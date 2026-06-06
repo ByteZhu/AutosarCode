@@ -1,0 +1,38 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling Integration\mcal_package\TargetIntegration\TC36x\Src\main.c
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 218/1] function Trap0 is qualified as __interrupt, but is not given an interrupt/trap number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 218/1] function Trap0 is qualified as __bisr_, but is not given an interrupt/trap number
+ctc E497: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 218/1] function Trap0 is qualified as __vector_table, but is not given a vector table number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 229/1] function Trap1 is qualified as __interrupt, but is not given an interrupt/trap number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 229/1] function Trap1 is qualified as __bisr_, but is not given an interrupt/trap number
+ctc E497: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 229/1] function Trap1 is qualified as __vector_table, but is not given a vector table number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 237/1] function Trap2 is qualified as __interrupt, but is not given an interrupt/trap number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 237/1] function Trap2 is qualified as __bisr_, but is not given an interrupt/trap number
+ctc E497: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 237/1] function Trap2 is qualified as __vector_table, but is not given a vector table number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 245/1] function Trap3 is qualified as __interrupt, but is not given an interrupt/trap number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 245/1] function Trap3 is qualified as __bisr_, but is not given an interrupt/trap number
+ctc E497: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 245/1] function Trap3 is qualified as __vector_table, but is not given a vector table number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 253/1] function Trap4 is qualified as __interrupt, but is not given an interrupt/trap number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 253/1] function Trap4 is qualified as __bisr_, but is not given an interrupt/trap number
+ctc E497: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 253/1] function Trap4 is qualified as __vector_table, but is not given a vector table number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 261/1] function Trap5 is qualified as __interrupt, but is not given an interrupt/trap number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 261/1] function Trap5 is qualified as __bisr_, but is not given an interrupt/trap number
+ctc E497: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 261/1] function Trap5 is qualified as __vector_table, but is not given a vector table number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 269/1] function Trap6 is qualified as __interrupt, but is not given an interrupt/trap number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 269/1] function Trap6 is qualified as __bisr_, but is not given an interrupt/trap number
+ctc E497: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 269/1] function Trap6 is qualified as __vector_table, but is not given a vector table number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 277/1] function Trap7 is qualified as __interrupt, but is not given an interrupt/trap number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 277/1] function Trap7 is qualified as __bisr_, but is not given an interrupt/trap number
+ctc E497: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 277/1] function Trap7 is qualified as __vector_table, but is not given a vector table number
+24 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\Integration\mcal_package\TargetIntegration\TC36x\main.o] Error 1
+scons: building terminated because of errors.

@@ -1,0 +1,666 @@
+/* ORTI Generated for Lauterbach debugger */
+VERSION {
+  KOIL = "AUTOSAR";
+  OSSEMANTICS = "ORTI", "2.2";
+};
+IMPLEMENTATION RTA_OS_ORTI  {
+  OS {
+    /************** Running Task ********************/
+    TOTRACE ENUM [
+      "Core0_OsTask_Background_1ms" = "&Os_const_tasks0[0]",
+      "Core1_OsTask_ASW_5ms" = "&Os_const_tasks1[0]",
+      "Core1_OsTask_BSW_5ms" = "&Os_const_tasks1[1]",
+      "Core1_OsTask_ASW_10ms" = "&Os_const_tasks1[2]",
+      "Core1_OsTask_BSW_10ms" = "&Os_const_tasks1[3]",
+      "Core1_OsTask_ASW_1ms" = "&Os_const_tasks1[4]",
+      "Core1_OsTask_BSW_1ms" = "&Os_const_tasks1[5]",
+      "Core0_OsTask_BSW_100ms" = "&Os_const_tasks0[1]",
+      "Core0_OsTask_BSW_50ms" = "&Os_const_tasks0[2]",
+      "Core0_OsTask_ASW_10ms" = "&Os_const_tasks0[3]",
+      "Core0_OsTask_BSW_10ms" = "&Os_const_tasks0[4]",
+      "Core0_OsTask_ASW_2ms" = "&Os_const_tasks0[5]",
+      "Core0_OsTask_ASW_5ms" = "&Os_const_tasks0[6]",
+      "Core0_OsTask_BSW_5ms" = "&Os_const_tasks0[7]",
+      "Core0_OsTask_ASW_1ms" = "&Os_const_tasks0[8]",
+      "Core0_OsTask_BSW_1ms" = "&Os_const_tasks0[9]",
+      "Core0_BSW_OsTask_SwcRequest" = "&Os_const_tasks0[10]",
+      "Core0_ECU_StartupTask" = "&Os_const_tasks0[11]",
+      "Core1_ECU_StartupTask" = "&Os_const_tasks1[6]",
+      "idle" = "0"
+    ] RUNNINGTASK, "Running Task";
+    /************** Running Task Priority ***********/
+    ENUM [
+      "TPL 1" = 1, /* Internal task priority */
+      "TPL 2" = 3, /* Internal task priority */
+      "TPL 3" = 7, /* Internal task priority */
+      "TPL 4" = 15, /* Internal task priority */
+      "TPL 5" = 31, /* Internal task priority */
+      "TPL 6" = 63, /* Internal task priority */
+      "TPL 7" = 127, /* Internal task priority */
+      "TPL 8" = 255, /* Internal task priority */
+      "TPL 9" = 511, /* Internal task priority */
+      "TPL 10" = 1023, /* Internal task priority */
+      "TPL 11" = 2047, /* Internal task priority */
+      "TPL 12" = 4095, /* Internal task priority */
+      "idle" = "0"
+    ] RUNNINGTASKPRIORITY, "Task priority";
+    /************** Running ISR2 ********************/
+    ENUM [
+      "CAN0SR0_ISR" = "&Os_const_isrs[0]",
+      "CAN0SR1_ISR" = "&Os_const_isrs[1]",
+      "CAN0SR2_ISR" = "&Os_const_isrs[2]",
+      "CAN0SR3_ISR" = "&Os_const_isrs[3]",
+      "CAN0SR4_ISR" = "&Os_const_isrs[4]",
+      "CAN0SR5_ISR" = "&Os_const_isrs[5]",
+      "CAN0SR6_ISR" = "&Os_const_isrs[6]",
+      "CAN0SR7_ISR" = "&Os_const_isrs[7]",
+      "CAN0SR8_ISR" = "&Os_const_isrs[8]",
+      "CAN0SR9_ISR" = "&Os_const_isrs[9]",
+      "CAN0SR10_ISR" = "&Os_const_isrs[10]",
+      "CAN0SR11_ISR" = "&Os_const_isrs[11]",
+      "Millisecond" = "&Os_const_isrs[12]",
+      "NO_ISR" = "0"
+    ] RUNNINGISR2, "Running Cat 2 ISR";
+    /************** Service IDs *********************/
+    TOTRACE ENUM [
+      "ActivateTask" = 2,
+      "Os_AdvanceCounter" = 4,
+      "CancelAlarm" = 6,
+      "CallTrustedFunction" = 8,
+      "CheckISRMemoryAccess" = 10,
+      "CheckObjectAccess" = 12,
+      "CheckObjectOwnership" = 14,
+      "CheckTaskMemoryAccess" = 16,
+      "ChainTask" = 18,
+      "ClearEvent" = 20,
+      "ControlIdle" = 22,
+      "CurrentIdleMode" = 24,
+      "DisableAllInterrupts" = 26,
+      "EnableAllInterrupts" = 28,
+      "GetActiveApplicationMode" = 30,
+      "GetAlarm" = 32,
+      "GetAlarmBase" = 34,
+      "GetApplicationID" = 36,
+      "GetCurrentApplicationID" = 38,
+      "GetCounterValue" = 40,
+      "GetElapsedCounterValue" = 42,
+      "GetEvent" = 44,
+      "GetISRID" = 46,
+      "GetResource" = 48,
+      "GetScheduleTableStatus" = 50,
+      "GetTaskID" = 52,
+      "GetTaskState" = 54,
+      "GetVersionInfo" = 56,
+      "IncrementCounter" = 58,
+      "NextScheduleTable" = 60,
+      "Os_GetCurrentIMask" = 62,
+      "Os_GetCurrentTPL" = 64,
+      "Os_GetExecutionTime" = 66,
+      "Os_GetISRMaxExecutionTime" = 68,
+      "Os_GetTaskMaxExecutionTime" = 70,
+      "Os_ResetISRMaxExecutionTime" = 72,
+      "Os_ResetTaskMaxExecutionTime" = 74,
+      "Os_GetElapsedTime" = 76,
+      "Os_GetTaskElapsedTime" = 78,
+      "Os_GetISRElapsedTime" = 80,
+      "Os_GetIdleElapsedTime" = 82,
+      "Os_ResetTaskElapsedTime" = 84,
+      "Os_ResetISRElapsedTime" = 86,
+      "Os_ResetIdleElapsedTime" = 88,
+      "Os_GetStackSize" = 90,
+      "Os_GetStackUsage" = 92,
+      "Os_GetStackValue" = 94,
+      "Os_GetISRMaxStackUsage" = 96,
+      "Os_GetTaskMaxStackUsage" = 98,
+      "Os_ResetISRMaxStackUsage" = 100,
+      "Os_ResetTaskMaxStackUsage" = 102,
+      "ReleaseResource" = 104,
+      "ResumeAllInterrupts" = 106,
+      "ResumeOSInterrupts" = 108,
+      "Schedule" = 110,
+      "SetEvent" = 112,
+      "SetAbsAlarm" = 114,
+      "SetRelAlarm" = 116,
+      "ShutdownOS" = 118,
+      "StartOS" = 120,
+      "StartScheduleTableAbs" = 122,
+      "StartScheduleTableRel" = 124,
+      "StartScheduleTableSynchron" = 126,
+      "SyncScheduleTable" = 128,
+      "SyncScheduleTableRel" = 130,
+      "SetScheduleTableAsync" = 132,
+      "StopScheduleTable" = 134,
+      "SuspendAllInterrupts" = 136,
+      "SuspendOSInterrupts" = 138,
+      "TerminateTask" = 140,
+      "WaitEvent" = 142,
+      "EnableInterruptSource" = 144,
+      "DisableInterruptSource" = 146,
+      "ClearPendingInterrupt" = 148,
+      "ModifyPeripheral32" = 150,
+      "ReadPeripheral32" = 152,
+      "WritePeripheral32" = 154,
+      "ModifyPeripheral16" = 156,
+      "ReadPeripheral16" = 158,
+      "WritePeripheral16" = 160,
+      "Restart" = 162,
+      "ModifyPeripheral8" = 164,
+      "ReadPeripheral8" = 166,
+      "WritePeripheral8" = 168,
+      "AllowAccess" = 170,
+      "GetApplicationState" = 172,
+      "GetNumberOfActivatedCores" = 174,
+      "ShutdownAllCores" = 176,
+      "StartCore" = 178,
+      "GetSpinlock" = 180,
+      "ReleaseSpinlock" = 182,
+      "TryToGetSpinlock" = 184,
+      "n/a" = 0
+    ] SERVICETRACE, "OS API";
+    /************** Error codes *********************/
+    ENUM [
+      "E_OS_ACCESS" = 1,
+      "E_OS_CALLEVEL" = 2,
+      "E_OS_ID" = 3,
+      "E_OS_LIMIT" = 4,
+      "E_OS_NOFUNC" = 5,
+      "E_OS_RESOURCE" = 6,
+      "E_OS_STATE" = 7,
+      "E_OS_VALUE" = 8,
+      "E_OS_SERVICEID" = 9,
+      "E_OS_ILLEGAL_ADDRESS" = 10,
+      "E_OS_MISSINGEND" = 11,
+      "E_OS_DISABLEDINT" = 12,
+      "E_OS_STACKFAULT" = 13,
+      "E_OS_PROTECTION_MEMORY" = 14,
+      "E_OS_PROTECTION_TIME" = 15,
+      "E_OS_PROTECTION_ARRIVAL" = 16,
+      "E_OS_PROTECTION_LOCKED" = 17,
+      "E_OS_PROTECTION_EXCEPTION" = 18,
+      "E_OS_CORE" = 19,
+      "E_OS_SPINLOCK" = 20,
+      "E_OS_INTERFERENCE_DEADLOCK" = 21,
+      "E_OS_NESTING_DEADLOCK" = 22,
+      "E_OS_PARAM_POINTER" = 23,
+      "E_OS_SYS_NO_RESTART" = 24,
+      "E_OS_SYS_RESTART" = 25,
+      "E_OS_SYS_OVERRUN" = 26,
+      "E_OS_SYS_XCORE_QFULL" = 27,
+      "E_OS_SYS_ERROR_LIMIT" = 28,
+      "E_OK" = 0
+    ] LASTERROR, "Last error";
+    /************** App Modes ***********************/
+    ENUM [
+      "OSDEFAULTAPPMODE" = 1,
+      "NO_APPMODE" = 0
+    ] CURRENTAPPMODE, "AppMode";
+    /************** Applications ********************/
+    ENUM [
+      "OsApplication_Core0" = 0,
+      "OsApplication_Core1" = 1,
+      "NO_APPLICATION" = 2
+    ] CURRENTAPPLICATION, "Application";
+    /************** Running Cat1 ISR *****************/
+    ENUM [
+      "NO_ISR" = "0",
+      "SENTSR0_ISR" = "1",
+      "SENTSR1_ISR" = "2",
+      "SENTSR2_ISR" = "3",
+      "SENTSR8_ISR" = "4",
+      "USER_ISR" = "5"
+    ] RUNNINGISR, "Running Cat 1 ISR";
+  };
+  /************** Tasks ***************************/
+  TASK {
+    STRING vs_BASEPRIORITY, "Base priority";
+    STRING PRIORITY, "Dispatch priority";
+    ENUM [
+      "SUSPENDED" = 0, "RUNNING" = 1, "READY" = 2, "RUNNING" = 3,
+      "WAITING"   = 4, "RUNNING" = 5, "READY" = 6, "RUNNING" = 7
+
+    ] STATE, "State";
+    CTYPE "unsigned char" CURRENTACTIVATIONS, "Activations";
+    CTYPE "unsigned" vs_STACK0MAX, "Maximum stack.sp used";
+    CTYPE "unsigned" vs_STACK1MAX, "Maximum stack.ctx used";
+    STRING vs_COREID, "Core";
+  };
+  /************** ISRs ****************************/
+  ISR2 {
+    STRING vs_p_Pri, "Base priority";
+    STRING vs_p_Disp, "Dispatch priority";
+    CTYPE "unsigned" vs_STACK0MAX, "Maximum stack.sp used";
+    CTYPE "unsigned" vs_STACK1MAX, "Maximum stack.ctx used";
+    STRING vs_COREID, "Core";
+  };
+  ISR1 {
+    STRING vs_p_Pri, "Base priority";
+    STRING vs_p_Disp, "Dispatch priority";
+    STRING vs_COREID, "Core";
+  };
+  /************** Alarms **************************/
+  ALARM {
+    CTYPE ALARMTIME, "Alarm Time";
+    CTYPE CYCLETIME, "Cycle Time";
+    ENUM [
+      "STOPPED" = 0,
+      "RUNNING" = 1
+    ] STATE, "Alarm state";
+    STRING ACTION, "Action";
+    STRING COUNTER, "Counter";
+    STRING vs_COREID, "Core";
+  };
+  /************** ScheduleTables ******************/
+  SCHEDULETABLE { /* [$UKS 612] */
+    STRING COUNTER, "Counter";
+    ENUM [
+      "STOPPED" = 0,
+      "NEXT" = 1,
+      "WAITING" = 2,
+      "RUNNING" = 3,
+      "RUNNING_AND_SYNCHRONOUS" = 4
+    ] STATE, "State";
+    CTYPE EXPIRYTIME, "Expiry Time";
+    ENUM [
+      "Rte_ScheduleTable" = "&Os_const_scheduletables[0]",
+      "none" = 0
+    ] NEXT, "Next table";
+    STRING vs_COREID, "Core";
+  };
+  /************** Resources ***********************/
+  RESOURCE {
+    ENUM [
+      "Core0_OsTask_Background_1ms" = "&Os_const_tasks0[0]",
+      "Core1_OsTask_ASW_5ms" = "&Os_const_tasks1[0]",
+      "Core1_OsTask_BSW_5ms" = "&Os_const_tasks1[1]",
+      "Core1_OsTask_ASW_10ms" = "&Os_const_tasks1[2]",
+      "Core1_OsTask_BSW_10ms" = "&Os_const_tasks1[3]",
+      "Core1_OsTask_ASW_1ms" = "&Os_const_tasks1[4]",
+      "Core1_OsTask_BSW_1ms" = "&Os_const_tasks1[5]",
+      "Core0_OsTask_BSW_100ms" = "&Os_const_tasks0[1]",
+      "Core0_OsTask_BSW_50ms" = "&Os_const_tasks0[2]",
+      "Core0_OsTask_ASW_10ms" = "&Os_const_tasks0[3]",
+      "Core0_OsTask_BSW_10ms" = "&Os_const_tasks0[4]",
+      "Core0_OsTask_ASW_2ms" = "&Os_const_tasks0[5]",
+      "Core0_OsTask_ASW_5ms" = "&Os_const_tasks0[6]",
+      "Core0_OsTask_BSW_5ms" = "&Os_const_tasks0[7]",
+      "Core0_OsTask_ASW_1ms" = "&Os_const_tasks0[8]",
+      "Core0_OsTask_BSW_1ms" = "&Os_const_tasks0[9]",
+      "Core0_BSW_OsTask_SwcRequest" = "&Os_const_tasks0[10]",
+      "Core0_ECU_StartupTask" = "&Os_const_tasks0[11]",
+      "Core1_ECU_StartupTask" = "&Os_const_tasks1[6]",
+      "CAN0SR0_ISR" = "&Os_const_isrs[0]",
+      "CAN0SR1_ISR" = "&Os_const_isrs[1]",
+      "CAN0SR2_ISR" = "&Os_const_isrs[2]",
+      "CAN0SR3_ISR" = "&Os_const_isrs[3]",
+      "CAN0SR4_ISR" = "&Os_const_isrs[4]",
+      "CAN0SR5_ISR" = "&Os_const_isrs[5]",
+      "CAN0SR6_ISR" = "&Os_const_isrs[6]",
+      "CAN0SR7_ISR" = "&Os_const_isrs[7]",
+      "CAN0SR8_ISR" = "&Os_const_isrs[8]",
+      "CAN0SR9_ISR" = "&Os_const_isrs[9]",
+      "CAN0SR10_ISR" = "&Os_const_isrs[10]",
+      "CAN0SR11_ISR" = "&Os_const_isrs[11]",
+      "Millisecond" = "&Os_const_isrs[12]",
+      "none" = "0"
+    ] LOCKER, "Resource Locker";
+    STRING PRIORITY, "Ceiling priority";
+    STRING vs_COREID, "Core";
+  };
+
+};
+OS Core0_Os_Config {
+  RUNNINGISR = "Os_RunningCat1ISR0";
+  RUNNINGTASK = "Os_ControlledCoreInfo[0U].RunningTask"; /* [$UKS 615] */
+  RUNNINGTASKPRIORITY = "Os_ControlledCoreInfo[0U].RunningTPMask.t0"; /* [$UKS 616] */
+  RUNNINGISR2 = "Os_ControlledCoreInfo[0U].RunningISR"; /* [$UKS 617] */
+  CURRENTAPPLICATION = "(((0 != Os_ControlledCoreInfo[0U].RunningISR) ? Os_ControlledCoreInfo[0U].RunningISR->application : ((0 != Os_ControlledCoreInfo[0U].RunningTask) ? Os_ControlledCoreInfo[0U].RunningTask->application : 2) ))";
+  LASTERROR = "Os_AnyCoreInfo[0].OrtiLastError"; /* [$UKS 619] */
+  SERVICETRACE = "Os_AnyCoreInfo[0].OrtiApiID"; /* [$UKS 618] */
+  CURRENTAPPMODE = "Os_CurrentAppMode"; /* [$UKS 620] */
+};
+OS Core1_Os_Config {
+  RUNNINGISR = "Os_RunningCat1ISR1";
+  RUNNINGTASK = "Os_ControlledCoreInfo[1U].RunningTask"; /* [$UKS 615] */
+  RUNNINGTASKPRIORITY = "Os_ControlledCoreInfo[1U].RunningTPMask.t1"; /* [$UKS 616] */
+  RUNNINGISR2 = "Os_ControlledCoreInfo[1U].RunningISR"; /* [$UKS 617] */
+  CURRENTAPPLICATION = "(((0 != Os_ControlledCoreInfo[1U].RunningISR) ? Os_ControlledCoreInfo[1U].RunningISR->application : ((0 != Os_ControlledCoreInfo[1U].RunningTask) ? Os_ControlledCoreInfo[1U].RunningTask->application : 2) ))";
+  LASTERROR = "Os_AnyCoreInfo[1].OrtiLastError"; /* [$UKS 619] */
+  SERVICETRACE = "Os_AnyCoreInfo[1].OrtiApiID"; /* [$UKS 618] */
+  CURRENTAPPMODE = "Os_CurrentAppMode"; /* [$UKS 620] */
+};
+
+ISR1 SENTSR0_ISR {
+  vs_p_Pri = "240";
+  vs_p_Disp = "240";
+  vs_COREID = "0";
+};
+
+ISR1 SENTSR1_ISR {
+  vs_p_Pri = "241";
+  vs_p_Disp = "241";
+  vs_COREID = "0";
+};
+
+ISR1 SENTSR2_ISR {
+  vs_p_Pri = "242";
+  vs_p_Disp = "242";
+  vs_COREID = "0";
+};
+
+ISR1 SENTSR8_ISR {
+  vs_p_Pri = "244";
+  vs_p_Disp = "244";
+  vs_COREID = "0";
+};
+
+ISR1 USER_ISR {
+  vs_p_Pri = "254";
+  vs_p_Disp = "254";
+  vs_COREID = "0";
+};
+
+
+ISR2 CAN0SR0_ISR {
+  vs_p_Pri = "150";
+  vs_p_Disp = "150";
+  vs_STACK0MAX = "Os_dyn_isrs[0].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_isrs[0].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+
+ISR2 CAN0SR1_ISR {
+  vs_p_Pri = "151";
+  vs_p_Disp = "151";
+  vs_STACK0MAX = "Os_dyn_isrs[1].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_isrs[1].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+
+ISR2 CAN0SR2_ISR {
+  vs_p_Pri = "152";
+  vs_p_Disp = "152";
+  vs_STACK0MAX = "Os_dyn_isrs[2].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_isrs[2].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+
+ISR2 CAN0SR3_ISR {
+  vs_p_Pri = "153";
+  vs_p_Disp = "153";
+  vs_STACK0MAX = "Os_dyn_isrs[3].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_isrs[3].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+
+ISR2 CAN0SR4_ISR {
+  vs_p_Pri = "154";
+  vs_p_Disp = "154";
+  vs_STACK0MAX = "Os_dyn_isrs[4].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_isrs[4].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+
+ISR2 CAN0SR5_ISR {
+  vs_p_Pri = "155";
+  vs_p_Disp = "155";
+  vs_STACK0MAX = "Os_dyn_isrs[5].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_isrs[5].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+
+ISR2 CAN0SR6_ISR {
+  vs_p_Pri = "156";
+  vs_p_Disp = "156";
+  vs_STACK0MAX = "Os_dyn_isrs[6].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_isrs[6].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+
+ISR2 CAN0SR7_ISR {
+  vs_p_Pri = "157";
+  vs_p_Disp = "157";
+  vs_STACK0MAX = "Os_dyn_isrs[7].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_isrs[7].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+
+ISR2 CAN0SR8_ISR {
+  vs_p_Pri = "158";
+  vs_p_Disp = "158";
+  vs_STACK0MAX = "Os_dyn_isrs[8].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_isrs[8].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+
+ISR2 CAN0SR9_ISR {
+  vs_p_Pri = "159";
+  vs_p_Disp = "159";
+  vs_STACK0MAX = "Os_dyn_isrs[9].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_isrs[9].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+
+ISR2 CAN0SR10_ISR {
+  vs_p_Pri = "160";
+  vs_p_Disp = "160";
+  vs_STACK0MAX = "Os_dyn_isrs[10].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_isrs[10].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+
+ISR2 CAN0SR11_ISR {
+  vs_p_Pri = "161";
+  vs_p_Disp = "161";
+  vs_STACK0MAX = "Os_dyn_isrs[11].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_isrs[11].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+
+ISR2 Millisecond {
+  vs_p_Pri = "200";
+  vs_p_Disp = "200";
+  vs_STACK0MAX = "Os_dyn_isrs[12].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_isrs[12].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+
+TASK Core0_OsTask_Background_1ms {
+  vs_BASEPRIORITY = "4";
+  PRIORITY = "4"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[0].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[0U].RunningTask == &Os_const_tasks0[0]) * 1) & 1) + ((Os_ControlledCoreInfo[0U].ReadyTasks.p0 & 0x1) << 1)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[0].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[0].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+TASK Core1_OsTask_ASW_5ms {
+  vs_BASEPRIORITY = "8";
+  PRIORITY = "8"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[1].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[1U].RunningTask == &Os_const_tasks1[0]) * 1) & 1) + ((Os_ControlledCoreInfo[1U].ReadyTasks.p1 & 0x1) << 1)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[1].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[1].meter.stackmax.ctx";
+  vs_COREID = "1";
+};
+TASK Core1_OsTask_BSW_5ms {
+  vs_BASEPRIORITY = "8";
+  PRIORITY = "8"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[2].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[1U].RunningTask == &Os_const_tasks1[1]) * 1) & 1) + (Os_ControlledCoreInfo[1U].ReadyTasks.p1 & 0x2)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[2].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[2].meter.stackmax.ctx";
+  vs_COREID = "1";
+};
+TASK Core1_OsTask_ASW_10ms {
+  vs_BASEPRIORITY = "9";
+  PRIORITY = "9"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[3].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[1U].RunningTask == &Os_const_tasks1[2]) * 1) & 1) + ((Os_ControlledCoreInfo[1U].ReadyTasks.p1 & 0x4) >> 1)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[3].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[3].meter.stackmax.ctx";
+  vs_COREID = "1";
+};
+TASK Core1_OsTask_BSW_10ms {
+  vs_BASEPRIORITY = "9";
+  PRIORITY = "9"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[4].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[1U].RunningTask == &Os_const_tasks1[3]) * 1) & 1) + ((Os_ControlledCoreInfo[1U].ReadyTasks.p1 & 0x8) >> 2)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[4].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[4].meter.stackmax.ctx";
+  vs_COREID = "1";
+};
+TASK Core1_OsTask_ASW_1ms {
+  vs_BASEPRIORITY = "10";
+  PRIORITY = "10"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[5].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[1U].RunningTask == &Os_const_tasks1[4]) * 1) & 1) + ((Os_ControlledCoreInfo[1U].ReadyTasks.p1 & 0x10) >> 3)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[5].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[5].meter.stackmax.ctx";
+  vs_COREID = "1";
+};
+TASK Core1_OsTask_BSW_1ms {
+  vs_BASEPRIORITY = "10";
+  PRIORITY = "10"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[6].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[1U].RunningTask == &Os_const_tasks1[5]) * 1) & 1) + ((Os_ControlledCoreInfo[1U].ReadyTasks.p1 & 0x20) >> 4)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[6].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[6].meter.stackmax.ctx";
+  vs_COREID = "1";
+};
+TASK Core0_OsTask_BSW_100ms {
+  vs_BASEPRIORITY = "11";
+  PRIORITY = "8"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[7].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[0U].RunningTask == &Os_const_tasks0[1]) * 1) & 1) + (Os_ControlledCoreInfo[0U].ReadyTasks.p0 & 0x2)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[7].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[7].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+TASK Core0_OsTask_BSW_50ms {
+  vs_BASEPRIORITY = "12";
+  PRIORITY = "8"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[8].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[0U].RunningTask == &Os_const_tasks0[2]) * 1) & 1) + ((Os_ControlledCoreInfo[0U].ReadyTasks.p0 & 0x4) >> 1)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[8].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[8].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+TASK Core0_OsTask_ASW_10ms {
+  vs_BASEPRIORITY = "14";
+  PRIORITY = "9"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[9].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[0U].RunningTask == &Os_const_tasks0[3]) * 1) & 1) + ((Os_ControlledCoreInfo[0U].ReadyTasks.p0 & 0x8) >> 2)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[9].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[9].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+TASK Core0_OsTask_BSW_10ms {
+  vs_BASEPRIORITY = "14";
+  PRIORITY = "9"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[10].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[0U].RunningTask == &Os_const_tasks0[4]) * 1) & 1) + ((Os_ControlledCoreInfo[0U].ReadyTasks.p0 & 0x10) >> 3)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[10].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[10].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+TASK Core0_OsTask_ASW_2ms {
+  vs_BASEPRIORITY = "15";
+  PRIORITY = "11"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[11].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[0U].RunningTask == &Os_const_tasks0[5]) * 1) & 1) + ((Os_ControlledCoreInfo[0U].ReadyTasks.p0 & 0x20) >> 4)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[11].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[11].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+TASK Core0_OsTask_ASW_5ms {
+  vs_BASEPRIORITY = "15";
+  PRIORITY = "11"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[12].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[0U].RunningTask == &Os_const_tasks0[6]) * 1) & 1) + ((Os_ControlledCoreInfo[0U].ReadyTasks.p0 & 0x40) >> 5)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[12].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[12].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+TASK Core0_OsTask_BSW_5ms {
+  vs_BASEPRIORITY = "15";
+  PRIORITY = "11"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[13].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[0U].RunningTask == &Os_const_tasks0[7]) * 1) & 1) + ((Os_ControlledCoreInfo[0U].ReadyTasks.p0 & 0x80) >> 6)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[13].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[13].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+TASK Core0_OsTask_ASW_1ms {
+  vs_BASEPRIORITY = "16";
+  PRIORITY = "14"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[14].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[0U].RunningTask == &Os_const_tasks0[8]) * 1) & 1) + ((Os_ControlledCoreInfo[0U].ReadyTasks.p0 & 0x100) >> 7)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[14].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[14].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+TASK Core0_OsTask_BSW_1ms {
+  vs_BASEPRIORITY = "16";
+  PRIORITY = "14"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[15].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[0U].RunningTask == &Os_const_tasks0[9]) * 1) & 1) + ((Os_ControlledCoreInfo[0U].ReadyTasks.p0 & 0x200) >> 8)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[15].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[15].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+TASK Core0_BSW_OsTask_SwcRequest {
+  vs_BASEPRIORITY = "19";
+  PRIORITY = "14"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[16].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[0U].RunningTask == &Os_const_tasks0[10]) * 1) & 1) + ((Os_ControlledCoreInfo[0U].ReadyTasks.p0 & 0x400) >> 9)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[16].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[16].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+TASK Core0_ECU_StartupTask {
+  vs_BASEPRIORITY = "20";
+  PRIORITY = "15"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[17].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[0U].RunningTask == &Os_const_tasks0[11]) * 1) & 1) + ((Os_ControlledCoreInfo[0U].ReadyTasks.p0 & 0x800) >> 10)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[17].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[17].meter.stackmax.ctx";
+  vs_COREID = "0";
+};
+TASK Core1_ECU_StartupTask {
+  vs_BASEPRIORITY = "20";
+  PRIORITY = "10"; /* [$UKS 621] */
+  CURRENTACTIVATIONS = "Os_dyn_tasks[18].activation_count"; /* [$UKS 623] */
+  STATE = "(((Os_ControlledCoreInfo[1U].RunningTask == &Os_const_tasks1[6]) * 1) & 1) + ((Os_ControlledCoreInfo[1U].ReadyTasks.p1 & 0x40) >> 5)"; /* [$UKS 622] */
+  vs_STACK0MAX = "Os_dyn_tasks[18].meter.stackmax.sp";
+  vs_STACK1MAX = "Os_dyn_tasks[18].meter.stackmax.ctx";
+  vs_COREID = "1";
+};
+SCHEDULETABLE Rte_ScheduleTable {  /* [$UKS 612] */
+  COUNTER = "Rte_TickCounter";
+  STATE = "Os_dyn_scheduletables[0].state";
+  EXPIRYTIME = "Os_dyn_scheduletables[0].match";
+  NEXT = "Os_dyn_scheduletables[0].next";
+  vs_COREID = "0";
+};
+RESOURCE RTE_RESOURCE_OS_APP_OsApplication_Core1 {
+  PRIORITY = "Task: 10"; /* [$UKS 631] */
+  LOCKER = "Os_dyn_resources[0].locker"; /* [$UKS 630] */
+  vs_COREID = "1";
+};
+RESOURCE RTE_RESOURCE_OS_APP_OsApplication_Core0 {
+  PRIORITY = "Task: 15"; /* [$UKS 631] */
+  LOCKER = "Os_dyn_resources[1].locker"; /* [$UKS 630] */
+  vs_COREID = "0";
+};
+RESOURCE Os_Core0_RES_SCHEDULER {
+  PRIORITY = "Task: 15"; /* [$UKS 631] */
+  LOCKER = "Os_dyn_resources[2].locker"; /* [$UKS 630] */
+  vs_COREID = "0";
+};
+RESOURCE Os_Core1_RES_SCHEDULER {
+  PRIORITY = "Task: 10"; /* [$UKS 631] */
+  LOCKER = "Os_dyn_resources[3].locker"; /* [$UKS 630] */
+  vs_COREID = "1";
+};
+
+

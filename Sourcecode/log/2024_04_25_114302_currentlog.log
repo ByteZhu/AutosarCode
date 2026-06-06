@@ -1,0 +1,69 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling asw\ASW_BASE\src\ASW_BASE.c
+ctc E219: ["asw\ASW_BASE\src\ASW_BASE.c" 21/1] cannot open #include file "Rte_ASW_BASE.h"
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 22/13] syntax error - token "<basic-type>" inserted before "ASW_BASE_CODE"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 22/13] start of current parameter declaration
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 22/28] syntax error - token ";" inserted before "CallTestStack_func"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 22/1] start of current external declaration
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 23/13] syntax error - token "<basic-type>" inserted before "ASW_BASE_CODE"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 23/13] start of current parameter declaration
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 23/28] syntax error - token ";" inserted before "CallTestStack_func1"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 23/1] start of current external declaration
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 29/7] syntax error - token ";" inserted before "shutdown_b"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 29/1] start of current external declaration
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 30/7] syntax error - token ";" inserted before "TestOverStack"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 30/1] start of current external declaration
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 36/18] syntax error - token ";" inserted before "Stack_OsTask_ASW_100ms"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 36/1] start of current external declaration
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 44/13] syntax error - token "<basic-type>" inserted before "Base_SWC_CODE"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 44/13] start of current parameter declaration
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 44/28] syntax error - token ";" inserted before "RE_BASE_SWC_func"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 44/1] start of current external declaration
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 68/13] syntax error - token "<basic-type>" inserted before "ASW_BASE_CODE"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 68/13] start of current parameter declaration
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 68/28] syntax error - token ";" inserted before "RE_BSW100ms_func"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 68/1] start of current external declaration
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 79/13] syntax error - token "<basic-type>" inserted before "ASW_BASE_CODE"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 79/13] start of current parameter declaration
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 79/28] syntax error - token ";" inserted before "CallTestStack_func"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 79/1] start of current external declaration
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 81/9] syntax error - token ";" inserted before "i"
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 82/9] syntax error - token ";" inserted before "test_stack"
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 93/13] syntax error - token "<basic-type>" inserted before "ASW_BASE_CODE"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 93/13] start of current parameter declaration
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 93/28] syntax error - token ";" inserted before "CallTestStack_func1"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 93/1] start of current external declaration
+18 errors, 0 warnings
+
+===================
+None
+===================
+Compiling asw\ASW_DCM\src\ASW_DCM.c
+Compiling asw\ASW_DCM\src\ASW_DCM_RoutineServices_CheckMemoryCRC_RequestRoutineResults_func.c
+scons: *** [output\objs\asw\ASW_BASE\ASW_BASE.o] Error 1
+Compiling asw\ASW_DCM\src\ASW_DCM_RoutineServices_CheckMemoryCRC_Start_func.c
+
+
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 502/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 503/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 504/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 505/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 512/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 513/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 514/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 515/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 516/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 517/15] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 518/15] pointers to different types at argument #1
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 214/17] unused variable "retValue"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 491/45] unused variable "write11"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 500/17] unused variable "retValue"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 837/17] unused variable "retValue"
+0 errors, 15 warnings
+
+scons: building terminated because of errors.

@@ -1,0 +1,12 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling Integration\mcal_package\Src\Ifx_Ssw_Tc1.c
+ctc W537: ["Integration\mcal_package\Src\Ifx_Ssw_Tc1.c" 73/20] unused variable "stmCount"
+ctc W537: ["Integration\mcal_package\Src\Ifx_Ssw_Tc1.c" 74/20] unused variable "stmCountBegin"
+0 errors, 2 warnings
+
+scons: done building targets.

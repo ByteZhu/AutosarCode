@@ -1,0 +1,18 @@
+ASAP2_VERSION 1 61
+/begin PROJECT template_A2L ""                          /* TODO: Change name according to project needs */
+  /begin MODULE template_A2L ""                         /* TODO: Change name according to project needs */
+  
+    /* A2ML - Language definitions */
+    /begin A2ML
+      /include "XCP_v1_2.aml"
+    /end A2ML
+    
+    /begin IF_DATA XCPplus 0x0102                       /* TODO: Change version to the needed one */
+      /* Include of the generated TL/PL-information */
+      /include "Xcp_A2L.a2l"                            /* TODO: Add the correct include */
+    /end IF_DATA
+    
+    /* TODO: Add your measurements here... */
+    
+  /end MODULE
+/end PROJECT

@@ -1,0 +1,63 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc34796a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\CheckTaskMemoryAccess.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\CheckTaskM
+                            emoryAccess.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.CheckTaskMemoryAccess.Os_CheckTaskMemoryAccess',code
+0000                     11         .sect   '.text.CheckTaskMemoryAccess.Os_CheckTaskMemoryAccess'
+                         12         .align  2
+                         13         
+                         14         .global Os_CheckTaskMemoryAccess
+                         15 ; Function Os_CheckTaskMemoryAccess
+0000                     16 Os_CheckTaskMemoryAccess:       .type   func
+0000 024F      1    1    17         mov     d15,d4
+0002 404F      1    2    18         mov.aa  a15,a4
+0004 8208      1    3    19         mov     d8,#0
+0006 405C      1    4    20         mov.aa  a12,a5
+0008 6Drrrrrr  2    6    21         call    Os_IsTaskValid
+000C 762A      1    7    22         jeq     d2,#0,.L2
+000E 09F46D08  1    8    23         ld.bu   d4,[a15]45
+0012 A005      1    9    24         mov.a   a5,#0
+0014 40F4      1   10    25         mov.aa  a4,a15
+0016 40C6      1   11    26         mov.aa  a6,a12
+0018 02F5      1   12    27         mov     d5,d15
+001A 6Drrrrrr  2   14    28         call    Os_Cbk_CheckMemoryAccess
+001E 0228      1   15    29         mov     d8,d2
+0020                     30 .L2:
+0020 0282      1   16    31         mov     d2,d8
+0022 0090      2   18    32         ret
+                         33         
+0024                     34 __Os_CheckTaskMemoryAccess_function_end:
+                         35         .size   Os_CheckTaskMemoryAccess,__Os_CheckTaskMemoryAccess_function_end-Os_CheckTaskMemoryAcces
+                            s
+                         36         ; End of function
+                         37         
+                         38         .calls  'Os_CheckTaskMemoryAccess','Os_IsTaskValid'
+                         39         .calls  'Os_CheckTaskMemoryAccess','Os_Cbk_CheckMemoryAccess'
+                         40         .extern Os_Cbk_CheckMemoryAccess
+                         41         .extern Os_IsTaskValid
+                         42         .calls  'Os_CheckTaskMemoryAccess','',0
+                         43         ; Module end

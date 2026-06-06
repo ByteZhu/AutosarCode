@@ -1,0 +1,182 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc34324a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\Os_Cfg_KL.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\Os_Cfg_KL.
+                            c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.Os_Cfg_KL.Os_ActivateTaskKL',code
+0000                     11         .sect   '.text.Os_Cfg_KL.Os_ActivateTaskKL'
+                         12         .align  2
+                         13         
+                         14         .global Os_ActivateTaskKL
+                         15 ; Function Os_ActivateTaskKL
+0000                     16 Os_ActivateTaskKL:      .type   func
+0000 4047      1    1    17         mov.aa  a7,a4
+0002 097FD408  1    2    18         ld.hu   d15,[a7]20
+0006 6E04      1    3    19         jeq     d15,#0,.L2
+0008 DF1F3100  1    4    20         jeq     d15,#1,.L3
+000C 0090      2    6    21         ret
+000E                     22 .L2:
+000E 096F5D18  1    7    23         ld.bu   d15,[a6]93
+0012 6E2F      1    8    24         jeq     d15,#0,.L5
+0014 D472      1    9    25         ld.a    a2,[a7]
+0016 09706408  1   10    26         ld.bu   d0,[a7]36
+001A 092F6414  1   11    27         ld.bu   d15,[+a2]100
+001E 7E03      1   12    28         jne     d15,d0,.L6
+0020 8244      1   13    29         mov     d4,#4
+0022 3C29      1   14    30         j       .L7
+0024                     31 .L6:
+0024 C21F      1   15    32         add     d15,#1
+0026 342F      1   16    33         st.b    [a2],d15
+0028 CC7A      1   17    34         ld.a    a15,[a7]40
+002A A002      1   18    35         mov.a   a2,#0
+002C 7DF21600  1   19    36         jeq.a   a2,a15,.L8
+0030 91r0rr2r  1   20    37         movh.a  a2,#@his(Os_dyn_fifocontrol)
+0034 D922rrrr  1   21    38         lea     a2,[a2]@los(Os_dyn_fifocontrol)
+0038 482F      1   22    39         ld.w    d15,[a15]8
+003A B042      1   23    40         add.a   a2,#4
+003C 9024      1   24    41         addsc.a a4,a2,d15,#2
+003E D444      1   25    42         ld.a    a4,[a4]
+0040 F447      1   26    43         st.a    [a4],a7
+0042 CC7A      1   27    44         ld.a    a15,[a7]40
+0044 482F      1   28    45         ld.w    d15,[a15]8
+0046 C815      1   29    46         ld.a    a5,[a15]4
+0048 9022      1   30    47         addsc.a a2,a2,d15,#2
+004A D424      1   31    48         ld.a    a4,[a2]
+004C 7D540480  1   32    49         jne.a   a4,a5,.L9
+0050 D4F4      1   33    50         ld.a    a4,[a15]
+0052 3C02      1   34    51         j       .L10
+0054                     52 .L9:
+0054 B044      1   35    53         add.a   a4,#4
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0056                     54 .L10:
+0056 F424      1   36    55         st.a    [a2],a4
+0058                     56 .L8:
+0058 91r0rrFr  1   37    57         movh.a  a15,#@his(Os_ControlledCoreInfo+12)
+005C 19F0rrrr  1   38    58         ld.w    d0,[a15]@los(Os_ControlledCoreInfo+12)
+0060 4C72      1   39    59         ld.w    d15,[a7]8
+0062 A6F0      1   40    60         or      d0,d15
+0064 59F0rrrr  1   41    61         st.w    [a15]@los(Os_ControlledCoreInfo+12),d0
+0068 0090      2   43    62         ret
+006A                     63 .L3:
+006A 096F5D18  1   44    64         ld.bu   d15,[a6]93
+006E EE05      1   45    65         jne     d15,#0,.L12
+0070                     66 .L5:
+0070 3B300140  1   46    67         mov     d4,#19
+0074                     68 .L7:
+0074 1Drrrrrr  1   47    69         j       Os_ErrorLog
+0078                     70 .L12:
+0078 91r0rr6r  1   48    71         movh.a  a6,#@his(Os_ControlledCoreInfo)
+007C D966rrrr  1   49    72         lea     a6,[a6]@los(Os_ControlledCoreInfo)
+0080 496C281A  1   50    73         lea     a12,[a6]104
+0084 3C09      1   51    74         j       .L14
+0086                     75 .L15:
+0086 0000      1   52    76         nop
+0088 0000      1   53    77         nop
+008A 0000      1   54    78         nop
+008C 0000      1   55    79         nop
+008E 0000      1   56    80         nop
+0090 0000      1   57    81         nop
+0092 0000      1   58    82         nop
+0094 0000      1   59    83         nop
+0096                     84 .L14:
+0096 DA01      1   60    85         mov     d15,#1
+0098 496F2818  1   61    86         swap.w  [a6]104,d15
+009C EEF5      1   62    87         jne     d15,#0,.L15
+009E D472      1   63    88         ld.a    a2,[a7]
+00A0 09706408  1   64    89         ld.bu   d0,[a7]36
+00A4 092F6414  1   65    90         ld.bu   d15,[+a2]100
+00A8 7E0B      1   66    91         jne     d15,d0,.L16
+00AA 8244      1   67    92         mov     d4,#4
+00AC 6Drrrrrr  2   69    93         call    Os_ErrorLog
+00B0 0D008004  1   70    94         dsync
+00B4 A00F      1   71    95         mov.a   a15,#0
+00B6 F4CF      1   72    96         st.a    [a12],a15
+00B8 0D008004  1   73    97         dsync
+00BC 0090      2   75    98         ret
+00BE                     99 .L16:
+00BE C21F      1   76   100         add     d15,#1
+00C0 342F      1   77   101         st.b    [a2],d15
+00C2 CC7A      1   78   102         ld.a    a15,[a7]40
+00C4 A002      1   79   103         mov.a   a2,#0
+00C6 7DF21600  1   80   104         jeq.a   a2,a15,.L18
+00CA 91r0rr2r  1   81   105         movh.a  a2,#@his(Os_dyn_fifocontrol)
+00CE D922rrrr  1   82   106         lea     a2,[a2]@los(Os_dyn_fifocontrol)
+00D2 482F      1   83   107         ld.w    d15,[a15]8
+00D4 B042      1   84   108         add.a   a2,#4
+00D6 9024      1   85   109         addsc.a a4,a2,d15,#2
+00D8 D44F      1   86   110         ld.a    a15,[a4]
+00DA F4F7      1   87   111         st.a    [a15],a7
+00DC CC7A      1   88   112         ld.a    a15,[a7]40
+00DE 482F      1   89   113         ld.w    d15,[a15]8
+00E0 C81D      1   90   114         ld.a    a13,[a15]4
+00E2 9022      1   91   115         addsc.a a2,a2,d15,#2
+00E4 D424      1   92   116         ld.a    a4,[a2]
+00E6 7DD40480  1   93   117         jne.a   a4,a13,.L19
+00EA D4F4      1   94   118         ld.a    a4,[a15]
+00EC 3C02      1   95   119         j       .L20
+00EE                    120 .L19:
+00EE B044      1   96   121         add.a   a4,#4
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   3
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+00F0                    122 .L20:
+00F0 F424      1   97   123         st.a    [a2],a4
+00F2                    124 .L18:
+00F2 09602C19  1   98   125         ld.w    d0,[a6]108
+00F6 4C72      1   99   126         ld.w    d15,[a7]8
+00F8 A6F0      1  100   127         or      d0,d15
+00FA 89602C19  1  101   128         st.w    [a6]108,d0
+00FE 0D008004  1  102   129         dsync
+0102 A00F      1  103   130         mov.a   a15,#0
+0104 F4CF      1  104   131         st.a    [a12],a15
+0106 0D008004  1  105   132         dsync
+010A 095FD408  1  106   133         ld.hu   d15,[a5]20
+010E 1E18      1  107   134         jeq     d15,#1,.L21
+0110 CC52      1  108   135         ld.a    a15,[a5]8
+0112 54FF      1  109   136         ld.w    d15,[a15]
+0114 BF5F0580  1  110   137         jlt.u   d15,#5,.L22
+0118 8214      1  111   138         mov     d4,#1
+011A 1Drrrrrr  1  112   139         j       Os_RaiseCrossCoreISR
+011E                    140 .L22:
+011E                    141 .L21:
+011E 0090      2  114   142         ret
+                        143         
+0120                    144 __Os_ActivateTaskKL_function_end:
+                        145         .size   Os_ActivateTaskKL,__Os_ActivateTaskKL_function_end-Os_ActivateTaskKL
+                        146         ; End of function
+                        147         
+                        148         .calls  'Os_ActivateTaskKL','Os_ErrorLog'
+                        149         .calls  'Os_ActivateTaskKL','Os_RaiseCrossCoreISR'
+                        150         .extern Os_ControlledCoreInfo
+                        151         .extern Os_RaiseCrossCoreISR
+                        152         .extern Os_ErrorLog
+                        153         .extern Os_dyn_fifocontrol
+                        154         .calls  'Os_ActivateTaskKL','',0
+                        155         ; Module end

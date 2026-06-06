@@ -1,0 +1,23 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling Integration\mcal_package\Src\Cpu0_Main.c
+ctc W505: ["Integration\mcal_package\Src\Cpu0_Main.c" 97/2] implicit declaration of function "inner_main"
+ctc W577: ["Integration\mcal_package\Src\Cpu0_Main.c" 97/12] calling a function without a prototype
+0 errors, 2 warnings
+
+Linking output\dbg\D_ENTRY_PLATFROM.elf...
+ltc E106: unresolved external: _SMALL_DATA_TC1 - (cstart_tc1.o)
+ltc E106: unresolved external: _LITERAL_DATA_TC1 - (cstart_tc1.o)
+ltc E106: unresolved external: _A8_DATA_TC1 - (cstart_tc1.o)
+ltc E106: unresolved external: _A9_DATA_TC1 - (cstart_tc1.o)
+ltc F019: unrecoverable error: fatal link error
+
+===================
+None
+===================
+scons: *** [output\dbg\D_ENTRY_PLATFROM.elf] Error 2
+scons: building terminated because of errors.

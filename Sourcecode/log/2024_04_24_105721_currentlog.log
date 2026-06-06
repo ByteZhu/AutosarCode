@@ -1,0 +1,215 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling os\Gen\ActivateTask.c
+Compiling os\Gen\AdvanceCounter.c
+Compiling os\Gen\AllowAccess.c
+Compiling os\Gen\CallTrustedFunction.c
+
+
+
+Compiling os\Gen\CancelAlarm.c
+
+Compiling os\Gen\ChainTask.c
+Compiling os\Gen\CheckISRMemoryAccess.c
+Compiling os\Gen\CheckObjectAccess.c
+
+
+Compiling os\Gen\CheckObjectOwnership.c
+Compiling os\Gen\CheckTaskMemoryAccess.c
+
+
+Compiling os\Gen\ClearEvent.c
+Compiling os\Gen\ControlIdle.c
+
+Compiling os\Gen\CrossCore.c
+
+Compiling os\Gen\DisableAllInterrupts.c
+
+Compiling os\Gen\DispatchTask.c
+
+Compiling os\Gen\ElapsedTime.c
+
+Compiling os\Gen\EnableAllInterrupts.c
+
+Compiling os\Gen\GetActiveApplicationMode.c
+
+
+Compiling os\Gen\GetAlarm.c
+Compiling os\Gen\GetAlarmBase.c
+
+Compiling os\Gen\GetApplicationID.c
+
+Compiling os\Gen\GetApplicationState.c
+
+Compiling os\Gen\GetCounterValue.c
+
+Compiling os\Gen\GetCurrentApplicationID.c
+
+Compiling os\Gen\GetElapsedCounterValue.c
+
+Compiling os\Gen\GetEvent.c
+
+ 
+Compiling os\Gen\GetExecutionTime.c
+Compiling os\Gen\GetISRID.c
+
+Compiling os\Gen\GetIsrMaxExecutionTime.c
+
+Compiling os\Gen\GetIsrMaxStackUsage.c
+
+Compiling os\Gen\GetNumberOfActivatedCores.c
+
+Compiling os\Gen\GetResource.c
+
+Compiling os\Gen\GetScheduleTableStatus.c
+
+Compiling os\Gen\GetSpinlock.c
+
+Compiling os\Gen\GetStackSize.c
+
+Compiling os\Gen\GetStackUsage.c
+
+
+Compiling os\Gen\GetStackValue.c
+Compiling os\Gen\GetTaskID.c
+
+Compiling os\Gen\GetTaskMaxExecutionTime.c
+
+Compiling os\Gen\GetTaskMaxStackUsage.c
+
+Compiling os\Gen\GetTaskState.c
+
+Compiling os\Gen\GetVersionInfo.c
+
+Compiling os\Gen\Idle.c
+
+Compiling os\Gen\IncrementCounter.c
+
+Compiling os\Gen\InShutdown.c
+
+Compiling os\Gen\InterruptSource.c
+
+Compiling os\Gen\ModifyPeripheral.c
+
+Compiling os\Gen\NextScheduleTable.c
+
+Compiling os\Gen\Os_Cfg.c
+
+Compiling os\Gen\Os_Cfg_Counters.c
+
+Compiling os\Gen\Os_Cfg_KL.c
+
+Compiling os\Gen\Os_CrossCore.c
+
+Compiling os\Gen\Os_GetCurrentIMask.c
+
+Compiling os\Gen\Os_GetCurrentTPL.c
+
+Compiling os\Gen\Os_GetTrapInfo.c
+
+Compiling os\Gen\Os_Peripherals.c
+
+Compiling os\Gen\Os_SrcInit.c
+
+
+Compiling os\Gen\Os_Stack.c
+Compiling os\Gen\Os_StartCores.c
+
+Compiling os\Gen\Os_TrapInit.c
+
+Compiling os\Gen\Os_TrapSupport.c
+
+Compiling os\Gen\Os_VectorInit.c
+
+Compiling os\Gen\Os_Wrapper.c
+
+Compiling os\Gen\ProtectionSupport.c
+
+
+Compiling os\Gen\ReadPeripheral.c
+Compiling os\Gen\ReleaseResource.c
+
+Compiling os\Gen\ReleaseSpinlock.c
+
+Compiling os\Gen\ResetIsrMaxExecutionTime.c
+
+
+Compiling os\Gen\ResetIsrMaxStackUsage.c
+Compiling os\Gen\ResetTaskMaxExecutionTime.c
+
+Compiling os\Gen\ResetTaskMaxStackUsage.c
+
+Compiling os\Gen\RestartOS.c
+
+
+Compiling os\Gen\ResumeAllInterrupts.c
+Compiling os\Gen\ResumeOSInterrupts.c
+
+Compiling os\Gen\Schedule.c
+
+Compiling os\Gen\SetAbsAlarm.c
+
+Compiling os\Gen\SetEvent.c
+
+Compiling os\Gen\SetRelAlarm.c
+
+Compiling os\Gen\SetScheduleTableAsync.c
+
+Compiling os\Gen\ShutdownAllCores.c
+
+Compiling os\Gen\ShutdownOS.c
+
+Compiling os\Gen\StackOverrunHook.c
+
+Compiling os\Gen\StartCore.c
+
+Compiling os\Gen\StartOS.c
+
+Compiling os\Gen\StartScheduleTableAbs.c
+
+Compiling os\Gen\StartScheduleTableRel.c
+
+Compiling os\Gen\StartScheduleTableSynchron.c
+
+Compiling os\Gen\StopScheduleTable.c
+
+Compiling os\Gen\SuspendAllInterrupts.c
+
+Compiling os\Gen\SuspendOSInterrupts.c
+
+Compiling os\Gen\SyncScheduleTable.c
+
+Compiling os\Gen\SyncScheduleTableRel.c
+
+Compiling os\Gen\TerminateTask.c
+
+Compiling os\Gen\TryToGetSpinlock.c
+
+Compiling os\Gen\ValidateCounter.c
+
+Compiling os\Gen\ValidateISR.c
+
+Compiling os\Gen\ValidateResource.c
+
+Compiling os\Gen\ValidateScheduleTable.c
+
+Compiling os\Gen\ValidateTask.c
+
+Compiling os\Gen\WaitEvent.c
+
+Compiling os\Gen\WritePeripheral.c
+
+
+ 
+
+Linking output\dbg\D_ENTRY_PLATFROM.elf...
+
+Dumping output\dbg\D_ENTRY_PLATFROM.elf to output\hex\D_ENTRY_PLATFROM.hex
+Dumping output\dbg\D_ENTRY_PLATFROM.elf to output\s19\D_ENTRY_PLATFROM.s19
+
+ 
+scons: done building targets.

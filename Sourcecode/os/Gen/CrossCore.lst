@@ -1,0 +1,102 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc35792a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\CrossCore.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\CrossCore.
+                            c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.CrossCore.Os_CrossCore0Check',code
+0000                     11         .sect   '.text.CrossCore.Os_CrossCore0Check'
+                         12         .align  2
+                         13         
+                         14         .global Os_CrossCore0Check
+                         15 ; Function Os_CrossCore0Check
+0000                     16 Os_CrossCore0Check:     .type   func
+0000 0090      2    2    17         ret
+                         18         
+0002                     19 __Os_CrossCore0Check_function_end:
+                         20         .size   Os_CrossCore0Check,__Os_CrossCore0Check_function_end-Os_CrossCore0Check
+                         21         ; End of function
+                         22         
+                         23         .sdecl  '.text.CrossCore.Os_CrossCore1Check',code
+0000                     24         .sect   '.text.CrossCore.Os_CrossCore1Check'
+                         25         .align  2
+                         26         
+                         27         .global Os_CrossCore1Check
+                         28 ; Function Os_CrossCore1Check
+0000                     29 Os_CrossCore1Check:     .type   func
+0000 0090      2    2    30         ret
+                         31         
+0002                     32 __Os_CrossCore1Check_function_end:
+                         33         .size   Os_CrossCore1Check,__Os_CrossCore1Check_function_end-Os_CrossCore1Check
+                         34         ; End of function
+                         35         
+                         36         .sdecl  '.text.CrossCore.Os_CrossCoreCheck',code
+0000                     37         .sect   '.text.CrossCore.Os_CrossCoreCheck'
+                         38         .align  2
+                         39         
+                         40         .global Os_CrossCoreCheck
+                         41 ; Function Os_CrossCoreCheck
+0000                     42 Os_CrossCoreCheck:      .type   func
+0000 91r0rrFr  1    1    43         movh.a  a15,#@his(Os_ShutdownAllCores_Indicator)
+0004 39FFrrrr  1    2    44         ld.bu   d15,[a15]@los(Os_ShutdownAllCores_Indicator)
+0008 404C      1    3    45         mov.aa  a12,a4
+000A 405D      1    4    46         mov.aa  a13,a5
+000C 6E07      1    5    47         jeq     d15,#0,.L2
+000E A00F      1    6    48         mov.a   a15,#0
+0010 ECC4      1    7    49         st.a    [a12]16,a15
+0012 ECC5      1    8    50         st.a    [a12]20,a15
+0014 92F4      1    9    51         add     d4,d15,#-1
+0016 6Drrrrrr  2   11    52         call    Os_ShutdownOS
+001A                     53 .L2:
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+001A 09DFD408  1   12    54         ld.hu   d15,[a13]20
+001E 6E03      1   13    55         jeq     d15,#0,.L3
+0020 1E16      1   14    56         jeq     d15,#1,.L4
+0022 0090      2   16    57         ret
+0024                     58 .L3:
+0024 40C4      1   17    59         mov.aa  a4,a12
+0026 40D5      1   18    60         mov.aa  a5,a13
+0028 1Drrrrrr  1   19    61         j       Os_CrossCore0Check
+002C                     62 .L4:
+002C 40C4      1   20    63         mov.aa  a4,a12
+002E 40D5      1   21    64         mov.aa  a5,a13
+0030 1Drrrrrr  1   22    65         j       Os_CrossCore1Check
+                         66         
+0034                     67 __Os_CrossCoreCheck_function_end:
+                         68         .size   Os_CrossCoreCheck,__Os_CrossCoreCheck_function_end-Os_CrossCoreCheck
+                         69         ; End of function
+                         70         
+                         71         .calls  'Os_CrossCoreCheck','Os_ShutdownOS'
+                         72         .calls  'Os_CrossCoreCheck','Os_CrossCore0Check'
+                         73         .calls  'Os_CrossCoreCheck','Os_CrossCore1Check'
+                         74         .calls  'Os_CrossCore0Check','',0
+                         75         .calls  'Os_CrossCore1Check','',0
+                         76         .extern Os_ShutdownOS
+                         77         .extern Os_ShutdownAllCores_Indicator
+                         78         .calls  'Os_CrossCoreCheck','',0
+                         79         ; Module end

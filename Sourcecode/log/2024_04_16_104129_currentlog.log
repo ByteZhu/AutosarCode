@@ -1,0 +1,21 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling Integration\mcal_package\Src\Cpu0_Main.c
+Compiling Integration\mcal_package\Src\Cpu1_Main.c
+Compiling Integration\mcal_package\Src\Ifx_Ssw_Tc0.c
+Compiling Integration\mcal_package\Src\Ifx_Ssw_Tc1.c
+
+
+ctc E272: ["Integration\mcal_package\Src\Ifx_Ssw_Tc1.c" 124/59] undeclared identifier "IFX_CFG_SSW_STARTCPU_WAIT_TIME_IN_SECONDS"
+1 errors, 0 warnings
+
+===================
+None
+===================
+
+scons: *** [output\objs\Integration\mcal_package\Ifx_Ssw_Tc1.o] Error 1
+scons: building terminated because of errors.

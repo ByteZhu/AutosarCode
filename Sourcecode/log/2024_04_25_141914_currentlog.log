@@ -1,0 +1,48 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling asw\ASW_COM\src\ASW_COM.c
+Compiling asw\ASW_CORE0\src\ASW_CORE0.c
+Compiling asw\ASW_CORE1\src\ASW_CORE1.c
+Compiling asw\ASW_DCM\src\ASW_DCM.c
+ctc W500: ["asw\ASW_CORE0\src\ASW_CORE0.c" 64/74] expression without effect
+ctc W500: ["asw\ASW_CORE0\src\ASW_CORE0.c" 66/102] expression without effect
+ctc E272: ["asw\ASW_CORE0\src\ASW_CORE0.c" 72/16] undeclared identifier "Core0_OsTask_ASW_100ms"
+ctc W524: ["asw\ASW_CORE0\src\ASW_CORE0.c" 72/16] conversion of integer to pointer at argument #1
+ctc W500: ["asw\ASW_CORE0\src\ASW_CORE0.c" 102/63] expression without effect
+ctc W500: ["asw\ASW_CORE0\src\ASW_CORE0.c" 142/105] expression without effect
+1 errors, 5 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\asw\ASW_CORE0\ASW_CORE0.o] Error 1
+
+ctc W560: ["asw\ASW_COM\src\ASW_COM.c" 217/24] possible truncation at implicit conversion to type "unsigned char"
+ctc W560: ["asw\ASW_COM\src\ASW_COM.c" 218/25] possible truncation at implicit conversion to type "unsigned char"
+ctc W560: ["asw\ASW_COM\src\ASW_COM.c" 219/25] possible truncation at implicit conversion to type "unsigned short int"
+ctc W560: ["asw\ASW_COM\src\ASW_COM.c" 220/26] possible truncation at implicit conversion to type "unsigned short int"
+ctc W537: ["asw\ASW_COM\src\ASW_COM.c" 142/17] unused variable "retValue"
+0 errors, 5 warnings
+
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 502/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 503/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 504/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 505/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 512/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 513/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 514/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 515/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 516/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 517/15] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 518/15] pointers to different types at argument #1
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 214/17] unused variable "retValue"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 491/45] unused variable "write11"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 500/17] unused variable "retValue"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 837/17] unused variable "retValue"
+0 errors, 15 warnings
+
+scons: building terminated because of errors.

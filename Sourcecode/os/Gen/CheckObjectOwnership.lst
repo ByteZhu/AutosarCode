@@ -1,0 +1,90 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc31500a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\CheckObjectOwnership.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\CheckObjec
+                            tOwnership.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.CheckObjectOwnership.Os_CheckObjectOwnership',code
+0000                     11         .sect   '.text.CheckObjectOwnership.Os_CheckObjectOwnership'
+                         12         .align  2
+                         13         
+                         14         .global Os_CheckObjectOwnership
+                         15 ; Function Os_CheckObjectOwnership
+0000                     16 Os_CheckObjectOwnership:        .type   func
+0000 DA02      1    1    17         mov     d15,#2
+0002 404F      1    2    18         mov.aa  a15,a4
+0004 7648      1    3    19         jeq     d4,#0,.L2
+0006 DF140E00  1    4    20         jeq     d4,#1,.L3
+000A DF441200  1    5    21         jeq     d4,#4,.L4
+000E DF541600  1    6    22         jeq     d4,#5,.L5
+0012 3C19      1    7    23         j       .L6
+0014                     24 .L2:
+0014 6Drrrrrr  2    9    25         call    Os_IsTaskValid
+0018 DF021600  1   10    26         jeq     d2,#0,.L7
+001C 09FF6D08  1   11    27         ld.bu   d15,[a15]45
+0020 3C12      1   12    28         j       .L8
+0022                     29 .L3:
+0022 6Drrrrrr  2   14    30         call    Os_IsISRValid
+0026 762F      1   15    31         jeq     d2,#0,.L9
+0028 09FF5908  1   16    32         ld.bu   d15,[a15]25
+002C 3C0C      1   17    33         j       .L10
+002E                     34 .L4:
+002E 6Drrrrrr  2   19    35         call    Os_IsCounterValid
+0032 7629      1   20    36         jeq     d2,#0,.L11
+0034 09FF6908  1   21    37         ld.bu   d15,[a15]41
+0038 3C06      1   22    38         j       .L12
+003A                     39 .L5:
+003A 6Drrrrrr  2   24    40         call    Os_IsScheduleTableValid
+003E 7623      1   25    41         jeq     d2,#0,.L13
+0040 09FF5008  1   26    42         ld.bu   d15,[a15]16
+0044                     43 .L13:
+0044                     44 .L12:
+0044                     45 .L11:
+0044                     46 .L10:
+0044                     47 .L9:
+0044                     48 .L8:
+0044                     49 .L7:
+0044                     50 .L6:
+0044 02F2      1   27    51         mov     d2,d15
+0046 0090      2   29    52         ret
+                         53         
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0048                     54 __Os_CheckObjectOwnership_function_end:
+                         55         .size   Os_CheckObjectOwnership,__Os_CheckObjectOwnership_function_end-Os_CheckObjectOwnership
+                         56         ; End of function
+                         57         
+                         58         .calls  'Os_CheckObjectOwnership','Os_IsTaskValid'
+                         59         .calls  'Os_CheckObjectOwnership','Os_IsISRValid'
+                         60         .calls  'Os_CheckObjectOwnership','Os_IsCounterValid'
+                         61         .calls  'Os_CheckObjectOwnership','Os_IsScheduleTableValid'
+                         62         .extern Os_IsCounterValid
+                         63         .extern Os_IsScheduleTableValid
+                         64         .extern Os_IsTaskValid
+                         65         .extern Os_IsISRValid
+                         66         .calls  'Os_CheckObjectOwnership','',0
+                         67         ; Module end

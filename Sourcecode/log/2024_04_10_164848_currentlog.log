@@ -1,0 +1,62 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling Integration\mcal_package\Irq\Traps.c
+Compiling Integration\mcal_package\Src\Cpu0_Main.c
+Compiling Integration\mcal_package\Src\Cpu1_Main.c
+Compiling Integration\mcal_package\Src\Ifx_Ssw_Infra.c
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 134/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 189/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 283/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 365/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 444/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 543/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 602/12] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 986/10] unused variable "CoreId"
+0 errors, 8 warnings
+
+Compiling Integration\mcal_package\Src\Ifx_Ssw_Tc0.c
+ctc W505: ["Integration\mcal_package\Src\Cpu1_Main.c" 67/3] implicit declaration of function "inner_main"
+ctc W577: ["Integration\mcal_package\Src\Cpu1_Main.c" 67/13] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling Integration\mcal_package\Src\Ifx_Ssw_Tc1.c
+
+Compiling Integration\mcal_package\Src\Stubs.c
+ctc W508: ["Integration\mcal_package\Src\Stubs.c" 1/1] empty source file
+0 errors, 1 warnings
+
+ctc W505: ["Integration\mcal_package\Src\Cpu0_Main.c" 97/2] implicit declaration of function "inner_main"
+ctc W577: ["Integration\mcal_package\Src\Cpu0_Main.c" 97/12] calling a function without a prototype
+0 errors, 2 warnings
+
+ctc W537: ["Integration\mcal_package\Src\Ifx_Ssw_Tc1.c" 72/20] unused variable "stmCount"
+ctc W537: ["Integration\mcal_package\Src\Ifx_Ssw_Tc1.c" 73/20] unused variable "stmCountBegin"
+0 errors, 2 warnings
+
+
+Linking output\dbg\D_ENTRY_PLATFROM.elf...
+ltc E106: unresolved external: __USTACK1 - (Ifx_Ssw_Tc1.o)
+ltc E106: unresolved external: __ISTACK1 - (Ifx_Ssw_Tc1.o)
+ltc E106: unresolved external: RE_CORE1_SWC_100ms_func - (Core1_OsTask_ASW_10ms.o)
+ltc E106: unresolved external: ErrorHook_OsApplication_1 - (Os_Cfg.o)
+ltc E106: unresolved external: __CSA1 - (Ifx_Ssw_Tc1.o)
+ltc E106: unresolved external: IoHwAb_GptNotification0 - (Gpt_PBcfg.o)
+ltc E106: unresolved external: __CSA1_END - (Ifx_Ssw_Tc1.o)
+ltc E106: unresolved external: IoHwAb_GptNotification1 - (Gpt_PBcfg.o)
+ltc E106: unresolved external: ErrorHook_OsApplication_0 - (Os_Cfg.o)
+ltc E106: unresolved external: Os_Entry_STMOSR1_ISR - (Os_Cfg.o)
+ltc E106: unresolved external: _SMALL_DATA_TC1 - (cstart_tc1.o)
+ltc E106: unresolved external: _LITERAL_DATA_TC1 - (cstart_tc1.o)
+ltc E106: unresolved external: _A8_DATA_TC1 - (cstart_tc1.o)
+ltc E106: unresolved external: _A9_DATA_TC1 - (cstart_tc1.o)
+ltc F019: unrecoverable error: fatal link error
+
+===================
+None
+===================
+scons: *** [output\dbg\D_ENTRY_PLATFROM.elf] Error 2
+scons: building terminated because of errors.

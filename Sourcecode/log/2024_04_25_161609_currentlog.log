@@ -1,0 +1,23 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling mcal\MCAL_Gen\src\Stm_Cfg.c
+
+Compiling mcal\MCAL_Modules\Mcu\src\Mcu_17_TimerIp.c
+Compiling mcal\MCAL_Modules\Stm\src\Stm.c
+Compiling mcal\MCAL_Modules\Wdg_17_Scu\src\Wdg_17_Scu.c
+Compiling mcal\MCAL_Modules\Irq\Irq.c
+
+
+
+
+Linking output\dbg\D_ENTRY_PLATFROM.elf...
+
+Dumping output\dbg\D_ENTRY_PLATFROM.elf to output\hex\D_ENTRY_PLATFROM.hex
+Dumping output\dbg\D_ENTRY_PLATFROM.elf to output\s19\D_ENTRY_PLATFROM.s19
+
+
+scons: done building targets.

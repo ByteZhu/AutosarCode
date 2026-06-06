@@ -1,0 +1,70 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling Integration\mcal_package\TargetIntegration\TC36x\Src\main.c
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 218/1] syntax error - token "<integer>" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 218/1] syntax error - token "<identifier>" inserted before "void"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 218/1] start of current external declaration
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 218/1] syntax error - token ")" inserted before "void"
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 218/1] syntax error - token ")" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 219/1] syntax error - token ";" inserted before "{"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 218/1] start of current function definition
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 229/1] syntax error - token "<integer>" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 229/1] syntax error - token "<identifier>" inserted before "void"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 229/1] start of current external declaration
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 229/1] syntax error - token ")" inserted before "void"
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 229/1] syntax error - token ")" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 230/1] syntax error - token ";" inserted before "{"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 229/1] start of current function definition
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 237/1] syntax error - token "<integer>" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 237/1] syntax error - token "<identifier>" inserted before "void"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 237/1] start of current external declaration
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 237/1] syntax error - token ")" inserted before "void"
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 237/1] syntax error - token ")" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 238/1] syntax error - token ";" inserted before "{"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 237/1] start of current function definition
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 245/1] syntax error - token "<integer>" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 245/1] syntax error - token "<identifier>" inserted before "void"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 245/1] start of current external declaration
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 245/1] syntax error - token ")" inserted before "void"
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 245/1] syntax error - token ")" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 246/1] syntax error - token ";" inserted before "{"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 245/1] start of current function definition
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 253/1] syntax error - token "<integer>" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 253/1] syntax error - token "<identifier>" inserted before "void"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 253/1] start of current external declaration
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 253/1] syntax error - token ")" inserted before "void"
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 253/1] syntax error - token ")" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 254/1] syntax error - token ";" inserted before "{"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 253/1] start of current function definition
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 261/1] syntax error - token "<integer>" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 261/1] syntax error - token "<identifier>" inserted before "void"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 261/1] start of current external declaration
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 261/1] syntax error - token ")" inserted before "void"
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 261/1] syntax error - token ")" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 262/1] syntax error - token ";" inserted before "{"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 261/1] start of current function definition
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 269/1] syntax error - token "<integer>" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 269/1] syntax error - token "<identifier>" inserted before "void"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 269/1] start of current external declaration
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 269/1] syntax error - token ")" inserted before "void"
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 269/1] syntax error - token ")" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 270/1] syntax error - token ";" inserted before "{"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 269/1] start of current function definition
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 277/1] syntax error - token "<integer>" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 277/1] syntax error - token "<identifier>" inserted before "void"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 277/1] start of current external declaration
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 277/1] syntax error - token ")" inserted before "void"
+ctc E207: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 277/1] syntax error - token ")" deleted
+ctc E208: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 278/1] syntax error - token ";" inserted before "{"
+ctc I805: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 277/1] start of current function definition
+40 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\Integration\mcal_package\TargetIntegration\TC36x\main.o] Error 1
+scons: building terminated because of errors.

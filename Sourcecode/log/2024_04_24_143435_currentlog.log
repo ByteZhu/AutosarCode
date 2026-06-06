@@ -1,0 +1,24 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling Integration\mcal_package\Irq\Traps.c
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 134/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 189/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 283/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 365/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 444/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 543/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 602/12] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 986/10] unused variable "CoreId"
+0 errors, 8 warnings
+
+Linking output\dbg\D_ENTRY_PLATFROM.elf...
+
+Dumping output\dbg\D_ENTRY_PLATFROM.elf to output\hex\D_ENTRY_PLATFROM.hex
+Dumping output\dbg\D_ENTRY_PLATFROM.elf to output\s19\D_ENTRY_PLATFROM.s19
+
+
+scons: done building targets.

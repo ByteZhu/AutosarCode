@@ -1,0 +1,1699 @@
+<RTEGEN>
+  <VERSION-INFO>
+    <RTEGen>RTA-RTE V12.0.0</RTEGen>
+  </VERSION-INFO>
+  <MESSAGES>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I002164</CODE>
+      <FILE>unknown</FILE>
+      <LINE>unknown</LINE>
+      <LOCATION/>
+      <TEXT>Expected ON-TRANSITION-VALUE element missing for ModeDeclarationGroup &apos;/ModeDeclarationGroup_NRC22/ModeDeclarationGroup_NRC22&apos;, using the calculated value &apos;2&apos;.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I002164</CODE>
+      <FILE>unknown</FILE>
+      <LINE>unknown</LINE>
+      <LOCATION/>
+      <TEXT>Expected ON-TRANSITION-VALUE element missing for ModeDeclarationGroup &apos;/ModeDeclarationGroup_NRC72/ModeDeclarationGroup_NRC72&apos;, using the calculated value &apos;2&apos;.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I002164</CODE>
+      <FILE>unknown</FILE>
+      <LINE>unknown</LINE>
+      <LOCATION/>
+      <TEXT>Expected ON-TRANSITION-VALUE element missing for ModeDeclarationGroup &apos;/MDG_App_Mode/MDG_App_Mode&apos;, using the calculated value &apos;19&apos;.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I002164</CODE>
+      <FILE>unknown</FILE>
+      <LINE>unknown</LINE>
+      <LOCATION/>
+      <TEXT>Expected ON-TRANSITION-VALUE element missing for ModeDeclarationGroup &apos;/AUTOSAR_ComM/ModeDeclarationGroups/ComMMode&apos;, using the calculated value &apos;3&apos;.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml</FILE>
+      <LINE>392</LINE>
+      <LOCATION>/AUTOSAR_BswM/BswModuleDescriptions/BswM/pp_MDGP_MDG_App_Mode_MDG_App_Mode</LOCATION>
+      <TEXT>Provided port &apos;BswM.pp_MDGP_MDG_App_Mode_MDG_App_Mode&apos; of SW-C instance &apos;/AUTOSAR_BswM/BswImplementations/BSWIMPL_BswM&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007762</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/bswmd/Dcm_BSWMD.arxml</FILE>
+      <LINE>1156</LINE>
+      <LOCATION>/AUTOSAR_Dcm/BswModuleDescriptions/Dcm/pp_DcmCommunicationControl_Can_Network_0_Channel_Can_Network_0</LOCATION>
+      <TEXT>The configured mode queue length is 1. Only one state transition can be pending. RTA-RTE has optimized away queue handling for this Mode Machine Instance.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/bswmd/Dcm_BSWMD.arxml</FILE>
+      <LINE>1152</LINE>
+      <LOCATION>/AUTOSAR_Dcm/BswModuleDescriptions/Dcm/pp_DcmControlDTCSetting</LOCATION>
+      <TEXT>Provided port &apos;Dcm.pp_DcmControlDTCSetting&apos; of SW-C instance &apos;/AUTOSAR_Dcm/BswImplementations/Dcm&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/bswmd/Dcm_BSWMD.arxml</FILE>
+      <LINE>1144</LINE>
+      <LOCATION>/AUTOSAR_Dcm/BswModuleDescriptions/Dcm/pp_DcmDiagnosticSessionControl</LOCATION>
+      <TEXT>Provided port &apos;Dcm.pp_DcmDiagnosticSessionControl&apos; of SW-C instance &apos;/AUTOSAR_Dcm/BswImplementations/Dcm&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/bswmd/Dcm_BSWMD.arxml</FILE>
+      <LINE>1148</LINE>
+      <LOCATION>/AUTOSAR_Dcm/BswModuleDescriptions/Dcm/pp_DcmEcuReset</LOCATION>
+      <TEXT>Provided port &apos;Dcm.pp_DcmEcuReset&apos; of SW-C instance &apos;/AUTOSAR_Dcm/BswImplementations/Dcm&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/bswmd/WdgM_Cfg_BSWMD.arxml</FILE>
+      <LINE>523</LINE>
+      <LOCATION>/AUTOSAR_WdgM/BswModuleDescriptions/WdgM/pp_WdgMSupervisionCycle</LOCATION>
+      <TEXT>Provided port &apos;WdgM.pp_WdgMSupervisionCycle&apos; of SW-C instance &apos;/AUTOSAR_WdgM/BswImplementations/WdgM&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="WARNING">
+      <CODE>W005090</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/bswmd/WdgM_Cfg_BSWMD.arxml</FILE>
+      <LINE>529</LINE>
+      <LOCATION>/AUTOSAR_WdgM/BswModuleDescriptions/WdgM/rp_Current_WdgMSupervisionCycle</LOCATION>
+      <TEXT>Mode declaration group &apos;Current_WdgMSupervisionCycle&apos; of BSW instance &apos;/AUTOSAR_WdgM/BswImplementations/WdgM&apos; is not connected. Mode instance for ModeDeclarationGroupPrototype &apos;Current_WdgMSupervisionCycle&apos; will remain in initial mode &apos;SUPERVISION_CYCLE_0&apos;.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="WARNING">
+      <CODE>W007210</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml</FILE>
+      <LINE>13</LINE>
+      <LOCATION>/AUTOSAR_BswM/SwComponentTypes/BswM/RP_BswMArbitration_BswMSwcModeRequest</LOCATION>
+      <TEXT>Required port &apos;BswM.RP_BswMArbitration_BswMSwcModeRequest&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_BswM&apos; is not connected to a providing port. Null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml</FILE>
+      <LINE>48</LINE>
+      <LOCATION>/AUTOSAR_ComM/SwComponentTypes/ComM/CL_Can_Network_0_Channel_Can_Network_0</LOCATION>
+      <TEXT>Provided port &apos;ComM.CL_Can_Network_0_Channel_Can_Network_0&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ComM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml</FILE>
+      <LINE>52</LINE>
+      <LOCATION>/AUTOSAR_ComM/SwComponentTypes/ComM/CL_Can_Network_1_Channel_Can_Network_1</LOCATION>
+      <TEXT>Provided port &apos;ComM.CL_Can_Network_1_Channel_Can_Network_1&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ComM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml</FILE>
+      <LINE>56</LINE>
+      <LOCATION>/AUTOSAR_ComM/SwComponentTypes/ComM/CL_Can_Network_2_Channel_Can_Network_2</LOCATION>
+      <TEXT>Provided port &apos;ComM.CL_Can_Network_2_Channel_Can_Network_2&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ComM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml</FILE>
+      <LINE>60</LINE>
+      <LOCATION>/AUTOSAR_ComM/SwComponentTypes/ComM/UM_ComMUser_Can_Network_0_Channel_Can_Network_0</LOCATION>
+      <TEXT>Provided port &apos;ComM.UM_ComMUser_Can_Network_0_Channel_Can_Network_0&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ComM&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml</FILE>
+      <LINE>80</LINE>
+      <LOCATION>/AUTOSAR_ComM/SwComponentTypes/ComM/UM_ComMUser_Can_Network_1_Channel_Can_Network_1</LOCATION>
+      <TEXT>Provided port &apos;ComM.UM_ComMUser_Can_Network_1_Channel_Can_Network_1&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ComM&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml</FILE>
+      <LINE>100</LINE>
+      <LOCATION>/AUTOSAR_ComM/SwComponentTypes/ComM/UM_ComMUser_Can_Network_2_Channel_Can_Network_2</LOCATION>
+      <TEXT>Provided port &apos;ComM.UM_ComMUser_Can_Network_2_Channel_Can_Network_2&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ComM&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml</FILE>
+      <LINE>90</LINE>
+      <LOCATION>/AUTOSAR_ComM/SwComponentTypes/ComM/UR_ComMUser_Can_Network_1_Channel_Can_Network_1</LOCATION>
+      <TEXT>Provided port &apos;ComM.UR_ComMUser_Can_Network_1_Channel_Can_Network_1&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ComM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml</FILE>
+      <LINE>110</LINE>
+      <LOCATION>/AUTOSAR_ComM/SwComponentTypes/ComM/UR_ComMUser_Can_Network_2_Channel_Can_Network_2</LOCATION>
+      <TEXT>Provided port &apos;ComM.UR_ComMUser_Can_Network_2_Channel_Can_Network_2&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ComM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007762</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dcm_Cfg_SWCD.arxml</FILE>
+      <LINE>70</LINE>
+      <LOCATION>/AUTOSAR_Dcm/SwComponentTypes/Dcm/Pp_DcmCommunicationControl_Can_Network_0_Channel_Can_Network_0</LOCATION>
+      <TEXT>The configured mode queue length is 1. Only one state transition can be pending. RTA-RTE has optimized away queue handling for this Mode Machine Instance.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dcm_Cfg_SWCD.arxml</FILE>
+      <LINE>60</LINE>
+      <LOCATION>/AUTOSAR_Dcm/SwComponentTypes/Dcm/Pp_DcmControlDTCSetting</LOCATION>
+      <TEXT>Provided port &apos;Dcm.Pp_DcmControlDTCSetting&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dcm&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dcm_Cfg_SWCD.arxml</FILE>
+      <LINE>40</LINE>
+      <LOCATION>/AUTOSAR_Dcm/SwComponentTypes/Dcm/Pp_DcmDiagnosticSessionControl</LOCATION>
+      <TEXT>Provided port &apos;Dcm.Pp_DcmDiagnosticSessionControl&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dcm&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dcm_Cfg_SWCD.arxml</FILE>
+      <LINE>50</LINE>
+      <LOCATION>/AUTOSAR_Dcm/SwComponentTypes/Dcm/Pp_DcmEcuReset</LOCATION>
+      <TEXT>Provided port &apos;Dcm.Pp_DcmEcuReset&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dcm&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2774</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0x061a62_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0x061a62_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2784</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0x452a62_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0x452a62_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2794</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0x505602_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0x505602_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2804</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0x560e55_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0x560e55_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2814</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0x600c96_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0x600c96_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2824</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xd01087_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xd01087_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2834</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xd0c451_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xd0c451_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2844</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xd0c568_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xd0c568_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2854</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xd14b51_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xd14b51_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2864</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xd14c51_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xd14c51_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2874</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xd63451_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xd63451_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2884</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xdc4088_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xdc4088_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2894</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xe01104_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xe01104_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2904</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xe01149_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xe01149_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2914</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xec3682_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xec3682_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2924</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xed3683_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xed3683_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2934</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xee0068_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xee0068_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2944</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xee0168_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xee0168_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2954</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xee0368_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xee0368_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2964</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xee0468_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xee0468_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2974</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xf00003_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xf00003_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2984</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xf00004_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xf00004_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2994</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xf00044_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xf00044_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3004</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xf00045_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xf00045_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3014</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xf00049_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xf00049_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3024</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xf0004b_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xf0004b_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3034</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xf00092_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xf00092_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3044</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/ControlEventAvailable_DTC_0xf00362_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.ControlEventAvailable_DTC_0xf00362_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3054</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0x061a62_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0x061a62_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3064</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0x452a62_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0x452a62_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3074</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0x505602_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0x505602_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3084</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0x560e55_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0x560e55_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3094</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0x600c96_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0x600c96_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3104</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xd01087_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xd01087_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3114</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xd0c451_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xd0c451_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3124</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xd0c568_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xd0c568_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3134</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xd14b51_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xd14b51_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3144</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xd14c51_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xd14c51_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3154</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xd63451_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xd63451_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3164</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xdc4088_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xdc4088_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3174</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xe01104_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xe01104_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3184</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xe01149_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xe01149_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3194</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xec3682_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xec3682_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3204</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xed3683_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xed3683_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3214</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xee0068_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xee0068_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3224</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xee0168_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xee0168_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3234</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xee0368_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xee0368_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3244</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xee0468_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xee0468_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3254</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xf00003_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xf00003_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3264</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xf00004_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xf00004_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3274</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xf00044_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xf00044_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3284</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xf00045_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xf00045_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3294</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xf00049_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xf00049_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3304</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xf0004b_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xf0004b_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3314</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xf00092_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xf00092_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>3324</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EventStatus_DTC_0xf00362_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EventStatus_DTC_0xf00362_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>14</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0x061a62_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0x061a62_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>40</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0x452a62_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0x452a62_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>66</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0x505602_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0x505602_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>92</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0x560e55_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0x560e55_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>118</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0x600c96_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0x600c96_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>144</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xd01087_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xd01087_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>170</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xd0c451_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xd0c451_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>196</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xd0c568_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xd0c568_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>222</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xd14b51_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xd14b51_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>248</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xd14c51_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xd14c51_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>274</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xd63451_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xd63451_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>300</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xdc4088_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xdc4088_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>326</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xe01104_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xe01104_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>352</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xe01149_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xe01149_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>378</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xec3682_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xec3682_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>404</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xed3683_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xed3683_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>430</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xee0068_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xee0068_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>456</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xee0168_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xee0168_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>482</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xee0368_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xee0368_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>508</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xee0468_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xee0468_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>534</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xf00003_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xf00003_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>560</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xf00004_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xf00004_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>586</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xf00044_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xf00044_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>612</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xf00045_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xf00045_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>638</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xf00049_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xf00049_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>664</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xf0004b_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xf0004b_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>690</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xf00092_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xf00092_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>716</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_DTC_0xf00362_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_DTC_0xf00362_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>742</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0x061a62_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0x061a62_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>752</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0x452a62_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0x452a62_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>762</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0x505602_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0x505602_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>772</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0x560e55_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0x560e55_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>782</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0x600c96_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0x600c96_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>792</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xd01087_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xd01087_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>802</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xd0c451_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xd0c451_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>812</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xd0c568_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xd0c568_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>822</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xd14b51_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xd14b51_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>832</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xd14c51_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xd14c51_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>842</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xd63451_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xd63451_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>852</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xdc4088_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xdc4088_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>862</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xe01104_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xe01104_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>872</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xe01149_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xe01149_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>882</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xec3682_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xec3682_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>892</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xed3683_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xed3683_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>902</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xee0068_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xee0068_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>912</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xee0168_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xee0168_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>922</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xee0368_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xee0368_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>932</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xee0468_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xee0468_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>942</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xf00003_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xf00003_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>952</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xf00004_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xf00004_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>962</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xf00044_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xf00044_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>972</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xf00045_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xf00045_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>982</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xf00049_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xf00049_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>992</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xf0004b_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xf0004b_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1002</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xf00092_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xf00092_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1012</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/Event_MonData_DTC_0xf00362_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.Event_MonData_DTC_0xf00362_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1022</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0x061a62_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0x061a62_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1072</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0x452a62_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0x452a62_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1122</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0x505602_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0x505602_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1172</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0x560e55_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0x560e55_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1222</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0x600c96_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0x600c96_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1272</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xd01087_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xd01087_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1322</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xd0c451_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xd0c451_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1372</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xd0c568_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xd0c568_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1422</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xd14b51_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xd14b51_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1472</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xd14c51_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xd14c51_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1522</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xd63451_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xd63451_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1572</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xdc4088_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xdc4088_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1622</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xe01104_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xe01104_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1672</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xe01149_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xe01149_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1722</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xec3682_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xec3682_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1772</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xed3683_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xed3683_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1822</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xee0068_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xee0068_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1872</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xee0168_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xee0168_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1922</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xee0368_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xee0368_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>1972</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xee0468_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xee0468_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2022</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xf00003_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xf00003_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2072</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xf00004_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xf00004_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2122</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xf00044_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xf00044_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2172</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xf00045_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xf00045_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2222</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xf00049_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xf00049_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2272</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xf0004b_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xf0004b_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2322</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xf00092_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xf00092_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2372</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/EvtInfo_DTC_0xf00362_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.EvtInfo_DTC_0xf00362_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2422</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/GeneralEvtInfo</LOCATION>
+      <TEXT>Provided port &apos;Dem.GeneralEvtInfo&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2476</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0x061a62_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0x061a62_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2486</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0x452a62_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0x452a62_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2496</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0x505602_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0x505602_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2506</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0x560e55_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0x560e55_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2516</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0x600c96_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0x600c96_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2526</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xd01087_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xd01087_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2536</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xd0c451_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xd0c451_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2546</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xd0c568_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xd0c568_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2556</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xd14b51_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xd14b51_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2566</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xd14c51_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xd14c51_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2576</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xd63451_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xd63451_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2586</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xdc4088_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xdc4088_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2596</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xe01104_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xe01104_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2606</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xe01149_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xe01149_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2616</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xec3682_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xec3682_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2626</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xed3683_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xed3683_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2636</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xee0068_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xee0068_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2646</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xee0168_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xee0168_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2656</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xee0368_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xee0368_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2666</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xee0468_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xee0468_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2676</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xf00003_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xf00003_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2686</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xf00004_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xf00004_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2696</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xf00044_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xf00044_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2706</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xf00045_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xf00045_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2716</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xf00049_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xf00049_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2726</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xf0004b_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xf0004b_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2736</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xf00092_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xf00092_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/Dem_Cfg_SWCD.arxml</FILE>
+      <LINE>2746</LINE>
+      <LOCATION>/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DTC_0xf00362_Event</LOCATION>
+      <TEXT>Provided port &apos;Dem.OpCycle_DTC_0xf00362_Event&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml</FILE>
+      <LINE>20</LINE>
+      <LOCATION>/AUTOSAR_EcuM/SwComponentTypes/EcuM/bootTarget</LOCATION>
+      <TEXT>Provided port &apos;EcuM.bootTarget&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_EcuM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml</FILE>
+      <LINE>16</LINE>
+      <LOCATION>/AUTOSAR_EcuM/SwComponentTypes/EcuM/shutdownTarget</LOCATION>
+      <TEXT>Provided port &apos;EcuM.shutdownTarget&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_EcuM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>355</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BN_DID_D09A_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BN_DID_D09A_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>419</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BN_DID_F190_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BN_DID_F190_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>483</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_AngCorrectStored_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_AngCorrectStored_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>547</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_AngEndCalData_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_AngEndCalData_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>611</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_AngValidEnd_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_AngValidEnd_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>675</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_BackupConfig_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_BackupConfig_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>739</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_CCPVal_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_CCPVal_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>803</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_CommonCRCStored_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_CommonCRCStored_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>867</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_CurrentOffset_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_CurrentOffset_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>931</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_FunConfig_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_FunConfig_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>995</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_InitAngle_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_InitAngle_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>1059</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_Mileage_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_Mileage_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>1123</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_PenProf_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_PenProf_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>1187</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_ResetFlag_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_ResetFlag_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>1251</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_RotorOffset_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_RotorOffset_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>1315</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_SoftwareConfig_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_SoftwareConfig_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>1379</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_StrAngZero_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_StrAngZero_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>1443</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_TOCStudyTrq_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_TOCStudyTrq_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>1507</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_TestMode_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_TestMode_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>1571</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_VIN_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_VIN_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>1635</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_VehicleConfig_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_VehicleConfig_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>1699</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_BR_VehicleName_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_BR_VehicleName_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>1763</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_NativeBlock_2_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_NativeBlock_2_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/NvM_Cfg_SWCD.arxml</FILE>
+      <LINE>1827</LINE>
+      <LOCATION>/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_NativeBlock_3_Admin</LOCATION>
+      <TEXT>Provided port &apos;NvM.NvM_NativeBlock_3_Admin&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/WdgM_Cfg_SWCD.arxml</FILE>
+      <LINE>402</LINE>
+      <LOCATION>/AUTOSAR_WdgM/WdgM/globalMode</LOCATION>
+      <TEXT>Provided port &apos;WdgM.globalMode&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/WdgM_Cfg_SWCD.arxml</FILE>
+      <LINE>337</LINE>
+      <LOCATION>/AUTOSAR_WdgM/WdgM/globalSupervision</LOCATION>
+      <TEXT>Provided port &apos;WdgM.globalSupervision&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/WdgM_Cfg_SWCD.arxml</FILE>
+      <LINE>307</LINE>
+      <LOCATION>/AUTOSAR_WdgM/WdgM/localSupervisionStatus_WdgMSupervisedEntity_Alive_Supervision_Entity1</LOCATION>
+      <TEXT>Provided port &apos;WdgM.localSupervisionStatus_WdgMSupervisedEntity_Alive_Supervision_Entity1&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/WdgM_Cfg_SWCD.arxml</FILE>
+      <LINE>317</LINE>
+      <LOCATION>/AUTOSAR_WdgM/WdgM/localSupervisionStatus_WdgMSupervisedEntity_Deadline_Supervision_Entity1</LOCATION>
+      <TEXT>Provided port &apos;WdgM.localSupervisionStatus_WdgMSupervisedEntity_Deadline_Supervision_Entity1&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/WdgM_Cfg_SWCD.arxml</FILE>
+      <LINE>327</LINE>
+      <LOCATION>/AUTOSAR_WdgM/WdgM/localSupervisionStatus_WdgMSupervisedEntity_PFC_Supervision_Entity1</LOCATION>
+      <TEXT>Provided port &apos;WdgM.localSupervisionStatus_WdgMSupervisedEntity_PFC_Supervision_Entity1&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/WdgM_Cfg_SWCD.arxml</FILE>
+      <LINE>247</LINE>
+      <LOCATION>/AUTOSAR_WdgM/WdgM/localSupervision_WdgMSupervisedEntity_Alive_Supervision_Entity1_WdgMCheckpoint_Alive_Supervision_Entity1</LOCATION>
+      <TEXT>Provided port &apos;WdgM.localSupervision_WdgMSupervisedEntity_Alive_Supervision_Entity1_WdgMCheckpoint_Alive_Supervision_Entity1&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/WdgM_Cfg_SWCD.arxml</FILE>
+      <LINE>257</LINE>
+      <LOCATION>/AUTOSAR_WdgM/WdgM/localSupervision_WdgMSupervisedEntity_Deadline_Supervision_Entity1_WdgMCheckpoint_Deadline_Supervision_Entity1</LOCATION>
+      <TEXT>Provided port &apos;WdgM.localSupervision_WdgMSupervisedEntity_Deadline_Supervision_Entity1_WdgMCheckpoint_Deadline_Supervision_Entity1&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/WdgM_Cfg_SWCD.arxml</FILE>
+      <LINE>267</LINE>
+      <LOCATION>/AUTOSAR_WdgM/WdgM/localSupervision_WdgMSupervisedEntity_Deadline_Supervision_Entity1_WdgMCheckpoint_Deadline_Supervision_Entity2</LOCATION>
+      <TEXT>Provided port &apos;WdgM.localSupervision_WdgMSupervisedEntity_Deadline_Supervision_Entity1_WdgMCheckpoint_Deadline_Supervision_Entity2&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/WdgM_Cfg_SWCD.arxml</FILE>
+      <LINE>277</LINE>
+      <LOCATION>/AUTOSAR_WdgM/WdgM/localSupervision_WdgMSupervisedEntity_PFC_Supervision_Entity1_WdgMCheckpoint_PFC_Supervision_0</LOCATION>
+      <TEXT>Provided port &apos;WdgM.localSupervision_WdgMSupervisedEntity_PFC_Supervision_Entity1_WdgMCheckpoint_PFC_Supervision_0&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/WdgM_Cfg_SWCD.arxml</FILE>
+      <LINE>287</LINE>
+      <LOCATION>/AUTOSAR_WdgM/WdgM/localSupervision_WdgMSupervisedEntity_PFC_Supervision_Entity1_WdgMCheckpoint_PFC_Supervision_1</LOCATION>
+      <TEXT>Provided port &apos;WdgM.localSupervision_WdgMSupervisedEntity_PFC_Supervision_Entity1_WdgMCheckpoint_PFC_Supervision_1&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007801</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/WdgM_Cfg_SWCD.arxml</FILE>
+      <LINE>297</LINE>
+      <LOCATION>/AUTOSAR_WdgM/WdgM/localSupervision_WdgMSupervisedEntity_PFC_Supervision_Entity1_WdgMCheckpoint_PFC_Supervision_2</LOCATION>
+      <TEXT>Provided port &apos;WdgM.localSupervision_WdgMSupervisedEntity_PFC_Supervision_Entity1_WdgMCheckpoint_PFC_Supervision_2&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM&apos; is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/WdgM_Cfg_SWCD.arxml</FILE>
+      <LINE>363</LINE>
+      <LOCATION>/AUTOSAR_WdgM/WdgM/mode_WdgMSupervisedEntity_Alive_Supervision_Entity1</LOCATION>
+      <TEXT>Provided port &apos;WdgM.mode_WdgMSupervisedEntity_Alive_Supervision_Entity1&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/WdgM_Cfg_SWCD.arxml</FILE>
+      <LINE>376</LINE>
+      <LOCATION>/AUTOSAR_WdgM/WdgM/mode_WdgMSupervisedEntity_Deadline_Supervision_Entity1</LOCATION>
+      <TEXT>Provided port &apos;WdgM.mode_WdgMSupervisedEntity_Deadline_Supervision_Entity1&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I007733</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/ecu_config/bsw/gen/swcd/WdgM_Cfg_SWCD.arxml</FILE>
+      <LINE>389</LINE>
+      <LOCATION>/AUTOSAR_WdgM/WdgM/mode_WdgMSupervisedEntity_PFC_Supervision_Entity1</LOCATION>
+      <TEXT>Provided port &apos;WdgM.mode_WdgMSupervisedEntity_PFC_Supervision_Entity1&apos; of SW-C instance &apos;/MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM&apos; is not connected to a requiring port but all provided data elements are measurable. Measurement points and null RTE API calls will be generated.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I002921</CODE>
+      <FILE>unknown</FILE>
+      <LINE>unknown</LINE>
+      <LOCATION/>
+      <TEXT>osNeeds.arxml contains the OS objects the RTE requires, but these objects have not been integrated into the OsApplication configuration. It will be necessary the first time to update the upstream OS configuration manually.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="WARNING">
+      <CODE>W006930</CODE>
+      <FILE>unknown</FILE>
+      <LINE>unknown</LINE>
+      <LOCATION/>
+      <TEXT>The configuration for Task Core0_OsTask_BSW_1ms specifies an activation limit of 5 however RTA-RTE has calculated that it requires a limit of 1. The calculated figure has not been output.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="WARNING">
+      <CODE>W006930</CODE>
+      <FILE>unknown</FILE>
+      <LINE>unknown</LINE>
+      <LOCATION/>
+      <TEXT>The configuration for Task Core0_BSW_OsTask_SwcRequest specifies an activation limit of 1 however RTA-RTE has calculated that it requires a limit of 2. The calculated figure has not been output.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I006910</CODE>
+      <FILE>unknown</FILE>
+      <LINE>unknown</LINE>
+      <LOCATION/>
+      <TEXT>Counter Rte_TickCounter must be ticked at 1 ms.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I100083</CODE>
+      <FILE>unknown</FILE>
+      <LINE>unknown</LINE>
+      <LOCATION/>
+      <TEXT>The RTE Default OsApplication is mapped to the EcucCoreDefinition /ETAS_Project/EcucModuleConfigurationValuess/EcuC/EcucHardware/EcucCore0.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I002187</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/system_config/rba_CUCELSwAddrMethod_BSWMD.arxml</FILE>
+      <LINE>77</LINE>
+      <LOCATION>/RB/RBA/Common/CentralElements/SwAddrMethods/CODE_FAST</LOCATION>
+      <TEXT>SwAddrMethod &apos;/RB/RBA/Common/CentralElements/SwAddrMethods/CODE_FAST&apos; has no sectionInitializationPolicy. RTA-RTE has used information about the referencing object in this instance to choose value &apos;&apos;.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I002187</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/system_config/rba_CUCELSwAddrMethod_BSWMD.arxml</FILE>
+      <LINE>85</LINE>
+      <LOCATION>/RB/RBA/Common/CentralElements/SwAddrMethods/CODE_SLOW</LOCATION>
+      <TEXT>SwAddrMethod &apos;/RB/RBA/Common/CentralElements/SwAddrMethods/CODE_SLOW&apos; has no sectionInitializationPolicy. RTA-RTE has used information about the referencing object in this instance to choose value &apos;&apos;.</TEXT>
+    </MESSAGE>
+    <MESSAGE SEVERITY="INFO">
+      <CODE>I002187</CODE>
+      <FILE>C:/Users/XBDZ/Desktop/Deng/ETAS_PSCM_BSW12-V1.0_CodeGen/Isolar_Project/system_config/rba_CUCELSwAddrMethod_BSWMD.arxml</FILE>
+      <LINE>61</LINE>
+      <LOCATION>/RB/RBA/Common/CentralElements/SwAddrMethods/CODE</LOCATION>
+      <TEXT>SwAddrMethod &apos;/RB/RBA/Common/CentralElements/SwAddrMethods/CODE&apos; has no sectionInitializationPolicy. RTA-RTE has used information about the referencing object in this instance to choose value &apos;&apos;.</TEXT>
+    </MESSAGE>
+    <COUNT>
+      <ERROR>0</ERROR>
+      <WARNING>4</WARNING>
+      <INFO>237</INFO>
+    </COUNT>
+  </MESSAGES>
+</RTEGEN>

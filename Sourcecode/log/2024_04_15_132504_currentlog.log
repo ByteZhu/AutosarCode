@@ -1,0 +1,213 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling asw\ASW_BASE\src\ASW_BASE.c
+Compiling asw\ASW_COM\src\ASW_COM.c
+Compiling asw\ASW_CORE0\src\ASW_CORE0.c
+Compiling asw\ASW_CORE1\src\ASW_CORE1.c
+ctc E219: [".\rte\gen\Rte_Intl.h" 24/1] cannot open #include file "Os.h"
+ctc E208: [".\rte\gen\Rte_Intl.h" 183/32] syntax error - token ";" inserted before "Rte_TaskRefType"
+ctc I805: [".\rte\gen\Rte_Intl.h" 183/1] start of current external declaration
+ctc E208: [".\rte\gen\Rte_Intl.h" 184/32] syntax error - token ";" inserted before "Rte_EventRefType"
+ctc I805: [".\rte\gen\Rte_Intl.h" 184/1] start of current external declaration
+ctc E208: [".\rte\gen\Rte_Intl.h" 300/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 300/28] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 300/28] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 316/4] syntax error - token "<basic-type>" inserted before "TickType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 316/28] syntax error - token ";" inserted before "increment"
+ctc E208: [".\rte\gen\Rte_Intl.h" 316/28] syntax error - token "<basic-type>" inserted before "increment"
+ctc E208: [".\rte\gen\Rte_Intl.h" 317/4] syntax error - token "<basic-type>" inserted before "TickType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 317/28] syntax error - token ";" inserted before "period"
+ctc E208: [".\rte\gen\Rte_Intl.h" 317/28] syntax error - token "<basic-type>" inserted before "period"
+ctc E208: [".\rte\gen\Rte_Intl.h" 340/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 340/31] syntax error - token ";" inserted before "osTask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 340/31] syntax error - token "<basic-type>" inserted before "osTask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 342/4] syntax error - token "<basic-type>" inserted before "Rte_EventRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 342/31] syntax error - token ";" inserted before "osEvent"
+ctc E208: [".\rte\gen\Rte_Intl.h" 342/31] syntax error - token "<basic-type>" inserted before "osEvent"
+ctc E208: [".\rte\gen\Rte_Intl.h" 361/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 361/52] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 361/52] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 370/77] syntax error - token "," inserted before "timeout"
+ctc E208: [".\rte\gen\Rte_Intl.h" 370/77] syntax error - token "<basic-type>" inserted before "timeout"
+ctc I805: [".\rte\gen\Rte_Intl.h" 370/77] start of current parameter declaration
+ctc E208: [".\rte\gen\Rte_Intl.h" 401/4] syntax error - token "<basic-type>" inserted before "TickType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 401/53] syntax error - token ";" inserted before "timeout"
+ctc E208: [".\rte\gen\Rte_Intl.h" 401/53] syntax error - token "<basic-type>" inserted before "timeout"
+ctc E208: [".\rte\gen\Rte_Intl.h" 417/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 417/51] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 417/51] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 438/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 438/51] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 438/51] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 439/4] syntax error - token "<basic-type>" inserted before "Rte_EventRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 439/51] syntax error - token ";" inserted before "mask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 439/51] syntax error - token "<basic-type>" inserted before "mask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 447/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 447/51] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 447/51] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 448/4] syntax error - token "<basic-type>" inserted before "Rte_EventRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 448/51] syntax error - token ";" inserted before "mask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 448/51] syntax error - token "<basic-type>" inserted before "mask"
+ctc E208: ["asw\ASW_BASE\src\ASW_BASE.c" 36/18] syntax error - token ";" inserted before "Stack_OsTask_ASW_100ms"
+ctc I805: ["asw\ASW_BASE\src\ASW_BASE.c" 36/1] start of current external declaration
+42 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\asw\ASW_BASE\ASW_BASE.o] Error 1
+ctc E219: [".\rte\gen\Rte_Intl.h" 24/1] cannot open #include file "Os.h"
+ctc E208: [".\rte\gen\Rte_Intl.h" 183/32] syntax error - token ";" inserted before "Rte_TaskRefType"
+ctc I805: [".\rte\gen\Rte_Intl.h" 183/1] start of current external declaration
+ctc E208: [".\rte\gen\Rte_Intl.h" 184/32] syntax error - token ";" inserted before "Rte_EventRefType"
+ctc I805: [".\rte\gen\Rte_Intl.h" 184/1] start of current external declaration
+ctc E208: [".\rte\gen\Rte_Intl.h" 300/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 300/28] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 300/28] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 316/4] syntax error - token "<basic-type>" inserted before "TickType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 316/28] syntax error - token ";" inserted before "increment"
+ctc E208: [".\rte\gen\Rte_Intl.h" 316/28] syntax error - token "<basic-type>" inserted before "increment"
+ctc E208: [".\rte\gen\Rte_Intl.h" 317/4] syntax error - token "<basic-type>" inserted before "TickType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 317/28] syntax error - token ";" inserted before "period"
+ctc E208: [".\rte\gen\Rte_Intl.h" 317/28] syntax error - token "<basic-type>" inserted before "period"
+ctc E208: [".\rte\gen\Rte_Intl.h" 340/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 340/31] syntax error - token ";" inserted before "osTask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 340/31] syntax error - token "<basic-type>" inserted before "osTask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 342/4] syntax error - token "<basic-type>" inserted before "Rte_EventRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 342/31] syntax error - token ";" inserted before "osEvent"
+ctc E208: [".\rte\gen\Rte_Intl.h" 342/31] syntax error - token "<basic-type>" inserted before "osEvent"
+ctc E208: [".\rte\gen\Rte_Intl.h" 361/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 361/52] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 361/52] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 370/77] syntax error - token "," inserted before "timeout"
+ctc E208: [".\rte\gen\Rte_Intl.h" 370/77] syntax error - token "<basic-type>" inserted before "timeout"
+ctc I805: [".\rte\gen\Rte_Intl.h" 370/77] start of current parameter declaration
+ctc E208: [".\rte\gen\Rte_Intl.h" 401/4] syntax error - token "<basic-type>" inserted before "TickType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 401/53] syntax error - token ";" inserted before "timeout"
+ctc E208: [".\rte\gen\Rte_Intl.h" 401/53] syntax error - token "<basic-type>" inserted before "timeout"
+ctc E208: [".\rte\gen\Rte_Intl.h" 417/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 417/51] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 417/51] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 438/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 438/51] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 438/51] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 439/4] syntax error - token "<basic-type>" inserted before "Rte_EventRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 439/51] syntax error - token ";" inserted before "mask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 439/51] syntax error - token "<basic-type>" inserted before "mask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 447/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 447/51] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 447/51] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 448/4] syntax error - token "<basic-type>" inserted before "Rte_EventRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 448/51] syntax error - token ";" inserted before "mask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 448/51] syntax error - token "<basic-type>" inserted before "mask"
+41 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\asw\ASW_CORE0\ASW_CORE0.o] Error 1
+ctc E219: [".\rte\gen\Rte_Intl.h" 24/1] cannot open #include file "Os.h"
+ctc E208: [".\rte\gen\Rte_Intl.h" 183/32] syntax error - token ";" inserted before "Rte_TaskRefType"
+ctc I805: [".\rte\gen\Rte_Intl.h" 183/1] start of current external declaration
+ctc E208: [".\rte\gen\Rte_Intl.h" 184/32] syntax error - token ";" inserted before "Rte_EventRefType"
+ctc I805: [".\rte\gen\Rte_Intl.h" 184/1] start of current external declaration
+ctc E208: [".\rte\gen\Rte_Intl.h" 300/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 300/28] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 300/28] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 316/4] syntax error - token "<basic-type>" inserted before "TickType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 316/28] syntax error - token ";" inserted before "increment"
+ctc E208: [".\rte\gen\Rte_Intl.h" 316/28] syntax error - token "<basic-type>" inserted before "increment"
+ctc E208: [".\rte\gen\Rte_Intl.h" 317/4] syntax error - token "<basic-type>" inserted before "TickType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 317/28] syntax error - token ";" inserted before "period"
+ctc E208: [".\rte\gen\Rte_Intl.h" 317/28] syntax error - token "<basic-type>" inserted before "period"
+ctc E208: [".\rte\gen\Rte_Intl.h" 340/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 340/31] syntax error - token ";" inserted before "osTask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 340/31] syntax error - token "<basic-type>" inserted before "osTask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 342/4] syntax error - token "<basic-type>" inserted before "Rte_EventRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 342/31] syntax error - token ";" inserted before "osEvent"
+ctc E208: [".\rte\gen\Rte_Intl.h" 342/31] syntax error - token "<basic-type>" inserted before "osEvent"
+ctc E208: [".\rte\gen\Rte_Intl.h" 361/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 361/52] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 361/52] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 370/77] syntax error - token "," inserted before "timeout"
+ctc E208: [".\rte\gen\Rte_Intl.h" 370/77] syntax error - token "<basic-type>" inserted before "timeout"
+ctc I805: [".\rte\gen\Rte_Intl.h" 370/77] start of current parameter declaration
+ctc E208: [".\rte\gen\Rte_Intl.h" 401/4] syntax error - token "<basic-type>" inserted before "TickType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 401/53] syntax error - token ";" inserted before "timeout"
+ctc E208: [".\rte\gen\Rte_Intl.h" 401/53] syntax error - token "<basic-type>" inserted before "timeout"
+ctc E208: [".\rte\gen\Rte_Intl.h" 417/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 417/51] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 417/51] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 438/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 438/51] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 438/51] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 439/4] syntax error - token "<basic-type>" inserted before "Rte_EventRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 439/51] syntax error - token ";" inserted before "mask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 439/51] syntax error - token "<basic-type>" inserted before "mask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 447/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 447/51] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 447/51] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 448/4] syntax error - token "<basic-type>" inserted before "Rte_EventRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 448/51] syntax error - token ";" inserted before "mask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 448/51] syntax error - token "<basic-type>" inserted before "mask"
+41 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\asw\ASW_CORE1\ASW_CORE1.o] Error 1
+ctc E219: [".\rte\gen\Rte_Intl.h" 24/1] cannot open #include file "Os.h"
+ctc E208: [".\rte\gen\Rte_Intl.h" 183/32] syntax error - token ";" inserted before "Rte_TaskRefType"
+ctc I805: [".\rte\gen\Rte_Intl.h" 183/1] start of current external declaration
+ctc E208: [".\rte\gen\Rte_Intl.h" 184/32] syntax error - token ";" inserted before "Rte_EventRefType"
+ctc I805: [".\rte\gen\Rte_Intl.h" 184/1] start of current external declaration
+ctc E208: [".\rte\gen\Rte_Intl.h" 300/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 300/28] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 300/28] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 316/4] syntax error - token "<basic-type>" inserted before "TickType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 316/28] syntax error - token ";" inserted before "increment"
+ctc E208: [".\rte\gen\Rte_Intl.h" 316/28] syntax error - token "<basic-type>" inserted before "increment"
+ctc E208: [".\rte\gen\Rte_Intl.h" 317/4] syntax error - token "<basic-type>" inserted before "TickType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 317/28] syntax error - token ";" inserted before "period"
+ctc E208: [".\rte\gen\Rte_Intl.h" 317/28] syntax error - token "<basic-type>" inserted before "period"
+ctc E208: [".\rte\gen\Rte_Intl.h" 340/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 340/31] syntax error - token ";" inserted before "osTask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 340/31] syntax error - token "<basic-type>" inserted before "osTask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 342/4] syntax error - token "<basic-type>" inserted before "Rte_EventRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 342/31] syntax error - token ";" inserted before "osEvent"
+ctc E208: [".\rte\gen\Rte_Intl.h" 342/31] syntax error - token "<basic-type>" inserted before "osEvent"
+ctc E208: [".\rte\gen\Rte_Intl.h" 361/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 361/52] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 361/52] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 370/77] syntax error - token "," inserted before "timeout"
+ctc E208: [".\rte\gen\Rte_Intl.h" 370/77] syntax error - token "<basic-type>" inserted before "timeout"
+ctc I805: [".\rte\gen\Rte_Intl.h" 370/77] start of current parameter declaration
+ctc E208: [".\rte\gen\Rte_Intl.h" 401/4] syntax error - token "<basic-type>" inserted before "TickType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 401/53] syntax error - token ";" inserted before "timeout"
+ctc E208: [".\rte\gen\Rte_Intl.h" 401/53] syntax error - token "<basic-type>" inserted before "timeout"
+ctc E208: [".\rte\gen\Rte_Intl.h" 417/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 417/51] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 417/51] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 438/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 438/51] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 438/51] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 439/4] syntax error - token "<basic-type>" inserted before "Rte_EventRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 439/51] syntax error - token ";" inserted before "mask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 439/51] syntax error - token "<basic-type>" inserted before "mask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 447/4] syntax error - token "<basic-type>" inserted before "Rte_TaskRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 447/51] syntax error - token ";" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 447/51] syntax error - token "<basic-type>" inserted before "task"
+ctc E208: [".\rte\gen\Rte_Intl.h" 448/4] syntax error - token "<basic-type>" inserted before "Rte_EventRefType"
+ctc E208: [".\rte\gen\Rte_Intl.h" 448/51] syntax error - token ";" inserted before "mask"
+ctc E208: [".\rte\gen\Rte_Intl.h" 448/51] syntax error - token "<basic-type>" inserted before "mask"
+41 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\asw\ASW_COM\ASW_COM.o] Error 1
+scons: building terminated because of errors.

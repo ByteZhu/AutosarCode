@@ -1,0 +1,31 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling asw\ASW_IoHwAb\src\IoHwAb_ADC.c
+
+Compiling asw\ASW_IoHwAb\src\IoHwAb_PWM.c
+Compiling asw\ASW_IoHwAb\src\SensorActuator_ADC.c
+Compiling asw\ASW_IoHwAb\src\SensorActuator_DIO.c
+Compiling asw\ASW_IoHwAb\src\SensorActuator_ICU.c
+ctc E272: ["asw\ASW_IoHwAb\src\SensorActuator_ADC.c" 65/27] undeclared identifier "AdcConf_AdcGroup_AdcSWGroup_0"
+ctc W560: ["asw\ASW_IoHwAb\src\SensorActuator_ADC.c" 65/27] possible truncation at implicit conversion to type "unsigned short int"
+ctc E272: ["asw\ASW_IoHwAb\src\SensorActuator_ADC.c" 66/27] undeclared identifier "AdcConf_AdcGroup_AdcSWGroup_1"
+ctc W560: ["asw\ASW_IoHwAb\src\SensorActuator_ADC.c" 66/27] possible truncation at implicit conversion to type "unsigned short int"
+2 errors, 2 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\asw\ASW_IoHwAb\SensorActuator_ADC.o] Error 1
+ctc W537: ["asw\ASW_IoHwAb\src\SensorActuator_ICU.c" 36/17] unused variable "retValue"
+0 errors, 1 warnings
+
+ctc W537: ["asw\ASW_IoHwAb\src\SensorActuator_DIO.c" 36/17] unused variable "retValue"
+ctc W537: ["asw\ASW_IoHwAb\src\SensorActuator_DIO.c" 61/17] unused variable "retValue"
+0 errors, 2 warnings
+
+
+scons: building terminated because of errors.

@@ -1,0 +1,28 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling asw\ASW_NVM\src\ASW_NVM.c
+ctc E219: [".\mcal\MCAL_Modules\Fls_17_Dmu\inc\Fls_17_Dmu.h" 51/1] cannot open #include file "Fls_17_Dmu_Cfg.h"
+ctc E219: [".\mcal\MCAL_Modules\Fls_17_Dmu\inc\Fls_17_Dmu.h" 1729/1] cannot open #include file "Fls_17_Dmu_PBcfg.h"
+2 errors, 0 warnings
+
+===================
+None
+===================
+Compiling asw\ASW_USER\src\ASW_USER.c
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 54/9] unused variable "dRead1"
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 55/9] unused variable "write2"
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 56/17] unused variable "retdRead1"
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 57/17] unused variable "retWrite2"
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 65/17] unused variable "retValue"
+0 errors, 5 warnings
+
+Compiling bsw\BswM\src\BswM.c
+scons: *** [output\objs\asw\ASW_NVM\ASW_NVM.o] Error 1
+Compiling bsw\BswM\src\BswM_CanSM.c
+
+
+scons: building terminated because of errors.

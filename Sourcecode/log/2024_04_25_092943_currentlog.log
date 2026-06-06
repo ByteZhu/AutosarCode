@@ -1,0 +1,27 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling Integration\mcal_package\TargetIntegration\TC36x\Src\main.c
+Compiling rte\gen\Core0_OsTask_BSW_1ms.c
+Compiling rte\gen\Core0_OsTask_BSW_50ms.c
+Compiling rte\gen\Core1_OsTask_ASW_10ms.c
+
+
+
+Compiling rte\gen\Core1_OsTask_BSW_10ms.c
+Compiling rte\gen\Rte.c
+Compiling rte\gen\Rte_Lib.c
+ctc E278: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 214/2] unexpected preprocessing directive "#endif"
+1 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\Integration\mcal_package\TargetIntegration\TC36x\main.o] Error 1
+
+
+
+scons: building terminated because of errors.

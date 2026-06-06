@@ -1,0 +1,129 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc32372a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\GetStackUsage.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\GetStackUs
+                            age.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.GetStackUsage.Os_GetStackUsage',code
+0000                     11         .sect   '.text.GetStackUsage.Os_GetStackUsage'
+                         12         .align  2
+                         13         
+                         14         .global Os_GetStackUsage
+                         15 ; Function Os_GetStackUsage
+0000                     16 Os_GetStackUsage:       .type   func
+0000 4DC0E1FF  1    1    17         mfcr    d15,#65052
+0004 538F21F0  3    4    18         mul     d15,d15,#24
+0008 91r0rrFr  1    5    19         movh.a  a15,#@his(Os_const_coreconfiguration)
+000C D9FFrrrr  1    6    20         lea     a15,[a15]@los(Os_const_coreconfiguration)
+0010 10FF      1    7    21         addsc.a a15,a15,d15,#0
+0012 D4FC      1    8    22         ld.a    a12,[a15]
+0014 4DC0E28F  1    9    23         mfcr    d8,#65068
+0018 0D004003  1   10    24         disable
+001C BBF000F8  1   11    25         mov.u   d15,#32783
+0020 CDCFE20F  1   12    26         mtcr    #65068,d15
+0024 0D00C004  1   13    27         isync
+                         28         
+0028 6Drrrrrr  2   15    29         call    Os_GetSP
+002C 022F      1   16    30         mov     d15,d2
+002E 09C01419  1   17    31         ld.w    d0,[a12]84
+0032 09C29C09  1   18    32         ld.a    a2,[a12]28
+0036 1202      1   19    33         add     d2,d15,d0
+0038 09C01819  1   20    34         ld.w    d0,[a12]88
+003C 023F      1   21    35         mov     d15,d3
+003E 1203      1   22    36         add     d3,d15,d0
+0040 542F      1   23    37         ld.w    d15,[a2]
+0042 0220      1   24    38         mov     d0,d2
+0044 520A      1   25    39         sub     d10,d15,d0
+0046 4C21      1   26    40         ld.w    d15,[a2]4
+0048 09200805  1   27    41         ld.w    d0,[+a2]8
+004C 523B      1   28    42         sub     d11,d15,d3
+004E 02AF      1   29    43         mov     d15,d10
+0050 7FF00380  1   30    44         jge.u   d0,d15,.L2
+0054 742F      1   31    45         st.w    [a2],d15
+0056                     46 .L2:
+0056 09C29C09  1   32    47         ld.a    a2,[a12]28
+005A 02BF      1   33    48         mov     d15,d11
+005C 492F0C0A  1   34    49         lea     a15,[a2]12
+0060 54F0      1   35    50         ld.w    d0,[a15]
+0062 7FF00380  1   36    51         jge.u   d0,d15,.L3
+0066 74FF      1   37    52         st.w    [a15],d15
+0068                     53 .L3:
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0068 CCC7      1   38    54         ld.a    a15,[a12]28
+006A 49F2100A  1   39    55         lea     a2,[a15]16
+006E 482F      1   40    56         ld.w    d15,[a15]8
+0070 5420      1   41    57         ld.w    d0,[a2]
+0072 7FF00380  1   42    58         jge.u   d0,d15,.L4
+0076 742F      1   43    59         st.w    [a2],d15
+0078                     60 .L4:
+0078 CCC7      1   44    61         ld.a    a15,[a12]28
+007A 49F2140A  1   45    62         lea     a2,[a15]20
+007E 483F      1   46    63         ld.w    d15,[a15]12
+0080 5420      1   47    64         ld.w    d0,[a2]
+0082 7FF00380  1   48    65         jge.u   d0,d15,.L5
+0086 742F      1   49    66         st.w    [a2],d15
+0088                     67 .L5:
+0088 CCC7      1   50    68         ld.a    a15,[a12]28
+008A 8203      1   51    69         mov     d3,#0
+008C 482F      1   52    70         ld.w    d15,[a15]8
+008E 4860      1   53    71         ld.w    d0,[a15]24
+0090 4831      1   54    72         ld.w    d1,[a15]12
+0092 4872      1   55    73         ld.w    d2,[a15]28
+0094 5204      1   56    74         sub     d4,d15,d0
+0096 0B218050  1   57    75         sub     d5,d1,d2
+009A 3FF00480  1   58    76         jlt.u   d0,d15,.L6
+009E 7F120380  1   59    77         jge.u   d2,d1,.L7
+00A2                     78 .L6:
+00A2 8213      1   60    79         mov     d3,#1
+00A4                     80 .L7:
+00A4 7639      1   61    81         jeq     d3,#0,.L8
+00A6 8206      1   62    82         mov     d6,#0
+00A8 6Drrrrrr  2   64    83         call    Os_Cbk_StackOverrunHook
+00AC CCC7      1   65    84         ld.a    a15,[a12]28
+00AE 82FF      1   66    85         mov     d15,#-1
+00B0 6CF6      1   67    86         st.w    [a15]24,d15
+00B2 CCC7      1   68    87         ld.a    a15,[a12]28
+00B4 6CF7      1   69    88         st.w    [a15]28,d15
+00B6                     89 .L8:
+00B6 CDC8E20F  1   70    90         mtcr    #65068,d8
+00BA 0D00C004  1   71    91         isync
+                         92         
+00BE 0BAB1028  1   72    93         mov     e2,d11,d10
+00C2 0090      2   74    94         ret
+                         95         
+00C4                     96 __Os_GetStackUsage_function_end:
+                         97         .size   Os_GetStackUsage,__Os_GetStackUsage_function_end-Os_GetStackUsage
+                         98         ; End of function
+                         99         
+                        100         .calls  'Os_GetStackUsage','Os_GetSP'
+                        101         .calls  'Os_GetStackUsage','Os_Cbk_StackOverrunHook'
+                        102         .extern Os_Cbk_StackOverrunHook
+                        103         .extern Os_GetSP
+                        104         .extern Os_const_coreconfiguration
+                        105         .calls  'Os_GetStackUsage','',0
+                        106         ; Module end

@@ -1,0 +1,1481 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+   <!-- McSupportData report file from RTA-RTE V12.0.0 -->
+   <AR-PACKAGES>
+      <AR-PACKAGE>
+         <SHORT-NAME>AUTOSAR_Rte</SHORT-NAME>
+         <REFERENCE-BASES>
+            <!-- Note: ReferenceBases must be unique in a package according to
+                 constr_2509 in AUTOSAR_TPS_GenericStructureTemplate so these
+                 must have different shortLabels to their counterparts in the
+                 BSWMD.
+            -->
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_ApplicationPrimitiveDataTypes</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/ApplicationPrimitiveDataTypes</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_BswImplementations</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/BswImplementations</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <!-- Note: This is package will actually be filled in the BSWMD -->
+               <SHORT-LABEL>Rte_MCSD_BswModuleDescriptions</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/BswModuleDescriptions</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_CompuMethods</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/CompuMethods</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_DataConstrs</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/DataConstrs</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_ImplementationDataTypes</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/ImplementationDataTypes</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_PhysicalDimensions</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/PhysicalDimensions</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_SwAddrMethods</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/SwAddrMethods</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_SwBaseTypes</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/SwBaseTypes</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_SwRecordLayouts</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/SwRecordLayouts</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_Units</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/Units</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_UnitGroups</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/UnitGroups</PACKAGE-REF>
+            </REFERENCE-BASE>
+         </REFERENCE-BASES>
+         <AR-PACKAGES>
+            <AR-PACKAGE>
+               <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+               <ELEMENTS>
+                  <!-- This package will actually be filled in the BSWMD -->
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>BswImplementations</SHORT-NAME>
+               <ELEMENTS>
+                  <BSW-IMPLEMENTATION>
+                     <!-- The name (and indeed path) of this BswImplementation
+                          must match that of the BswImplementation generated
+                          into the BSWMD report -->
+                     <SHORT-NAME>Rte</SHORT-NAME>
+                     <MC-SUPPORT>
+                        <EMULATION-SUPPORTS>
+                           <!--Emulation support common to all components on the ECU-->
+                           <MC-SW-EMULATION-METHOD-SUPPORT>
+                             <CATEGORY>NONE</CATEGORY>
+                           </MC-SW-EMULATION-METHOD-SUPPORT>
+                        </EMULATION-SUPPORTS>
+                        <MC-PARAMETER-INSTANCES>
+                           <!--Data instances common to all components on the ECU-->
+                           <!--Data instances for Application Software Component Type /ASW_CORE0/ASW_CORE0-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_CORE0-->
+                           <!--Data instances for Application Software Component Type /ASW_CORE1/ASW_CORE1-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_CORE1-->
+                           <!--Data instances for Application Software Component Type /ASW_DCM/ASW_DCM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_DCM-->
+                           <!--Data instances for Application Software Component Type /ASW_DEM/ASW_DEM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_DEM-->
+                           <!--Data instances for Application Software Component Type /ASW_NVM/ASW_NVM/ASW_NVM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_NVM-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_BswM/BswModuleDescriptions/BswM-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_BswM/BswImplementations/BSWIMPL_BswM-->
+                           <!--Data instances for Service Component Type /AUTOSAR_BswM/SwComponentTypes/BswM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_BswM-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_Can/BswModuleDescriptions/Can-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_Can/BswImplementations/BSWIMPL_Can-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_CanNm/BswModuleDescriptions/CanNm-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_CanNm/BswImplementations/CanNm-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_CanSM/BswModuleDescriptions/CanSM-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_CanSM/BswImplementations/CanSM-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_CanTp/BswModuleDescriptions/CanTp-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_CanTp/BswImplementations/CanTp-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_Com/BswImplementations/Com-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_ComM/BswModuleDescriptions/ComM-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_ComM/BswImplementations/ComM-->
+                           <!--Data instances for Service Component Type /AUTOSAR_ComM/SwComponentTypes/ComM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ComM-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_Dcm/BswModuleDescriptions/Dcm-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_Dcm/BswImplementations/Dcm-->
+                           <!--Data instances for Service Component Type /AUTOSAR_Dcm/SwComponentTypes/Dcm-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dcm-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_Dem/BswModuleDescriptions/Dem-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_Dem/BswImplementations/Dem-->
+                           <!--Data instances for Service Component Type /AUTOSAR_Dem/SwComponentTypes/Dem-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem-->
+                           <!--Data instances for Service Component Type /AUTOSAR_Det/SwComponentTypes/Det-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Det-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_EcuM/BswModuleDescriptions/EcuM-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_EcuM/BswImplementations/EcuM-->
+                           <!--Data instances for Service Component Type /AUTOSAR_EcuM/SwComponentTypes/EcuM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_EcuM-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_NvM/BswModuleDescriptions/NvM-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_NvM/BswImplementations/NvM-->
+                           <!--Data instances for Service Component Type /AUTOSAR_NvM/SwComponentTypes/NvM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_PduR/BswModuleDescriptions/PduR-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_PduR/BswImplementations/PduR-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_WdgM/BswModuleDescriptions/WdgM-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_WdgM/BswImplementations/WdgM-->
+                           <!--Data instances for Service Component Type /AUTOSAR_WdgM/WdgM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_Xcp/BswModuleDescriptions/Xcp-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_Xcp/BswImplementations/Xcp-->
+                           <!--Data instances for Application Software Component Type /CDD_CORE0/CDD_CORE0-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_CDD_CORE0-->
+                           <!--Data instances for Application Software Component Type /COM_SWC/ASW_COM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM-->
+                           <!--Data instances for Application Software Component Type /SwComponentTypes/ASW_NM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_NM-->
+                           <!--Data instances for Application Software Component Type /SwComponentTypes/ASW_USER-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_USER-->
+                           <!--Data instances for Application Software Component Type /SwComponentTypes/CDD_USER-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_CDD_USER-->
+                           <!--Data instances for Application Software Component Type /XCP_SWC/ASW_XCP-->
+                           <!--No McDataInstance for ConstantMemory /XCP_SWC/ASW_XCP/SwcInternalBehavior_XCP/Entry_Const_Var shared between instances of Application Software Component Type /XCP_SWC/ASW_XCP because emit-memorys MCSD policy is disabled-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_XCP-->
+                           <!--Data instances for Service Component Type /rba_DiagLib/SwComponentTypes/rba_DiagLib-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_rba_DiagLib-->
+                        </MC-PARAMETER-INSTANCES>
+                        <MC-VARIABLE-INSTANCES>
+                           <!--Data instances common to all components on the ECU-->
+                           <!--Data instances for Application Software Component Type /ASW_CORE0/ASW_CORE0-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_CORE0-->
+                           <!--Data instances for Application Software Component Type /ASW_CORE1/ASW_CORE1-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_CORE1-->
+                           <!--Data instances for Application Software Component Type /ASW_DCM/ASW_DCM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_DCM-->
+                           <!--No McDataInstance for ModeCurrent /ModeSwitchInterface_NRC22/ModeSwitchInterface_NRC22/MDGP_ModeDeclarationGroup_NRC22 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_DCM because the mode declaration group prototype is not marked as measurable-->
+                           <!--No McDataInstance for ModeCurrent /ModeSwitchInterface_NRC72/ModeSwitchInterface_NRC72/MDGP_ModeDeclarationGroup_NRC72 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_DCM because the mode declaration group prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /ASW_DEM/ASW_DEM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_DEM-->
+                           <!--Data instances for Application Software Component Type /ASW_NVM/ASW_NVM/ASW_NVM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_NVM-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_BswM/BswModuleDescriptions/BswM-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_BswM/BswImplementations/BSWIMPL_BswM-->
+                           <!--Data instances for Service Component Type /AUTOSAR_BswM/SwComponentTypes/BswM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_BswM-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /ModeRequestInterface/ModeRequestInterface/AppMode in port /AUTOSAR_BswM/SwComponentTypes/BswM/RP_BswMArbitration_BswMSwcModeRequest on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_BswM because RTE measurement support is disabled-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Interfaces/ETAS_SenderReceiverInterface_uint8/uint8 in port /AUTOSAR_BswM/SwComponentTypes/BswM/RP_BswMArbitration_BswM_MRP_SWC_Network on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_BswM because the data prototype is not marked as measurable-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_Can/BswModuleDescriptions/Can-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_Can/BswImplementations/BSWIMPL_Can-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_CanNm/BswModuleDescriptions/CanNm-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_CanNm/BswImplementations/CanNm-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_CanSM/BswModuleDescriptions/CanSM-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_CanSM/BswModuleDescriptions/CanSM/BswInternalBehavior/CanSM_BORMode_au8 shared between instances of BSW Module Type /AUTOSAR_CanSM/BswModuleDescriptions/CanSM because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_CanSM/BswModuleDescriptions/CanSM/BswInternalBehavior/CanSM_BusOffISRPend_ab shared between instances of BSW Module Type /AUTOSAR_CanSM/BswModuleDescriptions/CanSM because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_CanSM/BswModuleDescriptions/CanSM/BswInternalBehavior/CanSM_BusOff_Cntr_au8 shared between instances of BSW Module Type /AUTOSAR_CanSM/BswModuleDescriptions/CanSM because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_CanSM/BswModuleDescriptions/CanSM/BswInternalBehavior/CanSM_CurrNw_Mode_en shared between instances of BSW Module Type /AUTOSAR_CanSM/BswModuleDescriptions/CanSM because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_CanSM/BswModuleDescriptions/CanSM/BswInternalBehavior/CanSM_MutexMode_au8 shared between instances of BSW Module Type /AUTOSAR_CanSM/BswModuleDescriptions/CanSM because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_CanSM/BswModuleDescriptions/CanSM/BswInternalBehavior/CanSM_Network_Init_ab shared between instances of BSW Module Type /AUTOSAR_CanSM/BswModuleDescriptions/CanSM because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_CanSM/BswModuleDescriptions/CanSM/BswInternalBehavior/CanSM_ReqComM_Mode_en shared between instances of BSW Module Type /AUTOSAR_CanSM/BswModuleDescriptions/CanSM because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_CanSM/BswModuleDescriptions/CanSM/BswInternalBehavior/CanSM_TimerConfig_ast shared between instances of BSW Module Type /AUTOSAR_CanSM/BswModuleDescriptions/CanSM because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_CanSM/BswModuleDescriptions/CanSM/BswInternalBehavior/CanSM_currBOR_State_en shared between instances of BSW Module Type /AUTOSAR_CanSM/BswModuleDescriptions/CanSM because emit-memorys MCSD policy is disabled-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_CanSM/BswImplementations/CanSM-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_CanTp/BswModuleDescriptions/CanTp-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_CanTp/BswModuleDescriptions/CanTp/BswInternalBehavior/CanTp_MainState shared between instances of BSW Module Type /AUTOSAR_CanTp/BswModuleDescriptions/CanTp because emit-memorys MCSD policy is disabled-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_CanTp/BswImplementations/CanTp-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_SigTypeCom_MainFunctionRx_ComMainFunctionRx_au16 shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_SigTypeCom_MainFunctionRx_ComMainFunctionRx_au32 shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_SigTypeCom_MainFunctionRx_ComMainFunctionRx_au64 shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_SigTypeCom_MainFunctionRx_ComMainFunctionRx_au8 shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_CSCBCMCore_SecCanFrame01_Can_Network_0_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_CSCBCMCore_SecCanFrame02_Can_Network_0_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_CSCBCMCore_SecCanFrame03_Can_Network_0_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_CSCBCMCore_SecCanFrame04_Can_Network_0_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_CSCBCMCore_SpecialSecFrame01_Can_Network_0_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_EPS_DebugInfo_Can_Network_0_Channel_CAN_TxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_ISWMFrame04_Can_Network_0_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_MCoreFrame01_Can_Network_0_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_MCoreFrame03_Can_Network_0_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_MCoreFrame04_Can_Network_0_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_MCoreFrame07_Can_Network_0_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_MCoreFrame09_Can_Network_0_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCBTxCommonInfo_0x3F_Can_Network_1_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCBTxCommonInfo_0x4F_Can_Network_2_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCBTxCurrentAndCommand_0x1F_Can_Network_1_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCBTxCurrentAndCommand_0x2F_Can_Network_2_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCMFrame01_Can_Network_0_Channel_CAN_TxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCMSACMFrame01_Can_Network_0_Channel_CAN_TxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCMSACMFrame02_Can_Network_0_Channel_CAN_TxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCMSACMFrame03_Can_Network_0_Channel_CAN_TxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCMSACMFrame04_Can_Network_0_Channel_CAN_TxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCMSACM_SecCanFrame01_Can_Network_0_Channel_CAN_TxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCMSFCMFrame01_Can_Network_0_Channel_CAN_TxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCMSFCMFrame03_Can_Network_0_Channel_CAN_TxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCMTxCommonInfo_0x3A_Can_Network_1_Channel_CAN_TxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCMTxCommonInfo_0x4A_Can_Network_2_Channel_CAN_TxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCMTxCurrentAndCommand_0x1A_Can_Network_1_Channel_CAN_TxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_PSCMTxCurrentAndCommand_0x2A_Can_Network_2_Channel_CAN_TxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_TestModeRequest_Can_Network_0_Channel_CAN_RxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_Com/BswModuleDescriptions/Com/BswInternalBehavior/Com_dIP_TestModeResponse_Can_Network_0_Channel_CAN_TxByte shared between instances of BSW Module Type /AUTOSAR_Com/BswModuleDescriptions/Com because emit-memorys MCSD policy is disabled-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_Com/BswImplementations/Com-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_ComM/BswModuleDescriptions/ComM-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_ComM/BswModuleDescriptions/ComM/BswInternalBehavior/ComM_ChannelStruct shared between instances of BSW Module Type /AUTOSAR_ComM/BswModuleDescriptions/ComM because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_ComM/BswModuleDescriptions/ComM/BswInternalBehavior/ComM_UserStruct shared between instances of BSW Module Type /AUTOSAR_ComM/BswModuleDescriptions/ComM because emit-memorys MCSD policy is disabled-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_ComM/BswImplementations/ComM-->
+                           <!--Data instances for Service Component Type /AUTOSAR_ComM/SwComponentTypes/ComM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ComM-->
+                           <!--No McDataInstance for ModeCurrent /AUTOSAR_ComM/PortInterfaces/ComM_CurrentMode/currentMode on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ComM because the mode declaration group prototype is not marked as measurable-->
+                           <!--No McDataInstance for ModeCurrent /AUTOSAR_ComM/PortInterfaces/ComM_CurrentMode/currentMode on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ComM because the mode declaration group prototype is not marked as measurable-->
+                           <!--No McDataInstance for ModeCurrent /AUTOSAR_ComM/PortInterfaces/ComM_CurrentMode/currentMode on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ComM because the mode declaration group prototype is not marked as measurable-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_Dcm/BswModuleDescriptions/Dcm-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_Dcm/BswImplementations/Dcm-->
+                           <!--Data instances for Service Component Type /AUTOSAR_Dcm/SwComponentTypes/Dcm-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dcm-->
+                           <!--No McDataInstance for ModeCurrent /AUTOSAR_Dcm/PortInterfaces/DcmCommunicationControl_Can_Network_0_Channel_Can_Network_0/MDGP_DcmCommunicationControl_Can_Network_0_Channel_Can_Network_0 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dcm because the mode declaration group prototype is not marked as measurable-->
+                           <!--No McDataInstance for ModeCurrent /AUTOSAR_Dcm/PortInterfaces/DcmControlDTCSetting/MDGP_DcmControlDTCSetting on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dcm because the mode declaration group prototype is not marked as measurable-->
+                           <!--No McDataInstance for ModeCurrent /AUTOSAR_Dcm/PortInterfaces/DcmDiagnosticSessionControl/MDGP_DcmDiagnosticSessionControl on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dcm because the mode declaration group prototype is not marked as measurable-->
+                           <!--No McDataInstance for ModeCurrent /AUTOSAR_Dcm/PortInterfaces/DcmEcuReset/MDGP_DcmEcuReset on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dcm because the mode declaration group prototype is not marked as measurable-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_Dem/BswModuleDescriptions/Dem-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_Dem/BswImplementations/Dem-->
+                           <!--Data instances for Service Component Type /AUTOSAR_Dem/SwComponentTypes/Dem-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Dem-->
+                           <!--Data instances for Service Component Type /AUTOSAR_Det/SwComponentTypes/Det-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_Det-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_EcuM/BswModuleDescriptions/EcuM-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_EcuM/BswImplementations/EcuM-->
+                           <!--Data instances for Service Component Type /AUTOSAR_EcuM/SwComponentTypes/EcuM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_EcuM-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_NvM/BswModuleDescriptions/NvM-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_NvM/BswModuleDescriptions/NvM/BswInternalBehavior/NvM_Prv_Main_st shared between instances of BSW Module Type /AUTOSAR_NvM/BswModuleDescriptions/NvM because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_NvM/BswModuleDescriptions/NvM/BswInternalBehavior/NvM_Prv_idxDataSet_au8 shared between instances of BSW Module Type /AUTOSAR_NvM/BswModuleDescriptions/NvM because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_NvM/BswModuleDescriptions/NvM/BswInternalBehavior/NvM_Prv_stBlock_auo shared between instances of BSW Module Type /AUTOSAR_NvM/BswModuleDescriptions/NvM because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_NvM/BswModuleDescriptions/NvM/BswInternalBehavior/NvM_Prv_stRequestResult_au8 shared between instances of BSW Module Type /AUTOSAR_NvM/BswModuleDescriptions/NvM because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_NvM/BswModuleDescriptions/NvM/BswInternalBehavior/NvM_Prv_stRequests_au16 shared between instances of BSW Module Type /AUTOSAR_NvM/BswModuleDescriptions/NvM because emit-memorys MCSD policy is disabled-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_NvM/BswModuleDescriptions/NvM/BswInternalBehavior/NvM_Rb_stBlockErrors_au8 shared between instances of BSW Module Type /AUTOSAR_NvM/BswModuleDescriptions/NvM because emit-memorys MCSD policy is disabled-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_NvM/BswImplementations/NvM-->
+                           <!--Data instances for Service Component Type /AUTOSAR_NvM/SwComponentTypes/NvM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_NvM-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_PduR/BswModuleDescriptions/PduR-->
+                           <!--No McDataInstance for StaticMemory /AUTOSAR_PduR/BswModuleDescriptions/PduR/BswInternalBehavior/PduR_State shared between instances of BSW Module Type /AUTOSAR_PduR/BswModuleDescriptions/PduR because emit-memorys MCSD policy is disabled-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_PduR/BswImplementations/PduR-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_WdgM/BswModuleDescriptions/WdgM-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_WdgM/BswImplementations/WdgM-->
+                           <!--Data instances for Service Component Type /AUTOSAR_WdgM/WdgM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM-->
+                           <!--No McDataInstance for ModeCurrent /AUTOSAR_WdgM/WdgM_GlobalMode/currentMode on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM because the mode declaration group prototype is not marked as measurable-->
+                           <!--No McDataInstance for ModeCurrent /AUTOSAR_WdgM/WdgM_LocalMode/currentMode on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM because the mode declaration group prototype is not marked as measurable-->
+                           <!--No McDataInstance for ModeCurrent /AUTOSAR_WdgM/WdgM_LocalMode/currentMode on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM because the mode declaration group prototype is not marked as measurable-->
+                           <!--No McDataInstance for ModeCurrent /AUTOSAR_WdgM/WdgM_LocalMode/currentMode on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_WdgM because the mode declaration group prototype is not marked as measurable-->
+                           <!--Data instances for BSW Module Type /AUTOSAR_Xcp/BswModuleDescriptions/Xcp-->
+                           <!--Data instances for BSW Module Instance /AUTOSAR_Xcp/BswImplementations/Xcp-->
+                           <!--Data instances for Application Software Component Type /CDD_CORE0/CDD_CORE0-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_CDD_CORE0-->
+                           <!--Data instances for Application Software Component Type /COM_SWC/ASW_COM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADL3LatCtrlStsADMod/ADL3LatCtrlStsADMod in port /COM_SWC/ASW_COM/PPort_ADL3LatCtrlStsADMod on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADL3LatCtrlStsChks8/ADL3LatCtrlStsChks8 in port /COM_SWC/ASW_COM/PPort_ADL3LatCtrlStsChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADL3LatCtrlStsCntr4/ADL3LatCtrlStsCntr4 in port /COM_SWC/ASW_COM/PPort_ADL3LatCtrlStsCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADL3LatCtrlStsCtrlSts/ADL3LatCtrlStsCtrlSts in port /COM_SWC/ASW_COM/PPort_ADL3LatCtrlStsCtrlSts on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADL3LatCtrlStsDataID4/ADL3LatCtrlStsDataID4 in port /COM_SWC/ASW_COM/PPort_ADL3LatCtrlStsDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADL3LatCtrlStsDegraded/ADL3LatCtrlStsDegraded in port /COM_SWC/ASW_COM/PPort_ADL3LatCtrlStsDegraded on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADL3LatCtrlStsQf/ADL3LatCtrlStsQf in port /COM_SWC/ASW_COM/PPort_ADL3LatCtrlStsQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADL3LatCtrlStsSts/ADL3LatCtrlStsSts in port /COM_SWC/ASW_COM/PPort_ADL3LatCtrlStsSts on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADL3LatCtrlSts_UB/ADL3LatCtrlSts_UB in port /COM_SWC/ASW_COM/PPort_ADL3LatCtrlSts_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_0/DebugInfo_0 in port /COM_SWC/ASW_COM/PPort_DebugInfo_0 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_1/DebugInfo_1 in port /COM_SWC/ASW_COM/PPort_DebugInfo_1 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_2/DebugInfo_2 in port /COM_SWC/ASW_COM/PPort_DebugInfo_2 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_3/DebugInfo_3 in port /COM_SWC/ASW_COM/PPort_DebugInfo_3 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_4/DebugInfo_4 in port /COM_SWC/ASW_COM/PPort_DebugInfo_4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_5/DebugInfo_5 in port /COM_SWC/ASW_COM/PPort_DebugInfo_5 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_6/DebugInfo_6 in port /COM_SWC/ASW_COM/PPort_DebugInfo_6 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_7/DebugInfo_7 in port /COM_SWC/ASW_COM/PPort_DebugInfo_7 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_8/DebugInfo_8 in port /COM_SWC/ASW_COM/PPort_DebugInfo_8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_9/DebugInfo_9 in port /COM_SWC/ASW_COM/PPort_DebugInfo_9 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_A/DebugInfo_A in port /COM_SWC/ASW_COM/PPort_DebugInfo_A on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_B/DebugInfo_B in port /COM_SWC/ASW_COM/PPort_DebugInfo_B on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_C/DebugInfo_C in port /COM_SWC/ASW_COM/PPort_DebugInfo_C on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_D/DebugInfo_D in port /COM_SWC/ASW_COM/PPort_DebugInfo_D on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_E/DebugInfo_E in port /COM_SWC/ASW_COM/PPort_DebugInfo_E on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DebugInfo_F/DebugInfo_F in port /COM_SWC/ASW_COM/PPort_DebugInfo_F on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DrvrSteerActvChks8/DrvrSteerActvChks8 in port /COM_SWC/ASW_COM/PPort_DrvrSteerActvChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DrvrSteerActvCntr4/DrvrSteerActvCntr4 in port /COM_SWC/ASW_COM/PPort_DrvrSteerActvCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DrvrSteerActvDataID4/DrvrSteerActvDataID4 in port /COM_SWC/ASW_COM/PPort_DrvrSteerActvDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DrvrSteerActvDrvrSteerActv/DrvrSteerActvDrvrSteerActv in port /COM_SWC/ASW_COM/PPort_DrvrSteerActvDrvrSteerActv on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DrvrSteerActv_UB/DrvrSteerActv_UB in port /COM_SWC/ASW_COM/PPort_DrvrSteerActv_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DrvrSteerWhlHldChks8/DrvrSteerWhlHldChks8 in port /COM_SWC/ASW_COM/PPort_DrvrSteerWhlHldChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DrvrSteerWhlHldCntr4/DrvrSteerWhlHldCntr4 in port /COM_SWC/ASW_COM/PPort_DrvrSteerWhlHldCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DrvrSteerWhlHldDataID4/DrvrSteerWhlHldDataID4 in port /COM_SWC/ASW_COM/PPort_DrvrSteerWhlHldDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DrvrSteerWhlHldQly/DrvrSteerWhlHldQly in port /COM_SWC/ASW_COM/PPort_DrvrSteerWhlHldQly on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DrvrSteerWhlHldVal/DrvrSteerWhlHldVal in port /COM_SWC/ASW_COM/PPort_DrvrSteerWhlHldVal on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_DrvrSteerWhlHld_UB/DrvrSteerWhlHld_UB in port /COM_SWC/ASW_COM/PPort_DrvrSteerWhlHld_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_FrntSteerFEstimd1/FrntSteerFEstimd1 in port /COM_SWC/ASW_COM/PPort_FrntSteerFEstimd1 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_FrntSteerFEstimd1_UB/FrntSteerFEstimd1_UB in port /COM_SWC/ASW_COM/PPort_FrntSteerFEstimd1_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_IDPSSEvFromPSCMContextData1/IDPSSEvFromPSCMContextData1 in port /COM_SWC/ASW_COM/PPort_IDPSSEvFromPSCMContextData1 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_IDPSSEvFromPSCMContextData2/IDPSSEvFromPSCMContextData2 in port /COM_SWC/ASW_COM/PPort_IDPSSEvFromPSCMContextData2 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_IDPSSEvFromPSCMContextDataLength/IDPSSEvFromPSCMContextDataLength in port /COM_SWC/ASW_COM/PPort_IDPSSEvFromPSCMContextDataLength on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_IDPSSEvFromPSCMCount/IDPSSEvFromPSCMCount in port /COM_SWC/ASW_COM/PPort_IDPSSEvFromPSCMCount on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_IDPSSEvFromPSCMIDSID/IDPSSEvFromPSCMIDSID in port /COM_SWC/ASW_COM/PPort_IDPSSEvFromPSCMIDSID on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_IDPSSEvFromPSCMProtocol/IDPSSEvFromPSCMProtocol in port /COM_SWC/ASW_COM/PPort_IDPSSEvFromPSCMProtocol on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_IDPSSEvFromPSCMReserve/IDPSSEvFromPSCMReserve in port /COM_SWC/ASW_COM/PPort_IDPSSEvFromPSCMReserve on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_IDPSSEvFromPSCMTimestamp/IDPSSEvFromPSCMTimestamp in port /COM_SWC/ASW_COM/PPort_IDPSSEvFromPSCMTimestamp on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_IDPSSEvFromPSCM_UB/IDPSSEvFromPSCM_UB in port /COM_SWC/ASW_COM/PPort_IDPSSEvFromPSCM_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_LatCtrlModCfmdChks8/LatCtrlModCfmdChks8 in port /COM_SWC/ASW_COM/PPort_LatCtrlModCfmdChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_LatCtrlModCfmdCntr4/LatCtrlModCfmdCntr4 in port /COM_SWC/ASW_COM/PPort_LatCtrlModCfmdCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_LatCtrlModCfmdDataID4/LatCtrlModCfmdDataID4 in port /COM_SWC/ASW_COM/PPort_LatCtrlModCfmdDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_LatCtrlModCfmdLatCtrlMod/LatCtrlModCfmdLatCtrlMod in port /COM_SWC/ASW_COM/PPort_LatCtrlModCfmdLatCtrlMod on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_LatCtrlModCfmd_UB/LatCtrlModCfmd_UB in port /COM_SWC/ASW_COM/PPort_LatCtrlModCfmd_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PinionSteerAgChks8/PinionSteerAgChks8 in port /COM_SWC/ASW_COM/PPort_PinionSteerAgChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PinionSteerAgCntr4/PinionSteerAgCntr4 in port /COM_SWC/ASW_COM/PPort_PinionSteerAgCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PinionSteerAgDataID4/PinionSteerAgDataID4 in port /COM_SWC/ASW_COM/PPort_PinionSteerAgDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PinionSteerAgMax1/PinionSteerAgMax1 in port /COM_SWC/ASW_COM/PPort_PinionSteerAgMax1 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PinionSteerAgMax1_UB/PinionSteerAgMax1_UB in port /COM_SWC/ASW_COM/PPort_PinionSteerAgMax1_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PinionSteerAgSpd1/PinionSteerAgSpd1 in port /COM_SWC/ASW_COM/PPort_PinionSteerAgSpd1 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PinionSteerAgSpd1Qf/PinionSteerAgSpd1Qf in port /COM_SWC/ASW_COM/PPort_PinionSteerAgSpd1Qf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PinionSteerAgVal1/PinionSteerAgVal1 in port /COM_SWC/ASW_COM/PPort_PinionSteerAgVal1 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PinionSteerAgVal1Qf/PinionSteerAgVal1Qf in port /COM_SWC/ASW_COM/PPort_PinionSteerAgVal1Qf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PinionSteerAgWhlTq/PinionSteerAgWhlTq in port /COM_SWC/ASW_COM/PPort_PinionSteerAgWhlTq on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PinionSteerAgWhlTqQf/PinionSteerAgWhlTqQf in port /COM_SWC/ASW_COM/PPort_PinionSteerAgWhlTqQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PinionSteerAg_UB/PinionSteerAg_UB in port /COM_SWC/ASW_COM/PPort_PinionSteerAg_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerErrReq/SteerErrReq in port /COM_SWC/ASW_COM/PPort_SteerErrReq on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerErrReq_UB/SteerErrReq_UB in port /COM_SWC/ASW_COM/PPort_SteerErrReq_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerExtFctStsChks8/SteerExtFctStsChks8 in port /COM_SWC/ASW_COM/PPort_SteerExtFctStsChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerExtFctStsCntr4/SteerExtFctStsCntr4 in port /COM_SWC/ASW_COM/PPort_SteerExtFctStsCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerExtFctStsDataID4/SteerExtFctStsDataID4 in port /COM_SWC/ASW_COM/PPort_SteerExtFctStsDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerExtFctStsDrvrSteerOvrd/SteerExtFctStsDrvrSteerOvrd in port /COM_SWC/ASW_COM/PPort_SteerExtFctStsDrvrSteerOvrd on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerExtFctStsExtFctLower/SteerExtFctStsExtFctLower in port /COM_SWC/ASW_COM/PPort_SteerExtFctStsExtFctLower on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerExtFctStsExtFctRate/SteerExtFctStsExtFctRate in port /COM_SWC/ASW_COM/PPort_SteerExtFctStsExtFctRate on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerExtFctStsExtFctUpper/SteerExtFctStsExtFctUpper in port /COM_SWC/ASW_COM/PPort_SteerExtFctStsExtFctUpper on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerExtFctStsExtSafe/SteerExtFctStsExtSafe in port /COM_SWC/ASW_COM/PPort_SteerExtFctStsExtSafe on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerExtFctStsLatAgReqNIR/SteerExtFctStsLatAgReqNIR in port /COM_SWC/ASW_COM/PPort_SteerExtFctStsLatAgReqNIR on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerExtFctStsLatCtrlReqNIG/SteerExtFctStsLatCtrlReqNIG in port /COM_SWC/ASW_COM/PPort_SteerExtFctStsLatCtrlReqNIG on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerExtFctSts_UB/SteerExtFctSts_UB in port /COM_SWC/ASW_COM/PPort_SteerExtFctSts_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerServoSts1/SteerServoSts1 in port /COM_SWC/ASW_COM/PPort_SteerServoSts1 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerServoStsChks8/SteerServoStsChks8 in port /COM_SWC/ASW_COM/PPort_SteerServoStsChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerServoStsCntr4/SteerServoStsCntr4 in port /COM_SWC/ASW_COM/PPort_SteerServoStsCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerServoStsDataID4/SteerServoStsDataID4 in port /COM_SWC/ASW_COM/PPort_SteerServoStsDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerServoSts_UB/SteerServoSts_UB in port /COM_SWC/ASW_COM/PPort_SteerServoSts_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerStsToParkAssiChks8/SteerStsToParkAssiChks8 in port /COM_SWC/ASW_COM/PPort_SteerStsToParkAssiChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerStsToParkAssiCntr4/SteerStsToParkAssiCntr4 in port /COM_SWC/ASW_COM/PPort_SteerStsToParkAssiCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerStsToParkAssiDataID4/SteerStsToParkAssiDataID4 in port /COM_SWC/ASW_COM/PPort_SteerStsToParkAssiDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerStsToParkAssiVal1/SteerStsToParkAssiVal1 in port /COM_SWC/ASW_COM/PPort_SteerStsToParkAssiVal1 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerStsToParkAssi_UB/SteerStsToParkAssi_UB in port /COM_SWC/ASW_COM/PPort_SteerStsToParkAssi_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerWhlTqAddl/SteerWhlTqAddl in port /COM_SWC/ASW_COM/PPort_SteerWhlTqAddl on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerWhlTqAddl_UB/SteerWhlTqAddl_UB in port /COM_SWC/ASW_COM/PPort_SteerWhlTqAddl_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_TankTurnSteerWhlCfmd/TankTurnSteerWhlCfmd in port /COM_SWC/ASW_COM/PPort_TankTurnSteerWhlCfmd on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_TankTurnSteerWhlCfmd_UB/TankTurnSteerWhlCfmd_UB in port /COM_SWC/ASW_COM/PPort_TankTurnSteerWhlCfmd_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_Testmode_Response/Testmode_Response in port /COM_SWC/ASW_COM/PPort_Testmode_Response on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_TqAssAddl/TqAssAddl in port /COM_SWC/ASW_COM/PPort_TqAssAddl on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_TqAssAddl_UB/TqAssAddl_UB in port /COM_SWC/ASW_COM/PPort_TqAssAddl_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_TripResetSyncReqMsgPSCM/TripResetSyncReqMsgPSCM in port /COM_SWC/ASW_COM/PPort_TripResetSyncReqMsgPSCM on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_TripResetSyncReqMsgPSCM_UB/TripResetSyncReqMsgPSCM_UB in port /COM_SWC/ASW_COM/PPort_TripResetSyncReqMsgPSCM_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_UBoostReqBySteerFrnt/UBoostReqBySteerFrnt in port /COM_SWC/ASW_COM/PPort_UBoostReqBySteerFrnt on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_UBoostReqBySteerFrnt_UB/UBoostReqBySteerFrnt_UB in port /COM_SWC/ASW_COM/PPort_UBoostReqBySteerFrnt_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADataRawSafeALat/ADataRawSafeALat in port /COM_SWC/ASW_COM/RPort_ADataRawSafeALat on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADataRawSafeALat1Qf/ADataRawSafeALat1Qf in port /COM_SWC/ASW_COM/RPort_ADataRawSafeALat1Qf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADataRawSafeALgt/ADataRawSafeALgt in port /COM_SWC/ASW_COM/RPort_ADataRawSafeALgt on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADataRawSafeALgt1Qf/ADataRawSafeALgt1Qf in port /COM_SWC/ASW_COM/RPort_ADataRawSafeALgt1Qf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADataRawSafeAVert/ADataRawSafeAVert in port /COM_SWC/ASW_COM/RPort_ADataRawSafeAVert on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADataRawSafeAVertQf/ADataRawSafeAVertQf in port /COM_SWC/ASW_COM/RPort_ADataRawSafeAVertQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADataRawSafeChks8/ADataRawSafeChks8 in port /COM_SWC/ASW_COM/RPort_ADataRawSafeChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADataRawSafeCntr4/ADataRawSafeCntr4 in port /COM_SWC/ASW_COM/RPort_ADataRawSafeCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADataRawSafeDataID4/ADataRawSafeDataID4 in port /COM_SWC/ASW_COM/RPort_ADataRawSafeDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ADataRawSafe_UB/ADataRawSafe_UB in port /COM_SWC/ASW_COM/RPort_ADataRawSafe_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AbsCtrlActvChks8/AbsCtrlActvChks8 in port /COM_SWC/ASW_COM/RPort_AbsCtrlActvChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AbsCtrlActvCntr4/AbsCtrlActvCntr4 in port /COM_SWC/ASW_COM/RPort_AbsCtrlActvCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AbsCtrlActvCtrlSts1/AbsCtrlActvCtrlSts1 in port /COM_SWC/ASW_COM/RPort_AbsCtrlActvCtrlSts1 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AbsCtrlActvDataID4/AbsCtrlActvDataID4 in port /COM_SWC/ASW_COM/RPort_AbsCtrlActvDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AbsCtrlActv_UB/AbsCtrlActv_UB in port /COM_SWC/ASW_COM/RPort_AbsCtrlActv_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ActvSubtypMod/ActvSubtypMod in port /COM_SWC/ASW_COM/RPort_ActvSubtypMod on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_ActvSubtypMod_UB/ActvSubtypMod_UB in port /COM_SWC/ASW_COM/RPort_ActvSubtypMod_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgCtrlTqLowrLim/AgCtrlTqLowrLim in port /COM_SWC/ASW_COM/RPort_AgCtrlTqLowrLim on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgCtrlTqLowrLim_UB/AgCtrlTqLowrLim_UB in port /COM_SWC/ASW_COM/RPort_AgCtrlTqLowrLim_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgCtrlTqUpprLim/AgCtrlTqUpprLim in port /COM_SWC/ASW_COM/RPort_AgCtrlTqUpprLim on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgCtrlTqUpprLim_UB/AgCtrlTqUpprLim_UB in port /COM_SWC/ASW_COM/RPort_AgCtrlTqUpprLim_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgDataCmpQa_UB/AgDataCmpQa_UB in port /COM_SWC/ASW_COM/RPort_AgDataCmpQa_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgDataCmpQuaPitchRate/AgDataCmpQuaPitchRate in port /COM_SWC/ASW_COM/RPort_AgDataCmpQuaPitchRate on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgDataCmpQuaRollRate/AgDataCmpQuaRollRate in port /COM_SWC/ASW_COM/RPort_AgDataCmpQuaRollRate on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgDataCmpQuaYawRate/AgDataCmpQuaYawRate in port /COM_SWC/ASW_COM/RPort_AgDataCmpQuaYawRate on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgDataRawSafeChks8/AgDataRawSafeChks8 in port /COM_SWC/ASW_COM/RPort_AgDataRawSafeChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgDataRawSafeCntr4/AgDataRawSafeCntr4 in port /COM_SWC/ASW_COM/RPort_AgDataRawSafeCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgDataRawSafeDataID4/AgDataRawSafeDataID4 in port /COM_SWC/ASW_COM/RPort_AgDataRawSafeDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgDataRawSafeRollRate/AgDataRawSafeRollRate in port /COM_SWC/ASW_COM/RPort_AgDataRawSafeRollRate on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgDataRawSafeRollRateQf/AgDataRawSafeRollRateQf in port /COM_SWC/ASW_COM/RPort_AgDataRawSafeRollRateQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgDataRawSafeYawRate/AgDataRawSafeYawRate in port /COM_SWC/ASW_COM/RPort_AgDataRawSafeYawRate on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgDataRawSafeYawRateQf/AgDataRawSafeYawRateQf in port /COM_SWC/ASW_COM/RPort_AgDataRawSafeYawRateQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AgDataRawSafe_UB/AgDataRawSafe_UB in port /COM_SWC/ASW_COM/RPort_AgDataRawSafe_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AmbTRawAmbTEstimd/AmbTRawAmbTEstimd in port /COM_SWC/ASW_COM/RPort_AmbTRawAmbTEstimd on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AmbTRawAmbTEstimdQf/AmbTRawAmbTEstimdQf in port /COM_SWC/ASW_COM/RPort_AmbTRawAmbTEstimdQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AmbTRaw_UB/AmbTRaw_UB in port /COM_SWC/ASW_COM/RPort_AmbTRaw_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADL3FuncCtrlStsADMod/AsyADL3FuncCtrlStsADMod in port /COM_SWC/ASW_COM/RPort_AsyADL3FuncCtrlStsADMod on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADL3FuncCtrlStsChks8/AsyADL3FuncCtrlStsChks8 in port /COM_SWC/ASW_COM/RPort_AsyADL3FuncCtrlStsChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADL3FuncCtrlStsCntr4/AsyADL3FuncCtrlStsCntr4 in port /COM_SWC/ASW_COM/RPort_AsyADL3FuncCtrlStsCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADL3FuncCtrlStsCtrlSts/AsyADL3FuncCtrlStsCtrlSts in port /COM_SWC/ASW_COM/RPort_AsyADL3FuncCtrlStsCtrlSts on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADL3FuncCtrlStsDataID4/AsyADL3FuncCtrlStsDataID4 in port /COM_SWC/ASW_COM/RPort_AsyADL3FuncCtrlStsDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADL3FuncCtrlStsDegraded/AsyADL3FuncCtrlStsDegraded in port /COM_SWC/ASW_COM/RPort_AsyADL3FuncCtrlStsDegraded on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADL3FuncCtrlStsQf/AsyADL3FuncCtrlStsQf in port /COM_SWC/ASW_COM/RPort_AsyADL3FuncCtrlStsQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADL3FuncCtrlStsSts/AsyADL3FuncCtrlStsSts in port /COM_SWC/ASW_COM/RPort_AsyADL3FuncCtrlStsSts on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADL3FuncCtrlSts_UB/AsyADL3FuncCtrlSts_UB in port /COM_SWC/ASW_COM/RPort_AsyADL3FuncCtrlSts_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADModeReqADActiveReq/AsyADModeReqADActiveReq in port /COM_SWC/ASW_COM/RPort_AsyADModeReqADActiveReq on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADModeReqADDeactiveReq/AsyADModeReqADDeactiveReq in port /COM_SWC/ASW_COM/RPort_AsyADModeReqADDeactiveReq on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADModeReqChks8/AsyADModeReqChks8 in port /COM_SWC/ASW_COM/RPort_AsyADModeReqChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADModeReqCntr4/AsyADModeReqCntr4 in port /COM_SWC/ASW_COM/RPort_AsyADModeReqCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADModeReqDataID4/AsyADModeReqDataID4 in port /COM_SWC/ASW_COM/RPort_AsyADModeReqDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyADModeReq_UB/AsyADModeReq_UB in port /COM_SWC/ASW_COM/RPort_AsyADModeReq_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyDataWithCmpSafeALat1Qf/AsyDataWithCmpSafeALat1Qf in port /COM_SWC/ASW_COM/RPort_AsyDataWithCmpSafeALat1Qf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyDataWithCmpSafeALatWithCmp/AsyDataWithCmpSafeALatWithCmp in port /COM_SWC/ASW_COM/RPort_AsyDataWithCmpSafeALatWithCmp on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyDataWithCmpSafeALgt1Qf/AsyDataWithCmpSafeALgt1Qf in port /COM_SWC/ASW_COM/RPort_AsyDataWithCmpSafeALgt1Qf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyDataWithCmpSafeChks8/AsyDataWithCmpSafeChks8 in port /COM_SWC/ASW_COM/RPort_AsyDataWithCmpSafeChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyDataWithCmpSafeCntr4/AsyDataWithCmpSafeCntr4 in port /COM_SWC/ASW_COM/RPort_AsyDataWithCmpSafeCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyDataWithCmpSafeDataID4/AsyDataWithCmpSafeDataID4 in port /COM_SWC/ASW_COM/RPort_AsyDataWithCmpSafeDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyDataWithCmpSafeGrdtOfALgt/AsyDataWithCmpSafeGrdtOfALgt in port /COM_SWC/ASW_COM/RPort_AsyDataWithCmpSafeGrdtOfALgt on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyDataWithCmpSafeYawRateQf/AsyDataWithCmpSafeYawRateQf in port /COM_SWC/ASW_COM/RPort_AsyDataWithCmpSafeYawRateQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyDataWithCmpSafeYawRateWithCmp/AsyDataWithCmpSafeYawRateWithCmp in port /COM_SWC/ASW_COM/RPort_AsyDataWithCmpSafeYawRateWithCmp on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyDataWithCmpSafe_UB/AsyDataWithCmpSafe_UB in port /COM_SWC/ASW_COM/RPort_AsyDataWithCmpSafe_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyLatOvrdReqAsyLatOvrdReq/AsyLatOvrdReqAsyLatOvrdReq in port /COM_SWC/ASW_COM/RPort_AsyLatOvrdReqAsyLatOvrdReq on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyLatOvrdReqChks8/AsyLatOvrdReqChks8 in port /COM_SWC/ASW_COM/RPort_AsyLatOvrdReqChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyLatOvrdReqCntr4/AsyLatOvrdReqCntr4 in port /COM_SWC/ASW_COM/RPort_AsyLatOvrdReqCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyLatOvrdReqDataID4/AsyLatOvrdReqDataID4 in port /COM_SWC/ASW_COM/RPort_AsyLatOvrdReqDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyLatOvrdReq_UB/AsyLatOvrdReq_UB in port /COM_SWC/ASW_COM/RPort_AsyLatOvrdReq_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyPinionAgReqSafeChks8/AsyPinionAgReqSafeChks8 in port /COM_SWC/ASW_COM/RPort_AsyPinionAgReqSafeChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyPinionAgReqSafeCntr4/AsyPinionAgReqSafeCntr4 in port /COM_SWC/ASW_COM/RPort_AsyPinionAgReqSafeCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyPinionAgReqSafeDataID4/AsyPinionAgReqSafeDataID4 in port /COM_SWC/ASW_COM/RPort_AsyPinionAgReqSafeDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyPinionAgReqSafeVal/AsyPinionAgReqSafeVal in port /COM_SWC/ASW_COM/RPort_AsyPinionAgReqSafeVal on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_AsyPinionAgReqSafe_UB/AsyPinionAgReqSafe_UB in port /COM_SWC/ASW_COM/RPort_AsyPinionAgReqSafe_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_BrkPedlPsdBrkPedlNoPsdSafe/BrkPedlPsdBrkPedlNoPsdSafe in port /COM_SWC/ASW_COM/RPort_BrkPedlPsdBrkPedlNoPsdSafe on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_BrkPedlPsdBrkPedlPsd/BrkPedlPsdBrkPedlPsd in port /COM_SWC/ASW_COM/RPort_BrkPedlPsdBrkPedlPsd on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_BrkPedlPsdChks8/BrkPedlPsdChks8 in port /COM_SWC/ASW_COM/RPort_BrkPedlPsdChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_BrkPedlPsdCntr4/BrkPedlPsdCntr4 in port /COM_SWC/ASW_COM/RPort_BrkPedlPsdCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_BrkPedlPsdDataID4/BrkPedlPsdDataID4 in port /COM_SWC/ASW_COM/RPort_BrkPedlPsdDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_BrkPedlPsdQf/BrkPedlPsdQf in port /COM_SWC/ASW_COM/RPort_BrkPedlPsdQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_BrkPedlPsd_UB/BrkPedlPsd_UB in port /COM_SWC/ASW_COM/RPort_BrkPedlPsd_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_BrkTracCtrlActv/BrkTracCtrlActv in port /COM_SWC/ASW_COM/RPort_BrkTracCtrlActv on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_BrkTracCtrlActv_UB/BrkTracCtrlActv_UB in port /COM_SWC/ASW_COM/RPort_BrkTracCtrlActv_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_EscStChks8/EscStChks8 in port /COM_SWC/ASW_COM/RPort_EscStChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_EscStCntr4/EscStCntr4 in port /COM_SWC/ASW_COM/RPort_EscStCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_EscStDataID4/EscStDataID4 in port /COM_SWC/ASW_COM/RPort_EscStDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_EscStEscSt/EscStEscSt in port /COM_SWC/ASW_COM/RPort_EscStEscSt on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_EscSt_UB/EscSt_UB in port /COM_SWC/ASW_COM/RPort_EscSt_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_GearLvrIndcn2/GearLvrIndcn2 in port /COM_SWC/ASW_COM/RPort_GearLvrIndcn2 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_GearLvrIndcnChks8/GearLvrIndcnChks8 in port /COM_SWC/ASW_COM/RPort_GearLvrIndcnChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_GearLvrIndcnCntr4/GearLvrIndcnCntr4 in port /COM_SWC/ASW_COM/RPort_GearLvrIndcnCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_GearLvrIndcnDataID4/GearLvrIndcnDataID4 in port /COM_SWC/ASW_COM/RPort_GearLvrIndcnDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_GearLvrIndcn_UB/GearLvrIndcn_UB in port /COM_SWC/ASW_COM/RPort_GearLvrIndcn_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_LatCtrlReqSafeChks8/LatCtrlReqSafeChks8 in port /COM_SWC/ASW_COM/RPort_LatCtrlReqSafeChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_LatCtrlReqSafeCntr4/LatCtrlReqSafeCntr4 in port /COM_SWC/ASW_COM/RPort_LatCtrlReqSafeCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_LatCtrlReqSafeDataID4/LatCtrlReqSafeDataID4 in port /COM_SWC/ASW_COM/RPort_LatCtrlReqSafeDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_LatCtrlReqSafeLatCtrlMod1/LatCtrlReqSafeLatCtrlMod1 in port /COM_SWC/ASW_COM/RPort_LatCtrlReqSafeLatCtrlMod1 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_LatCtrlReqSafeSteerAgReq/LatCtrlReqSafeSteerAgReq in port /COM_SWC/ASW_COM/RPort_LatCtrlReqSafeSteerAgReq on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_LatCtrlReqSafeSteerTqReq/LatCtrlReqSafeSteerTqReq in port /COM_SWC/ASW_COM/RPort_LatCtrlReqSafeSteerTqReq on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_LatCtrlReqSafeSteerWarnReq/LatCtrlReqSafeSteerWarnReq in port /COM_SWC/ASW_COM/RPort_LatCtrlReqSafeSteerWarnReq on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_LatCtrlReqSafe_UB/LatCtrlReqSafe_UB in port /COM_SWC/ASW_COM/RPort_LatCtrlReqSafe_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_OdoMeter/OdoMeter in port /COM_SWC/ASW_COM/RPort_OdoMeter on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_OdoMeter_UB/OdoMeter_UB in port /COM_SWC/ASW_COM/RPort_OdoMeter_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PrkgPinionAgReqChks8/PrkgPinionAgReqChks8 in port /COM_SWC/ASW_COM/RPort_PrkgPinionAgReqChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PrkgPinionAgReqCntr4/PrkgPinionAgReqCntr4 in port /COM_SWC/ASW_COM/RPort_PrkgPinionAgReqCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PrkgPinionAgReqDataID4/PrkgPinionAgReqDataID4 in port /COM_SWC/ASW_COM/RPort_PrkgPinionAgReqDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PrkgPinionAgReqParkAssiPAgReq/PrkgPinionAgReqParkAssiPAgReq in port /COM_SWC/ASW_COM/RPort_PrkgPinionAgReqParkAssiPAgReq on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PrkgPinionAgReqQF/PrkgPinionAgReqQF in port /COM_SWC/ASW_COM/RPort_PrkgPinionAgReqQF on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PrkgPinionAgReq_UB/PrkgPinionAgReq_UB in port /COM_SWC/ASW_COM/RPort_PrkgPinionAgReq_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PtTqAtWhlFrntActChks8/PtTqAtWhlFrntActChks8 in port /COM_SWC/ASW_COM/RPort_PtTqAtWhlFrntActChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PtTqAtWhlFrntActCntr4/PtTqAtWhlFrntActCntr4 in port /COM_SWC/ASW_COM/RPort_PtTqAtWhlFrntActCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PtTqAtWhlFrntActDataID4/PtTqAtWhlFrntActDataID4 in port /COM_SWC/ASW_COM/RPort_PtTqAtWhlFrntActDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PtTqAtWhlFrntAct_UB/PtTqAtWhlFrntAct_UB in port /COM_SWC/ASW_COM/RPort_PtTqAtWhlFrntAct_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PtTqAtWhlFrntAxleFrntAct/PtTqAtWhlFrntAxleFrntAct in port /COM_SWC/ASW_COM/RPort_PtTqAtWhlFrntAxleFrntAct on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PtTqAtWhlFrntWhlFrntLeAct/PtTqAtWhlFrntWhlFrntLeAct in port /COM_SWC/ASW_COM/RPort_PtTqAtWhlFrntWhlFrntLeAct on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PtTqAtWhlFrntWhlFrntRiAct/PtTqAtWhlFrntWhlFrntRiAct in port /COM_SWC/ASW_COM/RPort_PtTqAtWhlFrntWhlFrntRiAct on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_PtTqAtWhlFrntWhlsFrntQly/PtTqAtWhlFrntWhlsFrntQly in port /COM_SWC/ASW_COM/RPort_PtTqAtWhlFrntWhlsFrntQly on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SftRkLimrFwrReq/SftRkLimrFwrReq in port /COM_SWC/ASW_COM/RPort_SftRkLimrFwrReq on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SftRkLimrFwrReq_UB/SftRkLimrFwrReq_UB in port /COM_SWC/ASW_COM/RPort_SftRkLimrFwrReq_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerCtrlCCPtoFASKey/SteerCtrlCCPtoFASKey in port /COM_SWC/ASW_COM/RPort_SteerCtrlCCPtoFASKey on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerCtrlCCPtoFASValue/SteerCtrlCCPtoFASValue in port /COM_SWC/ASW_COM/RPort_SteerCtrlCCPtoFASValue on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerCtrlCCPtoFAS_UB/SteerCtrlCCPtoFAS_UB in port /COM_SWC/ASW_COM/RPort_SteerCtrlCCPtoFAS_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerRatReq/SteerRatReq in port /COM_SWC/ASW_COM/RPort_SteerRatReq on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerRatReq_UB/SteerRatReq_UB in port /COM_SWC/ASW_COM/RPort_SteerRatReq_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerSetgPen/SteerSetgPen in port /COM_SWC/ASW_COM/RPort_SteerSetgPen on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerSetgSteerAsscLvl/SteerSetgSteerAsscLvl in port /COM_SWC/ASW_COM/RPort_SteerSetgSteerAsscLvl on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerSetgSteerMod/SteerSetgSteerMod in port /COM_SWC/ASW_COM/RPort_SteerSetgSteerMod on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerSetg_UB/SteerSetg_UB in port /COM_SWC/ASW_COM/RPort_SteerSetg_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerWhlSnsrAg/SteerWhlSnsrAg in port /COM_SWC/ASW_COM/RPort_SteerWhlSnsrAg on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerWhlSnsrAgSpd/SteerWhlSnsrAgSpd in port /COM_SWC/ASW_COM/RPort_SteerWhlSnsrAgSpd on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerWhlSnsrChks8/SteerWhlSnsrChks8 in port /COM_SWC/ASW_COM/RPort_SteerWhlSnsrChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerWhlSnsrCntr4/SteerWhlSnsrCntr4 in port /COM_SWC/ASW_COM/RPort_SteerWhlSnsrCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerWhlSnsrDataID4/SteerWhlSnsrDataID4 in port /COM_SWC/ASW_COM/RPort_SteerWhlSnsrDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerWhlSnsrQf/SteerWhlSnsrQf in port /COM_SWC/ASW_COM/RPort_SteerWhlSnsrQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_SteerWhlSnsr_UB/SteerWhlSnsr_UB in port /COM_SWC/ASW_COM/RPort_SteerWhlSnsr_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_TankTurnSteerWhlReq/TankTurnSteerWhlReq in port /COM_SWC/ASW_COM/RPort_TankTurnSteerWhlReq on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_TankTurnSteerWhlReq_UB/TankTurnSteerWhlReq_UB in port /COM_SWC/ASW_COM/RPort_TankTurnSteerWhlReq_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_Testmode_Request/Testmode_Request in port /COM_SWC/ASW_COM/RPort_Testmode_Request on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_TripResetSyncMsgRestCnt/TripResetSyncMsgRestCnt in port /COM_SWC/ASW_COM/RPort_TripResetSyncMsgRestCnt on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_TripResetSyncMsgTripCnt/TripResetSyncMsgTripCnt in port /COM_SWC/ASW_COM/RPort_TripResetSyncMsgTripCnt on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_UtcTiGlbDataValid/UtcTiGlbDataValid in port /COM_SWC/ASW_COM/RPort_UtcTiGlbDataValid on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_UtcTiGlbUtcTiVal/UtcTiGlbUtcTiVal in port /COM_SWC/ASW_COM/RPort_UtcTiGlbUtcTiVal on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_UtcTiGlb_UB/UtcTiGlb_UB in port /COM_SWC/ASW_COM/RPort_UtcTiGlb_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehHomePrkgSysSts/VehHomePrkgSysSts in port /COM_SWC/ASW_COM/RPort_VehHomePrkgSysSts on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehHomePrkgSysSts_UB/VehHomePrkgSysSts_UB in port /COM_SWC/ASW_COM/RPort_VehHomePrkgSysSts_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehLVSysUZCLVehLVSysUBkp/VehLVSysUZCLVehLVSysUBkp in port /COM_SWC/ASW_COM/RPort_VehLVSysUZCLVehLVSysUBkp on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehLVSysUZCLVehLVSysUMai/VehLVSysUZCLVehLVSysUMai in port /COM_SWC/ASW_COM/RPort_VehLVSysUZCLVehLVSysUMai on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehLVSysUZCL_UB/VehLVSysUZCL_UB in port /COM_SWC/ASW_COM/RPort_VehLVSysUZCL_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehModMngtGlbSafeCarModSts/VehModMngtGlbSafeCarModSts in port /COM_SWC/ASW_COM/RPort_VehModMngtGlbSafeCarModSts on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehModMngtGlbSafeCarModSubtypWd/VehModMngtGlbSafeCarModSubtypWd in port /COM_SWC/ASW_COM/RPort_VehModMngtGlbSafeCarModSubtypWd on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehModMngtGlbSafeChks8/VehModMngtGlbSafeChks8 in port /COM_SWC/ASW_COM/RPort_VehModMngtGlbSafeChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehModMngtGlbSafeCntr4/VehModMngtGlbSafeCntr4 in port /COM_SWC/ASW_COM/RPort_VehModMngtGlbSafeCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehModMngtGlbSafeDataID4/VehModMngtGlbSafeDataID4 in port /COM_SWC/ASW_COM/RPort_VehModMngtGlbSafeDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehModMngtGlbSafeEngElecMai/VehModMngtGlbSafeEngElecMai in port /COM_SWC/ASW_COM/RPort_VehModMngtGlbSafeEngElecMai on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehModMngtGlbSafeEngElecSubtyp/VehModMngtGlbSafeEngElecSubtyp in port /COM_SWC/ASW_COM/RPort_VehModMngtGlbSafeEngElecSubtyp on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehModMngtGlbSafeFltEgyCnsWdSts/VehModMngtGlbSafeFltEgyCnsWdSts in port /COM_SWC/ASW_COM/RPort_VehModMngtGlbSafeFltEgyCnsWdSts on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehModMngtGlbSafePwrElecMai/VehModMngtGlbSafePwrElecMai in port /COM_SWC/ASW_COM/RPort_VehModMngtGlbSafePwrElecMai on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehModMngtGlbSafePwrElecSubtyp/VehModMngtGlbSafePwrElecSubtyp in port /COM_SWC/ASW_COM/RPort_VehModMngtGlbSafePwrElecSubtyp on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehModMngtGlbSafePwrModSts/VehModMngtGlbSafePwrModSts in port /COM_SWC/ASW_COM/RPort_VehModMngtGlbSafePwrModSts on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehModMngtGlbSafe_UB/VehModMngtGlbSafe_UB in port /COM_SWC/ASW_COM/RPort_VehModMngtGlbSafe_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehMtnStChks8/VehMtnStChks8 in port /COM_SWC/ASW_COM/RPort_VehMtnStChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehMtnStCntr4/VehMtnStCntr4 in port /COM_SWC/ASW_COM/RPort_VehMtnStCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehMtnStDataID4/VehMtnStDataID4 in port /COM_SWC/ASW_COM/RPort_VehMtnStDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehMtnStVehMtnSt/VehMtnStVehMtnSt in port /COM_SWC/ASW_COM/RPort_VehMtnStVehMtnSt on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehMtnSt_UB/VehMtnSt_UB in port /COM_SWC/ASW_COM/RPort_VehMtnSt_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehSpdLgtA/VehSpdLgtA in port /COM_SWC/ASW_COM/RPort_VehSpdLgtA on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehSpdLgtChks8/VehSpdLgtChks8 in port /COM_SWC/ASW_COM/RPort_VehSpdLgtChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehSpdLgtCntr4/VehSpdLgtCntr4 in port /COM_SWC/ASW_COM/RPort_VehSpdLgtCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehSpdLgtDataID4/VehSpdLgtDataID4 in port /COM_SWC/ASW_COM/RPort_VehSpdLgtDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehSpdLgtQf/VehSpdLgtQf in port /COM_SWC/ASW_COM/RPort_VehSpdLgtQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_VehSpdLgt_UB/VehSpdLgt_UB in port /COM_SWC/ASW_COM/RPort_VehSpdLgt_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlFastSpdSafeA/WhlFastSpdSafeA in port /COM_SWC/ASW_COM/RPort_WhlFastSpdSafeA on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlFastSpdSafeChks8/WhlFastSpdSafeChks8 in port /COM_SWC/ASW_COM/RPort_WhlFastSpdSafeChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlFastSpdSafeCntr4/WhlFastSpdSafeCntr4 in port /COM_SWC/ASW_COM/RPort_WhlFastSpdSafeCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlFastSpdSafeDataID4/WhlFastSpdSafeDataID4 in port /COM_SWC/ASW_COM/RPort_WhlFastSpdSafeDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlFastSpdSafeQF/WhlFastSpdSafeQF in port /COM_SWC/ASW_COM/RPort_WhlFastSpdSafeQF on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlFastSpdSafe_UB/WhlFastSpdSafe_UB in port /COM_SWC/ASW_COM/RPort_WhlFastSpdSafe_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlRotToothCntrChks8/WhlRotToothCntrChks8 in port /COM_SWC/ASW_COM/RPort_WhlRotToothCntrChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlRotToothCntrCntr4/WhlRotToothCntrCntr4 in port /COM_SWC/ASW_COM/RPort_WhlRotToothCntrCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlRotToothCntrDataID4/WhlRotToothCntrDataID4 in port /COM_SWC/ASW_COM/RPort_WhlRotToothCntrDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlRotToothCntrFrntLe/WhlRotToothCntrFrntLe in port /COM_SWC/ASW_COM/RPort_WhlRotToothCntrFrntLe on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlRotToothCntrFrntRi/WhlRotToothCntrFrntRi in port /COM_SWC/ASW_COM/RPort_WhlRotToothCntrFrntRi on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlRotToothCntrReLe/WhlRotToothCntrReLe in port /COM_SWC/ASW_COM/RPort_WhlRotToothCntrReLe on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlRotToothCntrReRi/WhlRotToothCntrReRi in port /COM_SWC/ASW_COM/RPort_WhlRotToothCntrReRi on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlRotToothCntr_UB/WhlRotToothCntr_UB in port /COM_SWC/ASW_COM/RPort_WhlRotToothCntr_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlFrntChks8/WhlSpdCircumlFrntChks8 in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlFrntChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlFrntCntr4/WhlSpdCircumlFrntCntr4 in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlFrntCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlFrntDataID4/WhlSpdCircumlFrntDataID4 in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlFrntDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlFrntLe/WhlSpdCircumlFrntLe in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlFrntLe on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlFrntLeQf/WhlSpdCircumlFrntLeQf in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlFrntLeQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlFrntRi/WhlSpdCircumlFrntRi in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlFrntRi on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlFrntRiQf/WhlSpdCircumlFrntRiQf in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlFrntRiQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlFrnt_UB/WhlSpdCircumlFrnt_UB in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlFrnt_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlReChks8/WhlSpdCircumlReChks8 in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlReChks8 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlReCntr4/WhlSpdCircumlReCntr4 in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlReCntr4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlReDataID4/WhlSpdCircumlReDataID4 in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlReDataID4 on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlReLe/WhlSpdCircumlReLe in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlReLe on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlReLeQf/WhlSpdCircumlReLeQf in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlReLeQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlReRi/WhlSpdCircumlReRi in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlReRi on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlReRiQf/WhlSpdCircumlReRiQf in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlReRiQf on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /COM_SWC/SRInterface_WhlSpdCircumlRe_UB/WhlSpdCircumlRe_UB in port /COM_SWC/ASW_COM/RPort_WhlSpdCircumlRe_UB on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_COM because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /SwComponentTypes/ASW_NM-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_NM-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Interfaces/ETAS_SenderReceiverInterface_uint8/uint8 in port /SwComponentTypes/ASW_NM/PP_BswMArbitration_BswM_MRP_Network on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_NM because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Interfaces/ETAS_SenderReceiverInterface_uint8/uint8 in port /SwComponentTypes/ASW_NM/PP_BswMArbitration_BswM_MRP_NmState on Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_NM because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /SwComponentTypes/ASW_USER-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_USER-->
+                           <!--Data instances for Application Software Component Type /SwComponentTypes/CDD_USER-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_CDD_USER-->
+                           <!--Data instances for Application Software Component Type /XCP_SWC/ASW_XCP-->
+                           <!--No McDataInstance for StaticMemory /XCP_SWC/ASW_XCP/SwcInternalBehavior_XCP/Entry_Static_Var shared between instances of Application Software Component Type /XCP_SWC/ASW_XCP because emit-memorys MCSD policy is disabled-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_ASW_XCP-->
+                           <!--Data instances for Service Component Type /rba_DiagLib/SwComponentTypes/rba_DiagLib-->
+                           <!--Data instances for Application Software Component Instance /MCU_FlatView/SwComponentTypes/MCU_FlatView/CPT_rba_DiagLib-->
+                        </MC-VARIABLE-INSTANCES>
+                     </MC-SUPPORT>
+                  </BSW-IMPLEMENTATION>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>ApplicationPrimitiveDataTypes</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>Units</SHORT-NAME>
+               <ELEMENTS>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/rpm-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_rpm</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/Ampere-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_Ampere</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/deg-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_deg</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/Nm-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_Nm</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/V-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_V</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/Unitless-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_Unitless</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/NewtonMeter-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_NewtonMeter</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/KiloMtr-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_KiloMtr</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/Volt-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_Volt</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/m_s_2-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_m_s_2</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/m_s_cubed-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_m_s_cubed</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/rad_s-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_rad_s</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/rad-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_rad</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/degC-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_degC</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/m_s-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_m_s</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /DBC_SysDesc_Can_Network_0/Pkg_Units/N-->
+                    <SHORT-NAME>DBC_SysDesc_Can_Network_0_Pkg_Units_N</SHORT-NAME>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_CanIf/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_CanIf_Units_NoUnit</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">No Unit</L-4>
+                    </LONG-NAME>
+                    <DISPLAY-NAME>noUnit</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_CanIf_PhysicalDimensions_NoUnit</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_CanNm/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_CanNm_Units_NoUnit</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">No Unit</L-4>
+                    </LONG-NAME>
+                    <DISPLAY-NAME>noUnit</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_CanNm_PhysicalDimensions_NoUnit</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_CanSM/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_CanSM_Units_NoUnit</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">No Unit</L-4>
+                    </LONG-NAME>
+                    <DISPLAY-NAME>noUnit</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_CanSM_PhysicalDimensions_NoUnit</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_ComM/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_ComM_Units_NoUnit</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">No Unit</L-4>
+                    </LONG-NAME>
+                    <DISPLAY-NAME>noUnit</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_ComM_PhysicalDimensions_NoUnit</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_Com/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_Com_Units_NoUnit</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">No Unit</L-4>
+                    </LONG-NAME>
+                    <DISPLAY-NAME>noUnit</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_Com_PhysicalDimensions_NoUnit</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_Nm/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_Nm_Units_NoUnit</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">No Unit</L-4>
+                    </LONG-NAME>
+                    <DISPLAY-NAME>noUnit</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_Nm_PhysicalDimensions_NoUnit</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_NvM/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_NvM_Units_NoUnit</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">No Unit</L-4>
+                    </LONG-NAME>
+                    <DISPLAY-NAME>noUnit</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_NvM_PhysicalDimensions_NoUnit</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_PduR/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_PduR_Units_NoUnit</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">No Unit</L-4>
+                    </LONG-NAME>
+                    <DISPLAY-NAME>noUnit</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_PduR_PhysicalDimensions_NoUnit</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_Xcp/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_Xcp_Units_NoUnit</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">No Unit</L-4>
+                    </LONG-NAME>
+                    <DISPLAY-NAME>noUnit</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_Xcp_PhysicalDimensions_NoUnit</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /RB/RBA/rba_MemLib/Units/Mem_NoUnit-->
+                    <SHORT-NAME>RB_RBA_rba_MemLib_Units_Mem_NoUnit</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Mem No Unit / 1:1 / Identical</L-4>
+                    </LONG-NAME>
+                    <DISPLAY-NAME>Mem_NoUnit</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">RB_RBA_rba_MemLib_PhysicalDimensions_Mem_NoPhysDim</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/Bar-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_Bar</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Bar</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">pressure, no SI unit; 1 bar = 100,000 Pascal (Pa)</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>bar</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0E-5</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_LenNeg1M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/DegCgrd-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_DegCgrd</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Degree Centigrade</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">temperature, no SI unit, (degC = K - 273.15)</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>degC</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>-273.15</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_T1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/HectoPa-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_HectoPa</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Hecto Pascal</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI derived unit of pressure with prefix</L-2>
+                    </DESC>
+                    <INTRODUCTION>
+                      <P>
+                        <L-1 L="EN">It is equivalent to one Newton per square meter. In everyday life, the Pascal is perhaps best known from meteorological air-pressure reports, where it occurs in the form of hecto Pascal (1 hPa = 100 Pa).</L-1>
+                      </P>
+                    </INTRODUCTION>
+                    <DISPLAY-NAME>hPa</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>0.01</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_LenNeg1M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/Hz-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_Hz</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Hertz</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI derived unit of frequency</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>Hz</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_TiNeg1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/Kelvin-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_Kelvin</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Kelvin</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI base unit of thermodynamic temperature</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>K</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_T1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/KiloGr-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_KiloGr</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Kilo Gram</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI base unit of mass</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>kg</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_M1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/KiloHz-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_KiloHz</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Kilo Hertz</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI derived unit of frequency with prefix</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>kHz</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_TiNeg1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/KiloMtr-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_KiloMtr</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Kilo Meter</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI base unit of length with prefix</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>km</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>0.001</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_Len1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/Mtr-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_Mtr</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Meter</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI base unit of length</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>m</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_Len1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/MtrPerSec-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_MtrPerSec</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Meter per Second</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI derived unit of velocity</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>m/s</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_Len1TiNeg1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/MtrPerSecCubd-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_MtrPerSecCubd</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Meter per Second Cubed</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">jerk (derived from SI units), also called jolt (esp. in British English), surge or lurch, is the rate of change of acceleration; more precisely, the derivative of acceleration with respect to time, the second derivative of velocity, or the third derivative of displacement.</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>m/s^3</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_Len1TiNeg3</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/MtrPerSecSqd-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_MtrPerSecSqd</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Meter per Second Squared</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI derived unit of acceleration</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>m/s^2</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_Len1TiNeg2</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/MtrRecpr-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_MtrRecpr</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Meter Reciprocal</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI derived unit of wave number for electromagnetic fields or curvature as reciprocal of curve radius</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>1/m</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_LenNeg1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_NoUnit</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">No Unit</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">Unit for dimensionless continuous value data types like numbers, factors and coefficients</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>-</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_NoDimension</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/Nwt-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_Nwt</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Newton</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI derived unit of force</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>N</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_Len1M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/NwtMtr-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_NwtMtr</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Newton Meter</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI derived unit of moment of force (torque = kg m^2/s^2)</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>Nm</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_Len2M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/NwtMtrPerSec-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_NwtMtrPerSec</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Newton Meter per Second</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI derived unit of time-derivative of torque</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>Nm/s</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_Len2M1TiNeg3</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/NwtPerMtr-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_NwtPerMtr</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Newton per Meter</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">surface tension (derived from SI units)</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>N/m</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/NwtSecPerMtr-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_NwtSecPerMtr</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Newton Second per Meter</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">damping factor or coefficient (derived from SI units)</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>Ns/m</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_M1TiNeg1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/Pa-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_Pa</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Pascal</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI derived unit of pressure</L-2>
+                    </DESC>
+                    <INTRODUCTION>
+                      <P>
+                        <L-1 L="EN">The Pascal (symbol: Pa) is the SI derived unit of pressure or stress (also: Young&apos;s modulus and tensile strength). It is equivalent to one Newton per square meter. In everyday life, the Pascal is perhaps best known from meteorological air-pressure reports.</L-1>
+                      </P>
+                    </INTRODUCTION>
+                    <DISPLAY-NAME>Pa</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_LenNeg1M1TiNeg2</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/Perc-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_Perc</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Percent</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">a percentage is a way of expressing a number as a fraction of 100 (no SI unit).</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>%</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>100.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_NoDimension</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/PercPerSec-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_PercPerSec</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Percent per Second</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">time-derivative of percent</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>%/s</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>100.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_TiNeg1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/Rad-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_Rad</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Radian</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI derived unit of plane angle (dimensionless)</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>rad</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_NoDimension</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/RadPerSec-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_RadPerSec</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Radian per Second</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI derived unit of angular velocity</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>rad/s</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_TiNeg1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/RadPerSecSqd-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_RadPerSecSqd</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Radian per Second Squared</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI derived unit of angular acceleration</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>rad/s^2</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_TiNeg2</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/Rpm-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_Rpm</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Rpm</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">revolutions per minute - no SI unit</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>rpm</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>0.0166666666666667</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_TiNeg1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/RpmPerSec-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_RpmPerSec</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Revolutions per minute per Second</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">time-derivative of revolutions per minute - no SI unit</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>rpm/s</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>0.0166666666666667</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_TiNeg2</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/Sec-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_Sec</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Second</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI base unit of time</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>s</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_Ti1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /AUTOSAR_AISpecification/Units/Volt-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_Units_Volt</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Volt</L-4>
+                    </LONG-NAME>
+                    <DESC>
+                      <L-2 L="EN">SI derived unit of electric potential difference</L-2>
+                    </DESC>
+                    <DISPLAY-NAME>V</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">AUTOSAR_AISpecification_PhysicalDimensions_Len2M1TiNeg3INeg1</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+                  <UNIT>
+                    <!--Was /RB/RBA/Common/CentralElements/Units/NoUnit-->
+                    <SHORT-NAME>RB_RBA_Common_CentralElements_Units_NoUnit</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">No Unit</L-4>
+                    </LONG-NAME>
+                    <DISPLAY-NAME>noUnit</DISPLAY-NAME>
+                    <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                    <PHYSICAL-DIMENSION-REF BASE="Rte_MCSD_PhysicalDimensions" DEST="PHYSICAL-DIMENSION">RB_RBA_Common_CentralElements_PhysicalDimensions_NoUnit</PHYSICAL-DIMENSION-REF>
+                  </UNIT>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>UnitGroups</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>CompuMethods</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>DataConstrs</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>PhysicalDimensions</SHORT-NAME>
+               <ELEMENTS>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_CanIf/PhysicalDimensions/NoUnit-->
+                    <!--Referenced by /AUTOSAR_CanIf/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_CanIf_PhysicalDimensions_NoUnit</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_CanNm/PhysicalDimensions/NoUnit-->
+                    <!--Referenced by /AUTOSAR_CanNm/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_CanNm_PhysicalDimensions_NoUnit</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_CanSM/PhysicalDimensions/NoUnit-->
+                    <!--Referenced by /AUTOSAR_CanSM/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_CanSM_PhysicalDimensions_NoUnit</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_ComM/PhysicalDimensions/NoUnit-->
+                    <!--Referenced by /AUTOSAR_ComM/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_ComM_PhysicalDimensions_NoUnit</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_Com/PhysicalDimensions/NoUnit-->
+                    <!--Referenced by /AUTOSAR_Com/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_Com_PhysicalDimensions_NoUnit</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_Nm/PhysicalDimensions/NoUnit-->
+                    <!--Referenced by /AUTOSAR_Nm/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_Nm_PhysicalDimensions_NoUnit</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_NvM/PhysicalDimensions/NoUnit-->
+                    <!--Referenced by /AUTOSAR_NvM/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_NvM_PhysicalDimensions_NoUnit</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_PduR/PhysicalDimensions/NoUnit-->
+                    <!--Referenced by /AUTOSAR_PduR/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_PduR_PhysicalDimensions_NoUnit</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_Xcp/PhysicalDimensions/NoUnit-->
+                    <!--Referenced by /AUTOSAR_Xcp/Units/NoUnit-->
+                    <SHORT-NAME>AUTOSAR_Xcp_PhysicalDimensions_NoUnit</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /RB/RBA/rba_MemLib/PhysicalDimensions/Mem_NoPhysDim-->
+                    <!--Referenced by /RB/RBA/rba_MemLib/Units/Mem_NoUnit-->
+                    <SHORT-NAME>RB_RBA_rba_MemLib_PhysicalDimensions_Mem_NoPhysDim</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/LenNeg1M1TiNeg2-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/Bar-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/HectoPa-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/Pa-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_LenNeg1M1TiNeg2</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Length -1 Mass 1 Time -2</L-4>
+                    </LONG-NAME>
+                    <LENGTH-EXP>-1</LENGTH-EXP>
+                    <MASS-EXP>1</MASS-EXP>
+                    <TIME-EXP>-2</TIME-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/T1-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/DegCgrd-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/Kelvin-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_T1</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Temperature 1</L-4>
+                    </LONG-NAME>
+                    <TEMPERATURE-EXP>1</TEMPERATURE-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/TiNeg1-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/Hz-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/KiloHz-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/PercPerSec-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/RadPerSec-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/Rpm-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_TiNeg1</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Time -1</L-4>
+                    </LONG-NAME>
+                    <TIME-EXP>-1</TIME-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/M1-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/KiloGr-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_M1</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Mass 1</L-4>
+                    </LONG-NAME>
+                    <MASS-EXP>1</MASS-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/Len1-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/KiloMtr-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/Mtr-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_Len1</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Length 1</L-4>
+                    </LONG-NAME>
+                    <LENGTH-EXP>1</LENGTH-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/Len1TiNeg1-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/MtrPerSec-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_Len1TiNeg1</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Length 1 Time -1</L-4>
+                    </LONG-NAME>
+                    <LENGTH-EXP>1</LENGTH-EXP>
+                    <TIME-EXP>-1</TIME-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/Len1TiNeg3-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/MtrPerSecCubd-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_Len1TiNeg3</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Length 1 Time -3</L-4>
+                    </LONG-NAME>
+                    <LENGTH-EXP>1</LENGTH-EXP>
+                    <TIME-EXP>-3</TIME-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/Len1TiNeg2-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/MtrPerSecSqd-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_Len1TiNeg2</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Length 1 Time -2</L-4>
+                    </LONG-NAME>
+                    <LENGTH-EXP>1</LENGTH-EXP>
+                    <TIME-EXP>-2</TIME-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/LenNeg1-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/MtrRecpr-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_LenNeg1</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Length -1</L-4>
+                    </LONG-NAME>
+                    <LENGTH-EXP>-1</LENGTH-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/NoDimension-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/NoUnit-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/Perc-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/Rad-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_NoDimension</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">No Dimension</L-4>
+                    </LONG-NAME>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/Len1M1TiNeg2-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/Nwt-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_Len1M1TiNeg2</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Length 1 Mass 1 Time -2</L-4>
+                    </LONG-NAME>
+                    <LENGTH-EXP>1</LENGTH-EXP>
+                    <MASS-EXP>1</MASS-EXP>
+                    <TIME-EXP>-2</TIME-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/Len2M1TiNeg2-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/NwtMtr-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_Len2M1TiNeg2</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Length 2 Mass 1 Time -2</L-4>
+                    </LONG-NAME>
+                    <LENGTH-EXP>2</LENGTH-EXP>
+                    <MASS-EXP>1</MASS-EXP>
+                    <TIME-EXP>-2</TIME-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/Len2M1TiNeg3-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/NwtMtrPerSec-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_Len2M1TiNeg3</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Length 2 Mass 1 Time -3</L-4>
+                    </LONG-NAME>
+                    <LENGTH-EXP>2</LENGTH-EXP>
+                    <MASS-EXP>1</MASS-EXP>
+                    <TIME-EXP>-3</TIME-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/M1TiNeg2-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/NwtPerMtr-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_M1TiNeg2</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Mass 1 Time -2</L-4>
+                    </LONG-NAME>
+                    <MASS-EXP>1</MASS-EXP>
+                    <TIME-EXP>-2</TIME-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/M1TiNeg1-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/NwtSecPerMtr-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_M1TiNeg1</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Mass 1 Time -1</L-4>
+                    </LONG-NAME>
+                    <MASS-EXP>1</MASS-EXP>
+                    <TIME-EXP>-1</TIME-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/TiNeg2-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/RadPerSecSqd-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/RpmPerSec-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_TiNeg2</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Time -2</L-4>
+                    </LONG-NAME>
+                    <TIME-EXP>-2</TIME-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/Ti1-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/Sec-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_Ti1</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Time 1</L-4>
+                    </LONG-NAME>
+                    <TIME-EXP>1</TIME-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /AUTOSAR_AISpecification/PhysicalDimensions/Len2M1TiNeg3INeg1-->
+                    <!--Referenced by /AUTOSAR_AISpecification/Units/Volt-->
+                    <SHORT-NAME>AUTOSAR_AISpecification_PhysicalDimensions_Len2M1TiNeg3INeg1</SHORT-NAME>
+                    <LONG-NAME>
+                      <L-4 L="EN">Length 2 Mass 1 Time -3 Electric current -1</L-4>
+                    </LONG-NAME>
+                    <LENGTH-EXP>2</LENGTH-EXP>
+                    <MASS-EXP>1</MASS-EXP>
+                    <TIME-EXP>-3</TIME-EXP>
+                    <CURRENT-EXP>-1</CURRENT-EXP>
+                  </PHYSICAL-DIMENSION>
+                  <PHYSICAL-DIMENSION>
+                    <!--Was /RB/RBA/Common/CentralElements/PhysicalDimensions/NoUnit-->
+                    <!--Referenced by /RB/RBA/Common/CentralElements/Units/NoUnit-->
+                    <SHORT-NAME>RB_RBA_Common_CentralElements_PhysicalDimensions_NoUnit</SHORT-NAME>
+                    <LENGTH-EXP>0</LENGTH-EXP>
+                  </PHYSICAL-DIMENSION>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>SwAddrMethods</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>SwBaseTypes</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>SwRecordLayouts</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+         </AR-PACKAGES>
+      </AR-PACKAGE>
+   </AR-PACKAGES>
+</AUTOSAR>
+

@@ -1,0 +1,101 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc34660a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\Os_StartCores.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\Os_StartCo
+                            res.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.Os_StartCores.Os_StartCoreGate',code
+0000                     11         .sect   '.text.Os_StartCores.Os_StartCoreGate'
+                         12         .align  2
+                         13         
+                         14         .global Os_StartCoreGate
+                         15 ; Function Os_StartCoreGate
+0000                     16 Os_StartCoreGate:       .type   func
+0000 4DC0E1FF  1    1    17         mfcr    d15,#65052
+0004 3B50AA05  1    2    18         mov     d0,#23205
+0008 91r0rrFr  1    3    19         movh.a  a15,#@his(Os_StartBlock)
+000C 9BA0550A  1    4    20         addih   d0,d0,#42330
+0010 3C02      1    5    21         j       .L2
+0012                     22 .L3:
+0012 0000      1    6    23         nop
+0014                     24 .L2:
+0014 5E15      1    7    25         jne     d15,#1,.L4
+0016 19F1rrrr  1    8    26         ld.w    d1,[a15]@los(Os_StartBlock)
+001A 5F01FCFF  1    9    27         jne     d1,d0,.L3
+001E                     28 .L4:
+001E 0090      2   11    29         ret
+                         30         
+0020                     31 __Os_StartCoreGate_function_end:
+                         32         .size   Os_StartCoreGate,__Os_StartCoreGate_function_end-Os_StartCoreGate
+                         33         ; End of function
+                         34         
+                         35         .sdecl  '.text.Os_StartCores.Os_Cbk_StartCore',code
+0000                     36         .sect   '.text.Os_StartCores.Os_Cbk_StartCore'
+                         37         .align  2
+                         38         
+                         39         .global Os_Cbk_StartCore
+                         40 ; Function Os_Cbk_StartCore
+0000                     41 Os_Cbk_StartCore:       .type   func
+0000 8232      1    1    42         mov     d2,#3
+0002 DF141A80  1    2    43         jne     d4,#1,.L5
+0006 3B50AAF5  1    3    44         mov     d15,#23205
+000A 91r0rrFr  1    4    45         movh.a  a15,#@his(Os_StartBlock)
+000E 9BAF55FA  1    5    46         addih   d15,d15,#42330
+0012 59FFrrrr  1    6    47         st.w    [a15]@los(Os_StartBlock),d15
+0016 91r0rrFr  1    7    48         movh.a  a15,#@his(_start_tc1)
+001A D9FFrrrr  1    8    49         lea     a15,[a15]@los(_start_tc1)
+001E 80FF      1    9    50         mov.d   d15,a15
+0020 914088FF  1   10    51         movh.a  a15,#63620
+0024 59FFC88F  1   11    52         st.w    [a15]@los(0xf883fe08),d15
+0028 8202      1   12    53         mov     d2,#0
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+002A 19FFD48F  1   13    54         ld.w    d15,[a15]@los(0xf883fe14)
+002E B70F01FC  1   14    55         insert  d15,d15,#0,#24,#1
+0032 59FFD48F  1   15    56         st.w    [a15]@los(0xf883fe14),d15
+0036                     57 .L5:
+0036 0090      2   17    58         ret
+                         59         
+0038                     60 __Os_Cbk_StartCore_function_end:
+                         61         .size   Os_Cbk_StartCore,__Os_Cbk_StartCore_function_end-Os_Cbk_StartCore
+                         62         ; End of function
+                         63         
+                         64         .sdecl  '.data.Os_StartCores.Os_StartBlock',data
+0000                     65         .sect   '.data.Os_StartCores.Os_StartBlock'
+                         66         .global Os_StartBlock
+                         67         .align  2
+0000                     68 Os_StartBlock:  .type   object
+                         69         .size   Os_StartBlock,4
+0000                     70         .space  4
+  |  RESERVED               
+0003
+                         71         .calls  '__INDIRECT__','_start_tc1'
+                         72         .calls  'Os_StartCoreGate','',0
+                         73         .extern _start_tc1
+                         74         .extern __INDIRECT__
+                         75         .calls  'Os_Cbk_StartCore','',0
+                         76         ; Module end

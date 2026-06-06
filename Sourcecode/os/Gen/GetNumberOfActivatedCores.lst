@@ -1,0 +1,51 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc11576a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\GetNumberOfActivatedCores.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\GetNumberO
+                            fActivatedCores.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.GetNumberOfActivatedCores.Os_GetNumberOfActivatedCores',code
+0000                     11         .sect   '.text.GetNumberOfActivatedCores.Os_GetNumberOfActivatedCores'
+                         12         .align  2
+                         13         
+                         14         .global Os_GetNumberOfActivatedCores
+                         15 ; Function Os_GetNumberOfActivatedCores
+0000                     16 Os_GetNumberOfActivatedCores:   .type   func
+0000 91r0rrFr  1    1    17         movh.a  a15,#@his(Os_CoreState)
+0004 D9FFrrrr  1    2    18         lea     a15,[a15]@los(Os_CoreState)
+0008 481F      1    3    19         ld.w    d15,[a15]4
+000A 54F0      1    4    20         ld.w    d0,[a15]
+000C 8B0F2022  1    5    21         ne      d2,d15,#0
+0010 AB120020  1    6    22         cadd    d2,d0,d2,#1
+0014 0090      2    8    23         ret
+                         24         
+0016                     25 __Os_GetNumberOfActivatedCores_function_end:
+                         26         .size   Os_GetNumberOfActivatedCores,__Os_GetNumberOfActivatedCores_function_end-Os_GetNumberOfA
+                            ctivatedCores
+                         27         ; End of function
+                         28         
+                         29         .extern Os_CoreState
+                         30         .calls  'Os_GetNumberOfActivatedCores','',0
+                         31         ; Module end

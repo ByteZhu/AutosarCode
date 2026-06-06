@@ -1,0 +1,187 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc26992a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\ElapsedTime.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\ElapsedTim
+                            e.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.ElapsedTime.Os_GetElapsedTime',code
+0000                     11         .sect   '.text.ElapsedTime.Os_GetElapsedTime'
+                         12         .align  2
+                         13         
+                         14         .global Os_GetElapsedTime
+                         15 ; Function Os_GetElapsedTime
+0000                     16 Os_GetElapsedTime:      .type   func
+0000 4DC0E2FF  1    1    17         mfcr    d15,#65068
+0004 0D004003  1    2    18         disable
+0008 BBF00008  1    3    19         mov.u   d0,#32783
+000C CDC0E20F  1    4    20         mtcr    #65068,d0
+0010 0D00C004  1    5    21         isync
+                         22         
+0014 CDCFE20F  1    6    23         mtcr    #65068,d15
+0018 0D00C004  1    7    24         isync
+                         25         
+001C 8202      1    8    26         mov     d2,#0
+001E 0090      2   10    27         ret
+                         28         
+0020                     29 __Os_GetElapsedTime_function_end:
+                         30         .size   Os_GetElapsedTime,__Os_GetElapsedTime_function_end-Os_GetElapsedTime
+                         31         ; End of function
+                         32         
+                         33         .sdecl  '.text.ElapsedTime.Os_GetTaskElapsedTime',code
+0000                     34         .sect   '.text.ElapsedTime.Os_GetTaskElapsedTime'
+                         35         .align  2
+                         36         
+                         37         .global Os_GetTaskElapsedTime
+                         38 ; Function Os_GetTaskElapsedTime
+0000                     39 Os_GetTaskElapsedTime:  .type   func
+0000 8202      1    1    40         mov     d2,#0
+0002 0090      2    3    41         ret
+                         42         
+0004                     43 __Os_GetTaskElapsedTime_function_end:
+                         44         .size   Os_GetTaskElapsedTime,__Os_GetTaskElapsedTime_function_end-Os_GetTaskElapsedTime
+                         45         ; End of function
+                         46         
+                         47         .sdecl  '.text.ElapsedTime.Os_ResetTaskElapsedTime',code
+0000                     48         .sect   '.text.ElapsedTime.Os_ResetTaskElapsedTime'
+                         49         .align  2
+                         50         
+                         51         .global Os_ResetTaskElapsedTime
+                         52 ; Function Os_ResetTaskElapsedTime
+0000                     53 Os_ResetTaskElapsedTime:        .type   func
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0000 4DC0E2FF  1    1    54         mfcr    d15,#65068
+0004 0D004003  1    2    55         disable
+0008 BBF00008  1    3    56         mov.u   d0,#32783
+000C CDC0E20F  1    4    57         mtcr    #65068,d0
+0010 0D00C004  1    5    58         isync
+                         59         
+0014 CDCFE20F  1    6    60         mtcr    #65068,d15
+0018 0D00C004  1    7    61         isync
+                         62         
+001C 8202      1    8    63         mov     d2,#0
+001E 0090      2   10    64         ret
+                         65         
+0020                     66 __Os_ResetTaskElapsedTime_function_end:
+                         67         .size   Os_ResetTaskElapsedTime,__Os_ResetTaskElapsedTime_function_end-Os_ResetTaskElapsedTime
+                         68         ; End of function
+                         69         
+                         70         .sdecl  '.text.ElapsedTime.Os_GetISRElapsedTime',code
+0000                     71         .sect   '.text.ElapsedTime.Os_GetISRElapsedTime'
+                         72         .align  2
+                         73         
+                         74         .global Os_GetISRElapsedTime
+                         75 ; Function Os_GetISRElapsedTime
+0000                     76 Os_GetISRElapsedTime:   .type   func
+0000 8202      1    1    77         mov     d2,#0
+0002 0090      2    3    78         ret
+                         79         
+0004                     80 __Os_GetISRElapsedTime_function_end:
+                         81         .size   Os_GetISRElapsedTime,__Os_GetISRElapsedTime_function_end-Os_GetISRElapsedTime
+                         82         ; End of function
+                         83         
+                         84         .sdecl  '.text.ElapsedTime.Os_ResetISRElapsedTime',code
+0000                     85         .sect   '.text.ElapsedTime.Os_ResetISRElapsedTime'
+                         86         .align  2
+                         87         
+                         88         .global Os_ResetISRElapsedTime
+                         89 ; Function Os_ResetISRElapsedTime
+0000                     90 Os_ResetISRElapsedTime: .type   func
+0000 4DC0E2FF  1    1    91         mfcr    d15,#65068
+0004 0D004003  1    2    92         disable
+0008 BBF00008  1    3    93         mov.u   d0,#32783
+000C CDC0E20F  1    4    94         mtcr    #65068,d0
+0010 0D00C004  1    5    95         isync
+                         96         
+0014 CDCFE20F  1    6    97         mtcr    #65068,d15
+0018 0D00C004  1    7    98         isync
+                         99         
+001C 8202      1    8   100         mov     d2,#0
+001E 0090      2   10   101         ret
+                        102         
+0020                    103 __Os_ResetISRElapsedTime_function_end:
+                        104         .size   Os_ResetISRElapsedTime,__Os_ResetISRElapsedTime_function_end-Os_ResetISRElapsedTime
+                        105         ; End of function
+                        106         
+                        107         .sdecl  '.text.ElapsedTime.Os_GetIdleElapsedTime',code
+0000                    108         .sect   '.text.ElapsedTime.Os_GetIdleElapsedTime'
+                        109         .align  2
+                        110         
+                        111         .global Os_GetIdleElapsedTime
+                        112 ; Function Os_GetIdleElapsedTime
+0000                    113 Os_GetIdleElapsedTime:  .type   func
+0000 4DC0E2FF  1    1   114         mfcr    d15,#65068
+0004 0D004003  1    2   115         disable
+0008 BBF00008  1    3   116         mov.u   d0,#32783
+000C CDC0E20F  1    4   117         mtcr    #65068,d0
+0010 0D00C004  1    5   118         isync
+                        119         
+0014 CDCFE20F  1    6   120         mtcr    #65068,d15
+0018 0D00C004  1    7   121         isync
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   3
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                        122         
+001C 8202      1    8   123         mov     d2,#0
+001E 0090      2   10   124         ret
+                        125         
+0020                    126 __Os_GetIdleElapsedTime_function_end:
+                        127         .size   Os_GetIdleElapsedTime,__Os_GetIdleElapsedTime_function_end-Os_GetIdleElapsedTime
+                        128         ; End of function
+                        129         
+                        130         .sdecl  '.text.ElapsedTime.Os_ResetIdleElapsedTime',code
+0000                    131         .sect   '.text.ElapsedTime.Os_ResetIdleElapsedTime'
+                        132         .align  2
+                        133         
+                        134         .global Os_ResetIdleElapsedTime
+                        135 ; Function Os_ResetIdleElapsedTime
+0000                    136 Os_ResetIdleElapsedTime:        .type   func
+0000 4DC0E2FF  1    1   137         mfcr    d15,#65068
+0004 0D004003  1    2   138         disable
+0008 BBF00008  1    3   139         mov.u   d0,#32783
+000C CDC0E20F  1    4   140         mtcr    #65068,d0
+0010 0D00C004  1    5   141         isync
+                        142         
+0014 CDCFE20F  1    6   143         mtcr    #65068,d15
+0018 0D00C004  1    7   144         isync
+                        145         
+001C 8202      1    8   146         mov     d2,#0
+001E 0090      2   10   147         ret
+                        148         
+0020                    149 __Os_ResetIdleElapsedTime_function_end:
+                        150         .size   Os_ResetIdleElapsedTime,__Os_ResetIdleElapsedTime_function_end-Os_ResetIdleElapsedTime
+                        151         ; End of function
+                        152         
+                        153         .calls  'Os_GetElapsedTime','',0
+                        154         .calls  'Os_GetTaskElapsedTime','',0
+                        155         .calls  'Os_ResetTaskElapsedTime','',0
+                        156         .calls  'Os_GetISRElapsedTime','',0
+                        157         .calls  'Os_ResetISRElapsedTime','',0
+                        158         .calls  'Os_GetIdleElapsedTime','',0
+                        159         .calls  'Os_ResetIdleElapsedTime','',0
+                        160         ; Module end

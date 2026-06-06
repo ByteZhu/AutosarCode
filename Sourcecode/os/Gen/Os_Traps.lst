@@ -1,0 +1,136 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1 ;
+                          2 ; TriCoreTasking Traps
+                          3 ; Copyright ETAS GmbH 2024
+                          4 ;
+                          5 
+                          6   .name "Os_Traps.asm"
+                          7   .extern Os_UnhandledTrap
+                          8 ;  #===========================================================================
+                          9 ;  # Os Traps
+                         10 ;  #===========================================================================
+                         11 
+                         12 
+                         13 ;  # --------------------------------------------------------------------------
+                         14 ;  # MMU (Virtual memory)
+                         15 ;  # --------------------------------------------------------------------------
+                         16   .sdecl  '.text.traptab0.trapvec.000',CODE
+0000                     17   .sect   '.text.traptab0.trapvec.000'
+                         18   .align 32
+                         19   .global Os_TrapVectorTable
+                         20 .align 256 ; The vector table must be aligned such that the lowest 8 bits of its address are zero
+0000                     21 Os_TrapVectorTable: ; [$Satisfies $TgtCore 112]
+                         22   .global Os_memory_trap
+0000                     23 Os_memory_trap:
+0000 8205      1    1    24   mov    d5, # 0
+0002 3BE00040  1    2    25   mov    d4, #14
+0006 1Drrrrrr  1    3    26   j      Os_trap_fault
+                         27 
+                         28 ;  # --------------------------------------------------------------------------
+                         29 ;  # Internal Protection
+                         30 ;  # --------------------------------------------------------------------------
+                         31   .sdecl  '.text.traptab0.trapvec.001',CODE
+0000                     32   .sect   '.text.traptab0.trapvec.001'
+                         33   .align 32
+                         34   .global Os_protection_trap
+0000                     35 Os_protection_trap:
+0000 8215      1    1    36   mov    d5, # 1
+0002 3BE00040  1    2    37   mov    d4, #14
+0006 1Drrrrrr  1    3    38   j      Os_trap_fault
+                         39 
+                         40 ;  # --------------------------------------------------------------------------
+                         41 ;  # Instruction (Illegal ops, address errors) [$Satisfies $TgtCore 110]
+                         42 ;  # --------------------------------------------------------------------------
+                         43   .sdecl  '.text.traptab0.trapvec.002',CODE
+0000                     44   .sect   '.text.traptab0.trapvec.002'
+                         45   .align 32
+                         46   .global Os_instruction_trap
+0000                     47 Os_instruction_trap:
+0000 8225      1    1    48   mov    d5, # 2
+0002 3B200140  1    2    49   mov    d4, #18
+0006 1Drrrrrr  1    3    50   j      Os_trap_fault
+                         51 
+                         52 ;  # --------------------------------------------------------------------------
+                         53 ;  # Context call fault
+                         54 ;  # --------------------------------------------------------------------------
+                         55   .sdecl  '.text.traptab0.trapvec.003',CODE
+0000                     56   .sect   '.text.traptab0.trapvec.003'
+                         57   .align 32
+                         58   .global Os_context_trap
+0000                     59 Os_context_trap:
+0000 8235      1    1    60   mov    d5, # 3
+0002 3B200140  1    2    61   mov    d4, #18
+0006 1Drrrrrr  1    3    62   j      Os_trap_fault
+                         63 
+                         64 ;  # --------------------------------------------------------------------------
+                         65 ;  # Bus errors
+                         66 ;  # --------------------------------------------------------------------------
+                         67   .sdecl  '.text.traptab0.trapvec.004',CODE
+0000                     68   .sect   '.text.traptab0.trapvec.004'
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                         69   .align 32
+                         70   .global Os_bus_trap
+0000                     71 Os_bus_trap:
+0000 8245      1    1    72   mov    d5, # 4
+0002 3B200140  1    2    73   mov    d4, #18
+0006 1Drrrrrr  1    3    74   j      Os_trap_fault
+                         75 
+                         76 ;  # --------------------------------------------------------------------------
+                         77 ;  # Assertion (Arithmetic overflows)
+                         78 ;  # --------------------------------------------------------------------------
+                         79   .sdecl  '.text.traptab0.trapvec.005',CODE
+0000                     80   .sect   '.text.traptab0.trapvec.005'
+                         81   .align 32
+                         82   .global Os_assert_trap
+0000                     83 Os_assert_trap:
+0000 8255      1    1    84   mov    d5, # 5
+0002 3B200140  1    2    85   mov    d4, #18
+0006 1Drrrrrr  1    3    86   j      Os_trap_fault
+                         87 
+                         88 ;  # --------------------------------------------------------------------------
+                         89 ;  # Syscall [$TargetTT 176] [$TargetTT 177]
+                         90 ;  # --------------------------------------------------------------------------
+                         91   .sdecl  '.text.traptab0.trapvec.006',CODE
+0000                     92   .sect   '.text.traptab0.trapvec.006'
+                         93   .align 32
+                         94   .global Os_syscall_trap
+0000                     95 Os_syscall_trap:
+0000 8265      1    1    96   mov    d5, #6
+0002 3B200140  1    2    97   mov    d4, #18
+0006 1Drrrrrr  1    3    98   j      Os_trap_fault
+                         99 
+                        100 ;  # --------------------------------------------------------------------------
+                        101 ;  # NMI
+                        102 ;  # --------------------------------------------------------------------------
+                        103   .sdecl  '.text.traptab0.trapvec.007',CODE
+0000                    104   .sect   '.text.traptab0.trapvec.007'
+                        105   .align 32
+                        106   .global Os_nmi_trap
+0000                    107 Os_nmi_trap:
+0000 8275      1    1   108   mov    d5, # 7
+0002 3B200140  1    2   109   mov    d4, #18
+0006 1Drrrrrr  1    3   110   j      Os_trap_fault
+                        111 
+                        112   .sdecl  '.text.Os_trap_handlers',CODE
+0000                    113   .sect   '.text.Os_trap_handlers'
+                        114   .align 2
+0000                    115 Os_trap_fault: ; [$TargetTT 178]
+0000 02F6      1    1   116   mov    d6, d15   ; TIN
+0002 80B7      1    2   117   mov.d  d7, a11   ; Return
+                        118 ;  # Call depth counting must be disabled in case the OS is reset in the
+                        119 ;  # Shutdown hook. This is because Os_longjmp will otherwise see a call depth
+                        120 ;  # underflow
+0004 4D40E0FF  1    3   121   mfcr   d15, #0xFE04
+0008 967F      1    4   122   or     d15,#0x7f
+000A CD4FE00F  1    5   123   mtcr   #0xFE04,d15
+000E 91r0rrEr  1    6   124   movh.a  a14,#@his(Os_UnhandledTrap)
+0012 D9EErrrr  1    7   125   lea     a14,[a14]@los(Os_UnhandledTrap)
+0016 DC0E      1    8   126   ji      a14
+                        127 
+                        128 

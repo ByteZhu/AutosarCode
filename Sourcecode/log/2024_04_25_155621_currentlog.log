@@ -1,0 +1,47 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling asw\ASW_COM\src\ASW_COM.c
+Compiling asw\ASW_CORE0\src\ASW_CORE0.c
+Compiling asw\ASW_CORE1\src\ASW_CORE1.c
+Compiling asw\ASW_DCM\src\ASW_DCM.c
+ctc E219: [".\mcal\MCAL_Modules\Can_17_McmCan\inc\Can_17_McmCan.h" 55/1] cannot open #include file "Can_17_McmCan_Cfg.h"
+ctc E219: [".\mcal\MCAL_Modules\McalLib\inc\McalLib.h" 42/1] cannot open #include file "McalLib_Cfg.h"
+ctc E219: [".\mcal\MCAL_Modules\Can_17_McmCan\inc\Can_17_McmCan.h" 1880/1] cannot open #include file "Can_17_McmCan_PBcfg.h"
+3 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\asw\ASW_CORE0\ASW_CORE0.o] Error 1
+ctc E219: [".\mcal\MCAL_Modules\Can_17_McmCan\inc\Can_17_McmCan.h" 55/1] cannot open #include file "Can_17_McmCan_Cfg.h"
+ctc E219: [".\mcal\MCAL_Modules\McalLib\inc\McalLib.h" 42/1] cannot open #include file "McalLib_Cfg.h"
+ctc E219: [".\mcal\MCAL_Modules\Can_17_McmCan\inc\Can_17_McmCan.h" 1880/1] cannot open #include file "Can_17_McmCan_PBcfg.h"
+3 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\asw\ASW_CORE1\ASW_CORE1.o] Error 1
+ctc E219: [".\mcal\MCAL_Modules\Can_17_McmCan\inc\Can_17_McmCan.h" 55/1] cannot open #include file "Can_17_McmCan_Cfg.h"
+ctc E219: [".\mcal\MCAL_Modules\McalLib\inc\McalLib.h" 42/1] cannot open #include file "McalLib_Cfg.h"
+ctc E219: [".\mcal\MCAL_Modules\Can_17_McmCan\inc\Can_17_McmCan.h" 1880/1] cannot open #include file "Can_17_McmCan_PBcfg.h"
+3 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\asw\ASW_COM\ASW_COM.o] Error 1
+ctc E219: [".\mcal\MCAL_Modules\Can_17_McmCan\inc\Can_17_McmCan.h" 55/1] cannot open #include file "Can_17_McmCan_Cfg.h"
+ctc E219: [".\mcal\MCAL_Modules\McalLib\inc\McalLib.h" 42/1] cannot open #include file "McalLib_Cfg.h"
+ctc E219: [".\mcal\MCAL_Modules\Can_17_McmCan\inc\Can_17_McmCan.h" 1880/1] cannot open #include file "Can_17_McmCan_PBcfg.h"
+3 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\asw\ASW_DCM\ASW_DCM.o] Error 1
+scons: building terminated because of errors.

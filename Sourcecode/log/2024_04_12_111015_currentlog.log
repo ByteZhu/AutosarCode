@@ -1,0 +1,39 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling asw\ASW_IoHwAb\src\IoHwAb_ICU.c
+Compiling asw\ASW_NM\src\ASW_NM.c
+ctc W537: ["asw\ASW_IoHwAb\src\IoHwAb_ICU.c" 42/17] unused variable "retValue"
+ctc W537: ["asw\ASW_IoHwAb\src\IoHwAb_ICU.c" 57/17] unused variable "retValue"
+0 errors, 2 warnings
+
+Compiling asw\ASW_USER\src\ASW_USER.c
+ctc E219: [".\Integration\BSW\EcuM\integration\EcuM_PBDefine.h" 15/1] cannot open #include file "Gpt.h"
+ctc E219: [".\Integration\BSW\EcuM\integration\EcuM_PBDefine.h" 18/1] cannot open #include file "Gpt.h"
+2 errors, 0 warnings
+
+===================
+None
+===================
+ctc E219: ["asw\ASW_USER\src\ASW_USER.c" 27/1] cannot open #include file "Gpt_Cfg.h"
+ctc E219: ["asw\ASW_USER\src\ASW_USER.c" 28/1] cannot open #include file "Gpt.h"
+2 errors, 0 warnings
+
+===================
+None
+===================
+Compiling bsw\BswM\src\BswM.c
+scons: *** [output\objs\asw\ASW_NM\ASW_NM.o] Error 1
+scons: *** [output\objs\asw\ASW_USER\ASW_USER.o] Error 1
+ctc E219: [".\Integration\BSW\EcuM\integration\EcuM_PBDefine.h" 15/1] cannot open #include file "Gpt.h"
+ctc E219: [".\Integration\BSW\EcuM\integration\EcuM_PBDefine.h" 18/1] cannot open #include file "Gpt.h"
+2 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\bsw\BswM\BswM.o] Error 1
+scons: building terminated because of errors.

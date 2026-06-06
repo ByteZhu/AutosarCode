@@ -1,0 +1,70 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc28124a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\GetCurrentApplicationID.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\GetCurrent
+                            ApplicationID.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.GetCurrentApplicationID.Os_GetCurrentApplicationID',code
+0000                     11         .sect   '.text.GetCurrentApplicationID.Os_GetCurrentApplicationID'
+                         12         .align  2
+                         13         
+                         14         .global Os_GetCurrentApplicationID
+                         15 ; Function Os_GetCurrentApplicationID
+0000                     16 Os_GetCurrentApplicationID:     .type   func
+0000 4DC0E1FF  1    1    17         mfcr    d15,#65052
+0004 538F21F0  3    4    18         mul     d15,d15,#24
+0008 91r0rrFr  1    5    19         movh.a  a15,#@his(Os_const_coreconfiguration)
+000C D9FFrrrr  1    6    20         lea     a15,[a15]@los(Os_const_coreconfiguration)
+0010 10FF      1    7    21         addsc.a a15,a15,d15,#0
+0012 D4FF      1    8    22         ld.a    a15,[a15]
+0014 09FF4118  1    9    23         ld.bu   d15,[a15]65
+0018 1E24      1   10    24         jeq     d15,#2,.L2
+001A 09F24118  1   11    25         ld.bu   d2,[a15]65
+001E 0090      2   13    26         ret
+0020                     27 .L2:
+0020 C844      1   14    28         ld.a    a4,[a15]16
+0022 A002      1   15    29         mov.a   a2,#0
+0024 7D420600  1   16    30         jeq.a   a2,a4,.L4
+0028 C84F      1   17    31         ld.a    a15,[a15]16
+002A 09F25908  1   18    32         ld.bu   d2,[a15]25
+002E 0090      2   20    33         ret
+0030                     34 .L4:
+0030 C854      1   21    35         ld.a    a4,[a15]20
+0032 7D420600  1   22    36         jeq.a   a2,a4,.L6
+0036 C85F      1   23    37         ld.a    a15,[a15]20
+0038 09F26D08  1   24    38         ld.bu   d2,[a15]45
+003C 0090      2   26    39         ret
+003E                     40 .L6:
+003E 8222      1   27    41         mov     d2,#2
+0040 0090      2   29    42         ret
+                         43         
+0042                     44 __Os_GetCurrentApplicationID_function_end:
+                         45         .size   Os_GetCurrentApplicationID,__Os_GetCurrentApplicationID_function_end-Os_GetCurrentApplic
+                            ationID
+                         46         ; End of function
+                         47         
+                         48         .extern Os_const_coreconfiguration
+                         49         .calls  'Os_GetCurrentApplicationID','',0
+                         50         ; Module end

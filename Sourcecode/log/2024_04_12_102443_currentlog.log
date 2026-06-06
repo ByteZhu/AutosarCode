@@ -1,0 +1,19 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling asw\CDD_CORE1\src\CDD_CORE1.c
+ctc E272: ["asw\CDD_CORE1\src\CDD_CORE1.c" 141/19] undeclared identifier "RTE_E_CPU_Utilization_ON_PROGRESS"
+ctc W560: ["asw\CDD_CORE1\src\CDD_CORE1.c" 141/17] possible truncation at implicit conversion to type "unsigned char"
+ctc E272: ["asw\CDD_CORE1\src\CDD_CORE1.c" 167/19] undeclared identifier "RTE_E_CPU_Utilization_E_OK"
+ctc W560: ["asw\CDD_CORE1\src\CDD_CORE1.c" 167/17] possible truncation at implicit conversion to type "unsigned char"
+ctc W524: ["asw\CDD_CORE1\src\CDD_CORE1.c" 175/12] conversion of integer to pointer at assignment
+2 errors, 3 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\asw\CDD_CORE1\CDD_CORE1.o] Error 1
+scons: building terminated because of errors.

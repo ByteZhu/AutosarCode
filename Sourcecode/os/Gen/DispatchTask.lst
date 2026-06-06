@@ -1,0 +1,640 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc34704a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\DispatchTask.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\DispatchTa
+                            sk.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.DispatchTask.Os_Dispatch0',code
+0000                     11         .sect   '.text.DispatchTask.Os_Dispatch0'
+                         12         .align  2
+                         13         
+                         14         .global Os_Dispatch0
+                         15 ; Function Os_Dispatch0
+0000                     16 Os_Dispatch0:   .type   func
+0000 91r0rrFr  1    1    17         movh.a  a15,#@his(Os_const_coreconfiguration)
+0004 99FCrrrr  1    2    18         ld.a    a12,[a15]@los(Os_const_coreconfiguration)
+0008 2010      1    3    19         sub.a   a10,#16
+000A 8220      1    4    20         mov     d0,#2
+000C 09C29C09  1    5    21         ld.a    a2,[a12]28
+0010 89A28C09  1    6    22         st.a    [a10]12,a2
+0014 09CA1809  1    7    23         ld.w    d10,[a12]24
+0018 09C29409  1    8    24         ld.a    a2,[a12]20
+001C 89A28809  1    9    25         st.a    [a10]8,a2
+0020 09CF4018  1   10    26         ld.bu   d15,[a12]64
+0024 7801      1   11    27         st.w    [a10]4,d15
+0026 09CB4118  1   12    28         ld.bu   d11,[a12]65
+002A 89C00118  1   13    29         st.b    [a12]65,d0
+002E 6Drrrrrr  2   15    30         call    Os_GetSP
+0032 0B231088  1   16    31         mov     e8,d3,d2
+0036 09C29C09  1   17    32         ld.a    a2,[a12]28
+003A 0281      1   18    33         mov     d1,d8
+003C 5420      1   19    34         ld.w    d0,[a2]
+003E 4C21      1   20    35         ld.w    d15,[a2]4
+0040 0B108020  1   21    36         sub     d2,d0,d1
+0044 492F080A  1   22    37         lea     a15,[a2]8
+0048 0290      1   23    38         mov     d0,d9
+004A 5203      1   24    39         sub     d3,d15,d0
+004C 54F0      1   25    40         ld.w    d0,[a15]
+004E 022F      1   26    41         mov     d15,d2
+0050 7FF00380  1   27    42         jge.u   d0,d15,.L2
+0054 74FF      1   28    43         st.w    [a15],d15
+0056                     44 .L2:
+0056 CCC7      1   29    45         ld.a    a15,[a12]28
+0058 09FF0C05  1   30    46         ld.w    d15,[+a15]12
+005C 7F3F0380  1   31    47         jge.u   d15,d3,.L3
+0060 74F3      1   32    48         st.w    [a15],d3
+0062                     49 .L3:
+0062 CCC7      1   33    50         ld.a    a15,[a12]28
+0064 8203      1   34    51         mov     d3,#0
+0066 482F      1   35    52         ld.w    d15,[a15]8
+0068 4860      1   36    53         ld.w    d0,[a15]24
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+006A 4831      1   37    54         ld.w    d1,[a15]12
+006C 4872      1   38    55         ld.w    d2,[a15]28
+006E 5204      1   39    56         sub     d4,d15,d0
+0070 0B218050  1   40    57         sub     d5,d1,d2
+0074 3FF00480  1   41    58         jlt.u   d0,d15,.L4
+0078 7F120380  1   42    59         jge.u   d2,d1,.L5
+007C                     60 .L4:
+007C 8213      1   43    61         mov     d3,#1
+007E                     62 .L5:
+007E 7639      1   44    63         jeq     d3,#0,.L6
+0080 8206      1   45    64         mov     d6,#0
+0082 6Drrrrrr  2   47    65         call    Os_Cbk_StackOverrunHook
+0086 CCC7      1   48    66         ld.a    a15,[a12]28
+0088 82FF      1   49    67         mov     d15,#-1
+008A 6CF6      1   50    68         st.w    [a15]24,d15
+008C CCC7      1   51    69         ld.a    a15,[a12]28
+008E 6CF7      1   52    70         st.w    [a15]28,d15
+0090                     71 .L6:
+0090 91r0rrFr  1   53    72         movh.a  a15,#@his(Os_ControlledCoreInfo+12)
+0094 D9FDrrrr  1   54    73         lea     a13,[a15]@los(Os_ControlledCoreInfo+12)
+0098 91r0rrFr  1   55    74         movh.a  a15,#@his(Os_const_tasks0)
+009C D9FFrrrr  1   56    75         lea     a15,[a15]@los(Os_const_tasks0)
+00A0 BB0000C8  1   57    76         mov.u   d12,#32768
+00A4 F4AF      1   58    77         st.a    [a10],a15
+00A6 BBF000D8  1   59    78         mov.u   d13,#32783
+00AA 91r0rrFr  1   60    79         movh.a  a15,#@his(Os_const_applications)
+00AE 82FE      1   61    80         mov     d14,#-1
+00B0 D9FFrrrr  1   62    81         lea     a15,[a15]@los(Os_const_applications)
+00B4 A00E      1   63    82         mov.a   a14,#0
+00B6                     83 .L7:
+00B6 54DF      1   64    84         ld.w    d15,[a13]
+00B8 D4A2      1   65    85         ld.a    a2,[a10]
+00BA 0F0FB0F1  1   66    86         clz     d15,d15
+00BE 8BFF01F1  1   67    87         rsub    d15,d15,#31
+00C2 530F23F0  3   70    88         mul     d15,d15,#48
+00C6 1022      1   71    89         addsc.a a2,a2,d15,#0
+00C8 89C29409  1   72    90         st.a    [a12]20,a2
+00CC 09C29409  1   73    91         ld.a    a2,[a12]20
+00D0 4C2A      1   74    92         ld.w    d15,[a2]40
+00D2 6E33      1   75    93         jeq     d15,#0,.L8
+00D4 09C29409  1   76    94         ld.a    a2,[a12]20
+00D8 91r0rr4r  1   77    95         movh.a  a4,#@his(Os_dyn_fifocontrol)
+00DC D944rrrr  1   78    96         lea     a4,[a4]@los(Os_dyn_fifocontrol)
+00E0 0922A809  1   79    97         ld.a    a2,[a2]40
+00E4 4C22      1   80    98         ld.w    d15,[a2]8
+00E6 9042      1   81    99         addsc.a a2,a4,d15,#2
+00E8 D422      1   82   100         ld.a    a2,[a2]
+00EA D422      1   83   101         ld.a    a2,[a2]
+00EC 89C29409  1   84   102         st.a    [a12]20,a2
+00F0 09C29409  1   85   103         ld.a    a2,[a12]20
+00F4 0922A809  1   86   104         ld.a    a2,[a2]40
+00F8 4C22      1   87   105         ld.w    d15,[a2]8
+00FA 9042      1   88   106         addsc.a a2,a4,d15,#2
+00FC D422      1   89   107         ld.a    a2,[a2]
+00FE 09C59409  1   90   108         ld.a    a5,[a12]20
+0102 0955A809  1   91   109         ld.a    a5,[a5]40
+0106 09558409  1   92   110         ld.a    a5,[a5]4
+010A 7D520880  1   93   111         jne.a   a2,a5,.L9
+010E 09C29409  1   94   112         ld.a    a2,[a12]20
+0112 0922A809  1   95   113         ld.a    a2,[a2]40
+0116 D422      1   96   114         ld.a    a2,[a2]
+0118 3C09      1   97   115         j       .L10
+011A                    116 .L9:
+011A 09C29409  1   98   117         ld.a    a2,[a12]20
+011E 0922A809  1   99   118         ld.a    a2,[a2]40
+0122 4C22      1  100   119         ld.w    d15,[a2]8
+0124 9042      1  101   120         addsc.a a2,a4,d15,#2
+0126 D422      1  102   121         ld.a    a2,[a2]
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   3
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0128 B042      1  103   122         add.a   a2,#4
+012A                    123 .L10:
+012A 09C59409  1  104   124         ld.a    a5,[a12]20
+012E 0955A809  1  105   125         ld.a    a5,[a5]40
+0132 4C52      1  106   126         ld.w    d15,[a5]8
+0134 9044      1  107   127         addsc.a a4,a4,d15,#2
+0136 F442      1  108   128         st.a    [a4],a2
+0138                    129 .L8:
+0138 09C29409  1  109   130         ld.a    a2,[a12]20
+013C 4C24      1  110   131         ld.w    d15,[a2]16
+013E 6CC6      1  111   132         st.w    [a12]24,d15
+0140 09C29409  1  112   133         ld.a    a2,[a12]20
+0144 092F6D08  1  113   134         ld.bu   d15,[a2]45
+0148 53CF20F0  3  116   135         mul     d15,d15,#12
+014C 10F2      1  117   136         addsc.a a2,a15,d15,#0
+014E 0C28      1  118   137         ld.bu   d15,[a2]8
+0150 89CF0018  1  119   138         st.b    [a12]64,d15
+0154 DA00      1  120   139         mov     d15,#0
+0156 09C29409  1  121   140         ld.a    a2,[a12]20
+015A D422      1  122   141         ld.a    a2,[a2]
+015C 4922041A  1  123   142         lea     a2,[a2]68
+0160 89C29C09  1  124   143         st.a    [a12]28,a2
+0164 89284009  1  125   144         st.d    [a2]0,e8
+0168 09C29C09  1  126   145         ld.a    a2,[a12]28
+016C 6C22      1  127   146         st.w    [a2]8,d15
+016E 09C29C09  1  128   147         ld.a    a2,[a12]28
+0172 6C23      1  129   148         st.w    [a2]12,d15
+0174 09C29409  1  130   149         ld.a    a2,[a12]20
+0178 09C49C09  1  131   150         ld.a    a4,[a12]28
+017C 0922DC09  1  132   151         ld.da   a2/a3,[a2]28
+0180 8942D809  1  133   152         st.da   [a4]24,a2/a3
+0184 09C29409  1  134   153         ld.a    a2,[a12]20
+0188 D424      1  135   154         ld.a    a4,[a2]
+018A 6Drrrrrr  2  137   155         call    Os_setjmp
+018E 022F      1  138   156         mov     d15,d2
+0190 EE0B      1  139   157         jne     d15,#0,.L11
+0192 CDCCE20F  1  140   158         mtcr    #65068,d12
+0196 0D00C004  1  141   159         isync
+                        160         
+019A 09C29409  1  142   161         ld.a    a2,[a12]20
+019E 09228409  1  143   162         ld.a    a2,[a2]4
+01A2 2D020000  2  145   163         calli   a2
+01A6                    164 .L11:
+01A6 0D004003  1  146   165         disable
+01AA CDCDE20F  1  147   166         mtcr    #65068,d13
+01AE 0D00C004  1  148   167         isync
+                        168         
+01B2 09C29C09  1  149   169         ld.a    a2,[a12]28
+01B6 4924100A  1  150   170         lea     a4,[a2]16
+01BA 4C22      1  151   171         ld.w    d15,[a2]8
+01BC 5440      1  152   172         ld.w    d0,[a4]
+01BE 7FF00380  1  153   173         jge.u   d0,d15,.L12
+01C2 744F      1  154   174         st.w    [a4],d15
+01C4                    175 .L12:
+01C4 09C29C09  1  155   176         ld.a    a2,[a12]28
+01C8 4924140A  1  156   177         lea     a4,[a2]20
+01CC 4C23      1  157   178         ld.w    d15,[a2]12
+01CE 5440      1  158   179         ld.w    d0,[a4]
+01D0 7FF00380  1  159   180         jge.u   d0,d15,.L13
+01D4 744F      1  160   181         st.w    [a4],d15
+01D6                    182 .L13:
+01D6 09C29409  1  161   183         ld.a    a2,[a12]20
+01DA D422      1  162   184         ld.a    a2,[a2]
+01DC 092F6418  1  163   185         ld.bu   d15,[a2]100
+01E0 C2FF      1  164   186         add     d15,#-1
+01E2 892F2418  1  165   187         st.b    [a2]100,d15
+01E6 09C29409  1  166   188         ld.a    a2,[a12]20
+01EA D422      1  167   189         ld.a    a2,[a2]
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   4
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+01EC 092F6418  1  168   190         ld.bu   d15,[a2]100
+01F0 EE08      1  169   191         jne     d15,#0,.L14
+01F2 54D0      1  170   192         ld.w    d0,[a13]
+01F4 09C29409  1  171   193         ld.a    a2,[a12]20
+01F8 4C22      1  172   194         ld.w    d15,[a2]8
+01FA C6EF      1  173   195         xor     d15,d14
+01FC 26F0      1  174   196         and     d0,d15
+01FE 74D0      1  175   197         st.w    [a13],d0
+0200                    198 .L14:
+0200 09C29019  1  176   199         ld.a    a2,[a12]80
+0204 7D2E4C00  1  177   200         jeq.a   a14,a2,.L15
+0208 09C29019  1  178   201         ld.a    a2,[a12]80
+020C D422      1  179   202         ld.a    a2,[a2]
+020E 092F6418  1  180   203         ld.bu   d15,[a2]100
+0212 C21F      1  181   204         add     d15,#1
+0214 892F2418  1  182   205         st.b    [a2]100,d15
+0218 09C29019  1  183   206         ld.a    a2,[a12]80
+021C 0922A809  1  184   207         ld.a    a2,[a2]40
+0220 A004      1  185   208         mov.a   a4,#0
+0222 7D243500  1  186   209         jeq.a   a4,a2,.L16
+0226 09C29019  1  187   210         ld.a    a2,[a12]80
+022A 91r0rr5r  1  188   211         movh.a  a5,#@his(Os_dyn_fifocontrol)
+022E D955rrrr  1  189   212         lea     a5,[a5]@los(Os_dyn_fifocontrol)
+0232 0922A809  1  190   213         ld.a    a2,[a2]40
+0236 B045      1  191   214         add.a   a5,#4
+0238 4C22      1  192   215         ld.w    d15,[a2]8
+023A 9052      1  193   216         addsc.a a2,a5,d15,#2
+023C D422      1  194   217         ld.a    a2,[a2]
+023E 09C49019  1  195   218         ld.a    a4,[a12]80
+0242 F424      1  196   219         st.a    [a2],a4
+0244 09C29019  1  197   220         ld.a    a2,[a12]80
+0248 0922A809  1  198   221         ld.a    a2,[a2]40
+024C 4C22      1  199   222         ld.w    d15,[a2]8
+024E 9052      1  200   223         addsc.a a2,a5,d15,#2
+0250 D422      1  201   224         ld.a    a2,[a2]
+0252 09C49019  1  202   225         ld.a    a4,[a12]80
+0256 0944A809  1  203   226         ld.a    a4,[a4]40
+025A 09448409  1  204   227         ld.a    a4,[a4]4
+025E 7D420880  1  205   228         jne.a   a2,a4,.L17
+0262 09C29019  1  206   229         ld.a    a2,[a12]80
+0266 0922A809  1  207   230         ld.a    a2,[a2]40
+026A D422      1  208   231         ld.a    a2,[a2]
+026C 3C09      1  209   232         j       .L18
+026E                    233 .L17:
+026E 09C29019  1  210   234         ld.a    a2,[a12]80
+0272 0922A809  1  211   235         ld.a    a2,[a2]40
+0276 4C22      1  212   236         ld.w    d15,[a2]8
+0278 9052      1  213   237         addsc.a a2,a5,d15,#2
+027A D422      1  214   238         ld.a    a2,[a2]
+027C B042      1  215   239         add.a   a2,#4
+027E                    240 .L18:
+027E 09C49019  1  216   241         ld.a    a4,[a12]80
+0282 0944A809  1  217   242         ld.a    a4,[a4]40
+0286 4C42      1  218   243         ld.w    d15,[a4]8
+0288 9054      1  219   244         addsc.a a4,a5,d15,#2
+028A F442      1  220   245         st.a    [a4],a2
+028C                    246 .L16:
+028C 54D0      1  221   247         ld.w    d0,[a13]
+028E 09C29019  1  222   248         ld.a    a2,[a12]80
+0292 4C22      1  223   249         ld.w    d15,[a2]8
+0294 A6F0      1  224   250         or      d0,d15
+0296 74D0      1  225   251         st.w    [a13],d0
+0298 89CE9019  1  226   252         st.a    [a12]80,a14
+029C                    253 .L15:
+029C 54DF      1  227   254         ld.w    d15,[a13]
+029E 3FFA0CFF  1  228   255         jlt.u   d10,d15,.L7
+02A2 89CA1809  1  229   256         st.w    [a12]24,d10
+02A6 89CB0118  1  230   257         st.b    [a12]65,d11
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   5
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+02AA D802      1  231   258         ld.a    a15,[a10]8
+02AC ECC5      1  232   259         st.a    [a12]20,a15
+02AE 5801      1  233   260         ld.w    d15,[a10]4
+02B0 89CF0018  1  234   261         st.b    [a12]64,d15
+02B4 D803      1  235   262         ld.a    a15,[a10]12
+02B6 ECC7      1  236   263         st.a    [a12]28,a15
+02B8 0090      2  238   264         ret
+                        265         
+02BA                    266 __Os_Dispatch0_function_end:
+                        267         .size   Os_Dispatch0,__Os_Dispatch0_function_end-Os_Dispatch0
+                        268         ; End of function
+                        269         
+                        270         .sdecl  '.text.DispatchTask.Os_Dispatch1',code
+0000                    271         .sect   '.text.DispatchTask.Os_Dispatch1'
+                        272         .align  2
+                        273         
+                        274         .global Os_Dispatch1
+                        275 ; Function Os_Dispatch1
+0000                    276 Os_Dispatch1:   .type   func
+0000 91r0rrFr  1    1   277         movh.a  a15,#@his(Os_const_coreconfiguration+24)
+0004 99FCrrrr  1    2   278         ld.a    a12,[a15]@los(Os_const_coreconfiguration+24)
+0008 2018      1    3   279         sub.a   a10,#24
+000A 8220      1    4   280         mov     d0,#2
+000C 09C29C09  1    5   281         ld.a    a2,[a12]28
+0010 89A29409  1    6   282         st.a    [a10]20,a2
+0014 09CA1809  1    7   283         ld.w    d10,[a12]24
+0018 09C29409  1    8   284         ld.a    a2,[a12]20
+001C 89A29009  1    9   285         st.a    [a10]16,a2
+0020 09CF4018  1   10   286         ld.bu   d15,[a12]64
+0024 7803      1   11   287         st.w    [a10]12,d15
+0026 09CB4118  1   12   288         ld.bu   d11,[a12]65
+002A 89C00118  1   13   289         st.b    [a12]65,d0
+002E 6Drrrrrr  2   15   290         call    Os_GetSP
+0032 0B231088  1   16   291         mov     e8,d3,d2
+0036 09C29C09  1   17   292         ld.a    a2,[a12]28
+003A 0281      1   18   293         mov     d1,d8
+003C 5420      1   19   294         ld.w    d0,[a2]
+003E 4C21      1   20   295         ld.w    d15,[a2]4
+0040 0B108020  1   21   296         sub     d2,d0,d1
+0044 492F080A  1   22   297         lea     a15,[a2]8
+0048 0290      1   23   298         mov     d0,d9
+004A 5203      1   24   299         sub     d3,d15,d0
+004C 54F0      1   25   300         ld.w    d0,[a15]
+004E 022F      1   26   301         mov     d15,d2
+0050 7FF00380  1   27   302         jge.u   d0,d15,.L19
+0054 74FF      1   28   303         st.w    [a15],d15
+0056                    304 .L19:
+0056 CCC7      1   29   305         ld.a    a15,[a12]28
+0058 09FF0C05  1   30   306         ld.w    d15,[+a15]12
+005C 7F3F0380  1   31   307         jge.u   d15,d3,.L20
+0060 74F3      1   32   308         st.w    [a15],d3
+0062                    309 .L20:
+0062 CCC7      1   33   310         ld.a    a15,[a12]28
+0064 8203      1   34   311         mov     d3,#0
+0066 482F      1   35   312         ld.w    d15,[a15]8
+0068 4860      1   36   313         ld.w    d0,[a15]24
+006A 4831      1   37   314         ld.w    d1,[a15]12
+006C 4872      1   38   315         ld.w    d2,[a15]28
+006E 5204      1   39   316         sub     d4,d15,d0
+0070 0B218050  1   40   317         sub     d5,d1,d2
+0074 3FF00480  1   41   318         jlt.u   d0,d15,.L21
+0078 7F120380  1   42   319         jge.u   d2,d1,.L22
+007C                    320 .L21:
+007C 8213      1   43   321         mov     d3,#1
+007E                    322 .L22:
+007E 7639      1   44   323         jeq     d3,#0,.L23
+0080 8206      1   45   324         mov     d6,#0
+0082 6Drrrrrr  2   47   325         call    Os_Cbk_StackOverrunHook
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   6
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0086 CCC7      1   48   326         ld.a    a15,[a12]28
+0088 82FF      1   49   327         mov     d15,#-1
+008A 6CF6      1   50   328         st.w    [a15]24,d15
+008C CCC7      1   51   329         ld.a    a15,[a12]28
+008E 6CF7      1   52   330         st.w    [a15]28,d15
+0090                    331 .L23:
+0090 91r0rrEr  1   53   332         movh.a  a14,#@his(Os_ControlledCoreInfo)
+0094 D9EErrrr  1   54   333         lea     a14,[a14]@los(Os_ControlledCoreInfo)
+0098 49EF281A  1   55   334         lea     a15,[a14]104
+009C 91r0rr2r  1   56   335         movh.a  a2,#@his(Os_const_tasks1)
+00A0 F4AF      1   57   336         st.a    [a10],a15
+00A2 D922rrrr  1   58   337         lea     a2,[a2]@los(Os_const_tasks1)
+00A6 89A28809  1   59   338         st.a    [a10]8,a2
+00AA 91r0rr2r  1   60   339         movh.a  a2,#@his(Os_const_applications)
+00AE BB0000C8  1   61   340         mov.u   d12,#32768
+00B2 D922rrrr  1   62   341         lea     a2,[a2]@los(Os_const_applications)
+00B6 BBF000D8  1   63   342         mov.u   d13,#32783
+00BA 89A28409  1   64   343         st.a    [a10]4,a2
+00BE 82FE      1   65   344         mov     d14,#-1
+00C0 49ED2C1A  1   66   345         lea     a13,[a14]108
+00C4 A00F      1   67   346         mov.a   a15,#0
+00C6 3C09      1   68   347         j       .L25
+00C8                    348 .L26:
+00C8 0000      1   69   349         nop
+00CA 0000      1   70   350         nop
+00CC 0000      1   71   351         nop
+00CE 0000      1   72   352         nop
+00D0 0000      1   73   353         nop
+00D2 0000      1   74   354         nop
+00D4 0000      1   75   355         nop
+00D6 0000      1   76   356         nop
+00D8                    357 .L25:
+00D8 DA01      1   77   358         mov     d15,#1
+00DA 49EF2818  1   78   359         swap.w  [a14]104,d15
+00DE EEF5      1   79   360         jne     d15,#0,.L26
+00E0 54DF      1   80   361         ld.w    d15,[a13]
+00E2 09A28809  1   81   362         ld.a    a2,[a10]8
+00E6 0F0FB0F1  1   82   363         clz     d15,d15
+00EA 8BFF01F1  1   83   364         rsub    d15,d15,#31
+00EE 530F23F0  3   86   365         mul     d15,d15,#48
+00F2 1022      1   87   366         addsc.a a2,a2,d15,#0
+00F4 89C29409  1   88   367         st.a    [a12]20,a2
+00F8 09C29409  1   89   368         ld.a    a2,[a12]20
+00FC 4C2A      1   90   369         ld.w    d15,[a2]40
+00FE 6E33      1   91   370         jeq     d15,#0,.L27
+0100 09C29409  1   92   371         ld.a    a2,[a12]20
+0104 91r0rr4r  1   93   372         movh.a  a4,#@his(Os_dyn_fifocontrol)
+0108 D944rrrr  1   94   373         lea     a4,[a4]@los(Os_dyn_fifocontrol)
+010C 0922A809  1   95   374         ld.a    a2,[a2]40
+0110 4C22      1   96   375         ld.w    d15,[a2]8
+0112 9042      1   97   376         addsc.a a2,a4,d15,#2
+0114 D422      1   98   377         ld.a    a2,[a2]
+0116 D422      1   99   378         ld.a    a2,[a2]
+0118 89C29409  1  100   379         st.a    [a12]20,a2
+011C 09C29409  1  101   380         ld.a    a2,[a12]20
+0120 0922A809  1  102   381         ld.a    a2,[a2]40
+0124 4C22      1  103   382         ld.w    d15,[a2]8
+0126 9042      1  104   383         addsc.a a2,a4,d15,#2
+0128 D422      1  105   384         ld.a    a2,[a2]
+012A 09C59409  1  106   385         ld.a    a5,[a12]20
+012E 0955A809  1  107   386         ld.a    a5,[a5]40
+0132 09558409  1  108   387         ld.a    a5,[a5]4
+0136 7D520880  1  109   388         jne.a   a2,a5,.L28
+013A 09C29409  1  110   389         ld.a    a2,[a12]20
+013E 0922A809  1  111   390         ld.a    a2,[a2]40
+0142 D422      1  112   391         ld.a    a2,[a2]
+0144 3C09      1  113   392         j       .L29
+0146                    393 .L28:
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   7
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0146 09C29409  1  114   394         ld.a    a2,[a12]20
+014A 0922A809  1  115   395         ld.a    a2,[a2]40
+014E 4C22      1  116   396         ld.w    d15,[a2]8
+0150 9042      1  117   397         addsc.a a2,a4,d15,#2
+0152 D422      1  118   398         ld.a    a2,[a2]
+0154 B042      1  119   399         add.a   a2,#4
+0156                    400 .L29:
+0156 09C59409  1  120   401         ld.a    a5,[a12]20
+015A 0955A809  1  121   402         ld.a    a5,[a5]40
+015E 4C52      1  122   403         ld.w    d15,[a5]8
+0160 9044      1  123   404         addsc.a a4,a4,d15,#2
+0162 F442      1  124   405         st.a    [a4],a2
+0164                    406 .L27:
+0164 0D008004  1  125   407         dsync
+0168 D4A2      1  126   408         ld.a    a2,[a10]
+016A F42F      1  127   409         st.a    [a2],a15
+016C 0D008004  1  128   410         dsync
+0170 09C29409  1  129   411         ld.a    a2,[a12]20
+0174 4C24      1  130   412         ld.w    d15,[a2]16
+0176 6CC6      1  131   413         st.w    [a12]24,d15
+0178 09C29409  1  132   414         ld.a    a2,[a12]20
+017C 092F6D08  1  133   415         ld.bu   d15,[a2]45
+0180 09A28409  1  134   416         ld.a    a2,[a10]4
+0184 53CF20F0  3  137   417         mul     d15,d15,#12
+0188 1022      1  138   418         addsc.a a2,a2,d15,#0
+018A 0C28      1  139   419         ld.bu   d15,[a2]8
+018C 89CF0018  1  140   420         st.b    [a12]64,d15
+0190 DA00      1  141   421         mov     d15,#0
+0192 09C29409  1  142   422         ld.a    a2,[a12]20
+0196 D422      1  143   423         ld.a    a2,[a2]
+0198 4922041A  1  144   424         lea     a2,[a2]68
+019C 89C29C09  1  145   425         st.a    [a12]28,a2
+01A0 89284009  1  146   426         st.d    [a2]0,e8
+01A4 09C29C09  1  147   427         ld.a    a2,[a12]28
+01A8 6C22      1  148   428         st.w    [a2]8,d15
+01AA 09C29C09  1  149   429         ld.a    a2,[a12]28
+01AE 6C23      1  150   430         st.w    [a2]12,d15
+01B0 09C29409  1  151   431         ld.a    a2,[a12]20
+01B4 09C49C09  1  152   432         ld.a    a4,[a12]28
+01B8 0922DC09  1  153   433         ld.da   a2/a3,[a2]28
+01BC 8942D809  1  154   434         st.da   [a4]24,a2/a3
+01C0 09C29409  1  155   435         ld.a    a2,[a12]20
+01C4 D424      1  156   436         ld.a    a4,[a2]
+01C6 6Drrrrrr  2  158   437         call    Os_setjmp
+01CA 022F      1  159   438         mov     d15,d2
+01CC EE0B      1  160   439         jne     d15,#0,.L30
+01CE CDCCE20F  1  161   440         mtcr    #65068,d12
+01D2 0D00C004  1  162   441         isync
+                        442         
+01D6 09C29409  1  163   443         ld.a    a2,[a12]20
+01DA 09228409  1  164   444         ld.a    a2,[a2]4
+01DE 2D020000  2  166   445         calli   a2
+01E2                    446 .L30:
+01E2 0D004003  1  167   447         disable
+01E6 CDCDE20F  1  168   448         mtcr    #65068,d13
+01EA 0D00C004  1  169   449         isync
+                        450         
+01EE 09C29C09  1  170   451         ld.a    a2,[a12]28
+01F2 4924100A  1  171   452         lea     a4,[a2]16
+01F6 4C22      1  172   453         ld.w    d15,[a2]8
+01F8 5440      1  173   454         ld.w    d0,[a4]
+01FA 7FF00380  1  174   455         jge.u   d0,d15,.L31
+01FE 744F      1  175   456         st.w    [a4],d15
+0200                    457 .L31:
+0200 09C29C09  1  176   458         ld.a    a2,[a12]28
+0204 4924140A  1  177   459         lea     a4,[a2]20
+0208 4C23      1  178   460         ld.w    d15,[a2]12
+020A 5440      1  179   461         ld.w    d0,[a4]
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   8
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+020C 7FF00C80  1  180   462         jge.u   d0,d15,.L33
+0210 744F      1  181   463         st.w    [a4],d15
+0212 3C09      1  182   464         j       .L33
+0214                    465 .L34:
+0214 0000      1  183   466         nop
+0216 0000      1  184   467         nop
+0218 0000      1  185   468         nop
+021A 0000      1  186   469         nop
+021C 0000      1  187   470         nop
+021E 0000      1  188   471         nop
+0220 0000      1  189   472         nop
+0222 0000      1  190   473         nop
+0224                    474 .L33:
+0224 DA01      1  191   475         mov     d15,#1
+0226 49EF2818  1  192   476         swap.w  [a14]104,d15
+022A EEF5      1  193   477         jne     d15,#0,.L34
+022C 09C29409  1  194   478         ld.a    a2,[a12]20
+0230 D422      1  195   479         ld.a    a2,[a2]
+0232 092F6418  1  196   480         ld.bu   d15,[a2]100
+0236 C2FF      1  197   481         add     d15,#-1
+0238 892F2418  1  198   482         st.b    [a2]100,d15
+023C 09C29409  1  199   483         ld.a    a2,[a12]20
+0240 D422      1  200   484         ld.a    a2,[a2]
+0242 092F6418  1  201   485         ld.bu   d15,[a2]100
+0246 EE08      1  202   486         jne     d15,#0,.L35
+0248 54D0      1  203   487         ld.w    d0,[a13]
+024A 09C29409  1  204   488         ld.a    a2,[a12]20
+024E 4C22      1  205   489         ld.w    d15,[a2]8
+0250 C6EF      1  206   490         xor     d15,d14
+0252 26F0      1  207   491         and     d0,d15
+0254 74D0      1  208   492         st.w    [a13],d0
+0256                    493 .L35:
+0256 09C29019  1  209   494         ld.a    a2,[a12]80
+025A 7D2F4C00  1  210   495         jeq.a   a15,a2,.L36
+025E 09C29019  1  211   496         ld.a    a2,[a12]80
+0262 D422      1  212   497         ld.a    a2,[a2]
+0264 092F6418  1  213   498         ld.bu   d15,[a2]100
+0268 C21F      1  214   499         add     d15,#1
+026A 892F2418  1  215   500         st.b    [a2]100,d15
+026E 09C29019  1  216   501         ld.a    a2,[a12]80
+0272 0922A809  1  217   502         ld.a    a2,[a2]40
+0276 A004      1  218   503         mov.a   a4,#0
+0278 7D243500  1  219   504         jeq.a   a4,a2,.L37
+027C 09C29019  1  220   505         ld.a    a2,[a12]80
+0280 91r0rr5r  1  221   506         movh.a  a5,#@his(Os_dyn_fifocontrol)
+0284 D955rrrr  1  222   507         lea     a5,[a5]@los(Os_dyn_fifocontrol)
+0288 0922A809  1  223   508         ld.a    a2,[a2]40
+028C B045      1  224   509         add.a   a5,#4
+028E 4C22      1  225   510         ld.w    d15,[a2]8
+0290 9052      1  226   511         addsc.a a2,a5,d15,#2
+0292 D422      1  227   512         ld.a    a2,[a2]
+0294 09C49019  1  228   513         ld.a    a4,[a12]80
+0298 F424      1  229   514         st.a    [a2],a4
+029A 09C29019  1  230   515         ld.a    a2,[a12]80
+029E 0922A809  1  231   516         ld.a    a2,[a2]40
+02A2 4C22      1  232   517         ld.w    d15,[a2]8
+02A4 9052      1  233   518         addsc.a a2,a5,d15,#2
+02A6 D422      1  234   519         ld.a    a2,[a2]
+02A8 09C49019  1  235   520         ld.a    a4,[a12]80
+02AC 0944A809  1  236   521         ld.a    a4,[a4]40
+02B0 09448409  1  237   522         ld.a    a4,[a4]4
+02B4 7D420880  1  238   523         jne.a   a2,a4,.L38
+02B8 09C29019  1  239   524         ld.a    a2,[a12]80
+02BC 0922A809  1  240   525         ld.a    a2,[a2]40
+02C0 D422      1  241   526         ld.a    a2,[a2]
+02C2 3C09      1  242   527         j       .L39
+02C4                    528 .L38:
+02C4 09C29019  1  243   529         ld.a    a2,[a12]80
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   9
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+02C8 0922A809  1  244   530         ld.a    a2,[a2]40
+02CC 4C22      1  245   531         ld.w    d15,[a2]8
+02CE 9052      1  246   532         addsc.a a2,a5,d15,#2
+02D0 D422      1  247   533         ld.a    a2,[a2]
+02D2 B042      1  248   534         add.a   a2,#4
+02D4                    535 .L39:
+02D4 09C49019  1  249   536         ld.a    a4,[a12]80
+02D8 0944A809  1  250   537         ld.a    a4,[a4]40
+02DC 4C42      1  251   538         ld.w    d15,[a4]8
+02DE 9054      1  252   539         addsc.a a4,a5,d15,#2
+02E0 F442      1  253   540         st.a    [a4],a2
+02E2                    541 .L37:
+02E2 54D0      1  254   542         ld.w    d0,[a13]
+02E4 09C29019  1  255   543         ld.a    a2,[a12]80
+02E8 4C22      1  256   544         ld.w    d15,[a2]8
+02EA A6F0      1  257   545         or      d0,d15
+02EC 74D0      1  258   546         st.w    [a13],d0
+02EE 89CF9019  1  259   547         st.a    [a12]80,a15
+02F2                    548 .L36:
+02F2 0D008004  1  260   549         dsync
+02F6 D4A2      1  261   550         ld.a    a2,[a10]
+02F8 F42F      1  262   551         st.a    [a2],a15
+02FA 0D008004  1  263   552         dsync
+02FE 54DF      1  264   553         ld.w    d15,[a13]
+0300 3FFAECFE  1  265   554         jlt.u   d10,d15,.L25
+0304 89CA1809  1  266   555         st.w    [a12]24,d10
+0308 89CB0118  1  267   556         st.b    [a12]65,d11
+030C D804      1  268   557         ld.a    a15,[a10]16
+030E ECC5      1  269   558         st.a    [a12]20,a15
+0310 5803      1  270   559         ld.w    d15,[a10]12
+0312 89CF0018  1  271   560         st.b    [a12]64,d15
+0316 D805      1  272   561         ld.a    a15,[a10]20
+0318 ECC7      1  273   562         st.a    [a12]28,a15
+031A 0090      2  275   563         ret
+                        564         
+031C                    565 __Os_Dispatch1_function_end:
+                        566         .size   Os_Dispatch1,__Os_Dispatch1_function_end-Os_Dispatch1
+                        567         ; End of function
+                        568         
+                        569         .calls  'Os_Dispatch0','Os_GetSP'
+                        570         .calls  'Os_Dispatch0','Os_Cbk_StackOverrunHook'
+                        571         .calls  'Os_Dispatch0','Os_setjmp'
+                        572         .calls  'Os_Dispatch0','__INDIRECT__'
+                        573         .calls  'Os_Dispatch1','Os_GetSP'
+                        574         .calls  'Os_Dispatch1','Os_Cbk_StackOverrunHook'
+                        575         .calls  'Os_Dispatch1','Os_setjmp'
+                        576         .calls  'Os_Dispatch1','__INDIRECT__'
+                        577         .calls  'Os_Dispatch0','',16
+                        578         .extern Os_setjmp
+                        579         .extern Os_Cbk_StackOverrunHook
+                        580         .extern Os_GetSP
+                        581         .extern Os_const_tasks0
+                        582         .extern Os_const_tasks1
+                        583         .extern Os_const_coreconfiguration
+                        584         .extern Os_const_applications
+                        585         .extern Os_ControlledCoreInfo
+                        586         .extern Os_dyn_fifocontrol
+                        587         .extern __INDIRECT__
+                        588         .calls  'Os_Dispatch1','',24
+                        589         ; Module end

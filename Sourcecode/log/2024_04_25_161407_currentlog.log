@@ -1,0 +1,100 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling Integration\mcal_package\Irq\Sent_Irq.c
+Compiling Integration\mcal_package\Irq\Traps.c
+Compiling Integration\mcal_package\Src\Cpu0_Main.c
+Compiling Integration\mcal_package\Src\Cpu1_Main.c
+
+ctc W505: ["Integration\mcal_package\Src\Cpu1_Main.c" 67/3] implicit declaration of function "inner_main"
+ctc W577: ["Integration\mcal_package\Src\Cpu1_Main.c" 67/13] calling a function without a prototype
+0 errors, 2 warnings
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 134/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 189/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 283/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 365/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 444/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 543/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 602/12] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 986/10] unused variable "CoreId"
+0 errors, 8 warnings
+
+
+Compiling Integration\mcal_package\Src\Sent_Callback.c
+Compiling rte\gen\Core0_OsTask_ASW_10ms.c
+Compiling rte\gen\Core0_OsTask_ASW_1ms.c
+
+Compiling rte\gen\Core0_OsTask_BSW_10ms.c
+ctc W505: ["Integration\mcal_package\Src\Cpu0_Main.c" 97/2] implicit declaration of function "inner_main"
+ctc W577: ["Integration\mcal_package\Src\Cpu0_Main.c" 97/12] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling rte\gen\Core0_OsTask_BSW_1ms.c
+
+Compiling rte\gen\Core0_OsTask_BSW_50ms.c
+
+Compiling rte\gen\Core1_OsTask_ASW_10ms.c
+
+Compiling rte\gen\Core1_OsTask_BSW_10ms.c
+
+Compiling rte\gen\Rte.c
+
+Compiling rte\gen\Rte_Lib.c
+
+Compiling mcal\MCAL_Gen\src\Can_17_McmCan_PBcfg.c
+
+Compiling mcal\MCAL_Gen\src\Dio_Lcfg.c
+
+Compiling mcal\MCAL_Gen\src\Fls_17_Dmu_PBcfg.c
+
+Compiling mcal\MCAL_Gen\src\Gpt_PBcfg.c
+
+Compiling mcal\MCAL_Gen\src\Mcu_17_TimerIp_Cfg.c
+
+Compiling mcal\MCAL_Gen\src\Mcu_PBcfg.c
+
+Compiling mcal\MCAL_Gen\src\Port_PBcfg.c
+
+Compiling mcal\MCAL_Gen\src\Sent_PBcfg.c
+
+Compiling mcal\MCAL_Gen\src\Smu_PBcfg.c
+
+
+
+Compiling mcal\MCAL_Gen\src\Spi_PBcfg.c
+Compiling mcal\MCAL_Gen\src\Wdg_17_Scu_PBcfg.c
+Compiling mcal\MCAL_Modules\Can_17_McmCan\src\Can_17_McmCan.c
+
+
+Compiling mcal\MCAL_Modules\Dio\src\Dio.c
+Compiling mcal\MCAL_Modules\Fls_17_Dmu\src\Fls_17_Dmu.c
+
+Compiling mcal\MCAL_Modules\Fls_17_Dmu\src\Fls_17_Dmu_ac.c
+
+Compiling mcal\MCAL_Modules\Gpt\src\Gpt.c
+
+Compiling mcal\MCAL_Modules\McalLib\src\McalLib.c
+
+Compiling mcal\MCAL_Modules\Mcu\src\Mcu.c
+ctc W560: ["mcal\MCAL_Modules\Fls_17_Dmu\src\Fls_17_Dmu.c" 2657/28] possible truncation at implicit conversion to type "unsigned char"
+0 errors, 1 warnings
+
+Compiling mcal\MCAL_Modules\Mcu\src\Mcu_17_TimerIp.c
+
+Compiling mcal\MCAL_Modules\Port\src\Port.c
+
+Compiling mcal\MCAL_Modules\Sent\src\Sent.c
+ctc E219: ["mcal\MCAL_Modules\Mcu\src\Mcu_17_TimerIp.c" 70/1] cannot open #include file "Stm_Cbk.h"
+1 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\mcal\MCAL_Modules\Mcu\Mcu_17_TimerIp.o] Error 1
+
+
+
+scons: building terminated because of errors.

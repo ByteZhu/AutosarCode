@@ -1,0 +1,224 @@
+
+
+
+/*<VersionHead>
+ * This Configuration File is generated using versions (automatically filled in) as listed below.
+ *
+ * $Generator__: CanIf / AR45.2.0.0                Module Package Version
+ * $Editor_____: ISOLAR-A/B 12.0.1_12.0.1                Tool Version
+ * 
+ 
+
+ </VersionHead>*/
+
+
+*****************************************************************************************************************************************************************************************
+                                               CANSTACK CONFIGURATION REPORT
+
+*****************************************************************************************************************************************************************************************
+Section1:
+                                              CAN DRIVER CONFIGURATION REPORT
+******************************************************************************************************************************************************************************************
+
+
+"CAN driver does not support the report generation for the driver configuration parameters"
+
+
+
+*****************************************************************************************************************************************************************************************
+Section2:
+                                                CANIF CONFIGURATION REPORT
+*****************************************************************************************************************************************************************************************
+CanIf Variant configured:                                       ,PRE-COMPILE
+
+Development error detection support:                            ,ENABLED
+
+Partial Networking support:                                     ,DISABLED
+
+Controller WakeUp support:                                      ,DISABLED
+
+Transceiver WakeUp support:                                     ,DISABLED
+
+Set Baudrate support:                                           ,DISABLED
+(This feature will be used only when CAN FD is supported.
+This is currently supported only for IFX and JDP targets)
+
+Direct Hw wite access support for XCP:                          ,DISABLED
+(This feature is available only for JDP targets)
+
+CanIf XCore feature support                                     ,DISABLED
+*******************************************************************************************************************************************************************************************
+LIST OF UPPER LAYERS SUPPORTED:
+***********************************************
+[CAN_NM, CAN_TP, XCP, PDUR]
+
+EVENTS AND UPPER LAYERS TO BE INDICATED:
+************************************************
+EVENT                          , UPPER LAYER
+Controller BusOff              ,CAN_SM
+Controller Mode Indication     ,CAN_SM
+Transceiver Mode Indication    ,CAN_SM
+****************************************************************************************************************************************************************************************
+CAN TRANSCEIVER INFORMATION:
+********************************************
+
+Can Transceiver not configured.
+
+************************************************************************************************************************************************************************************
+CanIf ConfigSet Information
+*************************************************************************************************************************************************************************************
+Number of CanIf Configsets peresent in the project:  ,1
+1) Configuration information for __KW_COMMON
+
+   Name of the Variant: ,__KW_COMMON
+
+   Number of FULL TxPdus: ,20
+
+   Number of BASIC TxPdus: ,0
+
+   Number of FULL RxPdus:  ,20
+
+   Number of BASIC RxPdus:  ,1
+
+   Total size of the transmit buffers: , 10 
+
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+
+************************************************************************************************************************************************************************************
+CAN CONTROLLER INFORMATION:
+*******************************************
+Number of CAN controllers configured: ,3
+
+   S.No    ,CanIfCtrlDrvCfg name      ,CanHardwareNode       ,CanHardwareNodeId       ,Can Transceiver Reference
+1.,Can_Network_CANNODE_0   ,Can_Network_CANNODE_0   ,0   ,NONE
+2.,Can_Network_CANNODE_1   ,Can_Network_CANNODE_1   ,1   ,NONE
+3.,Can_Network_CANNODE_2   ,Can_Network_CANNODE_2   ,2   ,NONE
+**************************************************************************************************************************************************************************************
+
+****************************************************************************************************************************************************************************************
+DETAILS OF TXPDU:
+*************************
+
+S.No   ,TxPdu Name   ,CanId   ,DLC value   ,CanId Type   ,CanIfTxPdu Type   ,Can Handle Type   ,HTH Reference   ,CanHardwareNodeId   ,Target TxPduId   ,Upper Layer   ,Cbk Name   ,Pdu Reference   ,Read Notification Status
+1.,NM_VCU_Can_Network_CANNODE_0_OUT    ,0x50D    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_1    ,Can_Network_CANNODE_0    ,11
+    ,CAN_NM    ,&CanNm_TxConfirmation    ,NM_VCU_CanNm2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+2.,Diag_Physical_response_Can_Network_CANNODE_0_OUT    ,0x6DD    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_2    ,Can_Network_CANNODE_0    ,11
+    ,CAN_TP    ,NULL_PTR    ,Diag_Physical_response_Phys_CanTp2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+3.,XCP_TX_DAQ0_Can_Network_CANNODE_0_OUT    ,0x778    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_3    ,Can_Network_CANNODE_0    ,11
+    ,XCP    ,&Xcp_CanIfTxConfirmation    ,XCP_TX_DAQ0_Xcp2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+4.,XCP_TX_DAQ1_Can_Network_CANNODE_0_OUT    ,0x779    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_4    ,Can_Network_CANNODE_0    ,11
+    ,XCP    ,&Xcp_CanIfTxConfirmation    ,XCP_TX_DAQ1_Xcp2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+5.,XCP_TX_DAQ2_Can_Network_CANNODE_0_OUT    ,0x77A    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_5    ,Can_Network_CANNODE_0    ,11
+    ,XCP    ,&Xcp_CanIfTxConfirmation    ,XCP_TX_DAQ2_Xcp2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+6.,XCP_TX_RES_Can_Network_CANNODE_0_OUT    ,0x777    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_6    ,Can_Network_CANNODE_0    ,11
+    ,XCP    ,&Xcp_CanIfTxConfirmation    ,XCP_TX_RES_Xcp2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+7.,EPS_DebugInfo_Can_Network_CANNODE_0_OUT    ,0x7FE    ,10
+    ,STANDARD_FD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_7    ,Can_Network_CANNODE_0    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,EPS_DebugInfo_PduR2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+8.,PSCMSACMFrame04_Can_Network_CANNODE_0_OUT    ,0x251    ,10
+    ,STANDARD_FD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_8    ,Can_Network_CANNODE_0    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,PSCMSACMFrame04_PduR2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+9.,PSCMSACMFrame03_Can_Network_CANNODE_0_OUT    ,0x232    ,10
+    ,STANDARD_FD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_9    ,Can_Network_CANNODE_0    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,PSCMSACMFrame03_PduR2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+10.,PSCMFrame01_Can_Network_CANNODE_0_OUT    ,0x380    ,10
+    ,STANDARD_FD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_10    ,Can_Network_CANNODE_0    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,PSCMFrame01_PduR2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+11.,PSCMSACMFrame01_Can_Network_CANNODE_0_OUT    ,0x55    ,10
+    ,STANDARD_FD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_11    ,Can_Network_CANNODE_0    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,PSCMSACMFrame01_PduR2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+12.,PSCMSACMFrame02_Can_Network_CANNODE_0_OUT    ,0x179    ,10
+    ,STANDARD_FD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_12    ,Can_Network_CANNODE_0    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,PSCMSACMFrame02_PduR2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+13.,PSCMSACM_SecCanFrame01_Can_Network_CANNODE_0_OUT    ,0x102    ,10
+    ,STANDARD_FD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_13    ,Can_Network_CANNODE_0    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,PSCMSACM_SecCanFrame01_PduR2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+14.,TestModeResponse_Can_Network_CANNODE_0_OUT    ,0x2    ,10
+    ,STANDARD_FD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_14    ,Can_Network_CANNODE_0    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,TestModeResponse_PduR2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+15.,PSCMSFCMFrame01_Can_Network_CANNODE_0_OUT    ,0x186    ,10
+    ,STANDARD_FD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_15    ,Can_Network_CANNODE_0    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,PSCMSFCMFrame01_PduR2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+16.,PSCMSFCMFrame03_Can_Network_CANNODE_0_OUT    ,0x47    ,10
+    ,STANDARD_FD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_0_Tx_Std_MailBox_16    ,Can_Network_CANNODE_0    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,PSCMSFCMFrame03_PduR2CanIf_Can_Network_0_Channel_CAN   ,DISABLED
+17.,PSCMTxCurrentAndCommand_0x1A_Can_Network_CANNODE_1_OUT    ,0x1A    ,10
+    ,STANDARD_FD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_1_Tx_Std_MailBox_1    ,Can_Network_CANNODE_1    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,PSCMTxCurrentAndCommand_0x1A_PduR2CanIf_Can_Network_1_Channel_CAN   ,DISABLED
+18.,PSCMTxCommonInfo_0x3A_Can_Network_CANNODE_1_OUT    ,0x3A    ,10
+    ,STANDARD_FD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_1_Tx_Std_MailBox_2    ,Can_Network_CANNODE_1    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,PSCMTxCommonInfo_0x3A_PduR2CanIf_Can_Network_1_Channel_CAN   ,DISABLED
+19.,PSCMTxCommonInfo_0x4A_Can_Network_CANNODE_2_OUT    ,0x4A    ,10
+    ,STANDARD_FD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_2_Tx_Std_MailBox_1    ,Can_Network_CANNODE_2    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,PSCMTxCommonInfo_0x4A_PduR2CanIf_Can_Network_2_Channel_CAN   ,DISABLED
+20.,PSCMTxCurrentAndCommand_0x2A_Can_Network_CANNODE_2_OUT    ,0x2A    ,10
+    ,STANDARD_FD_CAN    ,STATIC    ,FULL    ,Can_Network_CANNODE_2_Tx_Std_MailBox_2    ,Can_Network_CANNODE_2    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,PSCMTxCurrentAndCommand_0x2A_PduR2CanIf_Can_Network_2_Channel_CAN   ,DISABLED
+****************************************************************************************************************************************************************************************
+
+*****************************************************************************************************************************************************************************************
+
+LIST OF BASIC RxPdus:
+*****************************
+[NM_VCU_Rx_ETAS_Can_Network_CANNODE_0_IN]
+
+Details of BASIC HRH:
+***************************
+
+S.No  ,HRH Name   ,Can Handle Reference  , CanHardwareNodeId: ,List/Range configuration  ,List/Range of CanIds
+1.,Can_Network_CANNODE_0_Rx_Std_MailBox_2    ,Can_Network_CANNODE_0_Rx_Std_MailBox_2    ,Can_Network_CANNODE_0    ,RANGE        Range0:0x500-0x5FF        
+
+*******************************************************************************************************************************************************************************************
+DETAILS OF RXPDU:
+*************************
+
+S.No ,RxPdu Name ,CanId ,DLC value ,CanId Type ,HRH Reference ,CanHardwareNodeId ,Upper Layer ,Cbk Name ,Pdu Reference ,Read Notification Status ,RxPdu Buffering ,CanIfRxPduType
+1.,Diag_Functional_request_Can_Network_CANNODE_0_IN    ,0x7FF    ,8    ,STANDARD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_1    ,Can_Network_CANNODE_0    ,CAN_TP    ,NULL_PTR    ,Diag_Functional_request_CanIf2CanTp_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+2.,NM_VCU_Rx_ETAS_Can_Network_CANNODE_0_IN    ,0x00    ,8    ,STANDARD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_2    ,Can_Network_CANNODE_0    ,CAN_NM    ,&CanNm_RxIndication    ,NM_VCU_Rx_ETAS_CanIf2CanNm_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+3.,Diag_Physical_request_Can_Network_CANNODE_0_IN    ,0x7DD    ,8    ,STANDARD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_3    ,Can_Network_CANNODE_0    ,CAN_TP    ,NULL_PTR    ,Diag_Physical_request_CanIf2CanTp_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+4.,XCP_RX_Broadcast_Can_Network_CANNODE_0_IN    ,0x332    ,0    ,STANDARD_NO_FD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_4    ,Can_Network_CANNODE_0    ,XCP    ,&Xcp_CanIfRxIndication    ,XCP_RX_Broadcast_CanIf2Xcp_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+5.,XCP_RX_CMD_Can_Network_CANNODE_0_IN    ,0x333    ,0    ,STANDARD_NO_FD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_5    ,Can_Network_CANNODE_0    ,XCP    ,&Xcp_CanIfRxIndication    ,XCP_RX_CMD_CanIf2Xcp_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+6.,MCoreFrame07_Can_Network_CANNODE_0_IN    ,0x234    ,64    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_6    ,Can_Network_CANNODE_0    ,PDUR    ,&PduR_CanIfRxIndication    ,MCoreFrame07_CanIf2PduR_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+7.,CSCBCMCore_SecCanFrame04_Can_Network_CANNODE_0_IN    ,0x202    ,32    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_7    ,Can_Network_CANNODE_0    ,PDUR    ,&PduR_CanIfRxIndication    ,CSCBCMCore_SecCanFrame04_CanIf2PduR_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+8.,MCoreFrame03_Can_Network_CANNODE_0_IN    ,0x400    ,64    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_8    ,Can_Network_CANNODE_0    ,PDUR    ,&PduR_CanIfRxIndication    ,MCoreFrame03_CanIf2PduR_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+9.,MCoreFrame09_Can_Network_CANNODE_0_IN    ,0x99    ,64    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_9    ,Can_Network_CANNODE_0    ,PDUR    ,&PduR_CanIfRxIndication    ,MCoreFrame09_CanIf2PduR_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+10.,TestModeRequest_Can_Network_CANNODE_0_IN    ,0x1    ,8    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_10    ,Can_Network_CANNODE_0    ,PDUR    ,&PduR_CanIfRxIndication    ,TestModeRequest_CanIf2PduR_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+11.,MCoreFrame01_Can_Network_CANNODE_0_IN    ,0x200    ,64    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_11    ,Can_Network_CANNODE_0    ,PDUR    ,&PduR_CanIfRxIndication    ,MCoreFrame01_CanIf2PduR_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+12.,ISWMFrame04_Can_Network_CANNODE_0_IN    ,0x101    ,64    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_12    ,Can_Network_CANNODE_0    ,PDUR    ,&PduR_CanIfRxIndication    ,ISWMFrame04_CanIf2PduR_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+13.,CSCBCMCore_SecCanFrame01_Can_Network_CANNODE_0_IN    ,0x50    ,48    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_13    ,Can_Network_CANNODE_0    ,PDUR    ,&PduR_CanIfRxIndication    ,CSCBCMCore_SecCanFrame01_CanIf2PduR_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+14.,CSCBCMCore_SecCanFrame02_Can_Network_CANNODE_0_IN    ,0x51    ,48    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_14    ,Can_Network_CANNODE_0    ,PDUR    ,&PduR_CanIfRxIndication    ,CSCBCMCore_SecCanFrame02_CanIf2PduR_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+15.,CSCBCMCore_SpecialSecFrame01_Can_Network_CANNODE_0_IN    ,0x201    ,16    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_15    ,Can_Network_CANNODE_0    ,PDUR    ,&PduR_CanIfRxIndication    ,CSCBCMCore_SpecialSecFrame01_CanIf2PduR_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+16.,MCoreFrame04_Can_Network_CANNODE_0_IN    ,0x40    ,64    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_16    ,Can_Network_CANNODE_0    ,PDUR    ,&PduR_CanIfRxIndication    ,MCoreFrame04_CanIf2PduR_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+17.,CSCBCMCore_SecCanFrame03_Can_Network_CANNODE_0_IN    ,0x52    ,64    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_0_Rx_Std_MailBox_17    ,Can_Network_CANNODE_0    ,PDUR    ,&PduR_CanIfRxIndication    ,CSCBCMCore_SecCanFrame03_CanIf2PduR_Can_Network_0_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+18.,PSCBTxCurrentAndCommand_0x1F_Can_Network_CANNODE_1_IN    ,0x1F    ,64    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_1_Rx_Std_MailBox_1    ,Can_Network_CANNODE_1    ,PDUR    ,&PduR_CanIfRxIndication    ,PSCBTxCurrentAndCommand_0x1F_CanIf2PduR_Can_Network_1_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+19.,PSCBTxCommonInfo_0x3F_Can_Network_CANNODE_1_IN    ,0x3F    ,64    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_1_Rx_Std_MailBox_2    ,Can_Network_CANNODE_1    ,PDUR    ,&PduR_CanIfRxIndication    ,PSCBTxCommonInfo_0x3F_CanIf2PduR_Can_Network_1_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+20.,PSCBTxCurrentAndCommand_0x2F_Can_Network_CANNODE_2_IN    ,0x2F    ,64    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_2_Rx_Std_MailBox_1    ,Can_Network_CANNODE_2    ,PDUR    ,&PduR_CanIfRxIndication    ,PSCBTxCurrentAndCommand_0x2F_CanIf2PduR_Can_Network_2_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+21.,PSCBTxCommonInfo_0x4F_Can_Network_CANNODE_2_IN    ,0x4F    ,64    ,STANDARD_FD_CAN    ,Can_Network_CANNODE_2_Rx_Std_MailBox_2    ,Can_Network_CANNODE_2    ,PDUR    ,&PduR_CanIfRxIndication    ,PSCBTxCommonInfo_0x4F_CanIf2PduR_Can_Network_2_Channel_CAN    ,ENABLED    ,DISABLED    ,STATIC
+*********************************************************************************************************************************************************************************************
+
+

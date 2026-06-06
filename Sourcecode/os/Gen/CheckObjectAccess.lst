@@ -1,0 +1,110 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc29212a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\CheckObjectAccess.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\CheckObjec
+                            tAccess.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.CheckObjectAccess.Os_CheckObjectAccess',code
+0000                     11         .sect   '.text.CheckObjectAccess.Os_CheckObjectAccess'
+                         12         .align  2
+                         13         
+                         14         .global Os_CheckObjectAccess
+                         15 ; Function Os_CheckObjectAccess
+0000                     16 Os_CheckObjectAccess:   .type   func
+0000 DA01      1    1    17         mov     d15,#1
+0002 404F      1    2    18         mov.aa  a15,a4
+0004 FF243180  1    3    19         jge.u   d4,#2,.L2
+0008 C214      1    4    20         add     d4,#1
+000A 0F4F0080  1    5    21         sh      d8,d15,d4
+000E 765B      1    6    22         jeq     d5,#0,.L3
+0010 BE53      1    7    23         jeq     d15,d5,.L4
+0012 DF252A00  1    8    24         jeq     d5,#2,.L14
+0016 DF351700  1    9    25         jeq     d5,#3,.L6
+001A DF451A00  1   10    26         jeq     d5,#4,.L7
+001E DF551E00  1   11    27         jeq     d5,#5,.L8
+0022 3C22      1   12    28         j       .L9
+0024                     29 .L3:
+0024 6Drrrrrr  2   14    30         call    Os_IsTaskValid
+0028 DF021F00  1   15    31         jeq     d2,#0,.L10
+002C 09FF6C08  1   16    32         ld.bu   d15,[a15]44
+0030 26F8      1   17    33         and     d8,d15
+0032 BA08      1   18    34         eq      d15,d8,#0
+0034 3C19      1   19    35         j       .L11
+0036                     36 .L4:
+0036 6Drrrrrr  2   21    37         call    Os_IsISRValid
+003A DF021600  1   22    38         jeq     d2,#0,.L12
+003E 09FF5808  1   23    39         ld.bu   d15,[a15]24
+0042 3C10      1   24    40         j       .L13
+0044                     41 .L6:
+0044 6Drrrrrr  2   26    42         call    Os_IsResourceValid
+0048 762F      1   27    43         jeq     d2,#0,.L15
+004A 088F      1   28    44         ld.bu   d15,[a15]8
+004C 3C0B      1   29    45         j       .L16
+004E                     46 .L7:
+004E 6Drrrrrr  2   31    47         call    Os_IsCounterValid
+0052 762A      1   32    48         jeq     d2,#0,.L17
+0054 09FF6808  1   33    49         ld.bu   d15,[a15]40
+0058 3C05      1   34    50         j       .L18
+005A                     51 .L8:
+005A 6Drrrrrr  2   36    52         call    Os_IsScheduleTableValid
+005E 7624      1   37    53         jeq     d2,#0,.L19
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0060 08FF      1   38    54         ld.bu   d15,[a15]15
+0062                     55 .L13:
+0062                     56 .L16:
+0062                     57 .L18:
+0062 268F      1   39    58         and     d15,d8
+0064 BA0F      1   40    59         eq      d15,d15,#0
+0066                     60 .L19:
+0066                     61 .L17:
+0066                     62 .L15:
+0066                     63 .L14:
+0066                     64 .L12:
+0066                     65 .L11:
+0066                     66 .L10:
+0066                     67 .L9:
+0066                     68 .L2:
+0066 02F2      1   41    69         mov     d2,d15
+0068 0090      2   43    70         ret
+                         71         
+006A                     72 __Os_CheckObjectAccess_function_end:
+                         73         .size   Os_CheckObjectAccess,__Os_CheckObjectAccess_function_end-Os_CheckObjectAccess
+                         74         ; End of function
+                         75         
+                         76         .calls  'Os_CheckObjectAccess','Os_IsTaskValid'
+                         77         .calls  'Os_CheckObjectAccess','Os_IsISRValid'
+                         78         .calls  'Os_CheckObjectAccess','Os_IsResourceValid'
+                         79         .calls  'Os_CheckObjectAccess','Os_IsCounterValid'
+                         80         .calls  'Os_CheckObjectAccess','Os_IsScheduleTableValid'
+                         81         .extern Os_IsCounterValid
+                         82         .extern Os_IsScheduleTableValid
+                         83         .extern Os_IsResourceValid
+                         84         .extern Os_IsTaskValid
+                         85         .extern Os_IsISRValid
+                         86         .calls  'Os_CheckObjectAccess','',0
+                         87         ; Module end

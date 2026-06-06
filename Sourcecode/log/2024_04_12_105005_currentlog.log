@@ -1,0 +1,27 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling asw\ASW_CORE1\src\ASW_CORE1.c
+
+Linking output\dbg\D_ENTRY_PLATFROM.elf...
+ltc E106: unresolved external: _LITERAL_DATA_TC1 - (cstart_tc1.o)
+ltc E106: unresolved external: __OVERLAY_RAM_START - (OverlayManager.o)
+ltc E106: unresolved external: __RODATA_CALIB_START - (OverlayManager.o)
+ltc E106: unresolved external: IoHwAb_GptNotification0 - (Gpt_PBcfg.o)
+ltc E106: unresolved external: IoHwAb_GptNotification1 - (Gpt_PBcfg.o)
+ltc E106: unresolved external: ErrorHook_OsApplication_0 - (Os_Cfg.o)
+ltc E106: unresolved external: Os_Entry_STMOSR1_ISR - (Os_Cfg.o)
+ltc E106: unresolved external: _SMALL_DATA_TC1 - (cstart_tc1.o)
+ltc E106: unresolved external: ErrorHook_OsApplication_1 - (Os_Cfg.o)
+ltc E106: unresolved external: _A8_DATA_TC1 - (cstart_tc1.o)
+ltc E106: unresolved external: _A9_DATA_TC1 - (cstart_tc1.o)
+ltc F019: unrecoverable error: fatal link error
+
+===================
+None
+===================
+scons: *** [output\dbg\D_ENTRY_PLATFROM.elf] Error 2
+scons: building terminated because of errors.

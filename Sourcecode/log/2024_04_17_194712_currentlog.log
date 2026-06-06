@@ -1,0 +1,153 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling asw\ASW_BASE\src\ASW_BASE.c
+Compiling asw\ASW_COM\src\ASW_COM.c
+Compiling asw\ASW_CORE0\src\ASW_CORE0.c
+Compiling asw\ASW_CORE1\src\ASW_CORE1.c
+ctc W505: ["asw\ASW_BASE\src\ASW_BASE.c" 53/3] implicit declaration of function "Rte_Write_ASW_BASE_PPort_SwcModeRequest_AppMode"
+ctc W577: ["asw\ASW_BASE\src\ASW_BASE.c" 53/50] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling asw\ASW_DCM\src\ASW_DCM.c
+ctc W500: ["asw\ASW_CORE0\src\ASW_CORE0.c" 64/74] expression without effect
+ctc W500: ["asw\ASW_CORE0\src\ASW_CORE0.c" 66/102] expression without effect
+ctc W500: ["asw\ASW_CORE0\src\ASW_CORE0.c" 102/63] expression without effect
+ctc W500: ["asw\ASW_CORE0\src\ASW_CORE0.c" 142/105] expression without effect
+ctc W537: ["asw\ASW_CORE0\src\ASW_CORE0.c" 60/17] unused variable "retValue"
+ctc W537: ["asw\ASW_CORE0\src\ASW_CORE0.c" 90/17] unused variable "retValue"
+0 errors, 6 warnings
+
+Compiling asw\ASW_DCM\src\ASW_DCM_RoutineServices_CheckMemoryCRC_RequestRoutineResults_func.c
+
+Compiling asw\ASW_DCM\src\ASW_DCM_RoutineServices_CheckMemoryCRC_Start_func.c
+ctc W560: ["asw\ASW_COM\src\ASW_COM.c" 217/24] possible truncation at implicit conversion to type "unsigned char"
+ctc W560: ["asw\ASW_COM\src\ASW_COM.c" 218/25] possible truncation at implicit conversion to type "unsigned char"
+ctc W560: ["asw\ASW_COM\src\ASW_COM.c" 219/25] possible truncation at implicit conversion to type "unsigned short int"
+ctc W560: ["asw\ASW_COM\src\ASW_COM.c" 220/26] possible truncation at implicit conversion to type "unsigned short int"
+ctc W537: ["asw\ASW_COM\src\ASW_COM.c" 142/17] unused variable "retValue"
+0 errors, 5 warnings
+
+Compiling asw\ASW_DCM\src\ASW_DCM_RoutineServices_CheckMemoryCRC_Stop_func.c
+
+Compiling asw\ASW_DCM\src\Diag_DIDRamBlock.c
+
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 502/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 503/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 504/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 505/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 512/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 513/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 514/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 515/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 516/14] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 517/15] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 518/15] pointers to different types at argument #1
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 214/17] unused variable "retValue"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 491/45] unused variable "write11"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 500/17] unused variable "retValue"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 837/17] unused variable "retValue"
+0 errors, 15 warnings
+
+
+Compiling asw\ASW_DCM\src\Diag_SeedKey.c
+Compiling asw\ASW_DEM\src\ASW_DEM_CBStatusComp_DemComponent_func.c
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_CS_ExtendedDataRecord_Aged_counter_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_CS_ExtendedDataRecord_Fault_pending_counter_ReadData_func.c
+
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_CBStatusComp_DemComponent_func.c" 50/17] unused variable "retValue"
+0 errors, 1 warnings
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Day_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Hour_ReadData_func.c
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Minute_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Month_ReadData_func.c
+
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_OdometerReading_ReadData_func.c
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_PowerMode_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_SupplyVoltage_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Year_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c
+
+
+
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 50/17] unused variable "syncCall2"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 51/17] unused variable "syncCall3"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 52/17] unused variable "syncCall4"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 53/30] unused variable "DebounceResetStatus2"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 54/17] unused variable "syncCall5"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 57/17] unused variable "syncCall7"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 58/17] unused variable "syncCall8"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 59/17] unused variable "syncCall9"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 60/30] unused variable "DebounceResetStatus4"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 61/17] unused variable "syncCall10"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 63/17] unused variable "syncCall11"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 65/17] unused variable "syncCall12"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 67/17] unused variable "syncCall13"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 69/17] unused variable "syncCall14"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 72/17] unused variable "syncCall16"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 73/17] unused variable "syncCall17"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 74/17] unused variable "syncCall18"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 75/30] unused variable "DebounceResetStatus10"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 76/17] unused variable "syncCall19"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 77/17] unused variable "syncCall20"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 80/17] unused variable "syncCall22"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 81/17] unused variable "syncCall23"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 82/17] unused variable "syncCall24"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 83/30] unused variable "DebounceResetStatus12"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 84/17] unused variable "syncCall25"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 85/17] unused variable "syncCall26"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 101/17] unused variable "retValue"
+0 errors, 27 warnings
+
+Compiling asw\ASW_NM\src\ASW_NM.c
+Compiling asw\ASW_NVM\src\ASW_NVM.c
+Compiling asw\ASW_USER\src\ASW_USER.c
+Compiling asw\ASW_WDG\src\ASW_WDG.c
+ctc W542: ["asw\ASW_NM\src\ASW_NM.c" 39/44] missing braces around initializer
+ctc W500: ["asw\ASW_NM\src\ASW_NM.c" 119/98] expression without effect
+ctc W500: ["asw\ASW_NM\src\ASW_NM.c" 126/105] expression without effect
+ctc W523: ["asw\ASW_NM\src\ASW_NM.c" 169/55] pointers to different types at argument #2
+ctc W523: ["asw\ASW_NM\src\ASW_NM.c" 175/55] pointers to different types at argument #2
+ctc W523: ["asw\ASW_NM\src\ASW_NM.c" 180/55] pointers to different types at argument #2
+ctc W537: ["asw\ASW_NM\src\ASW_NM.c" 45/14] unused variable "checkNMreceived"
+0 errors, 7 warnings
+
+
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 56/17] unused variable "retdRead1"
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 65/17] unused variable "retValue"
+0 errors, 2 warnings
+
+Compiling asw\ASW_XCP\src\ASW_XCP.c
+Compiling asw\CDD_CORE0\src\CDD_CORE0.c
+Compiling asw\CDD_CORE1\src\CDD_CORE1.c
+ctc E286: [".\bsw\WdgM\WdgM_Cfg.h" 376/75] array size shall be greater than zero
+1 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\asw\ASW_WDG\ASW_WDG.o] Error 1
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 56/27] unused variable "cpuWdtPassword"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 57/27] unused variable "safetyWdtPassword"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 58/20] unused variable "watchdog"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 59/21] unused variable "CpuWatchDog"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 60/17] unused variable "retValue"
+0 errors, 5 warnings
+
+
+ctc W524: ["asw\CDD_CORE0\src\CDD_CORE0.c" 185/12] conversion of integer to pointer at assignment
+ctc W537: ["asw\CDD_CORE0\src\CDD_CORE0.c" 39/15] unused variable "DataReceiverCore0_ClientServer"
+0 errors, 2 warnings
+
+scons: building terminated because of errors.

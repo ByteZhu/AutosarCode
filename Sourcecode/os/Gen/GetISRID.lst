@@ -1,0 +1,51 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc34668a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\GetISRID.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\GetISRID.c
+                            '
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.GetISRID.Os_GetISRID',code
+0000                     11         .sect   '.text.GetISRID.Os_GetISRID'
+                         12         .align  2
+                         13         
+                         14         .global Os_GetISRID
+                         15 ; Function Os_GetISRID
+0000                     16 Os_GetISRID:    .type   func
+0000 4DC0E1FF  1    1    17         mfcr    d15,#65052
+0004 538F21F0  3    4    18         mul     d15,d15,#24
+0008 91r0rrFr  1    5    19         movh.a  a15,#@his(Os_const_coreconfiguration)
+000C D9FFrrrr  1    6    20         lea     a15,[a15]@los(Os_const_coreconfiguration)
+0010 10FF      1    7    21         addsc.a a15,a15,d15,#0
+0012 D4FF      1    8    22         ld.a    a15,[a15]
+0014 C842      1    9    23         ld.a    a2,[a15]16
+0016 0090      2   11    24         ret
+                         25         
+0018                     26 __Os_GetISRID_function_end:
+                         27         .size   Os_GetISRID,__Os_GetISRID_function_end-Os_GetISRID
+                         28         ; End of function
+                         29         
+                         30         .extern Os_const_coreconfiguration
+                         31         .calls  'Os_GetISRID','',0
+                         32         ; Module end

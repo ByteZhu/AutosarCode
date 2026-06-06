@@ -1,0 +1,86 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc35220a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\ProtectionSupport.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\Protection
+                            Support.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.ProtectionSupport.Os_ProtectionLog',code
+0000                     11         .sect   '.text.ProtectionSupport.Os_ProtectionLog'
+                         12         .align  2
+                         13         
+                         14         .global Os_ProtectionLog
+                         15 ; Function Os_ProtectionLog
+0000                     16 Os_ProtectionLog:       .type   func
+0000 024A      1    1    17         mov     d10,d4
+0002 4DC0E1FF  1    2    18         mfcr    d15,#65052
+0006 538F21F0  3    5    19         mul     d15,d15,#24
+000A 91r0rrFr  1    6    20         movh.a  a15,#@his(Os_const_coreconfiguration)
+000E D9FFrrrr  1    7    21         lea     a15,[a15]@los(Os_const_coreconfiguration)
+0012 10FF      1    8    22         addsc.a a15,a15,d15,#0
+0014 D4FF      1    9    23         ld.a    a15,[a15]
+0016 4DC0E28F  1   10    24         mfcr    d8,#65068
+001A 0D004003  1   11    25         disable
+001E BBF000F8  1   12    26         mov.u   d15,#32783
+0022 CDCFE20F  1   13    27         mtcr    #65068,d15
+0026 0D00C004  1   14    28         isync
+                         29         
+002A 09FF5C18  1   15    30         ld.bu   d15,[a15]92
+002E EE13      1   16    31         jne     d15,#0,.L2
+0030 8209      1   17    32         mov     d9,#0
+0032 DA01      1   18    33         mov     d15,#1
+0034 89FF1C18  1   19    34         st.b    [a15]92,d15
+0038 02A4      1   20    35         mov     d4,d10
+003A 6Drrrrrr  2   22    36         call    ProtectionHook
+003E DA00      1   23    37         mov     d15,#0
+0040 89FF1C18  1   24    38         st.b    [a15]92,d15
+0044 F624      1   25    39         jne     d2,#0,.L3
+0046 8B0A01F2  1   26    40         eq      d15,d10,#16
+004A AA19      1   27    41         cmov    d9,d15,#1
+004C                     42 .L3:
+004C F694      1   28    43         jne     d9,#0,.L5
+004E 02A4      1   29    44         mov     d4,d10
+0050 6Drrrrrr  2   31    45         call    Os_ShutdownOS
+0054                     46 .L5:
+0054                     47 .L2:
+0054 CDC8E20F  1   32    48         mtcr    #65068,d8
+0058 0D00C004  1   33    49         isync
+                         50         
+005C 0090      2   35    51         ret
+                         52         
+005E                     53 __Os_ProtectionLog_function_end:
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                         54         .size   Os_ProtectionLog,__Os_ProtectionLog_function_end-Os_ProtectionLog
+                         55         ; End of function
+                         56         
+                         57         .calls  'Os_ProtectionLog','ProtectionHook'
+                         58         .calls  'Os_ProtectionLog','Os_ShutdownOS'
+                         59         .extern ProtectionHook
+                         60         .extern Os_ShutdownOS
+                         61         .extern Os_const_coreconfiguration
+                         62         .calls  'Os_ProtectionLog','',0
+                         63         ; Module end

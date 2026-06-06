@@ -1,0 +1,92 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling Integration\mcal_package\Irq\Sent_Irq.c
+Compiling Integration\mcal_package\Src\Sent_Callback.c
+Compiling rte\gen\Core0_OsTask_ASW_100ms.c
+Compiling rte\gen\Core0_OsTask_ASW_10ms.c
+
+Compiling rte\gen\Core0_OsTask_BSW_10ms.c
+
+Compiling rte\gen\Core0_OsTask_BSW_1ms.c
+
+Compiling rte\gen\Core0_OsTask_BSW_50ms.c
+
+Compiling rte\gen\Core1_OsTask_ASW_10ms.c
+
+Compiling rte\gen\Core1_OsTask_BSW_10ms.c
+
+Compiling rte\gen\Rte.c
+
+Compiling rte\gen\Rte_Lib.c
+
+Compiling mcal\MCAL_Gen\src\Fls_17_Dmu_PBcfg.c
+
+Compiling mcal\MCAL_Gen\src\Gpt_PBcfg.c
+
+Compiling mcal\MCAL_Gen\src\Icu_17_TimerIp_PBcfg.c
+
+
+Compiling mcal\MCAL_Gen\src\Sent_PBcfg.c
+Compiling mcal\MCAL_Gen\src\Spi_PBcfg.c
+
+Compiling mcal\MCAL_Modules\Adc\src\Adc.c
+
+Compiling mcal\MCAL_Modules\Can_17_McmCan\src\Can_17_McmCan.c
+
+Compiling mcal\MCAL_Modules\Dio\src\Dio.c
+
+Compiling mcal\MCAL_Modules\Fls_17_Dmu\src\Fls_17_Dmu.c
+
+Compiling mcal\MCAL_Modules\Fls_17_Dmu\src\Fls_17_Dmu_ac.c
+
+Compiling mcal\MCAL_Modules\Gpt\src\Gpt.c
+
+Compiling mcal\MCAL_Modules\Icu_17_TimerIp\src\Icu_17_TimerIp.c
+ctc W560: ["mcal\MCAL_Modules\Fls_17_Dmu\src\Fls_17_Dmu.c" 2657/28] possible truncation at implicit conversion to type "unsigned char"
+0 errors, 1 warnings
+
+
+Compiling mcal\MCAL_Modules\Mcu\src\Mcu.c
+Compiling mcal\MCAL_Modules\Mcu\src\Mcu_17_TimerIp.c
+ctc W505: ["mcal\MCAL_Modules\Adc\src\Adc.c" 14475/3] implicit declaration of function "Dem_ReportErrorStatus"
+ctc W577: ["mcal\MCAL_Modules\Adc\src\Adc.c" 14475/24] calling a function without a prototype
+ctc W536: ["mcal\MCAL_Modules\Adc\src\Adc.c" 14467/13] unused static function "Adc_lReportDemError"
+0 errors, 3 warnings
+
+Compiling mcal\MCAL_Modules\Port\src\Port.c
+
+Compiling mcal\MCAL_Modules\Pwm_17_GtmCcu6\src\Pwm_17_GtmCcu6.c
+
+Compiling mcal\MCAL_Modules\Sent\src\Sent.c
+
+Compiling mcal\MCAL_Modules\Smu\src\Smu.c
+
+
+Compiling mcal\MCAL_Modules\Spi\src\Spi.c
+Compiling mcal\MCAL_Modules\Stm\src\Stm.c
+
+Compiling mcal\MCAL_Modules\Wdg_17_Scu\src\Wdg_17_Scu.c
+
+
+
+
+Linking output\dbg\D_ENTRY_PLATFROM.elf...
+ltc E106: unresolved external: shutdown_b - (ASW_NVM.o)
+ltc E106: unresolved external: Rte_DRead_RPort_UserSend_Data - (CDD_USER.o)
+ltc E106: unresolved external: Rte_Write_PPort_UserRec_Data - (CDD_USER.o)
+ltc E106: unresolved external: TestNm_RemoteSleepIndication - (Nm_Cfg.o)
+ltc E106: unresolved external: Nm_RxIndicationCallback - (Nm_Cfg.o)
+ltc E106: unresolved external: TestNm_RemoteSleepCancellation - (Nm_Cfg.o)
+ltc E106: unresolved external: Nm_StateChangeIndication - (Nm_Cfg.o)
+ltc E106: unresolved external: _nop - (Task_NonRte.o)
+ltc F019: unrecoverable error: fatal link error
+
+===================
+None
+===================
+scons: *** [output\dbg\D_ENTRY_PLATFROM.elf] Error 2
+scons: building terminated because of errors.

@@ -1,0 +1,195 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc29852a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\ChainTask.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\ChainTask.
+                            c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.ChainTask.Os_ChainTask',code
+0000                     11         .sect   '.text.ChainTask.Os_ChainTask'
+                         12         .align  2
+                         13         
+                         14         .global Os_ChainTask
+                         15 ; Function Os_ChainTask
+0000                     16 Os_ChainTask:   .type   func
+0000 404C      1    1    17         mov.aa  a12,a4
+0002 8208      1    2    18         mov     d8,#0
+0004 91r0rr2r  1    3    19         movh.a  a2,#@his(Os_const_coreconfiguration)
+0008 D922rrrr  1    4    20         lea     a2,[a2]@los(Os_const_coreconfiguration)
+000C 4DC0E10F  1    5    21         mfcr    d0,#65052
+0010 538021F0  3    8    22         mul     d15,d0,#24
+0014 102D      1    9    23         addsc.a a13,a2,d15,#0
+0016 D4DE      1   10    24         ld.a    a14,[a13]
+0018 4DC0E29F  1   11    25         mfcr    d9,#65068
+001C 0D004003  1   12    26         disable
+0020 BBF00008  1   13    27         mov.u   d0,#32783
+0024 CDC0E20F  1   14    28         mtcr    #65068,d0
+0028 0D00C004  1   15    29         isync
+                         30         
+002C 09CFD408  1   16    31         ld.hu   d15,[a12]20
+0030 538F2100  3   19    32         mul     d0,d15,#24
+0034 012000F6  1   20    33         addsc.a a15,a2,d0,#0
+0038 D4FF      1   21    34         ld.a    a15,[a15]
+003A 09F05D18  1   22    35         ld.bu   d0,[a15]93
+003E F604      1   23    36         jne     d0,#0,.L2
+0040 3B300180  1   24    37         mov     d8,#19
+0044 3C7A      1   25    38         j       .L3
+0046                     39 .L2:
+0046 CCE5      1   26    40         ld.a    a15,[a14]20
+0048 7DFC6700  1   27    41         jeq.a   a12,a15,.L4
+004C 6E03      1   28    42         jeq     d15,#0,.L5
+004E 1E1B      1   29    43         jeq     d15,#1,.L6
+0050 3C63      1   30    44         j       .L7
+0052                     45 .L5:
+0052 D4CF      1   31    46         ld.a    a15,[a12]
+0054 09CF6408  1   32    47         ld.bu   d15,[a12]36
+0058 09F06418  1   33    48         ld.bu   d0,[a15]100
+005C 5F0F5D80  1   34    49         jne     d15,d0,.L8
+0060 8248      1   35    50         mov     d8,#4
+0062 3C6B      1   36    51         j       .L9
+0064                     52 .L6:
+0064 91r0rr5r  1   37    53         movh.a  a5,#@his(Os_ControlledCoreInfo)
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0068 D955rrrr  1   38    54         lea     a5,[a5]@los(Os_ControlledCoreInfo)
+006C 4954281A  1   39    55         lea     a4,[a5]104
+0070 3C09      1   40    56         j       .L10
+0072                     57 .L11:
+0072 0000      1   41    58         nop
+0074 0000      1   42    59         nop
+0076 0000      1   43    60         nop
+0078 0000      1   44    61         nop
+007A 0000      1   45    62         nop
+007C 0000      1   46    63         nop
+007E 0000      1   47    64         nop
+0080 0000      1   48    65         nop
+0082                     66 .L10:
+0082 DA01      1   49    67         mov     d15,#1
+0084 495F2818  1   50    68         swap.w  [a5]104,d15
+0088 EEF5      1   51    69         jne     d15,#0,.L11
+008A D4CF      1   52    70         ld.a    a15,[a12]
+008C 09C06408  1   53    71         ld.bu   d0,[a12]36
+0090 09FF6414  1   54    72         ld.bu   d15,[+a15]100
+0094 7E09      1   55    73         jne     d15,d0,.L12
+0096 8248      1   56    74         mov     d8,#4
+0098 0D008004  1   57    75         dsync
+009C A00F      1   58    76         mov.a   a15,#0
+009E F44F      1   59    77         st.a    [a4],a15
+00A0 0D008004  1   60    78         dsync
+00A4 3C4A      1   61    79         j       .L13
+00A6                     80 .L12:
+00A6 09D0D408  1   62    81         ld.hu   d0,[a13]20
+00AA 09C1D408  1   63    82         ld.hu   d1,[a12]20
+00AE 5F102E00  1   64    83         jeq     d0,d1,.L14
+00B2 C21F      1   65    84         add     d15,#1
+00B4 34FF      1   66    85         st.b    [a15],d15
+00B6 CCCA      1   67    86         ld.a    a15,[a12]40
+00B8 A002      1   68    87         mov.a   a2,#0
+00BA 7DF21800  1   69    88         jeq.a   a2,a15,.L15
+00BE 91r0rr2r  1   70    89         movh.a  a2,#@his(Os_dyn_fifocontrol)
+00C2 482F      1   71    90         ld.w    d15,[a15]8
+00C4 D922rrrr  1   72    91         lea     a2,[a2]@los(Os_dyn_fifocontrol)
+00C8 902F      1   73    92         addsc.a a15,a2,d15,#2
+00CA C81F      1   74    93         ld.a    a15,[a15]4
+00CC F4FC      1   75    94         st.a    [a15],a12
+00CE CCCA      1   76    95         ld.a    a15,[a12]40
+00D0 482F      1   77    96         ld.w    d15,[a15]8
+00D2 C817      1   78    97         ld.a    a7,[a15]4
+00D4 062F      1   79    98         sh      d15,#2
+00D6 1022      1   80    99         addsc.a a2,a2,d15,#0
+00D8 09268405  1   81   100         ld.a    a6,[+a2]4
+00DC 7D760480  1   82   101         jne.a   a6,a7,.L16
+00E0 D4FF      1   83   102         ld.a    a15,[a15]
+00E2 3C03      1   84   103         j       .L17
+00E4                    104 .L16:
+00E4 496F040A  1   85   105         lea     a15,[a6]4
+00E8                    106 .L17:
+00E8 F42F      1   86   107         st.a    [a2],a15
+00EA                    108 .L15:
+00EA 09502C19  1   87   109         ld.w    d0,[a5]108
+00EE 4CC2      1   88   110         ld.w    d15,[a12]8
+00F0 A6F0      1   89   111         or      d0,d15
+00F2 89502C19  1   90   112         st.w    [a5]108,d0
+00F6 0D008004  1   91   113         dsync
+00FA A00F      1   92   114         mov.a   a15,#0
+00FC F44F      1   93   115         st.a    [a4],a15
+00FE 0D008004  1   94   116         dsync
+0102 8214      1   95   117         mov     d4,#1
+0104 6Drrrrrr  2   97   118         call    Os_RaiseCrossCoreISR
+0108 3C07      1   98   119         j       .L18
+010A                    120 .L14:
+010A 0D008004  1   99   121         dsync
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   3
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+010E A00F      1  100   122         mov.a   a15,#0
+0110 F44F      1  101   123         st.a    [a4],a15
+0112 0D008004  1  102   124         dsync
+0116                    125 .L18:
+0116                    126 .L8:
+0116                    127 .L7:
+0116                    128 .L4:
+0116 09E29409  1  103   129         ld.a    a2,[a14]20
+011A A00F      1  104   130         mov.a   a15,#0
+011C 7D2F1100  1  105   131         jeq.a   a15,a2,.L19
+0120 09C0D408  1  106   132         ld.hu   d0,[a12]20
+0124 09DFD408  1  107   133         ld.hu   d15,[a13]20
+0128 7E03      1  108   134         jne     d15,d0,.L20
+012A 89EC9019  1  109   135         st.a    [a14]80,a12
+012E                    136 .L20:
+012E CCE5      1  110   137         ld.a    a15,[a14]20
+0130 D4F4      1  111   138         ld.a    a4,[a15]
+0132 6Drrrrrr  2  113   139         call    Os_longjmp
+0136 3C04      1  114   140         j       .L21
+0138                    141 .L13:
+0138                    142 .L9:
+0138                    143 .L3:
+0138 0284      1  115   144         mov     d4,d8
+013A 6Drrrrrr  2  117   145         call    Os_ErrorLog
+013E                    146 .L21:
+013E                    147 .L19:
+013E CDC9E20F  1  118   148         mtcr    #65068,d9
+0142 0D00C004  1  119   149         isync
+                        150         
+0146 0282      1  120   151         mov     d2,d8
+0148 0090      2  122   152         ret
+                        153         
+014A                    154 __Os_ChainTask_function_end:
+                        155         .size   Os_ChainTask,__Os_ChainTask_function_end-Os_ChainTask
+                        156         ; End of function
+                        157         
+                        158         .calls  'Os_ChainTask','Os_RaiseCrossCoreISR'
+                        159         .calls  'Os_ChainTask','Os_longjmp'
+                        160         .calls  'Os_ChainTask','Os_ErrorLog'
+                        161         .extern Os_longjmp
+                        162         .extern Os_const_coreconfiguration
+                        163         .extern Os_ControlledCoreInfo
+                        164         .extern Os_RaiseCrossCoreISR
+                        165         .extern Os_ErrorLog
+                        166         .extern Os_dyn_fifocontrol
+                        167         .calls  'Os_ChainTask','',0
+                        168         ; Module end

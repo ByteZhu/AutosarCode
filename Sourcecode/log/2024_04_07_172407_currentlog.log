@@ -1,0 +1,390 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling asw\ASW_COM\src\ASW_COM.c
+Compiling asw\ASW_CORE0\src\ASW_CORE0.c
+Compiling asw\ASW_CORE1\src\ASW_CORE1.c
+Compiling asw\ASW_DCM\src\ASW_DCM.c
+ctc W537: ["asw\ASW_COM\src\ASW_COM.c" 86/17] unused variable "retValue"
+0 errors, 1 warnings
+
+Compiling asw\ASW_DCM\src\ASW_DCM_RoutineServices_CheckMemoryCRC_RequestRoutineResults_func.c
+ctc W537: ["asw\ASW_CORE0\src\ASW_CORE0.c" 68/17] unused variable "retValue"
+0 errors, 1 warnings
+
+Compiling asw\ASW_DCM\src\ASW_DCM_RoutineServices_CheckMemoryCRC_Start_func.c
+
+Compiling asw\ASW_DCM\src\ASW_DCM_RoutineServices_CheckMemoryCRC_Stop_func.c
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 502/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 503/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 504/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 505/13] pointers to different types at argument #1
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 41/14] unused variable "mode_Nrc0x72"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 42/14] unused variable "mode_Nrc0x22"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 49/50] unused variable "HwRef"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 50/50] unused variable "SwRef"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 53/51] unused variable "NCF_Reference_Number"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 214/17] unused variable "retValue"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 491/45] unused variable "write11"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 500/17] unused variable "retValue"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 837/17] unused variable "retValue"
+0 errors, 13 warnings
+
+Compiling asw\ASW_DCM\src\Diag_DIDRamBlock.c
+
+
+
+
+Compiling asw\ASW_DCM\src\Diag_SeedKey.c
+Compiling asw\ASW_DEM\src\ASW_DEM_CBStatusComp_DemComponent_func.c
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_CS_ExtendedDataRecord_Aged_counter_ReadData_func.c
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_CS_ExtendedDataRecord_Fault_pending_counter_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Day_ReadData_func.c
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_CBStatusComp_DemComponent_func.c" 50/17] unused variable "retValue"
+0 errors, 1 warnings
+
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Hour_ReadData_func.c
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Minute_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Month_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_OdometerReading_ReadData_func.c
+
+ 
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_PowerMode_ReadData_func.c
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_SupplyVoltage_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Year_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c
+
+
+
+Compiling asw\ASW_NVM\src\ASW_NVM.c
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 48/38] unused variable "EventStatus1"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 50/17] unused variable "syncCall2"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 51/17] unused variable "syncCall3"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 52/17] unused variable "syncCall4"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 53/30] unused variable "DebounceResetStatus2"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 54/17] unused variable "syncCall5"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 55/22] unused variable "EventStatus3"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 57/17] unused variable "syncCall7"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 58/17] unused variable "syncCall8"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 59/17] unused variable "syncCall9"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 60/30] unused variable "DebounceResetStatus4"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 61/17] unused variable "syncCall10"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 63/17] unused variable "syncCall11"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 65/17] unused variable "syncCall12"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 67/17] unused variable "syncCall13"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 69/17] unused variable "syncCall14"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 70/22] unused variable "EventStatus9"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 72/17] unused variable "syncCall16"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 73/17] unused variable "syncCall17"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 74/17] unused variable "syncCall18"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 75/30] unused variable "DebounceResetStatus10"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 76/17] unused variable "syncCall19"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 77/17] unused variable "syncCall20"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 78/22] unused variable "EventStatus11"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 80/17] unused variable "syncCall22"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 81/17] unused variable "syncCall23"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 82/17] unused variable "syncCall24"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 83/30] unused variable "DebounceResetStatus12"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 84/17] unused variable "syncCall25"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 85/17] unused variable "syncCall26"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 101/17] unused variable "retValue"
+0 errors, 31 warnings
+
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 89/100] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 94/83] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 100/100] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 105/83] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 111/100] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 115/100] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 121/89] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 124/89] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 151/101] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 168/68] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 169/68] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 205/81] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 206/81] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 212/103] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 225/103] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 237/80] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 238/80] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 247/80] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 253/101] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 271/80] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 276/84] expression without effect
+0 errors, 21 warnings
+
+Compiling asw\ASW_USER\src\ASW_USER.c
+Compiling asw\ASW_XCP\src\ASW_XCP.c
+Compiling asw\CDD_CORE0\src\CDD_CORE0.c
+Compiling asw\CDD_USER\src\CDD_USER.c
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 54/9] unused variable "dRead1"
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 55/9] unused variable "write2"
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 56/17] unused variable "retdRead1"
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 57/17] unused variable "retWrite2"
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 65/17] unused variable "retValue"
+0 errors, 5 warnings
+
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 56/27] unused variable "cpuWdtPassword"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 57/27] unused variable "safetyWdtPassword"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 58/20] unused variable "watchdog"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 59/21] unused variable "CpuWatchDog"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 60/17] unused variable "retValue"
+0 errors, 5 warnings
+
+ctc W537: ["asw\CDD_USER\src\CDD_USER.c" 56/17] unused variable "retdRead1"
+ctc W537: ["asw\CDD_USER\src\CDD_USER.c" 57/17] unused variable "retWrite2"
+ctc W537: ["asw\CDD_USER\src\CDD_USER.c" 65/17] unused variable "retValue"
+ctc W506: ["asw\CDD_USER\src\CDD_USER.c" 71/22] variable "dRead1" is not initialized
+0 errors, 4 warnings
+
+Compiling bsw\BswM\src\BswM.c
+Compiling bsw\BswM\src\BswM_CanSM.c
+Compiling bsw\BswM\src\BswM_ComM.c
+ctc W537: ["asw\CDD_CORE0\src\CDD_CORE0.c" 27/34] unused variable "StateCaculationCore0"
+ctc W537: ["asw\CDD_CORE0\src\CDD_CORE0.c" 33/14] unused variable "Status_global"
+ctc W537: ["asw\CDD_CORE0\src\CDD_CORE0.c" 39/15] unused variable "DataReceiverCore0_ClientServer"
+ctc W537: ["asw\CDD_CORE0\src\CDD_CORE0.c" 45/15] unused variable "Duration_global"
+ctc W537: ["asw\CDD_CORE0\src\CDD_CORE0.c" 51/16] unused variable "CPU_PercentUtilization_global"
+ctc W537: ["asw\CDD_CORE0\src\CDD_CORE0.c" 52/16] unused variable "MaxUserStackUtilization_f64"
+0 errors, 6 warnings
+
+Compiling bsw\BswM\src\BswM_DCM.c
+
+Compiling bsw\BswM\src\BswM_EcuM.c
+
+
+Compiling bsw\BswM\src\BswM_EthIf.c
+Compiling bsw\BswM\src\BswM_EthSM.c
+
+Compiling bsw\BswM\src\BswM_FrSM.c
+
+Compiling bsw\BswM\src\BswM_Generic.c
+
+
+Compiling bsw\BswM\src\BswM_J1939Dcm.c
+Compiling bsw\BswM\src\BswM_J1939Nm.c
+
+Compiling bsw\BswM\src\BswM_LinSM.c
+
+Compiling bsw\BswM\src\BswM_LinTp.c
+
+
+Compiling bsw\BswM\src\BswM_Nm.c
+Compiling bsw\BswM\src\BswM_NvM.c
+
+Compiling bsw\BswM\src\BswM_Prv.c
+
+Compiling bsw\BswM\src\BswM_Prv_AC.c
+
+Compiling bsw\BswM\src\BswM_Prv_AL.c
+
+Compiling bsw\BswM\src\BswM_Prv_IntrptQueue.c
+
+Compiling bsw\BswM\src\BswM_Prv_MRP.c
+
+Compiling bsw\BswM\src\BswM_Prv_ProcessDeferredRequest.c
+
+Compiling bsw\BswM\src\BswM_Prv_ProcessDelayedReqst.c
+
+Compiling bsw\BswM\src\BswM_Prv_RL.c
+
+Compiling bsw\BswM\src\BswM_Sd.c
+
+Compiling bsw\BswM\src\BswM_WdgM.c
+
+
+Compiling bsw\CanIf\src\CanIf_Baudrate.c
+Compiling bsw\CanIf\src\CanIf_Controller.c
+
+Compiling bsw\CanIf\src\CanIf_GetTxConfirmationState.c
+
+Compiling bsw\CanIf\src\CanIf_GetVersionInfo.c
+
+Compiling bsw\CanIf\src\CanIf_Init.c
+
+Compiling bsw\CanIf\src\CanIf_PduMode.c
+
+Compiling bsw\CanIf\src\CanIf_Prv.c
+
+Compiling bsw\CanIf\src\CanIf_Prv_Buffer.c
+
+Compiling bsw\CanIf\src\CanIf_Rb_Apis.c
+
+Compiling bsw\CanIf\src\CanIf_ReadNotifStatus.c
+
+Compiling bsw\CanIf\src\CanIf_ReadRxPduData.c
+
+Compiling bsw\CanIf\src\CanIf_RxIndication.c
+
+Compiling bsw\CanIf\src\CanIf_SetDynamicTxId.c
+
+Compiling bsw\CanIf\src\CanIf_Shared.c
+
+Compiling bsw\CanIf\src\CanIf_Transceiver.c
+
+Compiling bsw\CanIf\src\CanIf_Transmit.c
+
+Compiling bsw\CanIf\src\CanIf_TriggerTransmit.c
+
+Compiling bsw\CanIf\src\CanIf_TxConfirmation.c
+
+Compiling bsw\CanIf\src\CanIf_Wakeup.c
+
+Compiling bsw\CanIf\src\CanIf_XCore.c
+
+
+Compiling bsw\CanNm\src\CanNm.c
+Compiling bsw\CanNm\src\CanNm_ChangeState.c
+
+Compiling bsw\CanNm\src\CanNm_CheckRemoteSleepIndication.c
+
+Compiling bsw\CanNm\src\CanNm_ConfirmPnAvailability.c
+
+Compiling bsw\CanNm\src\CanNm_DisableCommunication.c
+
+
+Compiling bsw\CanNm\src\CanNm_EnableCommunication.c
+Compiling bsw\CanNm\src\CanNm_GetLocalNodeIdentifier.c
+
+Compiling bsw\CanNm\src\CanNm_GetNodeIdentifier.c
+
+Compiling bsw\CanNm\src\CanNm_GetPduData.c
+
+
+Compiling bsw\CanNm\src\CanNm_GetState.c
+Compiling bsw\CanNm\src\CanNm_GetUserData.c
+
+Compiling bsw\CanNm\src\CanNm_GetVersionInfo.c
+
+Compiling bsw\CanNm\src\CanNm_Init.c
+
+Compiling bsw\CanNm\src\CanNm_NetworkRelease.c
+
+Compiling bsw\CanNm\src\CanNm_NetworkRequest.c
+
+Compiling bsw\CanNm\src\CanNm_PassiveStartup.c
+
+
+Compiling bsw\CanNm\src\CanNm_RepeatMessageRequest.c
+Compiling bsw\CanNm\src\CanNm_RequestBusSynchronization.c
+
+Compiling bsw\CanNm\src\CanNm_RequestSynchronizedPncShutdown.c
+
+Compiling bsw\CanNm\src\CanNm_RxIndication.c
+
+Compiling bsw\CanNm\src\CanNm_SetSleepReadyBit.c
+
+Compiling bsw\CanNm\src\CanNm_SetUserData.c
+
+Compiling bsw\CanNm\src\CanNm_StartTransmission.c
+
+Compiling bsw\CanNm\src\CanNm_Transmit.c
+
+Compiling bsw\CanNm\src\CanNm_TriggerTransmit.c
+
+Compiling bsw\CanNm\src\CanNm_TxConfirmation.c
+
+Compiling bsw\CanSM\src\CanSM_CheckTransceiverWakeFlagIndication.c
+
+Compiling bsw\CanSM\src\CanSM_ClearTrcvWufFlagIndication.c
+
+Compiling bsw\CanSM\src\CanSM_ConfirmPnAvailability.c
+
+Compiling bsw\CanSM\src\CanSM_ControllerBusoff.c
+
+Compiling bsw\CanSM\src\CanSM_ControllerModeIndication.c
+
+Compiling bsw\CanSM\src\CanSM_GetCurrentComMode.c
+
+Compiling bsw\CanSM\src\CanSM_GetVersionInfo.c
+
+Compiling bsw\CanSM\src\CanSM_Init.c
+
+Compiling bsw\CanSM\src\CanSM_InternalStateTransition.c
+
+Compiling bsw\CanSM\src\CanSM_Main.c
+
+Compiling bsw\CanSM\src\CanSM_NetworkModes.c
+
+Compiling bsw\CanSM\src\CanSM_RequestComMode.c
+
+Compiling bsw\CanSM\src\CanSM_SetBaudrate.c
+
+Compiling bsw\CanSM\src\CanSM_SetEcuPassive.c
+
+Compiling bsw\CanSM\src\CanSM_StartWakeupSource.c
+
+Compiling bsw\CanSM\src\CanSM_StopWakeupSource.c
+
+Compiling bsw\CanSM\src\CanSM_TransceiverModeIndication.c
+
+Compiling bsw\CanSM\src\CanSM_TxTimeoutException.c
+
+Compiling bsw\CanTp\src\CanTp.c
+
+Compiling bsw\CanTp\src\CanTp_Prv.c
+
+
+Compiling bsw\Com\src\Com_BusLoadManagement.c
+Compiling bsw\Com\src\Com_ByteCopy.c
+
+Compiling bsw\Com\src\Com_ByteCopyInit.c
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+10 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\bsw\Com\Com_ByteCopy.o] Error 1
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+10 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\bsw\Com\Com_BusLoadManagement.o] Error 1
+
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+ctc E201: [".\Integration\BSW\integration\Memmap\Bsw_MemMap.h" 1536/5] #error "Bsw_MemMap.h, memmap section unconfigured"
+10 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\bsw\Com\Com_ByteCopyInit.o] Error 1
+scons: building terminated because of errors.

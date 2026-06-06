@@ -1,0 +1,209 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc11880a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\Os_Wrapper.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\Os_Wrapper
+                            .c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.Os_Wrapper.Os_ISRWrapper0',code
+0000                     11         .sect   '.text.Os_Wrapper.Os_ISRWrapper0'
+                         12         .align  2
+                         13         
+                         14         .global Os_ISRWrapper0
+                         15 ; Function Os_ISRWrapper0
+0000                     16 Os_ISRWrapper0: .type   func
+0000 2010      1    1    17         sub.a   a10,#16
+0002 0B451088  1    2    18         mov     e8,d5,d4
+0006 91r0rrCr  1    3    19         movh.a  a12,#@his(Os_ControlledCoreInfo)
+000A D9CCrrrr  1    4    20         lea     a12,[a12]@los(Os_ControlledCoreInfo)
+000E 09CC4118  1    5    21         ld.bu   d12,[a12]65
+0012 DA02      1    6    22         mov     d15,#2
+0014 89CF0118  1    7    23         st.b    [a12]65,d15
+0018 6Drrrrrr  2    9    24         call    Os_GetSP
+001C 49CD1C0A  1   10    25         lea     a13,[a12]28
+0020 D4D2      1   11    26         ld.a    a2,[a13]
+0022 F4A2      1   12    27         st.a    [a10],a2
+0024 49CF001A  1   13    28         lea     a15,[a12]64
+0028 F801      1   14    29         st.a    [a10]4,a15
+002A 49CE100A  1   15    30         lea     a14,[a12]16
+002E D4EF      1   16    31         ld.a    a15,[a14]
+0030 0B2310A8  1   17    32         mov     e10,d3,d2
+0034 09CD4018  1   18    33         ld.bu   d13,[a12]64
+0038 F803      1   19    34         st.a    [a10]12,a15
+003A 492F080A  1   20    35         lea     a15,[a2]8
+003E 02A0      1   21    36         mov     d0,d10
+0040 542F      1   22    37         ld.w    d15,[a2]
+0042 5202      1   23    38         sub     d2,d15,d0
+0044 4C21      1   24    39         ld.w    d15,[a2]4
+0046 02B0      1   25    40         mov     d0,d11
+0048 5203      1   26    41         sub     d3,d15,d0
+004A 54F0      1   27    42         ld.w    d0,[a15]
+004C 022F      1   28    43         mov     d15,d2
+004E 7FF00380  1   29    44         jge.u   d0,d15,.L2
+0052 74FF      1   30    45         st.w    [a15],d15
+0054                     46 .L2:
+0054 D4DF      1   31    47         ld.a    a15,[a13]
+0056 09FF0C05  1   32    48         ld.w    d15,[+a15]12
+005A 7F3F0380  1   33    49         jge.u   d15,d3,.L3
+005E 74F3      1   34    50         st.w    [a15],d3
+0060                     51 .L3:
+0060 D4DF      1   35    52         ld.a    a15,[a13]
+0062 49F2100A  1   36    53         lea     a2,[a15]16
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0066 482F      1   37    54         ld.w    d15,[a15]8
+0068 5420      1   38    55         ld.w    d0,[a2]
+006A 7FF00380  1   39    56         jge.u   d0,d15,.L4
+006E 742F      1   40    57         st.w    [a2],d15
+0070                     58 .L4:
+0070 D4DF      1   41    59         ld.a    a15,[a13]
+0072 49F2140A  1   42    60         lea     a2,[a15]20
+0076 483F      1   43    61         ld.w    d15,[a15]12
+0078 5420      1   44    62         ld.w    d0,[a2]
+007A 7FF00380  1   45    63         jge.u   d0,d15,.L5
+007E 742F      1   46    64         st.w    [a2],d15
+0080                     65 .L5:
+0080 D4DF      1   47    66         ld.a    a15,[a13]
+0082 8203      1   48    67         mov     d3,#0
+0084 482F      1   49    68         ld.w    d15,[a15]8
+0086 4860      1   50    69         ld.w    d0,[a15]24
+0088 4831      1   51    70         ld.w    d1,[a15]12
+008A 4872      1   52    71         ld.w    d2,[a15]28
+008C 5204      1   53    72         sub     d4,d15,d0
+008E 0B218050  1   54    73         sub     d5,d1,d2
+0092 3FF00480  1   55    74         jlt.u   d0,d15,.L6
+0096 7F120380  1   56    75         jge.u   d2,d1,.L7
+009A                     76 .L6:
+009A 8213      1   57    77         mov     d3,#1
+009C                     78 .L7:
+009C 7639      1   58    79         jeq     d3,#0,.L8
+009E 8206      1   59    80         mov     d6,#0
+00A0 6Drrrrrr  2   61    81         call    Os_Cbk_StackOverrunHook
+00A4 D4DF      1   62    82         ld.a    a15,[a13]
+00A6 82FF      1   63    83         mov     d15,#-1
+00A8 6CF6      1   64    84         st.w    [a15]24,d15
+00AA D4DF      1   65    85         ld.a    a15,[a13]
+00AC 6CF7      1   66    86         st.w    [a15]28,d15
+00AE                     87 .L8:
+00AE 53C821F0  3   69    88         mul     d15,d8,#28
+00B2 91r0rrFr  1   70    89         movh.a  a15,#@his(Os_const_isrs)
+00B6 D9FFrrrr  1   71    90         lea     a15,[a15]@los(Os_const_isrs)
+00BA 10FF      1   72    91         addsc.a a15,a15,d15,#0
+00BC F4EF      1   73    92         st.a    [a14],a15
+00BE D4EF      1   74    93         ld.a    a15,[a14]
+00C0 09FF5908  1   75    94         ld.bu   d15,[a15]25
+00C4 53CF20F0  3   78    95         mul     d15,d15,#12
+00C8 91r0rrFr  1   79    96         movh.a  a15,#@his(Os_const_applications)
+00CC D9FFrrrr  1   80    97         lea     a15,[a15]@los(Os_const_applications)
+00D0 10FF      1   81    98         addsc.a a15,a15,d15,#0
+00D2 088F      1   82    99         ld.bu   d15,[a15]8
+00D4 D801      1   83   100         ld.a    a15,[a10]4
+00D6 34FF      1   84   101         st.b    [a15],d15
+00D8 D4EF      1   85   102         ld.a    a15,[a14]
+00DA C81F      1   86   103         ld.a    a15,[a15]4
+00DC F4DF      1   87   104         st.a    [a13],a15
+00DE 89FA4009  1   88   105         st.d    [a15]0,e10
+00E2 D4DF      1   89   106         ld.a    a15,[a13]
+00E4 DA00      1   90   107         mov     d15,#0
+00E6 6CF2      1   91   108         st.w    [a15]8,d15
+00E8 D4DF      1   92   109         ld.a    a15,[a13]
+00EA 6CF3      1   93   110         st.w    [a15]12,d15
+00EC D4DF      1   94   111         ld.a    a15,[a13]
+00EE D4E2      1   95   112         ld.a    a2,[a14]
+00F0 0922D009  1   96   113         ld.da   a2/a3,[a2]16
+00F4 89F2D809  1   97   114         st.da   [a15]24,a2/a3
+00F8 D4EF      1   98   115         ld.a    a15,[a14]
+00FA 482F      1   99   116         ld.w    d15,[a15]8
+00FC CDCFE20F  1  100   117         mtcr    #65068,d15
+0100 0D00C004  1  101   118         isync
+                        119         
+0104 D4EF      1  102   120         ld.a    a15,[a14]
+0106 D4FF      1  103   121         ld.a    a15,[a15]
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   3
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0108 2D0F0000  2  105   122         calli   a15
+010C 0D004003  1  106   123         disable
+0110 BBF000F8  1  107   124         mov.u   d15,#32783
+0114 CDCFE20F  1  108   125         mtcr    #65068,d15
+0118 0D00C004  1  109   126         isync
+                        127         
+011C D4DF      1  110   128         ld.a    a15,[a13]
+011E 49F2100A  1  111   129         lea     a2,[a15]16
+0122 482F      1  112   130         ld.w    d15,[a15]8
+0124 5420      1  113   131         ld.w    d0,[a2]
+0126 7FF00380  1  114   132         jge.u   d0,d15,.L9
+012A 742F      1  115   133         st.w    [a2],d15
+012C                    134 .L9:
+012C D4DF      1  116   135         ld.a    a15,[a13]
+012E 49F2140A  1  117   136         lea     a2,[a15]20
+0132 483F      1  118   137         ld.w    d15,[a15]12
+0134 5420      1  119   138         ld.w    d0,[a2]
+0136 7FF00380  1  120   139         jge.u   d0,d15,.L10
+013A 742F      1  121   140         st.w    [a2],d15
+013C                    141 .L10:
+013C 7B0004F0  1  122   142         movh    d15,#64
+0140 D803      1  123   143         ld.a    a15,[a10]12
+0142 F4EF      1  124   144         st.a    [a14],a15
+0144 7FF90D80  1  125   145         jge.u   d9,d15,.L11
+0148 4CC3      1  126   146         ld.w    d15,[a12]12
+014A 09C01809  1  127   147         ld.w    d0,[a12]24
+014E 0BF030F1  1  128   148         lt.u    d15,d0,d15
+0152 6E06      1  129   149         jeq     d15,#0,.L12
+0154 49CF200A  1  130   150         lea     a15,[a12]32
+0158 F4DF      1  131   151         st.a    [a13],a15
+015A 6Drrrrrr  2  133   152         call    Os_Dispatch0
+015E                    153 .L12:
+015E                    154 .L11:
+015E D4A2      1  134   155         ld.a    a2,[a10]
+0160 F4D2      1  135   156         st.a    [a13],a2
+0162 89CD0018  1  136   157         st.b    [a12]64,d13
+0166 89CC0118  1  137   158         st.b    [a12]65,d12
+016A 0D004002  4  141   159         rslcx
+016E 0000      1  142   160         nop
+0170 0000      1  143   161         nop
+0172 0000      1  144   162         nop
+0174 0080      2  146   163         rfe
+0176 0090      2  148   164         ret
+                        165         
+0178                    166 __Os_ISRWrapper0_function_end:
+                        167         .size   Os_ISRWrapper0,__Os_ISRWrapper0_function_end-Os_ISRWrapper0
+                        168         ; End of function
+                        169         
+                        170         .calls  'Os_ISRWrapper0','Os_GetSP'
+                        171         .calls  'Os_ISRWrapper0','Os_Cbk_StackOverrunHook'
+                        172         .calls  'Os_ISRWrapper0','__INDIRECT__'
+                        173         .calls  'Os_ISRWrapper0','Os_Dispatch0'
+                        174         .extern Os_Cbk_StackOverrunHook
+                        175         .extern Os_GetSP
+                        176         .extern Os_const_applications
+                        177         .extern Os_const_isrs
+                        178         .extern Os_ControlledCoreInfo
+                        179         .extern Os_Dispatch0
+                        180         .extern __INDIRECT__
+                        181         .calls  'Os_ISRWrapper0','',16
+                        182         ; Module end

@@ -1,0 +1,82 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc27148a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\GetTaskState.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\GetTaskSta
+                            te.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.GetTaskState.Os_GetTaskState',code
+0000                     11         .sect   '.text.GetTaskState.Os_GetTaskState'
+                         12         .align  2
+                         13         
+                         14         .global Os_GetTaskState
+                         15 ; Function Os_GetTaskState
+0000                     16 Os_GetTaskState:        .type   func
+0000 094FD408  1    1    17         ld.hu   d15,[a4]20
+0004 6E03      1    2    18         jeq     d15,#0,.L2
+0006 9E10      1    3    19         jeq     d15,#1,.L3
+0008 3C20      1    4    20         j       .L4
+000A                     21 .L2:
+000A 91r0rrFr  1    5    22         movh.a  a15,#@his(Os_ControlledCoreInfo)
+000E D9FFrrrr  1    6    23         lea     a15,[a15]@los(Os_ControlledCoreInfo)
+0012 C852      1    7    24         ld.a    a2,[a15]20
+0014 7D421100  1    8    25         jeq.a   a2,a4,.L5
+0018 483F      1    9    26         ld.w    d15,[a15]12
+001A 09400809  1   10    27         ld.w    d0,[a4]8
+001E 260F      1   11    28         and     d15,d0
+0020 6E13      1   12    29         jeq     d15,#0,.L8
+0022 DA01      1   13    30         mov     d15,#1
+0024 3C11      1   14    31         j       .L7
+0026                     32 .L3:
+0026 91r0rrFr  1   15    33         movh.a  a15,#@his(Os_ControlledCoreInfo)
+002A D9FFrrrr  1   16    34         lea     a15,[a15]@los(Os_ControlledCoreInfo)
+002E 09F2B419  1   17    35         ld.a    a2,[a15]116
+0032 7D420480  1   18    36         jne.a   a2,a4,.L9
+0036                     37 .L5:
+0036 DA03      1   19    38         mov     d15,#3
+0038 3C07      1   20    39         j       .L10
+003A                     40 .L9:
+003A 09F02C19  1   21    41         ld.w    d0,[a15]108
+003E 4C42      1   22    42         ld.w    d15,[a4]8
+0040 26F0      1   23    43         and     d0,d15
+0042 8B0020F2  1   24    44         ne      d15,d0,#0
+0046                     45 .L7:
+0046                     46 .L8:
+0046                     47 .L10:
+0046 745F      1   25    48         st.w    [a5],d15
+0048                     49 .L4:
+0048 8202      1   26    50         mov     d2,#0
+004A 0090      2   28    51         ret
+                         52         
+004C                     53 __Os_GetTaskState_function_end:
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                         54         .size   Os_GetTaskState,__Os_GetTaskState_function_end-Os_GetTaskState
+                         55         ; End of function
+                         56         
+                         57         .extern Os_ControlledCoreInfo
+                         58         .calls  'Os_GetTaskState','',0
+                         59         ; Module end

@@ -1,0 +1,209 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc33804a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\Os_Cfg_HwCounters.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\Os_Cfg_HwC
+                            ounters.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.Os_Cfg_HwCounters.Os_AdvanceCounter_Rte_TickCounter',code
+0000                     11         .sect   '.text.Os_Cfg_HwCounters.Os_AdvanceCounter_Rte_TickCounter'
+                         12         .align  2
+                         13         
+                         14         .global Os_AdvanceCounter_Rte_TickCounter
+                         15 ; Function Os_AdvanceCounter_Rte_TickCounter
+0000                     16 Os_AdvanceCounter_Rte_TickCounter:      .type   func
+0000 91r0rrCr  1    1    17         movh.a  a12,#@his(Os_const_coreconfiguration)
+0004 D9CCrrrr  1    2    18         lea     a12,[a12]@los(Os_const_coreconfiguration)
+0008 D4C7      1    3    19         ld.a    a7,[a12]
+000A 4DC0E2AF  1    4    20         mfcr    d10,#65068
+000E 0D004003  1    5    21         disable
+0012 BBF00008  1    6    22         mov.u   d0,#32783
+0016 CDC0E20F  1    7    23         mtcr    #65068,d0
+001A 0D00C004  1    8    24         isync
+                         25         
+001E 91r0rr5r  1    9    26         movh.a  a5,#@his(Os_dyn_scheduletables)
+0022 D955rrrr  1   10    27         lea     a5,[a5]@los(Os_dyn_scheduletables)
+0026 BBF0FFBF  1   11    28         mov.u   d11,#65535
+002A 4C52      1   12    29         ld.w    d15,[a5]8
+002C 02BC      1   13    30         mov     d12,d11
+002E 91r0rrFr  1   14    31         movh.a  a15,#@his(Os_dyn_counters)
+0032 8208      1   15    32         mov     d8,#0
+0034 D9FFrrrr  1   16    33         lea     a15,[a15]@los(Os_dyn_counters)
+0038 54F9      1   17    34         ld.w    d9,[a15]
+003A 5E3D      1   18    35         jne     d15,#3,.L2
+003C 545F      1   19    36         ld.w    d15,[a5]
+003E 7E9B      1   20    37         jne     d15,d9,.L3
+0040 91r0rr4r  1   21    38         movh.a  a4,#@his(Os_const_scheduletables)
+0044 D944rrrr  1   22    39         lea     a4,[a4]@los(Os_const_scheduletables)
+0048 7B100040  1   23    40         movh    d4,#1
+004C 40C6      1   24    41         mov.aa  a6,a12
+004E 6Drrrrrr  2   26    42         call    Os_PerformEP
+0052 4025      1   27    43         mov.aa  a5,a2
+0054                     44 .L3:
+0054                     45 .L2:
+0054 4C52      1   28    46         ld.w    d15,[a5]8
+0056 5E3B      1   29    47         jne     d15,#3,.L4
+0058 545F      1   30    48         ld.w    d15,[a5]
+005A 8218      1   31    49         mov     d8,#1
+005C 5290      1   32    50         sub     d0,d15,d9
+005E 0BF950F1  1   33    51         ge.u    d15,d9,d15
+0062 ABFB9FFF  1   34    52         sel     d15,d15,d11,#-1
+0066 420F      1   35    53         add     d15,d0
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0068 0BBF90C1  1   36    54         min.u   d12,d15,d11
+006C                     55 .L4:
+006C 768D      1   37    56         jeq     d8,#0,.L7
+006E A2CB      1   38    57         sub     d11,d12
+0070 3FB90580  1   39    58         jlt.u   d9,d11,.L8
+0074 0BB98040  1   40    59         sub     d4,d9,d11
+0078 3C03      1   41    60         j       .L9
+007A                     61 .L8:
+007A 9A1C      1   42    62         add     d15,d12,#1
+007C 1294      1   43    63         add     d4,d15,d9
+007E                     64 .L9:
+007E 74F4      1   44    65         st.w    [a15],d4
+0080 6Drrrrrr  2   46    66         call    Os_Cbk_Set_Rte_TickCounter
+0084 3C05      1   47    67         j       .L10
+0086                     68 .L7:
+0086 6Drrrrrr  2   49    69         call    Os_Cbk_Cancel_Rte_TickCounter
+008A DA00      1   50    70         mov     d15,#0
+008C 2CF4      1   51    71         st.b    [a15]4,d15
+008E                     72 .L10:
+008E 8FFA0FF1  1   52    73         and     d15,d10,#255
+0092 EE0C      1   53    74         jne     d15,#0,.L11
+0094 91r0rrFr  1   54    75         movh.a  a15,#@his(Os_ControlledCoreInfo)
+0098 D9FFrrrr  1   55    76         lea     a15,[a15]@los(Os_ControlledCoreInfo)
+009C 4830      1   56    77         ld.w    d0,[a15]12
+009E 486F      1   57    78         ld.w    d15,[a15]24
+00A0 7F0F0580  1   58    79         jge.u   d15,d0,.L12
+00A4 CCC3      1   59    80         ld.a    a15,[a12]12
+00A6 2D0F0000  2   61    81         calli   a15
+00AA                     82 .L12:
+00AA                     83 .L11:
+00AA CDCAE20F  1   62    84         mtcr    #65068,d10
+00AE 0D00C004  1   63    85         isync
+                         86         
+00B2 8202      1   64    87         mov     d2,#0
+00B4 0090      2   66    88         ret
+                         89         
+00B6                     90 __Os_AdvanceCounter_Rte_TickCounter_function_end:
+                         91         .size   Os_AdvanceCounter_Rte_TickCounter,__Os_AdvanceCounter_Rte_TickCounter_function_end-Os_Ad
+                            vanceCounter_Rte_TickCounter
+                         92         ; End of function
+                         93         
+                         94         .sdecl  '.text.Os_Cfg_HwCounters.Os_HwCounterAbsoluteStart',code
+0000                     95         .sect   '.text.Os_Cfg_HwCounters.Os_HwCounterAbsoluteStart'
+                         96         .align  2
+                         97         
+                         98         .global Os_HwCounterAbsoluteStart
+                         99 ; Function Os_HwCounterAbsoluteStart
+0000                    100 Os_HwCounterAbsoluteStart:      .type   func
+0000 2008      1    1   101         sub.a   a10,#8
+0002 404F      1    2   102         mov.aa  a15,a4
+0004 0248      1    3   103         mov     d8,d4
+0006 D4FC      1    4   104         ld.a    a12,[a15]
+0008 F656      1    5   105         jne     d5,#0,.L14
+000A C822      1    6   106         ld.a    a2,[a15]8
+000C 2D020000  2    8   107         calli   a2
+0010 0229      1    9   108         mov     d9,d2
+0012 3C02      1   10   109         j       .L15
+0014                    110 .L14:
+0014 5459      1   11   111         ld.w    d9,[a5]
+0016                    112 .L15:
+0016 C842      1   12   113         ld.a    a2,[a15]16
+0018 40A4      1   13   114         mov.aa  a4,a10
+001A 2D020000  2   15   115         calli   a2
+001E 14AF      1   16   116         ld.bu   d15,[a10]
+0020 6E23      1   17   117         jeq     d15,#0,.L16
+0022 0CA1      1   18   118         ld.bu   d15,[a10]1
+0024 EE27      1   19   119         jne     d15,#0,.L17
+0026 54C0      1   20   120         ld.w    d0,[a12]
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   3
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0028 3F900480  1   21   121         jlt.u   d0,d9,.L18
+002C A290      1   22   122         sub     d0,d9
+002E 3C06      1   23   123         j       .L19
+0030                    124 .L18:
+0030 486F      1   24   125         ld.w    d15,[a15]24
+0032 42F0      1   25   126         add     d0,d15
+0034 8B1900F1  1   26   127         rsub    d15,d9,#1
+0038 42F0      1   27   128         add     d0,d15
+003A                    129 .L19:
+003A 89A00209  1   28   130         st.w    [a10]2,d0
+003E 7F890480  1   29   131         jge.u   d9,d8,.L20
+0042 5A98      1   30   132         sub     d15,d8,d9
+0044 3C06      1   31   133         j       .L21
+0046                    134 .L20:
+0046 486F      1   32   135         ld.w    d15,[a15]24
+0048 8B190001  1   33   136         rsub    d0,d9,#1
+004C 428F      1   34   137         add     d15,d8
+004E 420F      1   35   138         add     d15,d0
+0050                    139 .L21:
+0050 09A00209  1   36   140         ld.w    d0,[a10]2
+0054 7F0F0F80  1   37   141         jge.u   d15,d0,.L22
+0058 DA01      1   38   142         mov     d15,#1
+005A 2CC4      1   39   143         st.b    [a12]4,d15
+005C 74C8      1   40   144         st.w    [a12],d8
+005E C832      1   41   145         ld.a    a2,[a15]12
+0060 D4FF      1   42   146         ld.a    a15,[a15]
+0062 54F4      1   43   147         ld.w    d4,[a15]
+0064 DC02      1   44   148         ji      a2
+0066                    149 .L16:
+0066 DA01      1   45   150         mov     d15,#1
+0068 2CC4      1   46   151         st.b    [a12]4,d15
+006A 74C8      1   47   152         st.w    [a12],d8
+006C C83F      1   48   153         ld.a    a15,[a15]12
+006E 0284      1   49   154         mov     d4,d8
+0070 DC0F      1   50   155         ji      a15
+0072                    156 .L22:
+0072                    157 .L17:
+0072 0090      2   52   158         ret
+                        159         
+0074                    160 __Os_HwCounterAbsoluteStart_function_end:
+                        161         .size   Os_HwCounterAbsoluteStart,__Os_HwCounterAbsoluteStart_function_end-Os_HwCounterAbsoluteS
+                            tart
+                        162         ; End of function
+                        163         
+                        164         .calls  'Os_AdvanceCounter_Rte_TickCounter','Os_PerformEP'
+                        165         .calls  'Os_AdvanceCounter_Rte_TickCounter','Os_Cbk_Set_Rte_TickCounter'
+                        166         .calls  'Os_AdvanceCounter_Rte_TickCounter','Os_Cbk_Cancel_Rte_TickCounter'
+                        167         .calls  'Os_AdvanceCounter_Rte_TickCounter','__INDIRECT__'
+                        168         .calls  'Os_HwCounterAbsoluteStart','__INDIRECT__'
+                        169         .calls  'Os_AdvanceCounter_Rte_TickCounter','',0
+                        170         .extern Os_const_coreconfiguration
+                        171         .extern Os_const_scheduletables
+                        172         .extern Os_ControlledCoreInfo
+                        173         .extern Os_Cbk_Set_Rte_TickCounter
+                        174         .extern Os_Cbk_Cancel_Rte_TickCounter
+                        175         .extern Os_dyn_counters
+                        176         .extern Os_dyn_scheduletables
+                        177         .extern Os_PerformEP
+                        178         .extern __INDIRECT__
+                        179         .calls  'Os_HwCounterAbsoluteStart','',8
+                        180         ; Module end

@@ -1,0 +1,21 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling rte\gen\Rte_Lib.c
+Compiling mcal\MCAL_Modules\Gpt\src\Gpt.c
+Compiling mcal\MCAL_Modules\Icu_17_TimerIp\src\Icu_17_TimerIp.c
+ctc E272: ["rte\gen\Rte_Lib.c" 701/41] undeclared identifier "RTE_RESOURCE_OS_APP_OsApplication_Core1"
+1 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\rte\Rte_Lib.o] Error 1
+Compiling mcal\MCAL_Modules\Mcu\src\Mcu_17_TimerIp.c
+
+
+
+scons: building terminated because of errors.

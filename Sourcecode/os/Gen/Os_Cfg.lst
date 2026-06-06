@@ -1,0 +1,1319 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc35380a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\Os_Cfg.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\Os_Cfg.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.Os_Cfg.Os_memclr',code
+0000                     11         .sect   '.text.Os_Cfg.Os_memclr'
+                         12         .align  2
+                         13         
+                         14         .global Os_memclr
+                         15 ; Function Os_memclr
+0000                     16 Os_memclr:      .type   func
+0000 DA00      1    1    17         mov     d15,#0
+0002 3C03      1    2    18         j       .L2
+0004                     19 .L3:
+0004 C2F4      1    3    20         add     d4,#-1
+0006 244F      1    4    21         st.b    [a4+],d15
+0008                     22 .L2:
+0008 DF04FEFF  1    5    23         jne     d4,#0,.L3
+000C 0090      2    7    24         ret
+                         25         
+000E                     26 __Os_memclr_function_end:
+                         27         .size   Os_memclr,__Os_memclr_function_end-Os_memclr
+                         28         ; End of function
+                         29         
+                         30         .sdecl  '.text.Os_Cfg.Os_StartOS_CoreInit',code
+0000                     31         .sect   '.text.Os_Cfg.Os_StartOS_CoreInit'
+                         32         .align  2
+                         33         
+                         34         .global Os_StartOS_CoreInit
+                         35 ; Function Os_StartOS_CoreInit
+0000                     36 Os_StartOS_CoreInit:    .type   func
+0000 404C      1    1    37         mov.aa  a12,a4
+0002 09CFD408  1    2    38         ld.hu   d15,[a12]20
+0006 D4CF      1    3    39         ld.a    a15,[a12]
+0008 6E03      1    4    40         jeq     d15,#0,.L4
+000A 1E17      1    5    41         jeq     d15,#1,.L5
+000C 3C11      1    6    42         j       .L6
+000E                     43 .L4:
+000E 91r0rr4r  1    7    44         movh.a  a4,#@his(Os_ControlledCoreInfo)
+0012 D944rrrr  1    8    45         lea     a4,[a4]@los(Os_ControlledCoreInfo)
+0016 3C05      1    9    46         j       .L7
+0018                     47 .L5:
+0018 91r0rr2r  1   10    48         movh.a  a2,#@his(Os_ControlledCoreInfo+96)
+001C D924rrrr  1   11    49         lea     a4,[a2]@los(Os_ControlledCoreInfo+96)
+0020                     50 .L7:
+0020 3B000640  1   12    51         mov     d4,#96
+0024 6Drrrrrr  2   14    52         call    Os_memclr
+0028 DA00      1   15    53         mov     d15,#0
+002A 6CF3      1   16    54         st.w    [a15]12,d15
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+002C 6CF6      1   17    55         st.w    [a15]24,d15
+002E                     56 .L6:
+002E DA01      1   18    57         mov     d15,#1
+0030 89FF0018  1   19    58         st.b    [a15]64,d15
+0034 DA02      1   20    59         mov     d15,#2
+0036 89FF0118  1   21    60         st.b    [a15]65,d15
+003A 0D008004  1   22    61         dsync
+003E A002      1   23    62         mov.a   a2,#0
+0040 E822      1   24    63         st.a    [a15]8,a2
+0042 0D008004  1   25    64         dsync
+0046 82FF      1   26    65         mov     d15,#-1
+0048 6CFE      1   27    66         st.w    [a15]56,d15
+004A 6CFF      1   28    67         st.w    [a15]60,d15
+004C 49FD200A  1   29    68         lea     a13,[a15]32
+0050 E87D      1   30    69         st.a    [a15]28,a13
+0052 6Drrrrrr  2   32    70         call    Os_GetSP
+0056 89D24009  1   33    71         st.d    [a13]0,e2
+005A DA00      1   34    72         mov     d15,#0
+005C 89FF1419  1   35    73         st.w    [a15]84,d15
+0060 89FF1819  1   36    74         st.w    [a15]88,d15
+0064 6Drrrrrr  2   38    75         call    Os_GetStackUsage
+0068 89F25419  1   39    76         st.d    [a15]84,e2
+006C C872      1   40    77         ld.a    a2,[a15]28
+006E DA00      1   41    78         mov     d15,#0
+0070 6C22      1   42    79         st.w    [a2]8,d15
+0072 C872      1   43    80         ld.a    a2,[a15]28
+0074 6C23      1   44    81         st.w    [a2]12,d15
+0076 C872      1   45    82         ld.a    a2,[a15]28
+0078 6C24      1   46    83         st.w    [a2]16,d15
+007A C872      1   47    84         ld.a    a2,[a15]28
+007C 6C25      1   48    85         st.w    [a2]20,d15
+007E 89FF0419  1   49    86         st.w    [a15]68,d15
+0082 89FF0819  1   50    87         st.w    [a15]72,d15
+0086 6Drrrrrr  2   52    88         call    Os_GetSP
+008A 0B231088  1   53    89         mov     e8,d3,d2
+008E 6Drrrrrr  2   55    90         call    Os_GetStackValue
+0092 028F      1   56    91         mov     d15,d8
+0094 91r0rr2r  1   57    92         movh.a  a2,#@his(Os_StackBase)
+0098 A22F      1   58    93         sub     d15,d2
+009A 89FF0419  1   59    94         st.w    [a15]68,d15
+009E A239      1   60    95         sub     d9,d3
+00A0 89F90819  1   61    96         st.w    [a15]72,d9
+00A4 D922rrrr  1   62    97         lea     a2,[a2]@los(Os_StackBase)
+00A8 09CFD408  1   63    98         ld.hu   d15,[a12]20
+00AC C87F      1   64    99         ld.a    a15,[a15]28
+00AE D022      1   65   100         addsc.a a2,a2,d15,#3
+00B0 0922C009  1   66   101         ld.da   a2/a3,[a2]0
+00B4 89F2C009  1   67   102         st.da   [a15]0,a2/a3
+00B8 0090      2   69   103         ret
+                        104         
+00BA                    105 __Os_StartOS_CoreInit_function_end:
+                        106         .size   Os_StartOS_CoreInit,__Os_StartOS_CoreInit_function_end-Os_StartOS_CoreInit
+                        107         ; End of function
+                        108         
+                        109         .sdecl  '.text.Os_Cfg.Os_StartOS_CommonInit',code
+0000                    110         .sect   '.text.Os_Cfg.Os_StartOS_CommonInit'
+                        111         .align  2
+                        112         
+                        113         .global Os_StartOS_CommonInit
+                        114 ; Function Os_StartOS_CommonInit
+0000                    115 Os_StartOS_CommonInit:  .type   func
+0000 91r0rrFr  1    1   116         movh.a  a15,#@his(Os_ShutdownAllCores_Indicator)
+0004 DA00      1    2   117         mov     d15,#0
+0006 E9FFrrrr  1    3   118         st.b    [a15]@los(Os_ShutdownAllCores_Indicator),d15
+000A 0D008004  1    4   119         dsync
+000E 91r0rrFr  1    5   120         movh.a  a15,#@his(Os_lock_alarmaccess)
+0012 A002      1    6   121         mov.a   a2,#0
+0014 B5F2rrrr  1    7   122         st.a    [a15]@los(Os_lock_alarmaccess),a2
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   3
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0018 0D008004  1    8   123         dsync
+001C 91r0rr4r  1    9   124         movh.a  a4,#@his(Os_dyn_tasks)
+0020 D944rrrr  1   10   125         lea     a4,[a4]@los(Os_dyn_tasks)
+0024 3B807B40  1   11   126         mov     d4,#1976
+0028 6Drrrrrr  2   13   127         call    Os_memclr
+002C 91r0rr4r  1   14   128         movh.a  a4,#@his(Os_dyn_isrs)
+0030 D944rrrr  1   15   129         lea     a4,[a4]@los(Os_dyn_isrs)
+0034 3B001C40  1   16   130         mov     d4,#448
+0038 6Drrrrrr  2   18   131         call    Os_memclr
+003C 91r0rr4r  1   19   132         movh.a  a4,#@his(Os_dyn_resources)
+0040 D944rrrr  1   20   133         lea     a4,[a4]@los(Os_dyn_resources)
+0044 3B000140  1   21   134         mov     d4,#16
+0048 6Drrrrrr  2   23   135         call    Os_memclr
+004C 91r0rr4r  1   24   136         movh.a  a4,#@his(Os_dyn_counters)
+0050 D944rrrr  1   25   137         lea     a4,[a4]@los(Os_dyn_counters)
+0054 8264      1   26   138         mov     d4,#6
+0056 6Drrrrrr  2   28   139         call    Os_memclr
+005A 91r0rr4r  1   29   140         movh.a  a4,#@his(Os_dyn_scheduletables)
+005E D944rrrr  1   30   141         lea     a4,[a4]@los(Os_dyn_scheduletables)
+0062 3B000140  1   31   142         mov     d4,#16
+0066 6Drrrrrr  2   33   143         call    Os_memclr
+006A 91r0rr4r  1   34   144         movh.a  a4,#@his(Os_dyn_appstate)
+006E D944rrrr  1   35   145         lea     a4,[a4]@los(Os_dyn_appstate)
+0072 3BC00040  1   36   146         mov     d4,#12
+0076 6Drrrrrr  2   38   147         call    Os_memclr
+007A 91r0rr2r  1   39   148         movh.a  a2,#@his(Os_TaskFifo)
+007E D922rrrr  1   40   149         lea     a2,[a2]@los(Os_TaskFifo)
+0082 91r0rrFr  1   41   150         movh.a  a15,#@his(Os_dyn_fifocontrol)
+0086 D9FFrrrr  1   42   151         lea     a15,[a15]@los(Os_dyn_fifocontrol)
+008A E812      1   43   152         st.a    [a15]4,a2
+008C F4F2      1   44   153         st.a    [a15],a2
+008E 91r0rr2r  1   45   154         movh.a  a2,#@his(Os_const_fifocontrol)
+0092 D922rrrr  1   46   155         lea     a2,[a2]@los(Os_const_fifocontrol)
+0096 09249009  1   47   156         ld.a    a4,[a2]16
+009A E834      1   48   157         st.a    [a15]12,a4
+009C E824      1   49   158         st.a    [a15]8,a4
+009E 0924A009  1   50   159         ld.a    a4,[a2]32
+00A2 E854      1   51   160         st.a    [a15]20,a4
+00A4 E844      1   52   161         st.a    [a15]16,a4
+00A6 0924B009  1   53   162         ld.a    a4,[a2]48
+00AA E874      1   54   163         st.a    [a15]28,a4
+00AC E864      1   55   164         st.a    [a15]24,a4
+00AE 09248019  1   56   165         ld.a    a4,[a2]64
+00B2 E894      1   57   166         st.a    [a15]36,a4
+00B4 E884      1   58   167         st.a    [a15]32,a4
+00B6 09229019  1   59   168         ld.a    a2,[a2]80
+00BA E8B2      1   60   169         st.a    [a15]44,a2
+00BC E8A2      1   61   170         st.a    [a15]40,a2
+00BE 0090      2   63   171         ret
+                        172         
+00C0                    173 __Os_StartOS_CommonInit_function_end:
+                        174         .size   Os_StartOS_CommonInit,__Os_StartOS_CommonInit_function_end-Os_StartOS_CommonInit
+                        175         ; End of function
+                        176         
+                        177         .sdecl  '.text.Os_Cfg.Os_StartOS_StartCore',code
+0000                    178         .sect   '.text.Os_Cfg.Os_StartOS_StartCore'
+                        179         .align  2
+                        180         
+                        181         .global Os_StartOS_StartCore
+                        182 ; Function Os_StartOS_StartCore
+0000                    183 Os_StartOS_StartCore:   .type   func
+0000 0090      2    2   184         ret
+                        185         
+0002                    186 __Os_StartOS_StartCore_function_end:
+                        187         .size   Os_StartOS_StartCore,__Os_StartOS_StartCore_function_end-Os_StartOS_StartCore
+                        188         ; End of function
+                        189         
+                        190         .sdecl  '.text.Os_Cfg.Os_StartOS_StartAuto',code
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   4
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0000                    191         .sect   '.text.Os_Cfg.Os_StartOS_StartAuto'
+                        192         .align  2
+                        193         
+                        194         .global Os_StartOS_StartAuto
+                        195 ; Function Os_StartOS_StartAuto
+0000                    196 Os_StartOS_StartAuto:   .type   func
+0000 404F      1    1   197         mov.aa  a15,a4
+0002 09FFD408  1    2   198         ld.hu   d15,[a15]20
+0006 405C      1    3   199         mov.aa  a12,a5
+0008 EE11      1    4   200         jne     d15,#0,.L8
+000A 91r0rrDr  1    5   201         movh.a  a13,#@his(Os_const_tasks0)
+000E D9DDrrrr  1    6   202         lea     a13,[a13]@los(Os_const_tasks0)
+0012 49D4207A  1    7   203         lea     a4,[a13]480
+0016 40F5      1    8   204         mov.aa  a5,a15
+0018 40C6      1    9   205         mov.aa  a6,a12
+001A 6Drrrrrr  2   11   206         call    Os_ActivateTaskKL
+001E D9D41080  1   12   207         lea     a4,[a13]528
+0022 40F5      1   13   208         mov.aa  a5,a15
+0024 40C6      1   14   209         mov.aa  a6,a12
+0026 1Drrrrrr  1   15   210         j       Os_ActivateTaskKL
+002A                    211 .L8:
+002A 0090      2   17   212         ret
+                        213         
+002C                    214 __Os_StartOS_StartAuto_function_end:
+                        215         .size   Os_StartOS_StartAuto,__Os_StartOS_StartAuto_function_end-Os_StartOS_StartAuto
+                        216         ; End of function
+                        217         
+                        218         .sdecl  '.text.Os_Cfg.Os_ErrorLog',code
+0000                    219         .sect   '.text.Os_Cfg.Os_ErrorLog'
+                        220         .align  2
+                        221         
+                        222         .global Os_ErrorLog
+                        223 ; Function Os_ErrorLog
+0000                    224 Os_ErrorLog:    .type   func
+0000 0249      1    1   225         mov     d9,d4
+0002 4DC0E1FF  1    2   226         mfcr    d15,#65052
+0006 538F21F0  3    5   227         mul     d15,d15,#24
+000A 91r0rrFr  1    6   228         movh.a  a15,#@his(Os_const_coreconfiguration)
+000E D9FFrrrr  1    7   229         lea     a15,[a15]@los(Os_const_coreconfiguration)
+0012 10FF      1    8   230         addsc.a a15,a15,d15,#0
+0014 D4FF      1    9   231         ld.a    a15,[a15]
+0016 4DC0E2AF  1   10   232         mfcr    d10,#65068
+001A 0D004003  1   11   233         disable
+001E BBF000F8  1   12   234         mov.u   d15,#32783
+0022 CDCFE20F  1   13   235         mtcr    #65068,d15
+0026 0D00C004  1   14   236         isync
+                        237         
+002A 09FF4C18  1   15   238         ld.bu   d15,[a15]76
+002E EE32      1   16   239         jne     d15,#0,.L9
+0030 09F84018  1   17   240         ld.bu   d8,[a15]64
+0034 DA01      1   18   241         mov     d15,#1
+0036 89FF0C18  1   19   242         st.b    [a15]76,d15
+003A 89FF0018  1   20   243         st.b    [a15]64,d15
+003E 0294      1   21   244         mov     d4,d9
+0040 6Drrrrrr  2   23   245         call    ErrorHook
+0044 89F80018  1   24   246         st.b    [a15]64,d8
+0048 A002      1   25   247         mov.a   a2,#0
+004A C844      1   26   248         ld.a    a4,[a15]16
+004C 7D420600  1   27   249         jeq.a   a2,a4,.L10
+0050 C842      1   28   250         ld.a    a2,[a15]16
+0052 092F5908  1   29   251         ld.bu   d15,[a2]25
+0056 3C09      1   30   252         j       .L11
+0058                    253 .L10:
+0058 C854      1   31   254         ld.a    a4,[a15]20
+005A 7D420600  1   32   255         jeq.a   a2,a4,.L12
+005E C852      1   33   256         ld.a    a2,[a15]20
+0060 092F6D08  1   34   257         ld.bu   d15,[a2]45
+0064 3C02      1   35   258         j       .L13
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   5
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0066                    259 .L12:
+0066 DA02      1   36   260         mov     d15,#2
+0068                    261 .L13:
+0068                    262 .L11:
+0068 53CF20F0  3   39   263         mul     d15,d15,#12
+006C 91r0rr2r  1   40   264         movh.a  a2,#@his(Os_const_applications)
+0070 D922rrrr  1   41   265         lea     a2,[a2]@los(Os_const_applications)
+0074 1022      1   42   266         addsc.a a2,a2,d15,#0
+0076 09248409  1   43   267         ld.a    a4,[a2]4
+007A BC49      1   44   268         jz.a    a4,.L14
+007C 0C28      1   45   269         ld.bu   d15,[a2]8
+007E 89FF0018  1   46   270         st.b    [a15]64,d15
+0082 0294      1   47   271         mov     d4,d9
+0084 2D040000  2   49   272         calli   a4
+0088 89F80018  1   50   273         st.b    [a15]64,d8
+008C                    274 .L14:
+008C DA00      1   51   275         mov     d15,#0
+008E 89FF0C18  1   52   276         st.b    [a15]76,d15
+0092                    277 .L9:
+0092 CDCAE20F  1   53   278         mtcr    #65068,d10
+0096 0D00C004  1   54   279         isync
+                        280         
+009A 0090      2   56   281         ret
+                        282         
+009C                    283 __Os_ErrorLog_function_end:
+                        284         .size   Os_ErrorLog,__Os_ErrorLog_function_end-Os_ErrorLog
+                        285         ; End of function
+                        286         
+                        287         .sdecl  '.bss.Os_Cfg.Os_CurrentAppMode',data
+0000                    288         .sect   '.bss.Os_Cfg.Os_CurrentAppMode'
+                        289         .global Os_CurrentAppMode
+0000                    290 Os_CurrentAppMode:      .type   object
+                        291         .size   Os_CurrentAppMode,1
+0000 RESERVED           292         .space  1
+                        293         .sdecl  '.bss.Os_Cfg.Os_AnyCoreInfo',data
+0000                    294         .sect   '.bss.Os_Cfg.Os_AnyCoreInfo'
+                        295         .global Os_AnyCoreInfo
+                        296         .align  4
+0000                    297 Os_AnyCoreInfo: .type   object
+                        298         .size   Os_AnyCoreInfo,192
+0000                    299         .space  192
+  |  RESERVED               
+00BF
+                        300         .sdecl  '.bss.Os_Cfg.Os_CoreState',data
+0000                    301         .sect   '.bss.Os_Cfg.Os_CoreState'
+                        302         .global Os_CoreState
+                        303         .align  2
+0000                    304 Os_CoreState:   .type   object
+                        305         .size   Os_CoreState,8
+0000                    306         .space  8
+  |  RESERVED               
+0007
+                        307         .sdecl  '.bss.Os_Cfg.Os_ShutdownAllCores_Indicator',data
+0000                    308         .sect   '.bss.Os_Cfg.Os_ShutdownAllCores_Indicator'
+                        309         .global Os_ShutdownAllCores_Indicator
+0000                    310 Os_ShutdownAllCores_Indicator:  .type   object
+                        311         .size   Os_ShutdownAllCores_Indicator,1
+0000 RESERVED           312         .space  1
+                        313         .sdecl  '.bss.Os_Cfg.Os_StackBase',data
+0000                    314         .sect   '.bss.Os_Cfg.Os_StackBase'
+                        315         .global Os_StackBase
+                        316         .align  4
+0000                    317 Os_StackBase:   .type   object
+                        318         .size   Os_StackBase,16
+0000                    319         .space  16
+  |  RESERVED               
+000F
+                        320         .sdecl  '.bss.Os_Cfg.Os_lock_alarmaccess',data
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   6
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0000                    321         .sect   '.bss.Os_Cfg.Os_lock_alarmaccess'
+                        322         .global Os_lock_alarmaccess
+                        323         .align  4
+0000                    324 Os_lock_alarmaccess:    .type   object
+                        325         .size   Os_lock_alarmaccess,4
+0000                    326         .space  4
+  |  RESERVED               
+0003
+                        327         .sdecl  '.bss.Os_Cfg.Os_dyn_appstate',data
+0000                    328         .sect   '.bss.Os_Cfg.Os_dyn_appstate'
+                        329         .global Os_dyn_appstate
+                        330         .align  2
+0000                    331 Os_dyn_appstate:        .type   object
+                        332         .size   Os_dyn_appstate,12
+0000                    333         .space  12
+  |  RESERVED               
+000B
+                        334         .sdecl  '.bss.Os_Cfg.Os_dyn_tasks',data
+0000                    335         .sect   '.bss.Os_Cfg.Os_dyn_tasks'
+                        336         .global Os_dyn_tasks
+                        337         .align  4
+0000                    338 Os_dyn_tasks:   .type   object
+                        339         .size   Os_dyn_tasks,1976
+0000                    340         .space  1976
+  |  RESERVED               
+07B7
+                        341         .sdecl  '.bss.Os_Cfg.Os_dyn_isrs',data
+0000                    342         .sect   '.bss.Os_Cfg.Os_dyn_isrs'
+                        343         .global Os_dyn_isrs
+                        344         .align  4
+0000                    345 Os_dyn_isrs:    .type   object
+                        346         .size   Os_dyn_isrs,448
+0000                    347         .space  448
+  |  RESERVED               
+01BF
+                        348         .sdecl  '.bss.Os_Cfg.Os_ControlledCoreInfo',data
+0000                    349         .sect   '.bss.Os_Cfg.Os_ControlledCoreInfo'
+                        350         .global Os_ControlledCoreInfo
+                        351         .align  4
+0000                    352 Os_ControlledCoreInfo:  .type   object
+                        353         .size   Os_ControlledCoreInfo,192
+0000                    354         .space  192
+  |  RESERVED               
+00BF
+                        355         .sdecl  '.bss.Os_Cfg.Os_TaskFifo',data
+0000                    356         .sect   '.bss.Os_Cfg.Os_TaskFifo'
+                        357         .global Os_TaskFifo
+                        358         .align  4
+0000                    359 Os_TaskFifo:    .type   object
+                        360         .size   Os_TaskFifo,68
+0000                    361         .space  68
+  |  RESERVED               
+0043
+                        362         .sdecl  '.bss.Os_Cfg.Os_dyn_fifocontrol',data
+0000                    363         .sect   '.bss.Os_Cfg.Os_dyn_fifocontrol'
+                        364         .global Os_dyn_fifocontrol
+                        365         .align  4
+0000                    366 Os_dyn_fifocontrol:     .type   object
+                        367         .size   Os_dyn_fifocontrol,48
+0000                    368         .space  48
+  |  RESERVED               
+002F
+                        369         .sdecl  '.bss.Os_Cfg.Os_dyn_resources',data
+0000                    370         .sect   '.bss.Os_Cfg.Os_dyn_resources'
+                        371         .global Os_dyn_resources
+                        372         .align  2
+0000                    373 Os_dyn_resources:       .type   object
+                        374         .size   Os_dyn_resources,16
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   7
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0000                    375         .space  16
+  |  RESERVED               
+000F
+                        376         .sdecl  '.bss.Os_Cfg.Os_dyn_counters',data
+0000                    377         .sect   '.bss.Os_Cfg.Os_dyn_counters'
+                        378         .global Os_dyn_counters
+                        379         .align  2
+0000                    380 Os_dyn_counters:        .type   object
+                        381         .size   Os_dyn_counters,6
+0000                    382         .space  6
+  |  RESERVED               
+0005
+                        383         .sdecl  '.bss.Os_Cfg.Os_dyn_scheduletables',data
+0000                    384         .sect   '.bss.Os_Cfg.Os_dyn_scheduletables'
+                        385         .global Os_dyn_scheduletables
+                        386         .align  4
+0000                    387 Os_dyn_scheduletables:  .type   object
+                        388         .size   Os_dyn_scheduletables,16
+0000                    389         .space  16
+  |  RESERVED               
+000F
+                        390         .sdecl  '.rodata.Os_Cfg.Os_const_coreconfiguration',data,rom
+0000                    391         .sect   '.rodata.Os_Cfg.Os_const_coreconfiguration'
+                        392         .global Os_const_coreconfiguration
+                        393         .align  4
+0000                    394 Os_const_coreconfiguration:     .type   object
+                        395         .size   Os_const_coreconfiguration,48
+0000 rrrrrrrr           396         .word   Os_ControlledCoreInfo,Os_AnyCoreInfo,Os_CoreState,Os_Dispatch0
+     rrrrrrrr               
+     rrrrrrrr               
+     rrrrrrrr               
+0010 rrrrrrrr           397         .word   Os_const_resources+24
+0014                    398         .space  4
+  |  RESERVED               
+0017
+0018 rrrrrrrr           399         .word   Os_ControlledCoreInfo+96,Os_AnyCoreInfo+96,Os_CoreState+4,Os_Dispatch1
+     rrrrrrrr               
+     rrrrrrrr               
+     rrrrrrrr               
+0028 rrrrrrrr           400         .word   Os_const_resources+36
+002C 0100               401         .half   1
+002E                    402         .space  2
+  |  RESERVED               
+002F
+                        403         .sdecl  '.rodata.Os_Cfg.Os_const_applications',data,rom
+0000                    404         .sect   '.rodata.Os_Cfg.Os_const_applications'
+                        405         .global Os_const_applications
+                        406         .align  4
+0000                    407 Os_const_applications:  .type   object
+                        408         .size   Os_const_applications,36
+0000                    409         .space  4
+  |  RESERVED               
+0003
+0004 rrrrrrrr           410         .word   ErrorHook_OsApplication_Core0
+0008 02                 411         .byte   2
+0009                    412         .space  3
+  |  RESERVED               
+000B
+000C 01                 413         .byte   1
+000D                    414         .space  3
+  |  RESERVED               
+000F
+0010 rrrrrrrr           415         .word   ErrorHook_OsApplication_Core1
+0014 04                 416         .byte   4
+0015                    417         .space  3
+  |  RESERVED               
+0017
+0018 02                 418         .byte   2
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   8
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0019                    419         .space  11
+  |  RESERVED               
+0023
+                        420         .sdecl  '.rodata.Os_Cfg.Os_const_isrs',data,rom
+0000                    421         .sect   '.rodata.Os_Cfg.Os_const_isrs'
+                        422         .global Os_const_isrs
+                        423         .align  4
+0000                    424 Os_const_isrs:  .type   object
+                        425         .size   Os_const_isrs,392
+0000 rrrrrrrr           426         .word   Os_Entry_CAN0SR0_ISR,Os_dyn_isrs,32770
+     rrrrrrrr               
+     02800000               
+000C                    427         .space  4
+  |  RESERVED               
+000F
+0010 FFFFFFFF           428         .word   -1,-1
+     FFFFFFFF               
+0018 03                 429         .byte   3
+0019                    430         .space  3
+  |  RESERVED               
+001B
+001C rrrrrrrr           431         .word   Os_Entry_CAN0SR1_ISR,Os_dyn_isrs+32,32771,1
+     rrrrrrrr               
+     03800000               
+     01000000               
+002C FFFFFFFF           432         .word   -1,-1
+     FFFFFFFF               
+0034 03                 433         .byte   3
+0035                    434         .space  3
+  |  RESERVED               
+0037
+0038 rrrrrrrr           435         .word   Os_Entry_CAN0SR2_ISR,Os_dyn_isrs+64,32772,2
+     rrrrrrrr               
+     04800000               
+     02000000               
+0048 FFFFFFFF           436         .word   -1,-1
+     FFFFFFFF               
+0050 03                 437         .byte   3
+0051                    438         .space  3
+  |  RESERVED               
+0053
+0054 rrrrrrrr           439         .word   Os_Entry_CAN0SR3_ISR,Os_dyn_isrs+96,32773,3
+     rrrrrrrr               
+     05800000               
+     03000000               
+0064 FFFFFFFF           440         .word   -1,-1
+     FFFFFFFF               
+006C 03                 441         .byte   3
+006D                    442         .space  3
+  |  RESERVED               
+006F
+0070 rrrrrrrr           443         .word   Os_Entry_CAN0SR4_ISR,Os_dyn_isrs+128,32774,4
+     rrrrrrrr               
+     06800000               
+     04000000               
+0080 FFFFFFFF           444         .word   -1,-1
+     FFFFFFFF               
+0088 03                 445         .byte   3
+0089                    446         .space  3
+  |  RESERVED               
+008B
+008C rrrrrrrr           447         .word   Os_Entry_CAN0SR5_ISR,Os_dyn_isrs+160,32775,5
+     rrrrrrrr               
+     07800000               
+     05000000               
+009C FFFFFFFF           448         .word   -1,-1
+     FFFFFFFF               
+00A4 03                 449         .byte   3
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   9
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+00A5                    450         .space  3
+  |  RESERVED               
+00A7
+00A8 rrrrrrrr           451         .word   Os_Entry_CAN0SR6_ISR,Os_dyn_isrs+192,32776,6
+     rrrrrrrr               
+     08800000               
+     06000000               
+00B8 FFFFFFFF           452         .word   -1,-1
+     FFFFFFFF               
+00C0 03                 453         .byte   3
+00C1                    454         .space  3
+  |  RESERVED               
+00C3
+00C4 rrrrrrrr           455         .word   Os_Entry_CAN0SR7_ISR,Os_dyn_isrs+224,32777,7
+     rrrrrrrr               
+     09800000               
+     07000000               
+00D4 FFFFFFFF           456         .word   -1,-1
+     FFFFFFFF               
+00DC 03                 457         .byte   3
+00DD                    458         .space  3
+  |  RESERVED               
+00DF
+00E0 rrrrrrrr           459         .word   Os_Entry_CAN0SR8_ISR,Os_dyn_isrs+256,32778,8
+     rrrrrrrr               
+     0A800000               
+     08000000               
+00F0 FFFFFFFF           460         .word   -1,-1
+     FFFFFFFF               
+00F8 03                 461         .byte   3
+00F9                    462         .space  3
+  |  RESERVED               
+00FB
+00FC rrrrrrrr           463         .word   Os_Entry_CAN0SR9_ISR,Os_dyn_isrs+288,32779,9
+     rrrrrrrr               
+     0B800000               
+     09000000               
+010C FFFFFFFF           464         .word   -1,-1
+     FFFFFFFF               
+0114 03                 465         .byte   3
+0115                    466         .space  3
+  |  RESERVED               
+0117
+0118 rrrrrrrr           467         .word   Os_Entry_CAN0SR10_ISR,Os_dyn_isrs+320,32780,10
+     rrrrrrrr               
+     0C800000               
+     0A000000               
+0128 FFFFFFFF           468         .word   -1,-1
+     FFFFFFFF               
+0130 03                 469         .byte   3
+0131                    470         .space  3
+  |  RESERVED               
+0133
+0134 rrrrrrrr           471         .word   Os_Entry_CAN0SR11_ISR,Os_dyn_isrs+352,32781,11
+     rrrrrrrr               
+     0D800000               
+     0B000000               
+0144 FFFFFFFF           472         .word   -1,-1
+     FFFFFFFF               
+014C 03                 473         .byte   3
+014D                    474         .space  3
+  |  RESERVED               
+014F
+0150 rrrrrrrr           475         .word   Os_Entry_Millisecond,Os_dyn_isrs+384,32782,12
+     rrrrrrrr               
+     0E800000               
+     0C000000               
+
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page  10
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0160 FFFFFFFF           476         .word   -1,-1
+     FFFFFFFF               
+0168 03                 477         .byte   3
+0169                    478         .space  3
+  |  RESERVED               
+016B
+016C rrrrrrrr           479         .word   Os_Entry_NewIsr1,Os_dyn_isrs+416,32783,13
+     rrrrrrrr               
+     0F800000               
+     0D000000               
+017C FFFFFFFF           480         .word   -1,-1
+     FFFFFFFF               
+0184 03                 481         .byte   3
+0185                    482         .space  3
+  |  RESERVED               
+0187
+                        483         .sdecl  '.rodata.Os_Cfg.Os_const_tasks0',data,rom
+0000                    484         .sect   '.rodata.Os_Cfg.Os_const_tasks0'
+                        485         .global Os_const_tasks0
+                        486         .align  4
+0000                    487 Os_const_tasks0:        .type   object
+                        488         .size   Os_const_tasks0,576
+0000 rrrrrrrr           489         .word   Os_dyn_tasks,Os_Entry_Core0_OsTask_Background_1ms,1,1
+     rrrrrrrr               
+     01000000               
+     01000000               
+0010 01000000           490         .word   1
+0014                    491         .space  8
+  |  RESERVED               
+001B
+001C FFFFFFFF           492         .word   -1,-1
+     FFFFFFFF               
+0024 01                 493         .byte   1
+0025                    494         .space  7
+  |  RESERVED               
+002B
+002C 03                 495         .byte   3
+002D                    496         .space  3
+  |  RESERVED               
+002F
+0030 rrrrrrrr           497         .word   Os_dyn_tasks+728,Os_Entry_Core0_OsTask_BSW_100ms,2,3
+     rrrrrrrr               
+     02000000               
+     03000000               
+0040 03000000           498         .word   3
+0044                    499         .space  2
+  |  RESERVED               
+0045
+0046 07000000           500         .word   7
+004A                    501         .space  2
+  |  RESERVED               
+004B
+004C FFFFFFFF           502         .word   -1,-1
+     FFFFFFFF               
+0054 01                 503         .byte   1
+0055                    504         .space  7
+  |  RESERVED               
+005B
+005C 03                 505         .byte   3
+005D                    506         .space  3
+  |  RESERVED               
+005F
+0060 rrrrrrrr           507         .word   Os_dyn_tasks+832,Os_Entry_Core0_OsTask_BSW_50ms,4,7
+     rrrrrrrr               
+     04000000               
+     07000000               
+0070 07000000           508         .word   7
+
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page  11
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0074                    509         .space  2
+  |  RESERVED               
+0075
+0076 08000000           510         .word   8
+007A                    511         .space  2
+  |  RESERVED               
+007B
+007C FFFFFFFF           512         .word   -1,-1
+     FFFFFFFF               
+0084 01                 513         .byte   1
+0085                    514         .space  7
+  |  RESERVED               
+008B
+008C 03                 515         .byte   3
+008D                    516         .space  3
+  |  RESERVED               
+008F
+0090 rrrrrrrr           517         .word   Os_dyn_tasks+936,Os_Entry_Core0_OsTask_ASW_10ms,8,15
+     rrrrrrrr               
+     08000000               
+     0F000000               
+00A0 1F000000           518         .word   31
+00A4                    519         .space  2
+  |  RESERVED               
+00A5
+00A6 09000000           520         .word   9
+00AA                    521         .space  2
+  |  RESERVED               
+00AB
+00AC FFFFFFFF           522         .word   -1,-1
+     FFFFFFFF               
+00B4 01                 523         .byte   1
+00B5                    524         .space  3
+  |  RESERVED               
+00B7
+00B8 rrrrrrrr           525         .word   Os_const_fifocontrol+48
+00BC 03                 526         .byte   3
+00BD                    527         .space  3
+  |  RESERVED               
+00BF
+00C0 rrrrrrrr           528         .word   Os_dyn_tasks+1040,Os_Entry_Core0_OsTask_BSW_10ms,16,31
+     rrrrrrrr               
+     10000000               
+     1F000000               
+00D0 1F000000           529         .word   31
+00D4                    530         .space  2
+  |  RESERVED               
+00D5
+00D6 0A000000           531         .word   10
+00DA                    532         .space  2
+  |  RESERVED               
+00DB
+00DC FFFFFFFF           533         .word   -1,-1
+     FFFFFFFF               
+00E4 01                 534         .byte   1
+00E5                    535         .space  3
+  |  RESERVED               
+00E7
+00E8 rrrrrrrr           536         .word   Os_const_fifocontrol+48
+00EC 03                 537         .byte   3
+00ED                    538         .space  3
+  |  RESERVED               
+00EF
+00F0 rrrrrrrr           539         .word   Os_dyn_tasks+1144,Os_Entry_Core0_OsTask_ASW_2ms,32,63
+     rrrrrrrr               
+     20000000               
+     3F000000               
+0100 FF000000           540         .word   255
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page  12
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0104                    541         .space  2
+  |  RESERVED               
+0105
+0106 0B000000           542         .word   11
+010A                    543         .space  2
+  |  RESERVED               
+010B
+010C FFFFFFFF           544         .word   -1,-1
+     FFFFFFFF               
+0114 01                 545         .byte   1
+0115                    546         .space  3
+  |  RESERVED               
+0117
+0118 rrrrrrrr           547         .word   Os_const_fifocontrol+64
+011C 03                 548         .byte   3
+011D                    549         .space  3
+  |  RESERVED               
+011F
+0120 rrrrrrrr           550         .word   Os_dyn_tasks+1248,Os_Entry_Core0_OsTask_ASW_5ms,64,127
+     rrrrrrrr               
+     40000000               
+     7F000000               
+0130 FF000000           551         .word   255
+0134                    552         .space  2
+  |  RESERVED               
+0135
+0136 0C000000           553         .word   12
+013A                    554         .space  2
+  |  RESERVED               
+013B
+013C FFFFFFFF           555         .word   -1,-1
+     FFFFFFFF               
+0144 01                 556         .byte   1
+0145                    557         .space  3
+  |  RESERVED               
+0147
+0148 rrrrrrrr           558         .word   Os_const_fifocontrol+64
+014C 03                 559         .byte   3
+014D                    560         .space  3
+  |  RESERVED               
+014F
+0150 rrrrrrrr           561         .word   Os_dyn_tasks+1352,Os_Entry_Core0_OsTask_BSW_5ms,128,255
+     rrrrrrrr               
+     80000000               
+     FF000000               
+0160 FF000000           562         .word   255
+0164                    563         .space  2
+  |  RESERVED               
+0165
+0166 0D000000           564         .word   13
+016A                    565         .space  2
+  |  RESERVED               
+016B
+016C FFFFFFFF           566         .word   -1,-1
+     FFFFFFFF               
+0174 01                 567         .byte   1
+0175                    568         .space  3
+  |  RESERVED               
+0177
+0178 rrrrrrrr           569         .word   Os_const_fifocontrol+64
+017C 03                 570         .byte   3
+017D                    571         .space  3
+  |  RESERVED               
+017F
+0180 rrrrrrrr           572         .word   Os_dyn_tasks+1456,Os_Entry_Core0_OsTask_ASW_1ms,256,511
+     rrrrrrrr               
+     00010000               
+     FF010000               
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page  13
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0190 FF030000           573         .word   1023
+0194                    574         .space  2
+  |  RESERVED               
+0195
+0196 0E000000           575         .word   14
+019A                    576         .space  2
+  |  RESERVED               
+019B
+019C FFFFFFFF           577         .word   -1,-1
+     FFFFFFFF               
+01A4 01                 578         .byte   1
+01A5                    579         .space  3
+  |  RESERVED               
+01A7
+01A8 rrrrrrrr           580         .word   Os_const_fifocontrol+80
+01AC 03                 581         .byte   3
+01AD                    582         .space  3
+  |  RESERVED               
+01AF
+01B0 rrrrrrrr           583         .word   Os_dyn_tasks+1560,Os_Entry_Core0_OsTask_BSW_1ms,512,1023
+     rrrrrrrr               
+     00020000               
+     FF030000               
+01C0 FF030000           584         .word   1023
+01C4                    585         .space  2
+  |  RESERVED               
+01C5
+01C6 0F000000           586         .word   15
+01CA                    587         .space  2
+  |  RESERVED               
+01CB
+01CC FFFFFFFF           588         .word   -1,-1
+     FFFFFFFF               
+01D4 05                 589         .byte   5
+01D5                    590         .space  3
+  |  RESERVED               
+01D7
+01D8 rrrrrrrr           591         .word   Os_const_fifocontrol+80
+01DC 03                 592         .byte   3
+01DD                    593         .space  3
+  |  RESERVED               
+01DF
+01E0 rrrrrrrr           594         .word   Os_dyn_tasks+1664,Os_Entry_Core0_BSW_OsTask_SwcRequest,1024,2047
+     rrrrrrrr               
+     00040000               
+     FF070000               
+01F0 FF070000           595         .word   2047
+01F4                    596         .space  2
+  |  RESERVED               
+01F5
+01F6 10000000           597         .word   16
+01FA                    598         .space  2
+  |  RESERVED               
+01FB
+01FC 00020000           599         .word   512,512
+     00020000               
+0204 01                 600         .byte   1
+0205                    601         .space  7
+  |  RESERVED               
+020B
+020C 03                 602         .byte   3
+020D                    603         .space  3
+  |  RESERVED               
+020F
+0210 rrrrrrrr           604         .word   Os_dyn_tasks+1768,Os_Entry_Core0_ECU_StartupTask,2048,4095
+     rrrrrrrr               
+     00080000               
+     FF0F0000               
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page  14
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0220 FF0F0000           605         .word   4095
+0224                    606         .space  2
+  |  RESERVED               
+0225
+0226 11000000           607         .word   17
+022A                    608         .space  2
+  |  RESERVED               
+022B
+022C FFFFFFFF           609         .word   -1,-1
+     FFFFFFFF               
+0234 01                 610         .byte   1
+0235                    611         .space  7
+  |  RESERVED               
+023B
+023C 03                 612         .byte   3
+023D                    613         .space  3
+  |  RESERVED               
+023F
+                        614         .sdecl  '.rodata.Os_Cfg.Os_const_tasks1',data,rom
+0000                    615         .sect   '.rodata.Os_Cfg.Os_const_tasks1'
+                        616         .global Os_const_tasks1
+                        617         .align  4
+0000                    618 Os_const_tasks1:        .type   object
+                        619         .size   Os_const_tasks1,336
+0000 rrrrrrrr           620         .word   Os_dyn_tasks+104,Os_Entry_Core1_OsTask_ASW_5ms,1,1
+     rrrrrrrr               
+     01000000               
+     01000000               
+0010 03000000           621         .word   3
+0014 0100               622         .half   1
+0016 01000000           623         .word   1
+001A                    624         .space  2
+  |  RESERVED               
+001B
+001C FFFFFFFF           625         .word   -1,-1
+     FFFFFFFF               
+0024 01                 626         .byte   1
+0025                    627         .space  3
+  |  RESERVED               
+0027
+0028 rrrrrrrr           628         .word   Os_const_fifocontrol
+002C 0701               629         .byte   7,1
+002E                    630         .space  2
+  |  RESERVED               
+002F
+0030 rrrrrrrr           631         .word   Os_dyn_tasks+208,Os_Entry_Core1_OsTask_BSW_5ms,2,3
+     rrrrrrrr               
+     02000000               
+     03000000               
+0040 03000000           632         .word   3
+0044 0100               633         .half   1
+0046 02000000           634         .word   2
+004A                    635         .space  2
+  |  RESERVED               
+004B
+004C FFFFFFFF           636         .word   -1,-1
+     FFFFFFFF               
+0054 01                 637         .byte   1
+0055                    638         .space  3
+  |  RESERVED               
+0057
+0058 rrrrrrrr           639         .word   Os_const_fifocontrol
+005C 0701               640         .byte   7,1
+005E                    641         .space  2
+  |  RESERVED               
+005F
+0060 rrrrrrrr           642         .word   Os_dyn_tasks+312,Os_Entry_Core1_OsTask_ASW_10ms,4,7
+     rrrrrrrr               
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page  15
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+     04000000               
+     07000000               
+0070 0F000000           643         .word   15
+0074 0100               644         .half   1
+0076 03000000           645         .word   3
+007A                    646         .space  2
+  |  RESERVED               
+007B
+007C FFFFFFFF           647         .word   -1,-1
+     FFFFFFFF               
+0084 01                 648         .byte   1
+0085                    649         .space  3
+  |  RESERVED               
+0087
+0088 rrrrrrrr           650         .word   Os_const_fifocontrol+16
+008C 0701               651         .byte   7,1
+008E                    652         .space  2
+  |  RESERVED               
+008F
+0090 rrrrrrrr           653         .word   Os_dyn_tasks+416,Os_Entry_Core1_OsTask_BSW_10ms,8,15
+     rrrrrrrr               
+     08000000               
+     0F000000               
+00A0 0F000000           654         .word   15
+00A4 0100               655         .half   1
+00A6 04000000           656         .word   4
+00AA                    657         .space  2
+  |  RESERVED               
+00AB
+00AC FFFFFFFF           658         .word   -1,-1
+     FFFFFFFF               
+00B4 01                 659         .byte   1
+00B5                    660         .space  3
+  |  RESERVED               
+00B7
+00B8 rrrrrrrr           661         .word   Os_const_fifocontrol+16
+00BC 0701               662         .byte   7,1
+00BE                    663         .space  2
+  |  RESERVED               
+00BF
+00C0 rrrrrrrr           664         .word   Os_dyn_tasks+520,Os_Entry_Core1_OsTask_ASW_1ms,16,31
+     rrrrrrrr               
+     10000000               
+     1F000000               
+00D0 3F000000           665         .word   63
+00D4 0100               666         .half   1
+00D6 05000000           667         .word   5
+00DA                    668         .space  2
+  |  RESERVED               
+00DB
+00DC FFFFFFFF           669         .word   -1,-1
+     FFFFFFFF               
+00E4 01                 670         .byte   1
+00E5                    671         .space  3
+  |  RESERVED               
+00E7
+00E8 rrrrrrrr           672         .word   Os_const_fifocontrol+32
+00EC 0701               673         .byte   7,1
+00EE                    674         .space  2
+  |  RESERVED               
+00EF
+00F0 rrrrrrrr           675         .word   Os_dyn_tasks+624,Os_Entry_Core1_OsTask_BSW_1ms,32,63
+     rrrrrrrr               
+     20000000               
+     3F000000               
+0100 3F000000           676         .word   63
+0104 0100               677         .half   1
+0106 06000000           678         .word   6
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page  16
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+010A                    679         .space  2
+  |  RESERVED               
+010B
+010C FFFFFFFF           680         .word   -1,-1
+     FFFFFFFF               
+0114 01                 681         .byte   1
+0115                    682         .space  3
+  |  RESERVED               
+0117
+0118 rrrrrrrr           683         .word   Os_const_fifocontrol+32
+011C 0701               684         .byte   7,1
+011E                    685         .space  2
+  |  RESERVED               
+011F
+0120 rrrrrrrr           686         .word   Os_dyn_tasks+1872,Os_Entry_Core1_ECU_StartupTask,64,127
+     rrrrrrrr               
+     40000000               
+     7F000000               
+0130 7F000000           687         .word   127
+0134 0100               688         .half   1
+0136 12000000           689         .word   18
+013A                    690         .space  2
+  |  RESERVED               
+013B
+013C FFFFFFFF           691         .word   -1,-1
+     FFFFFFFF               
+0144 01                 692         .byte   1
+0145                    693         .space  7
+  |  RESERVED               
+014B
+014C 0701               694         .byte   7,1
+014E                    695         .space  2
+  |  RESERVED               
+014F
+                        696         .sdecl  '.rodata.Os_Cfg.Os_const_tasks',data,rom
+0000                    697         .sect   '.rodata.Os_Cfg.Os_const_tasks'
+                        698         .global Os_const_tasks
+                        699         .align  4
+0000                    700 Os_const_tasks: .type   object
+                        701         .size   Os_const_tasks,76
+0000 rrrrrrrr           702         .word   Os_const_tasks0,Os_const_tasks1,Os_const_tasks1+48,Os_const_tasks1+96
+     rrrrrrrr               
+     rrrrrrrr               
+     rrrrrrrr               
+0010 rrrrrrrr           703         .word   Os_const_tasks1+144,Os_const_tasks1+192,Os_const_tasks1+240,Os_const_tasks0+48
+     rrrrrrrr               
+     rrrrrrrr               
+     rrrrrrrr               
+0020 rrrrrrrr           704         .word   Os_const_tasks0+96,Os_const_tasks0+144,Os_const_tasks0+192,Os_const_tasks0+240
+     rrrrrrrr               
+     rrrrrrrr               
+     rrrrrrrr               
+0030 rrrrrrrr           705         .word   Os_const_tasks0+288,Os_const_tasks0+336,Os_const_tasks0+384,Os_const_tasks0+432
+     rrrrrrrr               
+     rrrrrrrr               
+     rrrrrrrr               
+0040 rrrrrrrr           706         .word   Os_const_tasks0+480,Os_const_tasks0+528,Os_const_tasks1+288
+     rrrrrrrr               
+     rrrrrrrr               
+                        707         .sdecl  '.rodata.Os_Cfg.Os_const_resources',data,rom
+0000                    708         .sect   '.rodata.Os_Cfg.Os_const_resources'
+                        709         .global Os_const_resources
+                        710         .align  4
+0000                    711 Os_const_resources:     .type   object
+                        712         .size   Os_const_resources,48
+0000 rrrrrrrr           713         .word   Os_dyn_resources,127
+     7F000000               
+0008 04                 714         .byte   4
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page  17
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0009                    715         .space  3
+  |  RESERVED               
+000B
+000C rrrrrrrr           716         .word   Os_dyn_resources+4,4095
+     FF0F0000               
+0014 02                 717         .byte   2
+0015                    718         .space  3
+  |  RESERVED               
+0017
+0018 rrrrrrrr           719         .word   Os_dyn_resources+8,4095
+     FF0F0000               
+0020 07                 720         .byte   7
+0021                    721         .space  3
+  |  RESERVED               
+0023
+0024 rrrrrrrr           722         .word   Os_dyn_resources+12,127
+     7F000000               
+002C 07                 723         .byte   7
+002D                    724         .space  3
+  |  RESERVED               
+002F
+                        725         .sdecl  '.rodata.Os_Cfg.Os_TotalNumberOfCores',data,rom
+0000                    726         .sect   '.rodata.Os_Cfg.Os_TotalNumberOfCores'
+                        727         .global Os_TotalNumberOfCores
+                        728         .align  2
+0000                    729 Os_TotalNumberOfCores:  .type   object
+                        730         .size   Os_TotalNumberOfCores,2
+0000 0200               731         .half   2
+                        732         .sdecl  '.rodata.Os_Cfg.Os_const_fifocontrol',data,rom
+0000                    733         .sect   '.rodata.Os_Cfg.Os_const_fifocontrol'
+                        734         .global Os_const_fifocontrol
+                        735         .align  4
+0000                    736 Os_const_fifocontrol:   .type   object
+                        737         .size   Os_const_fifocontrol,96
+0000 rrrrrrrr           738         .word   Os_TaskFifo,Os_TaskFifo+4
+     rrrrrrrr               
+0008                    739         .space  4
+  |  RESERVED               
+000B
+000C 03000000           740         .word   3,Os_TaskFifo+8,Os_TaskFifo+12,2
+     rrrrrrrr               
+     rrrrrrrr               
+     02000000               
+001C 0F000000           741         .word   15,Os_TaskFifo+16,Os_TaskFifo+20,4
+     rrrrrrrr               
+     rrrrrrrr               
+     04000000               
+002C 3F000000           742         .word   63,Os_TaskFifo+24,Os_TaskFifo+28,6
+     rrrrrrrr               
+     rrrrrrrr               
+     06000000               
+003C 1F000000           743         .word   31,Os_TaskFifo+32,Os_TaskFifo+40,8
+     rrrrrrrr               
+     rrrrrrrr               
+     08000000               
+004C FF000000           744         .word   255,Os_TaskFifo+44,Os_TaskFifo+64,10
+     rrrrrrrr               
+     rrrrrrrr               
+     0A000000               
+005C FF030000           745         .word   1023
+                        746         .calls  '__INDIRECT__','ErrorHook_OsApplication_Core0'
+                        747         .calls  '__INDIRECT__','ErrorHook_OsApplication_Core1'
+                        748         .calls  '__INDIRECT__','Os_Entry_Core0_OsTask_Background_1ms'
+                        749         .calls  '__INDIRECT__','Os_Entry_Core1_OsTask_ASW_5ms'
+                        750         .calls  '__INDIRECT__','Os_Entry_Core1_OsTask_BSW_5ms'
+                        751         .calls  '__INDIRECT__','Os_Entry_Core1_OsTask_ASW_10ms'
+                        752         .calls  '__INDIRECT__','Os_Entry_Core1_OsTask_BSW_10ms'
+                        753         .calls  '__INDIRECT__','Os_Entry_Core1_OsTask_ASW_1ms'
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page  18
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                        754         .calls  '__INDIRECT__','Os_Entry_Core1_OsTask_BSW_1ms'
+                        755         .calls  '__INDIRECT__','Os_Entry_Core0_OsTask_BSW_100ms'
+                        756         .calls  '__INDIRECT__','Os_Entry_Core0_OsTask_BSW_50ms'
+                        757         .calls  '__INDIRECT__','Os_Entry_Core0_OsTask_ASW_10ms'
+                        758         .calls  '__INDIRECT__','Os_Entry_Core0_OsTask_BSW_10ms'
+                        759         .calls  '__INDIRECT__','Os_Entry_Core0_OsTask_ASW_2ms'
+                        760         .calls  '__INDIRECT__','Os_Entry_Core0_OsTask_ASW_5ms'
+                        761         .calls  '__INDIRECT__','Os_Entry_Core0_OsTask_BSW_5ms'
+                        762         .calls  '__INDIRECT__','Os_Entry_Core0_OsTask_ASW_1ms'
+                        763         .calls  '__INDIRECT__','Os_Entry_Core0_OsTask_BSW_1ms'
+                        764         .calls  '__INDIRECT__','Os_Entry_Core0_BSW_OsTask_SwcRequest'
+                        765         .calls  '__INDIRECT__','Os_Entry_Core0_ECU_StartupTask'
+                        766         .calls  '__INDIRECT__','Os_Entry_Core1_ECU_StartupTask'
+                        767         .calls  '__INDIRECT__','Os_Entry_CAN0SR0_ISR'
+                        768         .calls  '__INDIRECT__','Os_Entry_CAN0SR1_ISR'
+                        769         .calls  '__INDIRECT__','Os_Entry_CAN0SR2_ISR'
+                        770         .calls  '__INDIRECT__','Os_Entry_CAN0SR3_ISR'
+                        771         .calls  '__INDIRECT__','Os_Entry_CAN0SR4_ISR'
+                        772         .calls  '__INDIRECT__','Os_Entry_CAN0SR5_ISR'
+                        773         .calls  '__INDIRECT__','Os_Entry_CAN0SR6_ISR'
+                        774         .calls  '__INDIRECT__','Os_Entry_CAN0SR7_ISR'
+                        775         .calls  '__INDIRECT__','Os_Entry_CAN0SR8_ISR'
+                        776         .calls  '__INDIRECT__','Os_Entry_CAN0SR9_ISR'
+                        777         .calls  '__INDIRECT__','Os_Entry_CAN0SR10_ISR'
+                        778         .calls  '__INDIRECT__','Os_Entry_CAN0SR11_ISR'
+                        779         .calls  '__INDIRECT__','Os_Entry_Millisecond'
+                        780         .calls  '__INDIRECT__','Os_Entry_NewIsr1'
+                        781         .calls  '__INDIRECT__','Os_Dispatch0'
+                        782         .calls  '__INDIRECT__','Os_Dispatch1'
+                        783         .calls  'Os_StartOS_CoreInit','Os_memclr'
+                        784         .calls  'Os_StartOS_CoreInit','Os_GetSP'
+                        785         .calls  'Os_StartOS_CoreInit','Os_GetStackUsage'
+                        786         .calls  'Os_StartOS_CoreInit','Os_GetStackValue'
+                        787         .calls  'Os_StartOS_CommonInit','Os_memclr'
+                        788         .calls  'Os_StartOS_StartAuto','Os_ActivateTaskKL'
+                        789         .calls  'Os_ErrorLog','ErrorHook'
+                        790         .calls  'Os_ErrorLog','__INDIRECT__'
+                        791         .calls  'Os_memclr','',0
+                        792         .calls  'Os_StartOS_CoreInit','',0
+                        793         .calls  'Os_StartOS_CommonInit','',0
+                        794         .calls  'Os_StartOS_StartCore','',0
+                        795         .calls  'Os_StartOS_StartAuto','',0
+                        796         .extern ErrorHook
+                        797         .extern Os_GetSP
+                        798         .extern Os_GetStackUsage
+                        799         .extern Os_GetStackValue
+                        800         .extern ErrorHook_OsApplication_Core0
+                        801         .extern ErrorHook_OsApplication_Core1
+                        802         .extern Os_Entry_Core0_OsTask_Background_1ms
+                        803         .extern Os_Entry_Core1_OsTask_ASW_5ms
+                        804         .extern Os_Entry_Core1_OsTask_BSW_5ms
+                        805         .extern Os_Entry_Core1_OsTask_ASW_10ms
+                        806         .extern Os_Entry_Core1_OsTask_BSW_10ms
+                        807         .extern Os_Entry_Core1_OsTask_ASW_1ms
+                        808         .extern Os_Entry_Core1_OsTask_BSW_1ms
+                        809         .extern Os_Entry_Core0_OsTask_BSW_100ms
+                        810         .extern Os_Entry_Core0_OsTask_BSW_50ms
+                        811         .extern Os_Entry_Core0_OsTask_ASW_10ms
+                        812         .extern Os_Entry_Core0_OsTask_BSW_10ms
+                        813         .extern Os_Entry_Core0_OsTask_ASW_2ms
+                        814         .extern Os_Entry_Core0_OsTask_ASW_5ms
+                        815         .extern Os_Entry_Core0_OsTask_BSW_5ms
+                        816         .extern Os_Entry_Core0_OsTask_ASW_1ms
+                        817         .extern Os_Entry_Core0_OsTask_BSW_1ms
+                        818         .extern Os_Entry_Core0_BSW_OsTask_SwcRequest
+                        819         .extern Os_Entry_Core0_ECU_StartupTask
+                        820         .extern Os_Entry_Core1_ECU_StartupTask
+                        821         .extern Os_Entry_CAN0SR0_ISR
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page  19
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                        822         .extern Os_Entry_CAN0SR1_ISR
+                        823         .extern Os_Entry_CAN0SR2_ISR
+                        824         .extern Os_Entry_CAN0SR3_ISR
+                        825         .extern Os_Entry_CAN0SR4_ISR
+                        826         .extern Os_Entry_CAN0SR5_ISR
+                        827         .extern Os_Entry_CAN0SR6_ISR
+                        828         .extern Os_Entry_CAN0SR7_ISR
+                        829         .extern Os_Entry_CAN0SR8_ISR
+                        830         .extern Os_Entry_CAN0SR9_ISR
+                        831         .extern Os_Entry_CAN0SR10_ISR
+                        832         .extern Os_Entry_CAN0SR11_ISR
+                        833         .extern Os_Entry_Millisecond
+                        834         .extern Os_Entry_NewIsr1
+                        835         .extern Os_ActivateTaskKL
+                        836         .extern Os_Dispatch0
+                        837         .extern Os_Dispatch1
+                        838         .extern __INDIRECT__
+                        839         .calls  'Os_ErrorLog','',0
+                        840         ; Module end

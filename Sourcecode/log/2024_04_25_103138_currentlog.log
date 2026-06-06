@@ -1,0 +1,645 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling bsw\EcuM\src\EcuM_BootTarget.c
+Compiling bsw\EcuM\src\EcuM_CurrentState.c
+Compiling bsw\EcuM\src\EcuM_KillAllRequests.c
+Compiling bsw\EcuM\src\EcuM_MainFunction.c
+
+Compiling bsw\EcuM\src\EcuM_Misc.c
+
+Compiling bsw\EcuM\src\EcuM_Prv.c
+
+Compiling bsw\EcuM\src\EcuM_Prv_RteActions.c
+
+Compiling bsw\EcuM\src\EcuM_ReleasePOST_RUN.c
+
+Compiling bsw\EcuM\src\EcuM_ReleaseRUN.c
+
+Compiling bsw\EcuM\src\EcuM_RequestPOST_RUN.c
+
+Compiling bsw\EcuM\src\EcuM_RequestRUN.c
+
+Compiling bsw\EcuM\src\EcuM_SetState.c
+
+Compiling bsw\EcuM\src\EcuM_Shutdown.c
+
+Compiling bsw\EcuM\src\EcuM_ShutdownServices.c
+
+Compiling bsw\EcuM\src\EcuM_Sleep.c
+
+Compiling bsw\EcuM\src\EcuM_Startup.c
+
+Compiling bsw\EcuM\src\EcuM_WakeupServices.c
+
+
+Compiling bsw\Fee\src\Fee_Chunk.c
+Compiling bsw\Fee\src\Fee_Config.c
+
+Compiling bsw\Fee\src\Fee_Dbg.c
+
+Compiling bsw\Fee\src\Fee_Job.c
+
+Compiling bsw\Fee\src\Fee_Lib.c
+
+Compiling bsw\Fee\src\Fee_Medium.c
+ctc W505: ["bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: ["bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\Fee\src\Fee_Order.c
+
+Compiling bsw\Fee\src\Fee_Proc.c
+ctc W505: ["bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: ["bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\MemIf\src\MemIf.c
+
+Compiling bsw\MemIf\src\MemIf_MainFunction.c
+ctc W505: ["bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: ["bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\MemIf\src\MemIf_Rb_GetStatus.c
+ctc W505: ["bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: ["bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+ctc W505: ["bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: ["bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\MemIf\src\MemIf_Rb_MainFunction.c
+Compiling bsw\Nm\src\Nm.c
+
+Compiling bsw\Nm\src\Nm_BusSleepMode.c
+
+Compiling bsw\Nm\src\Nm_CheckRemoteSleepIndication.c
+ctc W505: ["bsw\MemIf\src\MemIf_Rb_MainFunction.c" 170/9] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: ["bsw\MemIf\src\MemIf_Rb_MainFunction.c" 170/9] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\Nm\src\Nm_CoordReadyToSleepCancellation.c
+
+Compiling bsw\Nm\src\Nm_CoordReadyToSleepIndication.c
+
+Compiling bsw\Nm\src\Nm_DisableCommunication.c
+
+Compiling bsw\Nm\src\Nm_EnableCommunication.c
+
+Compiling bsw\Nm\src\Nm_Extensions.c
+
+Compiling bsw\Nm\src\Nm_ForwardSynchronizedPncShutdown.c
+
+Compiling bsw\Nm\src\Nm_GetLocalNodeIdentifier.c
+
+Compiling bsw\Nm\src\Nm_GetNodeIdentifier.c
+
+Compiling bsw\Nm\src\Nm_GetPduData.c
+
+Compiling bsw\Nm\src\Nm_GetState.c
+
+Compiling bsw\Nm\src\Nm_GetUserData.c
+
+Compiling bsw\Nm\src\Nm_GetVersionInfo.c
+
+Compiling bsw\Nm\src\Nm_Int_NetworkRelease.c
+
+Compiling bsw\Nm\src\Nm_Int_NetworkRequest.c
+
+Compiling bsw\Nm\src\Nm_LinNm.c
+
+Compiling bsw\Nm\src\Nm_MainFunction.c
+
+Compiling bsw\Nm\src\Nm_NetworkMode.c
+
+Compiling bsw\Nm\src\Nm_NetworkRelease.c
+
+Compiling bsw\Nm\src\Nm_NetworkRequest.c
+
+Compiling bsw\Nm\src\Nm_NetworkStartIndication.c
+
+Compiling bsw\Nm\src\Nm_PassiveStartup.c
+
+Compiling bsw\Nm\src\Nm_PrepareBusSleepMode.c
+
+Compiling bsw\Nm\src\Nm_RemoteSleepCancellation.c
+
+Compiling bsw\Nm\src\Nm_RemoteSleepIndication.c
+
+Compiling bsw\Nm\src\Nm_RepeatMessageRequest.c
+
+Compiling bsw\Nm\src\Nm_RequestSynchronizedPncShutdown.c
+
+Compiling bsw\Nm\src\Nm_SetUserData.c
+
+Compiling bsw\Nm\src\Nm_SynchronizeMode.c
+
+
+Compiling bsw\NvM\src\AuxiliaryRequests\Asynchronous\NvM_Rb_AuxInvalidateNvBlock.c
+Compiling bsw\NvM\src\AuxiliaryRequests\Asynchronous\NvM_Rb_AuxReadBlock.c
+
+Compiling bsw\NvM\src\AuxiliaryRequests\Asynchronous\NvM_Rb_AuxWriteBlock.c
+
+Compiling bsw\NvM\src\AuxiliaryRequests\Synchronous\NvM_Rb_AuxGetDataIndex.c
+
+
+Compiling bsw\NvM\src\AuxiliaryRequests\Synchronous\NvM_Rb_AuxGetErrorInfoDetail.c
+Compiling bsw\NvM\src\AuxiliaryRequests\Synchronous\NvM_Rb_AuxGetErrorStatus.c
+
+Compiling bsw\NvM\src\AuxiliaryRequests\Synchronous\NvM_Rb_AuxGetMigrationResult.c
+
+Compiling bsw\NvM\src\AuxiliaryRequests\Synchronous\NvM_Rb_AuxSetDataIndex.c
+
+
+Compiling bsw\NvM\src\Internal\BlockData\NvM_BlockData.c
+Compiling bsw\NvM\src\Internal\Crc\NvM_Crc.c
+
+
+Compiling bsw\NvM\src\Internal\CryptoServices\NvM_Crypto.c
+Compiling bsw\NvM\src\Internal\CryptoServices\NvM_CryptoKeySetting.c
+
+Compiling bsw\NvM\src\Internal\CryptoServices\NvM_CryptoRead.c
+
+Compiling bsw\NvM\src\Internal\CryptoServices\NvM_CryptoWrite.c
+
+Compiling bsw\NvM\src\Internal\CryptoServices\NvM_Csm.c
+
+Compiling bsw\NvM\src\Internal\ErrorDetection\NvM_ErrorDetection.c
+
+
+Compiling bsw\NvM\src\Internal\ExplicitSynchronization\NvM_ExplicitSynchronization.c
+Compiling bsw\NvM\src\Internal\InternalBuffer\NvM_InternalBuffer.c
+
+Compiling bsw\NvM\src\Internal\JobHandling\NvM_Job.c
+
+Compiling bsw\NvM\src\Internal\JobHandling\NvM_JobGenerateRandomNr.c
+
+Compiling bsw\NvM\src\Internal\JobHandling\NvM_JobInvalidate.c
+
+Compiling bsw\NvM\src\Internal\JobHandling\NvM_JobMaintain.c
+
+Compiling bsw\NvM\src\Internal\JobHandling\NvM_JobRead.c
+
+Compiling bsw\NvM\src\Internal\JobHandling\NvM_JobRecalcRamBlkCrc.c
+
+Compiling bsw\NvM\src\Internal\JobHandling\NvM_JobRestore.c
+
+Compiling bsw\NvM\src\Internal\JobHandling\NvM_JobValidate.c
+
+Compiling bsw\NvM\src\Internal\JobHandling\NvM_JobWrite.c
+
+Compiling bsw\NvM\src\Internal\JobResource\NvM_JobResource.c
+
+Compiling bsw\NvM\src\Internal\MemIf\NvM_MemIf.c
+
+Compiling bsw\NvM\src\Internal\Monitoring\NvM_Rb_WriteMon.c
+
+Compiling bsw\NvM\src\Internal\ProcessMultiBlock\NvM_ProcessMultiBlock.c
+
+Compiling bsw\NvM\src\Internal\QueueHandling\NvM_JobQueue.c
+
+ 
+Compiling bsw\NvM\src\Internal\QueueHandling\NvM_Queue.c
+Compiling bsw\NvM\src\Internal\QueueHandling\NvM_QueueLinked.c
+
+Compiling bsw\NvM\src\Internal\QueueHandling\NvM_RequestQueue.c
+
+
+Compiling bsw\NvM\src\Internal\Service\NvM_Service.c
+Compiling bsw\NvM\src\SingleBlockRequests\Asynchronous\NvM_EraseNvBlock.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Asynchronous\NvM_InvalidateNvBlock.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Asynchronous\NvM_ReadBlock.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Asynchronous\NvM_RestoreBlockDefaults.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Asynchronous\NvM_WriteBlock.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_GetDataIndex.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_GetErrorStatus.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_Rb_GetBlockId.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_Rb_GetErrorInfoDetail.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_Rb_GetMigrationResult.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_Rb_GetNvBlockLength.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_Rb_GetWriteCounter.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_Rb_SetWriteAllTrigger.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_SetBlockLockStatus.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_SetBlockProtection.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_SetDataIndex.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_SetRamBlockStatus.c
+
+Compiling bsw\NvM\src\CommonRequests\NvM_GetVersionInfo.c
+
+Compiling bsw\NvM\src\CommonRequests\NvM_Init.c
+
+Compiling bsw\NvM\src\CommonRequests\NvM_Rb_GetActiveService.c
+
+Compiling bsw\NvM\src\CommonRequests\NvM_Rb_GetRequestType.c
+
+Compiling bsw\NvM\src\CommonRequests\NvM_Rb_GetStatus.c
+
+Compiling bsw\NvM\src\MultiBlockRequests\NvM_CancelWriteAll.c
+
+
+Compiling bsw\NvM\src\MultiBlockRequests\NvM_InitAfterReadAll.c
+Compiling bsw\NvM\src\MultiBlockRequests\NvM_Rb_FirstInitAll.c
+
+Compiling bsw\NvM\src\MultiBlockRequests\NvM_ReadAll.c
+
+Compiling bsw\NvM\src\MultiBlockRequests\NvM_ValidateAll.c
+
+Compiling bsw\NvM\src\MultiBlockRequests\NvM_WriteAll.c
+
+Compiling bsw\NvM\src\ScheduledFunctions\NvM_MainFunction.c
+
+Compiling bsw\NvM\src\ScheduledFunctions\NvM_MainFunctionArbitrate.c
+
+Compiling bsw\NvM\src\ScheduledFunctions\NvM_MainFunctionJobStart.c
+
+Compiling bsw\NvM\src\ScheduledFunctions\NvM_MainFunctionResultEval.c
+
+Compiling bsw\NvM\src\NvM_Asserts.c
+
+
+Compiling bsw\PduR\src\PduR_BufferPool.c
+Compiling bsw\PduR\src\PduR_EnableDisableRouting.c
+
+
+Compiling bsw\PduR\src\PduR_Gateway_DDIfTransmit_FiFo.c
+Compiling bsw\PduR\src\PduR_Gateway_DDIfTxConf_FiFo.c
+
+Compiling bsw\PduR\src\PduR_Gateway_DDIfTxConf_NoBuf.c
+
+Compiling bsw\PduR\src\PduR_Gateway_IfRxInd.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TpDcmTx.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TpRx.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TpTx.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TpTxConf.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TTIfTransmit_Buf.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TTIfTransmit_FiFo.c
+
+
+Compiling bsw\PduR\src\PduR_Gateway_TTIfTrigTx_Buf.c
+Compiling bsw\PduR\src\PduR_Gateway_TTIfTrigTx_FiFo.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TTIfTxConf_Buf.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TTIfTxConf_FiFo.c
+
+
+Compiling bsw\PduR\src\PduR_Gateway_UpIf.c
+Compiling bsw\PduR\src\PduR_GetBuffer.c
+
+
+Compiling bsw\PduR\src\PduR_GetConfigurationId.c
+Compiling bsw\PduR\src\PduR_GetVersionInfo.c
+
+
+Compiling bsw\PduR\src\PduR_Globals.c
+Compiling bsw\PduR\src\PduR_Init.c
+
+
+Compiling bsw\PduR\src\PduR_InvalidId_If.c
+Compiling bsw\PduR\src\PduR_InvalidId_Tp.c
+
+Compiling bsw\PduR\src\PduR_InvalidId_UpTx.c
+
+Compiling bsw\PduR\src\PduR_Multicast_LoTpTxToUp.c
+
+Compiling bsw\PduR\src\PduR_Multicast_Tp.c
+
+Compiling bsw\PduR\src\PduR_Multicast_UpToLo.c
+
+
+Compiling bsw\PduR\src\PduR_Multicast_UpTx.c
+Compiling bsw\PduR\src\PduR_NullFunc_TrigTx.c
+
+
+Compiling bsw\PduR\src\PduR_Null_UpIf.c
+Compiling bsw\PduR\src\PduR_RPG_TpRx.c
+
+Compiling bsw\Rba_FeeFs1x\src\addressLayer\PAMap\rba_FeeFs1x_PAMap.c
+
+
+Compiling bsw\Rba_FeeFs1x\src\addressLayer\PARead\rba_FeeFs1x_PARead.c
+Compiling bsw\Rba_FeeFs1x\src\addressLayer\PASrv\rba_FeeFs1x_PASrv.c
+
+Compiling bsw\Rba_FeeFs1x\src\addressLayer\PAWrite\rba_FeeFs1x_PAWrite.c
+ctc W505: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\Rba_FeeFs1x\src\addressLayer\Sector\rba_FeeFs1x_Sector.c
+ctc W505: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+ctc W505: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\Rba_FeeFs1x\src\BlockJobs\BlockJob\rba_FeeFs1x_BlockJob.c
+Compiling bsw\Rba_FeeFs1x\src\BlockJobs\InvalidateJob\rba_FeeFs1x_InvalidateJob.c
+ctc W505: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\Rba_FeeFs1x\src\BlockJobs\Rb_MaintainJob\rba_FeeFs1x_Rb_MaintainJob.c
+
+Compiling bsw\Rba_FeeFs1x\src\BlockJobs\ReadJob\rba_FeeFs1x_ReadJob.c
+
+Compiling bsw\Rba_FeeFs1x\src\BlockJobs\WriteJob\rba_FeeFs1x_WriteJob.c
+ctc W505: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\Rba_FeeFs1x\src\SectorJobs\BackgroundJob\rba_FeeFs1x_BackgroundJob.c
+ctc W505: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\Rba_FeeFs1x\src\SectorJobs\SectorEraseJob\rba_FeeFs1x_SectorEraseJob.c
+
+Compiling bsw\Rba_FeeFs1x\src\SectorJobs\SectorReorganisation\rba_FeeFs1x_SectorReorg.c
+ctc W505: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\Rba_FeeFs1x\src\SectorJobs\TriggerReorgJob\rba_FeeFs1x_TriggerReorgJob.c
+ctc W505: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\Rba_FeeFs1x\src\virtualPagingLayer\BC\rba_FeeFs1x_BC.c
+ctc W505: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\Rba_FeeFs1x\src\virtualPagingLayer\CacheKwn\rba_FeeFs1x_CacheKwn.c
+ctc W505: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\Rba_FeeFs1x\src\virtualPagingLayer\Searcher\rba_FeeFs1x_Searcher.c
+
+Compiling bsw\Rba_FeeFs1x\src\Init\rba_FeeFs1x_Init.c
+ctc W505: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\Rba_FeeFs1x\src\Utils\rba_FeeFs1x_Utils.c
+ctc W505: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+
+Compiling bsw\WdgM\src\WdgM.c
+Compiling bsw\WdgM\src\WdgM_Prv.c
+
+Compiling bsw\Xcp\src\Xcp.c
+ctc W505: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] implicit declaration of function "Fls_17_Dmu_MainFunction"
+ctc W577: [".\bsw\Fee\src\Fee_Prv_Lib.h" 465/5] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\Xcp\src\XcpOnCan.c
+
+Compiling bsw\Xcp\src\XcpOnCdd.c
+
+Compiling bsw\Xcp\src\XcpOnEth.c
+
+Compiling bsw\Xcp\src\XcpOnFr.c
+
+Compiling bsw\Xcp\src\Xcp_Cmd0xC0Handling.c
+
+Compiling bsw\Xcp\src\Xcp_CmdAllocDaq.c
+
+Compiling bsw\Xcp\src\Xcp_CmdAllocOdt.c
+
+Compiling bsw\Xcp\src\Xcp_CmdAllocOdtEntry.c
+
+Compiling bsw\Xcp\src\Xcp_CmdBuildChecksum.c
+
+Compiling bsw\Xcp\src\Xcp_CmdClearDaqList.c
+
+Compiling bsw\Xcp\src\Xcp_CmdConnect.c
+
+Compiling bsw\Xcp\src\Xcp_CmdCopyCalPage.c
+
+
+Compiling bsw\Xcp\src\Xcp_CmdDisconnect.c
+Compiling bsw\Xcp\src\Xcp_CmdDownload.c
+
+Compiling bsw\Xcp\src\Xcp_CmdDownloadMax.c
+
+Compiling bsw\Xcp\src\Xcp_CmdDownloadNext.c
+
+Compiling bsw\Xcp\src\Xcp_CmdFreeDaq.c
+
+Compiling bsw\Xcp\src\Xcp_CmdGetCalPage.c
+
+Compiling bsw\Xcp\src\Xcp_CmdGetCommModeInfo.c
+
+Compiling bsw\Xcp\src\Xcp_CmdGetDaqClock.c
+
+Compiling bsw\Xcp\src\Xcp_CmdGetDaqEventInfo.c
+
+Compiling bsw\Xcp\src\Xcp_CmdGetDaqListMode.c
+
+Compiling bsw\Xcp\src\Xcp_CmdGetDaqPackedMode.c
+
+Compiling bsw\Xcp\src\Xcp_CmdGetDaqProcessorInfo.c
+
+Compiling bsw\Xcp\src\Xcp_CmdGetDaqResolutionInfo.c
+
+Compiling bsw\Xcp\src\Xcp_CmdGetId.c
+
+Compiling bsw\Xcp\src\Xcp_CmdGetPageInfo.c
+
+Compiling bsw\Xcp\src\Xcp_CmdGetPagProcessorInfo.c
+
+Compiling bsw\Xcp\src\Xcp_CmdGetSeed.c
+
+Compiling bsw\Xcp\src\Xcp_CmdGetSegmentInfo.c
+
+Compiling bsw\Xcp\src\Xcp_CmdGetStatus.c
+
+Compiling bsw\Xcp\src\Xcp_CmdModifyBits.c
+
+
+Compiling bsw\Xcp\src\Xcp_CmdReadDaq.c
+Compiling bsw\Xcp\src\Xcp_CmdSetCalPage.c
+
+Compiling bsw\Xcp\src\Xcp_CmdSetDaqListMode.c
+
+Compiling bsw\Xcp\src\Xcp_CmdSetDaqPackedMode.c
+
+Compiling bsw\Xcp\src\Xcp_CmdSetDaqPtr.c
+
+Compiling bsw\Xcp\src\Xcp_CmdSetMta.c
+
+Compiling bsw\Xcp\src\Xcp_CmdSetRequest.c
+
+Compiling bsw\Xcp\src\Xcp_CmdShortDownload.c
+
+Compiling bsw\Xcp\src\Xcp_CmdShortUpload.c
+
+Compiling bsw\Xcp\src\Xcp_CmdStartStopDaqList.c
+
+Compiling bsw\Xcp\src\Xcp_CmdStartStopSynch.c
+
+Compiling bsw\Xcp\src\Xcp_CmdSynch.c
+
+Compiling bsw\Xcp\src\Xcp_CmdTransportLayerCmd.c
+
+Compiling bsw\Xcp\src\Xcp_CmdUnlock.c
+
+Compiling bsw\Xcp\src\Xcp_CmdUpload.c
+
+Compiling bsw\Xcp\src\Xcp_CmdUserCmd.c
+
+Compiling bsw\Xcp\src\Xcp_CmdWriteDaq.c
+
+Compiling bsw\Xcp\src\Xcp_CmdWriteDaqMultiple.c
+
+
+Compiling bsw\Xcp\src\Xcp_DaqEvent.c
+Compiling bsw\Xcp\src\Xcp_DaqRam.c
+
+Compiling bsw\Xcp\src\Xcp_EventChannel.c
+
+Compiling bsw\Xcp\src\Xcp_GetVersionInfo.c
+
+
+Compiling bsw\Xcp\src\Xcp_Init.c
+Compiling bsw\Xcp\src\Xcp_ProductLineMdg1.c
+
+Compiling bsw\Xcp\src\Xcp_QueHandling.c
+
+Compiling bsw\Xcp\src\Xcp_Receive.c
+
+Compiling bsw\Xcp\src\Xcp_ReceiveCommand.c
+
+Compiling bsw\Xcp\src\Xcp_Stim.c
+
+
+Compiling bsw\Xcp\src\Xcp_SubCmdGetVersion.c
+Compiling bsw\Xcp\src\Xcp_Transmit.c
+
+
+Compiling bsw\Xcp\src\Xcp_Utils.c
+Compiling bsw\Xcp\src\Xcp_UtilsStartStop.c
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_AC.c
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_LE.c
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_ModeManagerReq.c
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_MRP.c
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_RL.c
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_PBcfg.c
+
+Compiling bsw\CanIf\CanIf_cfg.c
+
+Compiling bsw\CanIf\CanIf_PBcfg.c
+
+Compiling bsw\CanNm_PreCompile_and_PB_Variant\CanNm_Cfg.c
+
+Compiling bsw\CanNm_PreCompile_and_PB_Variant\CanNm_PBcfg.c
+
+Compiling bsw\CanSM\CanSM_PBcfg.c
+
+Compiling bsw\CanTp_PreCompile\CanTp_Cfg.c
+
+Compiling bsw\Com\Com_Cfg.c
+
+Compiling bsw\Com\Com_PBcfg.c
+
+Compiling bsw\Com\Com_PBcfg_Common.c
+
+Compiling bsw\Com\Com_PBcfg_Variant.c
+
+Compiling bsw\ComM\ComM_Cfg.c
+
+
+Compiling bsw\ComM\ComM_Main.c
+Compiling bsw\ComM\ComM_PBcfg.c
+
+Compiling bsw\Dcm\Dcm_Lcfg_Dsd.c
+
+ 
+
+Compiling bsw\Dcm\Dcm_Lcfg_Dsl.c
+Compiling bsw\Dcm\Dcm_Lcfg_DspUds.c
+Compiling bsw\Dcm\Dcm_PBcfg.c
+
+Compiling bsw\Dem\Dem_Cfg_Clear.c
+
+Compiling bsw\Dem\Dem_Cfg_Client_DataStructures.c
+
+Compiling bsw\Dem\Dem_Cfg_DTC_DataStructures.c
+
+Compiling bsw\Dem\Dem_Cfg_Events_DataStructures.c
+
+Compiling bsw\Dem\Dem_Cfg_NvmCallbacks.c
+
+Compiling bsw\Dem\Dem_Cfg_OperationCycle_DataStructures.c
+ctc W537: ["bsw\Dcm\Dcm_Lcfg_DspUds.c" 213/20] unused variable "Dcm_Dsld_supported_security_acu8"
+0 errors, 1 warnings
+
+Compiling bsw\EcuM\EcuM_Cfg.c
+
+
+Compiling bsw\EcuM\EcuM_Cfg_Startup.c
+
+Compiling bsw\EcuM\EcuM_Lcfg.c
+Compiling bsw\EcuM\EcuM_PBcfg.c
+
+Compiling bsw\Fee\Fee_Prv_Cfg.c
+
+Compiling bsw\Fee\rba_FeeFs1x_Prv_Cfg.c
+
+Compiling bsw\Nm\Nm_Cfg.c
+ctc E272: ["bsw\EcuM\EcuM_PBcfg.c" 39/14] undeclared identifier "Spi_Config"
+ctc W523: ["bsw\EcuM\EcuM_PBcfg.c" 39/14] pointers to different types at initializer
+ctc E272: ["bsw\EcuM\EcuM_PBcfg.c" 40/14] undeclared identifier "Sent_Config"
+ctc W523: ["bsw\EcuM\EcuM_PBcfg.c" 40/14] pointers to different types at initializer
+ctc W523: ["bsw\EcuM\EcuM_PBcfg.c" 41/14] pointers to different types at initializer
+ctc E269: ["bsw\EcuM\EcuM_PBcfg.c" 42/13] too many initializers
+ctc E306: ["bsw\EcuM\EcuM_PBcfg.c" 39/14] initializer must be constant
+ctc E306: ["bsw\EcuM\EcuM_PBcfg.c" 40/14] initializer must be constant
+5 errors, 3 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\bsw\EcuM_PBcfg.o] Error 1
+
+
+
+scons: building terminated because of errors.

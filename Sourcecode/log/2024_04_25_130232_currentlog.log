@@ -1,0 +1,35 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling Integration\base_package\os\Src\Task_NonRte.c
+Compiling Integration\BSW\BswM\integration\BswM_Callout_Stub.c
+Compiling Integration\BSW\CanIf\integration\CanIfAppl.c
+Compiling Integration\BSW\CanIf\integration\CanIf_Write_Integration.c
+
+Compiling Integration\BSW\CanNm\integration\CanNmAppl.c
+
+Compiling Integration\BSW\ComM\integration\ComMAppl.c
+
+
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Dcm_SetProgConditions.c
+Compiling Integration\BSW\EcuM\integration\EcuM_Callout_Stubs.c
+Compiling Integration\BSW\WdgM\integration\WdgM_Bsw_User.c
+
+
+Compiling Integration\mcal_package\TargetIntegration\TC36x\Src\main.c
+
+
+
+Linking output\dbg\D_ENTRY_PLATFROM.elf...
+ltc E106: unresolved external: shutdown_b - (ASW_NVM.o)
+ltc F019: unrecoverable error: fatal link error
+
+===================
+None
+===================
+scons: *** [output\dbg\D_ENTRY_PLATFROM.elf] Error 2
+scons: building terminated because of errors.

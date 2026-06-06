@@ -1,0 +1,15 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Linking output\dbg\D_ENTRY_PLATFROM.elf...
+ltc E120: expression evaluation error in "task1": address of symbol "__ISTACK1_END" could not be evaluated
+ltc F019: unrecoverable error: fatal locate error
+
+===================
+None
+===================
+scons: *** [output\dbg\D_ENTRY_PLATFROM.elf] Error 2
+scons: building terminated because of errors.

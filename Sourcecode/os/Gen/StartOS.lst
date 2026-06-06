@@ -1,0 +1,188 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc25116a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\StartOS.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\StartOS.c'
+                            
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.StartOS.Os_synchronize_os_cores',code
+0000                     11         .sect   '.text.StartOS.Os_synchronize_os_cores'
+                         12         .align  2
+                         13         
+                         14         .global Os_synchronize_os_cores
+                         15 ; Function Os_synchronize_os_cores
+0000                     16 Os_synchronize_os_cores:        .type   func
+0000 CC42      1    1    17         ld.a    a15,[a4]8
+0002 54F0      1    2    18         ld.w    d0,[a15]
+0004 C210      1    3    19         add     d0,#1
+0006 74F0      1    4    20         st.w    [a15],d0
+0008 91r0rrFr  1    5    21         movh.a  a15,#@his(Os_CoreState)
+000C D9FFrrrr  1    6    22         lea     a15,[a15]@los(Os_CoreState)
+0010 3C09      1    7    23         j       .L2
+0012                     24 .L3:
+0012                     25 .L4:
+0012 0000      1    8    26         nop
+0014 0000      1    9    27         nop
+0016 0000      1   10    28         nop
+0018 0000      1   11    29         nop
+001A 0000      1   12    30         nop
+001C 0000      1   13    31         nop
+001E 0000      1   14    32         nop
+0020 0000      1   15    33         nop
+0022                     34 .L2:
+0022 54FF      1   16    35         ld.w    d15,[a15]
+0024 A20F      1   17    36         sub     d15,d0
+0026 FF2FF6FF  1   18    37         jge.u   d15,#2,.L4
+002A 481F      1   19    38         ld.w    d15,[a15]4
+002C A20F      1   20    39         sub     d15,d0
+002E FF2FF2FF  1   21    40         jge.u   d15,#2,.L3
+0032 0090      2   23    41         ret
+                         42         
+0034                     43 __Os_synchronize_os_cores_function_end:
+                         44         .size   Os_synchronize_os_cores,__Os_synchronize_os_cores_function_end-Os_synchronize_os_cores
+                         45         ; End of function
+                         46         
+                         47         .sdecl  '.text.StartOS.Os_StartOS',code
+0000                     48         .sect   '.text.StartOS.Os_StartOS'
+                         49         .align  2
+                         50         
+                         51         .global Os_StartOS
+                         52 ; Function Os_StartOS
+0000                     53 Os_StartOS:     .type   func
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0000 0248      1    1    54         mov     d8,d4
+0002 4DC0E10F  1    2    55         mfcr    d0,#65052
+0006 538021F0  3    5    56         mul     d15,d0,#24
+000A 91r0rrFr  1    6    57         movh.a  a15,#@his(Os_const_coreconfiguration)
+000E D9FFrrrr  1    7    58         lea     a15,[a15]@los(Os_const_coreconfiguration)
+0012 10FC      1    8    59         addsc.a a12,a15,d15,#0
+0014 D4CF      1    9    60         ld.a    a15,[a12]
+0016 4D40E0FF  1   10    61         mfcr    d15,#65028
+001A AEB4      1   11    62         jnz.t   d15:11,.L5
+001C 8274      1   12    63         mov     d4,#7
+001E 6Drrrrrr  2   14    64         call    Os_ShutdownOS
+0022                     65 .L5:
+0022 4D40E0FF  1   15    66         mfcr    d15,#65028
+0026 AE94      1   16    67         jnz.t   d15:9,.L6
+0028 8274      1   17    68         mov     d4,#7
+002A 6Drrrrrr  2   19    69         call    Os_ShutdownOS
+002E                     70 .L6:
+002E 0D004003  1   20    71         disable
+0032 BBF00008  1   21    72         mov.u   d0,#32783
+0036 CDC0E20F  1   22    73         mtcr    #65068,d0
+003A 0D00C004  1   23    74         isync
+                         75         
+003E 91r0rrDr  1   24    76         movh.a  a13,#@his(Os_CurrentAppMode)
+0042 D9DDrrrr  1   25    77         lea     a13,[a13]@los(Os_CurrentAppMode)
+0046 14DF      1   26    78         ld.bu   d15,[a13]
+0048 6E03      1   27    79         jeq     d15,#0,.L7
+004A 8202      1   28    80         mov     d2,#0
+004C 0090      2   30    81         ret
+004E                     82 .L7:
+004E 40C4      1   31    83         mov.aa  a4,a12
+0050 6Drrrrrr  2   33    84         call    Os_synchronize_os_cores
+0054 09CFD408  1   34    85         ld.hu   d15,[a12]20
+0058 EE03      1   35    86         jne     d15,#0,.L9
+005A 6Drrrrrr  2   37    87         call    Os_StartOS_CommonInit
+005E                     88 .L9:
+005E 40C4      1   38    89         mov.aa  a4,a12
+0060 6Drrrrrr  2   40    90         call    Os_synchronize_os_cores
+0064 40C4      1   41    91         mov.aa  a4,a12
+0066 6Drrrrrr  2   43    92         call    Os_StartOS_CoreInit
+006A 40C4      1   44    93         mov.aa  a4,a12
+006C 6Drrrrrr  2   46    94         call    Os_synchronize_os_cores
+0070 7684      1   47    95         jeq     d8,#0,.L10
+0072 14DF      1   48    96         ld.bu   d15,[a13]
+0074 A68F      1   49    97         or      d15,d8
+0076 34DF      1   50    98         st.b    [a13],d15
+0078                     99 .L10:
+0078                    100 .L11:
+0078 14DF      1   51   101         ld.bu   d15,[a13]
+007A 6EFF      1   52   102         jeq     d15,#0,.L11
+007C                    103 .L12:
+007C 7684      1   53   104         jeq     d8,#0,.L13
+007E 14DF      1   54   105         ld.bu   d15,[a13]
+0080 5F8FFEFF  1   55   106         jne     d15,d8,.L12
+0084                    107 .L13:
+0084 DA02      1   56   108         mov     d15,#2
+0086 89FF0118  1   57   109         st.b    [a15]65,d15
+008A 40F4      1   58   110         mov.aa  a4,a15
+008C 6Drrrrrr  2   60   111         call    Os_StartOS_StartCore
+0090 DA01      1   61   112         mov     d15,#1
+0092 89FF0018  1   62   113         st.b    [a15]64,d15
+0096 89FF1D18  1   63   114         st.b    [a15]93,d15
+009A 40C4      1   64   115         mov.aa  a4,a12
+009C 40F5      1   65   116         mov.aa  a5,a15
+009E 6Drrrrrr  2   67   117         call    Os_StartOS_StartAuto
+00A2 40C4      1   68   118         mov.aa  a4,a12
+00A4 6Drrrrrr  2   70   119         call    Os_synchronize_os_cores
+00A8 6Drrrrrr  2   72   120         call    StartupHook
+00AC 40C4      1   73   121         mov.aa  a4,a12
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   3
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+00AE 6Drrrrrr  2   75   122         call    Os_synchronize_os_cores
+00B2 483F      1   76   123         ld.w    d15,[a15]12
+00B4 4860      1   77   124         ld.w    d0,[a15]24
+00B6 0BF030F1  1   78   125         lt.u    d15,d0,d15
+00BA 6E04      1   79   126         jeq     d15,#0,.L14
+00BC CCC3      1   80   127         ld.a    a15,[a12]12
+00BE 2D0F0000  2   82   128         calli   a15
+00C2                    129 .L14:
+00C2 BB0000F8  1   83   130         mov.u   d15,#32768
+00C6 CDCFE20F  1   84   131         mtcr    #65068,d15
+00CA 0D00C004  1   85   132         isync
+                        133         
+00CE 8212      1   86   134         mov     d2,#1
+00D0 0090      2   88   135         ret
+                        136         
+00D2                    137 __Os_StartOS_function_end:
+                        138         .size   Os_StartOS,__Os_StartOS_function_end-Os_StartOS
+                        139         ; End of function
+                        140         
+                        141         .calls  'Os_StartOS','Os_ShutdownOS'
+                        142         .calls  'Os_StartOS','Os_synchronize_os_cores'
+                        143         .calls  'Os_StartOS','Os_StartOS_CommonInit'
+                        144         .calls  'Os_StartOS','Os_StartOS_CoreInit'
+                        145         .calls  'Os_StartOS','Os_StartOS_StartCore'
+                        146         .calls  'Os_StartOS','Os_StartOS_StartAuto'
+                        147         .calls  'Os_StartOS','StartupHook'
+                        148         .calls  'Os_StartOS','__INDIRECT__'
+                        149         .calls  'Os_synchronize_os_cores','',0
+                        150         .extern StartupHook
+                        151         .extern Os_ShutdownOS
+                        152         .extern Os_const_coreconfiguration
+                        153         .extern Os_CurrentAppMode
+                        154         .extern Os_StartOS_CoreInit
+                        155         .extern Os_StartOS_CommonInit
+                        156         .extern Os_StartOS_StartCore
+                        157         .extern Os_StartOS_StartAuto
+                        158         .extern Os_CoreState
+                        159         .extern __INDIRECT__
+                        160         .calls  'Os_StartOS','',0
+                        161         ; Module end

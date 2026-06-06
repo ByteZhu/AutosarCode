@@ -1,0 +1,120 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc19584a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\ShutdownOS.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\ShutdownOS
+                            .c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.ShutdownOS.Os_ShutdownOS',code
+0000                     11         .sect   '.text.ShutdownOS.Os_ShutdownOS'
+                         12         .align  2
+                         13         
+                         14         .global Os_ShutdownOS
+                         15 ; Function Os_ShutdownOS
+0000                     16 Os_ShutdownOS:  .type   func
+0000 0248      1    1    17         mov     d8,d4
+0002 4DC0E1FF  1    2    18         mfcr    d15,#65052
+0006 538F21F0  3    5    19         mul     d15,d15,#24
+000A 91r0rrFr  1    6    20         movh.a  a15,#@his(Os_const_coreconfiguration)
+000E D9FFrrrr  1    7    21         lea     a15,[a15]@los(Os_const_coreconfiguration)
+0012 10FC      1    8    22         addsc.a a12,a15,d15,#0
+0014 D4CD      1    9    23         ld.a    a13,[a12]
+0016 0D004003  1   10    24         disable
+001A BBF000F8  1   11    25         mov.u   d15,#32783
+001E CDCFE20F  1   12    26         mtcr    #65068,d15
+0022 0D00C004  1   13    27         isync
+                         28         
+0026 DA00      1   14    29         mov     d15,#0
+0028 89DF1D18  1   15    30         st.b    [a13]93,d15
+002C A00F      1   16    31         mov.a   a15,#0
+002E ECD4      1   17    32         st.a    [a13]16,a15
+0030 ECD5      1   18    33         st.a    [a13]20,a15
+0032 DA02      1   19    34         mov     d15,#2
+0034 89DF0118  1   20    35         st.b    [a13]65,d15
+0038 09DF5E18  1   21    36         ld.bu   d15,[a13]94
+003C EE26      1   22    37         jne     d15,#0,.L2
+003E DA01      1   23    38         mov     d15,#1
+0040 89DF1E18  1   24    39         st.b    [a13]94,d15
+0044 89DF0018  1   25    40         st.b    [a13]64,d15
+0048 91r0rr2r  1   26    41         movh.a  a2,#@his(Os_ShutdownAllCores_Indicator)
+004C 392Frrrr  1   27    42         ld.bu   d15,[a2]@los(Os_ShutdownAllCores_Indicator)
+0050 6E16      1   28    43         jeq     d15,#0,.L3
+0052 91r0rrFr  1   29    44         movh.a  a15,#@his(Os_ControlledCoreInfo)
+0056 D9FFrrrr  1   30    45         lea     a15,[a15]@los(Os_ControlledCoreInfo)
+005A 3C04      1   31    46         j       .L4
+005C                     47 .L5:
+005C 8204      1   32    48         mov     d4,#0
+005E 6Drrrrrr  2   34    49         call    Os_RaiseCrossCoreISR
+0062                     50 .L4:
+0062 09FF5E18  1   35    51         ld.bu   d15,[a15]94
+0066 6EFB      1   36    52         jeq     d15,#0,.L5
+0068 3C04      1   37    53         j       .L6
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+006A                     54 .L7:
+006A 8214      1   38    55         mov     d4,#1
+006C 6Drrrrrr  2   40    56         call    Os_RaiseCrossCoreISR
+0070                     57 .L6:
+0070 09FF7E28  1   41    58         ld.bu   d15,[a15]190
+0074 6EFB      1   42    59         jeq     d15,#0,.L7
+0076 40C4      1   43    60         mov.aa  a4,a12
+0078 6Drrrrrr  2   45    61         call    Os_synchronize_os_cores
+007C                     62 .L3:
+007C 0284      1   46    63         mov     d4,d8
+007E 6Drrrrrr  2   48    64         call    ShutdownHook
+0082 DA00      1   49    65         mov     d15,#0
+0084 89DF1E18  1   50    66         st.b    [a13]94,d15
+0088                     67 .L2:
+0088 0D004003  1   51    68         disable
+008C BBF00FF8  1   52    69         mov.u   d15,#33023
+0090 CDCFE20F  1   53    70         mtcr    #65068,d15
+0094 0D00C004  1   54    71         isync
+                         72         
+0098 91r0rrFr  1   55    73         movh.a  a15,#@his(Os_CurrentAppMode)
+009C DA00      1   56    74         mov     d15,#0
+009E E9FFrrrr  1   57    75         st.b    [a15]@los(Os_CurrentAppMode),d15
+00A2                     76 .L8:
+00A2 6Drrrrrr  2   59    77         call    Os_Cbk_InShutdown
+00A6 3CFE      1   60    78         j       .L8
+                         79         
+00A8                     80 __Os_ShutdownOS_function_end:
+                         81         .size   Os_ShutdownOS,__Os_ShutdownOS_function_end-Os_ShutdownOS
+                         82         ; End of function
+                         83         
+                         84         .calls  'Os_ShutdownOS','Os_RaiseCrossCoreISR'
+                         85         .calls  'Os_ShutdownOS','Os_synchronize_os_cores'
+                         86         .calls  'Os_ShutdownOS','ShutdownHook'
+                         87         .calls  'Os_ShutdownOS','Os_Cbk_InShutdown'
+                         88         .extern ShutdownHook
+                         89         .extern Os_Cbk_InShutdown
+                         90         .extern Os_const_coreconfiguration
+                         91         .extern Os_CurrentAppMode
+                         92         .extern Os_ShutdownAllCores_Indicator
+                         93         .extern Os_ControlledCoreInfo
+                         94         .extern Os_RaiseCrossCoreISR
+                         95         .extern Os_synchronize_os_cores
+                         96         .calls  'Os_ShutdownOS','',0
+                         97         ; Module end

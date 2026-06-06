@@ -1,0 +1,21 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling Integration\mcal_package\TargetIntegration\TC36x\Src\main.c
+
+Linking output\dbg\D_ENTRY_PLATFROM.elf...
+ltc W141: unresolved reference to "_lc_u_trap_tab"
+ltc W132: cannot bind symbol "_lc_ue_ustack": cannot find section or group to bind to
+ltc W132: cannot bind symbol "_lc_ue_istack": cannot find section or group to bind to
+ltc W132: cannot bind symbol "_lc_ub_csa_01": cannot find section or group to bind to
+ltc W132: cannot bind symbol "_lc_ue_csa_01": cannot find section or group to bind to
+ltc W132: cannot bind symbol "_lc_ub_ustack": cannot find section or group to bind to
+
+Dumping output\dbg\D_ENTRY_PLATFROM.elf to output\hex\D_ENTRY_PLATFROM.hex
+Dumping output\dbg\D_ENTRY_PLATFROM.elf to output\s19\D_ENTRY_PLATFROM.s19
+
+
+scons: done building targets.

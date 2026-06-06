@@ -1,0 +1,122 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling Integration\BSW\EcuM\integration\EcuM_integration.c
+Compiling Integration\BSW\integration\rba_BswSrv\src\rba_BswSrv_MemCompare.c
+Compiling Integration\BSW\integration\rba_BswSrv\src\rba_BswSrv_MemCopy.c
+Compiling Integration\BSW\integration\rba_BswSrv\src\rba_BswSrv_MemSet.c
+
+Compiling Integration\BSW\NvM\integration\FBL_DataMPrvCfg.c
+
+
+Compiling Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c
+Compiling Integration\BSW\PduR\integration\PduRAppl.c
+
+Compiling Integration\BSW\WdgM\integration\WdgM_Bsw_User.c
+ctc W505: ["Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c" 42/3] implicit declaration of function "Wdg_17_Scu_SetTriggerCondition"
+ctc W577: ["Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c" 42/33] calling a function without a prototype
+ctc W505: ["Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c" 80/3] implicit declaration of function "Wdg_17_Scu_SetTriggerCondition"
+ctc W577: ["Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c" 80/33] calling a function without a prototype
+ctc W537: ["Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c" 30/10] unused variable "CRC_ptr"
+ctc W537: ["Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c" 31/9] unused variable "CRC_data"
+ctc W537: ["Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c" 32/9] unused variable "CRC_cal"
+0 errors, 7 warnings
+
+Compiling Integration\BSW\Xcp\integration\Xcp_Appl_EnterDaqList.c
+ctc W537: ["Integration\BSW\EcuM\integration\EcuM_integration.c" 62/18] unused variable "safetyWdtPassword"
+0 errors, 1 warnings
+
+Compiling Integration\BSW\Xcp\integration\Xcp_Appl_Init.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_Appl_NewSwFlashed.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_Appl_StoreCalReq.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_Appl_TriggerSchedule.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_BuildChecksum.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_CalPage.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_CmdReceived.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_ConnectTransportLayer.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_GetId.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_MemoryAccessProtection.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_MemoryReadWrite.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_OdtEntryReadWrite.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_SeedAndKey.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_StaticAddressTransformation.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_Timestamp.c
+
+Compiling Integration\BSW\Xcp\integration\Xcp_UserCmd.c
+
+Compiling Integration\mcal_package\OverlayManager\Src\OverlayManager.c
+
+Compiling Integration\mcal_package\SchM\src\SchM_Adc.c
+
+Compiling Integration\mcal_package\SchM\src\SchM_Can_17_McmCan.c
+
+Compiling Integration\mcal_package\SchM\src\SchM_Gpt.c
+
+Compiling Integration\mcal_package\SchM\src\SchM_Icu_17_TimerIp.c
+
+
+Compiling Integration\mcal_package\SchM\src\SchM_McalLib.c
+Compiling Integration\mcal_package\SchM\src\SchM_Mcu.c
+
+Compiling Integration\mcal_package\SchM\src\SchM_Pwm_17_GtmCcu6.c
+
+Compiling Integration\mcal_package\SchM\src\SchM_Smu.c
+
+
+Compiling Integration\mcal_package\SchM\src\SchM_Wdg_17_Scu.c
+Compiling Integration\mcal_package\TargetIntegration\TC36x\Src\IFX_Os.c
+
+Compiling Integration\mcal_package\TargetIntegration\TC36x\Src\main.c
+
+Compiling Integration\mcal_package\TargetIntegration\TC36x\Src\McuFunc.c
+
+Compiling Integration\mcal_package\TargetIntegration\TC36x\Src\SchM.c
+
+Compiling Integration\mcal_package\Irq\Adc_Irq.c
+
+Compiling Integration\mcal_package\Irq\Can_17_McmCan_Irq.c
+
+Compiling Integration\mcal_package\Irq\Ccu6_Irq.c
+
+Compiling Integration\mcal_package\Irq\Gtm_Irq.c
+
+Compiling Integration\mcal_package\Irq\Traps.c
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 124/1] function USER_ISR is qualified as __interrupt, but is not given an interrupt/trap number
+ctc E472: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 124/1] function USER_ISR is qualified as __bisr_, but is not given an interrupt/trap number
+ctc E497: ["Integration\mcal_package\TargetIntegration\TC36x\Src\main.c" 124/1] function USER_ISR is qualified as __vector_table, but is not given a vector table number
+3 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\Integration\mcal_package\TargetIntegration\TC36x\main.o] Error 1
+
+
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 134/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 189/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 283/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 365/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 444/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 543/10] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 602/12] unused variable "CoreId"
+ctc W537: ["Integration\mcal_package\Irq\Traps.c" 986/10] unused variable "CoreId"
+0 errors, 8 warnings
+
+scons: building terminated because of errors.

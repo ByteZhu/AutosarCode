@@ -1,0 +1,108 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc33924a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\WritePeripheral.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\WritePerip
+                            heral.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.WritePeripheral.Os_WritePeripheral8',code
+0000                     11         .sect   '.text.WritePeripheral.Os_WritePeripheral8'
+                         12         .align  2
+                         13         
+                         14         .global Os_WritePeripheral8
+                         15 ; Function Os_WritePeripheral8
+0000                     16 Os_WritePeripheral8:    .type   func
+0000 4DC0E2FF  1    1    17         mfcr    d15,#65068
+0004 0D004003  1    2    18         disable
+0008 BBF00008  1    3    19         mov.u   d0,#32783
+000C CDC0E20F  1    4    20         mtcr    #65068,d0
+0010 0D00C004  1    5    21         isync
+                         22         
+0014 3445      1    6    23         st.b    [a4],d5
+0016 CDCFE20F  1    7    24         mtcr    #65068,d15
+001A 0D00C004  1    8    25         isync
+                         26         
+001E 8202      1    9    27         mov     d2,#0
+0020 0090      2   11    28         ret
+                         29         
+0022                     30 __Os_WritePeripheral8_function_end:
+                         31         .size   Os_WritePeripheral8,__Os_WritePeripheral8_function_end-Os_WritePeripheral8
+                         32         ; End of function
+                         33         
+                         34         .sdecl  '.text.WritePeripheral.Os_WritePeripheral16',code
+0000                     35         .sect   '.text.WritePeripheral.Os_WritePeripheral16'
+                         36         .align  2
+                         37         
+                         38         .global Os_WritePeripheral16
+                         39 ; Function Os_WritePeripheral16
+0000                     40 Os_WritePeripheral16:   .type   func
+0000 4DC0E2FF  1    1    41         mfcr    d15,#65068
+0004 0D004003  1    2    42         disable
+0008 BBF00008  1    3    43         mov.u   d0,#32783
+000C CDC0E20F  1    4    44         mtcr    #65068,d0
+0010 0D00C004  1    5    45         isync
+                         46         
+0014 B445      1    6    47         st.h    [a4],d5
+0016 CDCFE20F  1    7    48         mtcr    #65068,d15
+001A 0D00C004  1    8    49         isync
+                         50         
+001E 8202      1    9    51         mov     d2,#0
+0020 0090      2   11    52         ret
+                         53         
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0022                     54 __Os_WritePeripheral16_function_end:
+                         55         .size   Os_WritePeripheral16,__Os_WritePeripheral16_function_end-Os_WritePeripheral16
+                         56         ; End of function
+                         57         
+                         58         .sdecl  '.text.WritePeripheral.Os_WritePeripheral32',code
+0000                     59         .sect   '.text.WritePeripheral.Os_WritePeripheral32'
+                         60         .align  2
+                         61         
+                         62         .global Os_WritePeripheral32
+                         63 ; Function Os_WritePeripheral32
+0000                     64 Os_WritePeripheral32:   .type   func
+0000 4DC0E2FF  1    1    65         mfcr    d15,#65068
+0004 0D004003  1    2    66         disable
+0008 BBF00008  1    3    67         mov.u   d0,#32783
+000C CDC0E20F  1    4    68         mtcr    #65068,d0
+0010 0D00C004  1    5    69         isync
+                         70         
+0014 7445      1    6    71         st.w    [a4],d5
+0016 CDCFE20F  1    7    72         mtcr    #65068,d15
+001A 0D00C004  1    8    73         isync
+                         74         
+001E 8202      1    9    75         mov     d2,#0
+0020 0090      2   11    76         ret
+                         77         
+0022                     78 __Os_WritePeripheral32_function_end:
+                         79         .size   Os_WritePeripheral32,__Os_WritePeripheral32_function_end-Os_WritePeripheral32
+                         80         ; End of function
+                         81         
+                         82         .calls  'Os_WritePeripheral8','',0
+                         83         .calls  'Os_WritePeripheral16','',0
+                         84         .calls  'Os_WritePeripheral32','',0
+                         85         ; Module end

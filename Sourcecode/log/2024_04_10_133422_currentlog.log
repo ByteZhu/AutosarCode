@@ -1,0 +1,57 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling asw\ASW_IoHwAb\src\SensorActuator_ADC.c
+Compiling asw\ASW_IoHwAb\src\SensorActuator_PWM.c
+Compiling asw\ASW_NM\src\ASW_NM.c
+Compiling asw\ASW_NVM\src\ASW_NVM.c
+ctc W537: ["asw\ASW_IoHwAb\src\SensorActuator_PWM.c" 36/9] unused variable "pwm_duty1"
+ctc W537: ["asw\ASW_IoHwAb\src\SensorActuator_PWM.c" 38/17] unused variable "retValue"
+0 errors, 2 warnings
+
+Compiling asw\ASW_USER\src\ASW_USER.c
+ctc W537: ["asw\ASW_IoHwAb\src\SensorActuator_ADC.c" 49/17] unused variable "retValue"
+0 errors, 1 warnings
+
+
+Compiling asw\ASW_WDG\src\ASW_WDG.c
+ctc W542: ["asw\ASW_NM\src\ASW_NM.c" 39/44] missing braces around initializer
+ctc W523: ["asw\ASW_NM\src\ASW_NM.c" 169/55] pointers to different types at argument #2
+ctc W523: ["asw\ASW_NM\src\ASW_NM.c" 175/55] pointers to different types at argument #2
+ctc W523: ["asw\ASW_NM\src\ASW_NM.c" 180/55] pointers to different types at argument #2
+ctc W537: ["asw\ASW_NM\src\ASW_NM.c" 45/14] unused variable "checkNMreceived"
+0 errors, 5 warnings
+
+Compiling asw\ASW_XCP\src\ASW_XCP.c
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 56/17] unused variable "retdRead1"
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 65/17] unused variable "retValue"
+0 errors, 2 warnings
+
+Compiling asw\CDD_CORE0\src\CDD_CORE0.c
+Compiling asw\CDD_USER\src\CDD_USER.c
+ctc E286: [".\bsw\WdgM\WdgM_Cfg.h" 376/75] array size shall be greater than zero
+1 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\asw\ASW_WDG\ASW_WDG.o] Error 1
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 56/27] unused variable "cpuWdtPassword"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 57/27] unused variable "safetyWdtPassword"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 58/20] unused variable "watchdog"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 59/21] unused variable "CpuWatchDog"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 60/17] unused variable "retValue"
+0 errors, 5 warnings
+
+ctc W537: ["asw\CDD_USER\src\CDD_USER.c" 56/17] unused variable "retdRead1"
+ctc W537: ["asw\CDD_USER\src\CDD_USER.c" 65/17] unused variable "retValue"
+0 errors, 2 warnings
+
+ctc W524: ["asw\CDD_CORE0\src\CDD_CORE0.c" 185/12] conversion of integer to pointer at assignment
+ctc W537: ["asw\CDD_CORE0\src\CDD_CORE0.c" 39/15] unused variable "DataReceiverCore0_ClientServer"
+0 errors, 2 warnings
+
+scons: building terminated because of errors.

@@ -1,0 +1,102 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1 ;
+                          2 ;  TriCoreTasking setjmp/longjmp functions
+                          3 ;
+                          4 ;  Copyright ETAS GmbH 2024
+                          5 ;
+                          6 ; [$TargetTT  155]
+                          7 ;
+                          8   .name  "Os_setjmp.asm"
+                          9   .sdecl '.text.Os_setjmp.Os_setjmp',CODE
+0000                     10   .sect  '.text.Os_setjmp.Os_setjmp'
+                         11   .align 4
+                         12   .global Os_setjmp
+                         13   ; Entered with A4 containing the address of the jump buffer
+0000                     14 Os_setjmp: .type func
+0000 894B8009  1    1    15   st.a  [a4]0, a11    ; Save return address
+0004 0D008004  1    2    16   dsync               ; This sync is necessary
+                         17   ; Get the address of the top CSA into a15
+0008 4D00E0EF  1    3    18   mfcr  d14, #0xFE00
+000C 370E50F0  1    4    19   extr  d15, d14, #0, #16
+0010 866F      1    5    20   sha   d15, #6
+0012 7BF000D0  1    6    21   movh  d13, #0xf
+0016 26DE      1    7    22   and   d14, d13
+0018 8FCE20E0  1    8    23   sha   d14, d14, #12
+001C A6EF      1    9    24   or    d15, d14
+001E 60FF      1   10    25   mov.a a15, d15
+                         26 
+                         27   ; Clone the context
+0020 09F84009  1   11    28   ld.d  e8, [a15]0x00
+0024 89484409  1   12    29   st.d  [a4]0x04, e8
+0028 09F84809  1   13    30   ld.d  e8, [a15]0x08
+002C 89484C09  1   14    31   st.d  [a4]0x0c, e8
+0030 09F85009  1   15    32   ld.d  e8, [a15]0x10
+0034 89485409  1   16    33   st.d  [a4]0x14, e8
+0038 09F85809  1   17    34   ld.d  e8, [a15]0x18
+003C 89485C09  1   18    35   st.d  [a4]0x1c, e8
+0040 09F86009  1   19    36   ld.d  e8, [a15]0x20
+0044 89486409  1   20    37   st.d  [a4]0x24, e8
+0048 09F86809  1   21    38   ld.d  e8, [a15]0x28
+004C 89486C09  1   22    39   st.d  [a4]0x2c, e8
+0050 09F87009  1   23    40   ld.d  e8, [a15]0x30
+0054 89487409  1   24    41   st.d  [a4]0x34, e8
+0058 09F87809  1   25    42   ld.d  e8, [a15]0x38
+005C 89487C09  1   26    43   st.d  [a4]0x3c, e8
+                         44 
+                         45   ; Return 0
+0060 8202      1   27    46   mov   d2, #0
+0062 0090      2   29    47   ret
+                         48 
+                         49   .sdecl '.text.Os_setjmp.Os_longjmp',CODE
+0000                     50   .sect  '.text.Os_setjmp.Os_longjmp'
+                         51   .align 4
+                         52   .global Os_longjmp
+                         53    ; Entered with A4 containing the address of the jump buffer. OS level
+0000                     54 Os_longjmp: .type func
+0000 0D004003  1    1    55   disable              ; [$TgtCore 186]
+0004 09420409  1    2    56   ld.w    d2,[a4]4     ; Read saved PCXI
+                         57   ; Get loop address into a5
+0008 91r0rr5r  1    3    58   movh.a  a5,#@his(Os_longjmp_loop)
+000C D955rrrr  1    4    59   lea     a5,[a5]@los(Os_longjmp_loop)
+0010                     60 Os_longjmp_loop:
+0010 4D00E0FF  1    5    61   mfcr    d15,#0xFE00  ; Read PCXI
+0014 5FF20400  1    6    62   jeq     d2,d15, Os_longjmp_exit
+0018 405B      1    7    63   mov.aa  a11,a5       ; 'ret' back to loop, popping a CSA
+001A 0090      2    9    64   ret
+                         65 
+                         66   .align  4
+                         67   .global Os_longjmp_exit
+001C                     68 Os_longjmp_exit:
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                         69   ; PCXI matches the one recorded at setjmp
+001C 09420809  1   10    70   ld.w    d2,[a4]8     ; Restore PSW
+0020 CD42E00F  1   11    71   mtcr    #0xFE04,d2
+0024 0D008004  1   12    72   dsync                ;# Sync needed
+                         73   ; ld.da a12,[a4]12 ; A10/A11 from CSA of Os_setjmp (accounting for TC.081 bug)
+0028 094CCC09            74   .word  0x09cc4c09
+002C 40CA      1   13    75   mov.aa  a10,a12
+002E 40DB      1   14    76   mov.aa  a11,a13
+0030 09485409  1   15    77   ld.d    e8,[a4]0x14
+0034 094A5C09  1   16    78   ld.d    e10,[a4]0x1C
+                         79   ;ld.da a12,[a4]0x24
+0038 094CE409            80   .word  0x09e44c09
+                         81   ;ld.da a14,[a4]0x2C
+003C 094EEC09            82   .word  0x09ec4e09
+0040 094C7409  1   17    83   ld.d    e12,[a4]0x34
+0044 094E7C09  1   18    84   ld.d    e14,[a4]0x3C
+                         85   ; Return 1
+0048 8212      1   19    86   mov     d2, #1
+                         87 
+                         88   ; Indirect jump to saved return address
+004A 09458009  1   20    89   ld.a    a5,[a4]0
+004E 0D000003  1   21    90   enable  ; [$TgtCore 186]
+0052 0000      1   22    91   nop     ; CPU_TC.048
+0054 DC05      1   23    92   ji      a5
+                         93 
+                         94 

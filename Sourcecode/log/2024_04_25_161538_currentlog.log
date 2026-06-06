@@ -1,0 +1,27 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling mcal\MCAL_Gen\src\Stm_Cfg.c
+ctc E219: [".\mcal\MCAL_Modules\Stm\inc\Stm.h" 44/1] cannot open #include file "Stm_Cfg.h"
+1 errors, 0 warnings
+
+===================
+None
+===================
+Compiling mcal\MCAL_Modules\Mcu\src\Mcu_17_TimerIp.c
+Compiling mcal\MCAL_Modules\Smu\src\Smu.c
+scons: *** [output\objs\mcal\MCAL_Gen\Stm_Cfg.o] Error 1
+Compiling mcal\MCAL_Modules\Spi\src\Spi.c
+ctc E219: [".\mcal\MCAL_Modules\Stm\inc\Stm.h" 44/1] cannot open #include file "Stm_Cfg.h"
+1 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\mcal\MCAL_Modules\Mcu\Mcu_17_TimerIp.o] Error 1
+
+
+scons: building terminated because of errors.

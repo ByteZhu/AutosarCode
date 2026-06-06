@@ -1,0 +1,18 @@
+Start at 2024/7/5 9:33:12
+RTA-OS Code Generator 
+Version 12.0.0.34170, Copyright © ETAS 2022
+Warning: The AR-PACKAGE being imported from file '..\Isolar_Project\manual_config\base_config\bsw_config\Other_Modules\Base_EcuC_Hardware_Partition_EcucValues.arxml' has a different name to that already in the system. Expected 'Os'.
+ (Location = ..\Isolar_Project\manual_config\base_config\bsw_config\Other_Modules\Base_EcuC_Hardware_Partition_EcucValues.arxml)
+Warning: The AR-PACKAGE being imported from file '..\Isolar_Project\manual_config\cores_config\bsw_config\Other_Modules\Core_EcuC_Hardware_Partition_EcucValues.arxml' has a different name to that already in the system. Expected 'Os'.
+ (Location = ..\Isolar_Project\manual_config\cores_config\bsw_config\Other_Modules\Core_EcuC_Hardware_Partition_EcucValues.arxml)
+Selected target TriCoreTasking[TC36x] V5.0.21.1908
+..............................................................................................................
+Stop at 2024/7/5 9:34:03
+Information: ScheduleTable Rte_ScheduleTable has 100 expiry points.
+Warning: Elapsed Time Recording is not enabled because Time Monitoring is not selected
+Information: Allocating SRC_GPSR00 as cross-core interrupt for core 0
+Information: Allocating SRC_GPSR01 as cross-core interrupt for core 1
+Information: Updated 'RTAOS.a'
+
+Errors: 0, Warnings: 3.
+Stop at 2024/7/5 9:34:03

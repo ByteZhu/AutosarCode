@@ -1,0 +1,86 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling mcal\MCAL_Modules\Mcu\src\Mcu_17_TimerIp.c
+Compiling mcal\MCAL_Modules\Pwm_17_GtmCcu6\src\Pwm_17_GtmCcu6.c
+Compiling mcal\MCAL_Modules\Smu\src\Smu.c
+Compiling mcal\MCAL_Modules\Stm\src\Stm.c
+ctc E219: [".\mcal\MCAL_Modules\Stm\inc\Stm.h" 44/1] cannot open #include file "Stm_Cfg.h"
+ctc E219: [".\mcal\MCAL_Modules\Stm\inc\Stm.h" 173/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: [".\mcal\MCAL_Modules\Stm\inc\Stm.h" 404/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: [".\mcal\MCAL_Modules\Stm\inc\Stm_Cbk.h" 68/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: [".\mcal\MCAL_Modules\Stm\inc\Stm_Cbk.h" 101/1] cannot open #include file "Stm_MemMap.h"
+ctc E201: ["mcal\MCAL_Modules\Stm\src\Stm.c" 70/1] #error "STM_AR_RELEASE_MAJOR_VERSION is not defined. "
+ctc E201: ["mcal\MCAL_Modules\Stm\src\Stm.c" 74/1] #error "STM_AR_RELEASE_MINOR_VERSION is not defined. "
+ctc E201: ["mcal\MCAL_Modules\Stm\src\Stm.c" 78/1] #error "STM_AR_RELEASE_REVISION_VERSION is not defined. "
+ctc E201: ["mcal\MCAL_Modules\Stm\src\Stm.c" 82/1] #error "STM_SW_MAJOR_VERSION is not defined. "
+ctc E201: ["mcal\MCAL_Modules\Stm\src\Stm.c" 86/1] #error "STM_SW_MINOR_VERSION is not defined. "
+ctc E201: ["mcal\MCAL_Modules\Stm\src\Stm.c" 90/1] #error "STM_SW_PATCH_VERSION is not defined. "
+ctc E201: ["mcal\MCAL_Modules\Stm\src\Stm.c" 95/1] #error "STM_SW_MAJOR_VERSION does not match. "
+ctc E201: ["mcal\MCAL_Modules\Stm\src\Stm.c" 107/1] #error "STM_AR_RELEASE_MAJOR_VERSION does not match. "
+ctc E201: ["mcal\MCAL_Modules\Stm\src\Stm.c" 111/1] #error "STM_AR_RELEASE_MINOR_VERSION does not match. "
+ctc E201: ["mcal\MCAL_Modules\Stm\src\Stm.c" 115/1] #error "STM_AR_RELEASE_REVISION_VERSION does not match. "
+ctc E219: ["mcal\MCAL_Modules\Stm\src\Stm.c" 251/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: ["mcal\MCAL_Modules\Stm\src\Stm.c" 260/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: ["mcal\MCAL_Modules\Stm\src\Stm.c" 276/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: ["mcal\MCAL_Modules\Stm\src\Stm.c" 294/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: ["mcal\MCAL_Modules\Stm\src\Stm.c" 499/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: ["mcal\MCAL_Modules\Stm\src\Stm.c" 555/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: ["mcal\MCAL_Modules\Stm\src\Stm.c" 567/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: ["mcal\MCAL_Modules\Stm\src\Stm.c" 599/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: ["mcal\MCAL_Modules\Stm\src\Stm.c" 610/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: ["mcal\MCAL_Modules\Stm\src\Stm.c" 1733/1] cannot open #include file "Stm_MemMap.h"
+25 errors, 0 warnings
+
+===================
+Nonectc E219: [".\mcal\MCAL_Modules\Stm\inc\Stm.h" 44/1] cannot open #include file "Stm_Cfg.h"
+ctc E219: [".\mcal\MCAL_Modules\Stm\inc\Stm.h" 173/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: [".\mcal\MCAL_Modules\Stm\inc\Stm.h" 404/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: [".\mcal\MCAL_Modules\Stm\inc\Stm_Cbk.h" 68/1] cannot open #include file "Stm_MemMap.h"
+ctc E219: [".\mcal\MCAL_Modules\Stm\inc\Stm_Cbk.h" 101/1] cannot open #include file "Stm_MemMap.h"
+5 errors, 0 warnings
+
+
+===================
+===================
+scons: *** [output\objs\mcal\MCAL_Modules\Stm\Stm.o] Error 1
+None
+===================
+scons: *** [output\objs\mcal\MCAL_Modules\Mcu\Mcu_17_TimerIp.o] Error 1
+ctc W505: ["mcal\MCAL_Modules\Smu\src\Smu.c" 908/3] implicit declaration of function "Dem_ReportErrorStatus"
+ctc W577: ["mcal\MCAL_Modules\Smu\src\Smu.c" 908/24] calling a function without a prototype
+ctc E272: ["mcal\MCAL_Modules\Smu\src\Smu.c" 2449/27] undeclared identifier "DemConf_DemEventParameter_SMU_E_CLEAR_ALARM_STATUS_FAILURE"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 2449/27] possible truncation at implicit conversion to type "unsigned short int"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 2469/27] possible truncation at implicit conversion to type "unsigned short int"
+ctc E272: ["mcal\MCAL_Modules\Smu\src\Smu.c" 2679/27] undeclared identifier "DemConf_DemEventParameter_SMU_E_SET_ALARM_STATUS_FAILURE"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 2679/27] possible truncation at implicit conversion to type "unsigned short int"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 2699/27] possible truncation at implicit conversion to type "unsigned short int"
+ctc E272: ["mcal\MCAL_Modules\Smu\src\Smu.c" 3373/29] undeclared identifier "DemConf_DemEventParameter_SMU_E_RELEASE_FSP_FAILURE"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 3373/29] possible truncation at implicit conversion to type "unsigned short int"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 3393/29] possible truncation at implicit conversion to type "unsigned short int"
+ctc E272: ["mcal\MCAL_Modules\Smu\src\Smu.c" 3526/27] undeclared identifier "DemConf_DemEventParameter_SMU_E_ACTIVATE_FSP_FAILURE"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 3526/27] possible truncation at implicit conversion to type "unsigned short int"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 3544/27] possible truncation at implicit conversion to type "unsigned short int"
+ctc E272: ["mcal\MCAL_Modules\Smu\src\Smu.c" 4043/27] undeclared identifier "DemConf_DemEventParameter_SMU_E_RT_STOP_FAILURE"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 4043/27] possible truncation at implicit conversion to type "unsigned short int"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 4066/27] possible truncation at implicit conversion to type "unsigned short int"
+ctc E272: ["mcal\MCAL_Modules\Smu\src\Smu.c" 4641/29] undeclared identifier "DemConf_DemEventParameter_SMU_E_ACTIVATE_RUN_STATE_FAILURE"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 4641/29] possible truncation at implicit conversion to type "unsigned short int"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 4672/29] possible truncation at implicit conversion to type "unsigned short int"
+ctc E272: ["mcal\MCAL_Modules\Smu\src\Smu.c" 4792/27] undeclared identifier "DemConf_DemEventParameter_SMU_E_ACTIVATE_PES_FAILURE"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 4792/27] possible truncation at implicit conversion to type "unsigned short int"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 4811/27] possible truncation at implicit conversion to type "unsigned short int"
+ctc E272: ["mcal\MCAL_Modules\Smu\src\Smu.c" 5554/27] undeclared identifier "DemConf_DemEventParameter_SMU_E_SFF_FAILURE"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 5554/27] possible truncation at implicit conversion to type "unsigned short int"
+ctc W560: ["mcal\MCAL_Modules\Smu\src\Smu.c" 5583/27] possible truncation at implicit conversion to type "unsigned short int"
+8 errors, 18 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\mcal\MCAL_Modules\Smu\Smu.o] Error 1
+
+scons: building terminated because of errors.

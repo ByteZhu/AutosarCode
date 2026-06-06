@@ -1,0 +1,67 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc33860a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\ResumeOSInterrupts.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\ResumeOSIn
+                            terrupts.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.ResumeOSInterrupts.Os_ResumeOSInterrupts',code
+0000                     11         .sect   '.text.ResumeOSInterrupts.Os_ResumeOSInterrupts'
+                         12         .align  2
+                         13         
+                         14         .global Os_ResumeOSInterrupts
+                         15 ; Function Os_ResumeOSInterrupts
+0000                     16 Os_ResumeOSInterrupts:  .type   func
+0000 2008      1    1    17         sub.a   a10,#8
+0002 4DC0E1FF  1    2    18         mfcr    d15,#65052
+0006 538F21F0  3    5    19         mul     d15,d15,#24
+000A 91r0rrFr  1    6    20         movh.a  a15,#@his(Os_const_coreconfiguration)
+000E D9FFrrrr  1    7    21         lea     a15,[a15]@los(Os_const_coreconfiguration)
+0012 10FF      1    8    22         addsc.a a15,a15,d15,#0
+0014 C81F      1    9    23         ld.a    a15,[a15]4
+0016 485F      1   10    24         ld.w    d15,[a15]20
+0018 6E10      1   11    25         jeq     d15,#0,.L2
+001A 482F      1   12    26         ld.w    d15,[a15]8
+001C 74AF      1   13    27         st.w    [a10],d15
+001E 485F      1   14    28         ld.w    d15,[a15]20
+0020 C2FF      1   15    29         add     d15,#-1
+0022 6CF5      1   16    30         st.w    [a15]20,d15
+0024 EE0A      1   17    31         jne     d15,#0,.L3
+0026 0D004003  1   18    32         disable
+002A 54AF      1   19    33         ld.w    d15,[a10]
+002C B71F81F7  1   20    34         insert  d15,d15,#1,#15,#1
+0030 CDCFE20F  1   21    35         mtcr    #65068,d15
+0034 0D00C004  1   22    36         isync
+                         37         
+0038                     38 .L3:
+0038                     39 .L2:
+0038 0090      2   24    40         ret
+                         41         
+003A                     42 __Os_ResumeOSInterrupts_function_end:
+                         43         .size   Os_ResumeOSInterrupts,__Os_ResumeOSInterrupts_function_end-Os_ResumeOSInterrupts
+                         44         ; End of function
+                         45         
+                         46         .extern Os_const_coreconfiguration
+                         47         .calls  'Os_ResumeOSInterrupts','',8
+                         48         ; Module end

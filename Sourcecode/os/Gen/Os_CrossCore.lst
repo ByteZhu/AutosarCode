@@ -1,0 +1,313 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc34472a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\Os_CrossCore.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\Os_CrossCo
+                            re.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.Os_CrossCore.Os_RaiseCrossCoreISR',code
+0000                     11         .sect   '.text.Os_CrossCore.Os_RaiseCrossCoreISR'
+                         12         .align  2
+                         13         
+                         14         .global Os_RaiseCrossCoreISR
+                         15 ; Function Os_RaiseCrossCoreISR
+0000                     16 Os_RaiseCrossCoreISR:   .type   func
+0000 91r0rrFr  1    1    17         movh.a  a15,#@his(Os_CrossCoreSRCs)
+0004 D9FFrrrr  1    2    18         lea     a15,[a15]@los(Os_CrossCoreSRCs)
+0008 01F402F6  1    3    19         addsc.a a15,a15,d4,#2
+000C 91r0rr4r  1    4    20         movh.a  a4,#@his(Os_CrossCoreTriggers)
+0010 D944rrrr  1    5    21         lea     a4,[a4]@los(Os_CrossCoreTriggers)
+0014 01440246  1    6    22         addsc.a a4,a4,d4,#2
+0018 D4F2      1    7    23         ld.a    a2,[a15]
+001A 544F      1    8    24         ld.w    d15,[a4]
+001C 742F      1    9    25         st.w    [a2],d15
+001E D4FF      1   10    26         ld.a    a15,[a15]
+0020 54FF      1   11    27         ld.w    d15,[a15]
+0022 B71F01FD  1   12    28         insert  d15,d15,#1,#26,#1
+0026 74FF      1   13    29         st.w    [a15],d15
+0028 0090      2   15    30         ret
+                         31         
+002A                     32 __Os_RaiseCrossCoreISR_function_end:
+                         33         .size   Os_RaiseCrossCoreISR,__Os_RaiseCrossCoreISR_function_end-Os_RaiseCrossCoreISR
+                         34         ; End of function
+                         35         
+                         36         .sdecl  '.text.inttab0.intvec.001',code
+0000                     37         .sect   '.text.inttab0.intvec.001'
+0000 E00F      4    4    38         bisr    #15
+0002 91r0rrEr  1    5    39         movh.a  a14,#@his(Os_CrossCoreISR0)
+0006 D9EErrrr  1    6    40         lea     a14,[a14]@los(Os_CrossCoreISR0)
+000A DC0E      1    7    41         ji      a14
+                         42         .sdecl  '.text.Os_CrossCore.Os_CrossCoreISR0',code
+0000                     43         .sect   '.text.Os_CrossCore.Os_CrossCoreISR0'
+                         44         .align  2
+                         45         
+                         46         .global Os_CrossCoreISR0
+                         47 ; Function Os_CrossCoreISR0
+0000                     48 Os_CrossCoreISR0:       .type   func
+0000 2008      1    1    49         sub.a   a10,#8
+0002 91r0rrEr  1    2    50         movh.a  a14,#@his(Os_ControlledCoreInfo)
+0006 D9EErrrr  1    3    51         lea     a14,[a14]@los(Os_ControlledCoreInfo)
+000A 49EC011A  1    4    52         lea     a12,[a14]65
+000E 14C8      1    5    53         ld.bu   d8,[a12]
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0010 DA02      1    6    54         mov     d15,#2
+0012 34CF      1    7    55         st.b    [a12],d15
+0014 6Drrrrrr  2    9    56         call    Os_GetSP
+0018 49ED1C0A  1   10    57         lea     a13,[a14]28
+001C D4D2      1   11    58         ld.a    a2,[a13]
+001E F4A2      1   12    59         st.a    [a10],a2
+0020 49EF001A  1   13    60         lea     a15,[a14]64
+0024 F801      1   14    61         st.a    [a10]4,a15
+0026 0220      1   15    62         mov     d0,d2
+0028 542F      1   16    63         ld.w    d15,[a2]
+002A 09E94018  1   17    64         ld.bu   d9,[a14]64
+002E 5200      1   18    65         sub     d0,d15,d0
+0030 4C21      1   19    66         ld.w    d15,[a2]4
+0032 09220805  1   20    67         ld.w    d2,[+a2]8
+0036 5231      1   21    68         sub     d1,d15,d3
+0038 020F      1   22    69         mov     d15,d0
+003A 7FF20380  1   23    70         jge.u   d2,d15,.L2
+003E 742F      1   24    71         st.w    [a2],d15
+0040                     72 .L2:
+0040 D4DF      1   25    73         ld.a    a15,[a13]
+0042 09FF0C05  1   26    74         ld.w    d15,[+a15]12
+0046 7F1F0380  1   27    75         jge.u   d15,d1,.L3
+004A 74F1      1   28    76         st.w    [a15],d1
+004C                     77 .L3:
+004C D4DF      1   29    78         ld.a    a15,[a13]
+004E 49F2100A  1   30    79         lea     a2,[a15]16
+0052 482F      1   31    80         ld.w    d15,[a15]8
+0054 5420      1   32    81         ld.w    d0,[a2]
+0056 7FF00380  1   33    82         jge.u   d0,d15,.L4
+005A 742F      1   34    83         st.w    [a2],d15
+005C                     84 .L4:
+005C D4DF      1   35    85         ld.a    a15,[a13]
+005E 49F2140A  1   36    86         lea     a2,[a15]20
+0062 483F      1   37    87         ld.w    d15,[a15]12
+0064 5420      1   38    88         ld.w    d0,[a2]
+0066 7FF00380  1   39    89         jge.u   d0,d15,.L5
+006A 742F      1   40    90         st.w    [a2],d15
+006C                     91 .L5:
+006C D4DF      1   41    92         ld.a    a15,[a13]
+006E 8203      1   42    93         mov     d3,#0
+0070 482F      1   43    94         ld.w    d15,[a15]8
+0072 4860      1   44    95         ld.w    d0,[a15]24
+0074 4831      1   45    96         ld.w    d1,[a15]12
+0076 4872      1   46    97         ld.w    d2,[a15]28
+0078 5204      1   47    98         sub     d4,d15,d0
+007A 0B218050  1   48    99         sub     d5,d1,d2
+007E 3FF00480  1   49   100         jlt.u   d0,d15,.L6
+0082 7F120380  1   50   101         jge.u   d2,d1,.L7
+0086                    102 .L6:
+0086 8213      1   51   103         mov     d3,#1
+0088                    104 .L7:
+0088 7639      1   52   105         jeq     d3,#0,.L8
+008A 8206      1   53   106         mov     d6,#0
+008C 6Drrrrrr  2   55   107         call    Os_Cbk_StackOverrunHook
+0090 D4DF      1   56   108         ld.a    a15,[a13]
+0092 82FF      1   57   109         mov     d15,#-1
+0094 6CF6      1   58   110         st.w    [a15]24,d15
+0096 D4DF      1   59   111         ld.a    a15,[a13]
+0098 6CF7      1   60   112         st.w    [a15]28,d15
+009A                    113 .L8:
+009A 49EF200A  1   61   114         lea     a15,[a14]32
+009E F4DF      1   62   115         st.a    [a13],a15
+00A0 91r0rr5r  1   63   116         movh.a  a5,#@his(Os_const_coreconfiguration)
+00A4 D955rrrr  1   64   117         lea     a5,[a5]@los(Os_const_coreconfiguration)
+00A8 40E4      1   65   118         mov.aa  a4,a14
+00AA 6Drrrrrr  2   67   119         call    Os_CrossCoreCheck
+00AE 4CE3      1   68   120         ld.w    d15,[a14]12
+00B0 09E01809  1   69   121         ld.w    d0,[a14]24
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   3
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+00B4 0BF030F1  1   70   122         lt.u    d15,d0,d15
+00B8 6E03      1   71   123         jeq     d15,#0,.L9
+00BA 6Drrrrrr  2   73   124         call    Os_Dispatch0
+00BE                    125 .L9:
+00BE D4AF      1   74   126         ld.a    a15,[a10]
+00C0 F4DF      1   75   127         st.a    [a13],a15
+00C2 D801      1   76   128         ld.a    a15,[a10]4
+00C4 34F9      1   77   129         st.b    [a15],d9
+00C6 34C8      1   78   130         st.b    [a12],d8
+00C8 0D004002  4   82   131         rslcx
+00CC 0000      1   83   132         nop
+00CE 0000      1   84   133         nop
+00D0 0000      1   85   134         nop
+00D2 0080      2   87   135         rfe
+00D4 0D004002  4   91   136         rslcx
+00D8 0080      2   93   137         rfe
+                        138         
+00DA                    139 __Os_CrossCoreISR0_function_end:
+                        140         .size   Os_CrossCoreISR0,__Os_CrossCoreISR0_function_end-Os_CrossCoreISR0
+                        141         ; End of function
+                        142         
+                        143         .sdecl  '.text.inttab1.intvec.001',code
+0000                    144         .sect   '.text.inttab1.intvec.001'
+0000 E00F      4    4   145         bisr    #15
+0002 91r0rrEr  1    5   146         movh.a  a14,#@his(Os_CrossCoreISR1)
+0006 D9EErrrr  1    6   147         lea     a14,[a14]@los(Os_CrossCoreISR1)
+000A DC0E      1    7   148         ji      a14
+                        149         .sdecl  '.text.Os_CrossCore.Os_CrossCoreISR1',code
+0000                    150         .sect   '.text.Os_CrossCore.Os_CrossCoreISR1'
+                        151         .align  2
+                        152         
+                        153         .global Os_CrossCoreISR1
+                        154 ; Function Os_CrossCoreISR1
+0000                    155 Os_CrossCoreISR1:       .type   func
+0000 91r0rrFr  1    1   156         movh.a  a15,#@his(Os_const_coreconfiguration+24)
+0004 D9FCrrrr  1    2   157         lea     a12,[a15]@los(Os_const_coreconfiguration+24)
+0008 91r0rrFr  1    3   158         movh.a  a15,#@his(Os_ControlledCoreInfo+96)
+000C D9FFrrrr  1    4   159         lea     a15,[a15]@los(Os_ControlledCoreInfo+96)
+0010 09F84118  1    5   160         ld.bu   d8,[a15]65
+0014 DA02      1    6   161         mov     d15,#2
+0016 89FF0118  1    7   162         st.b    [a15]65,d15
+001A 6Drrrrrr  2    9   163         call    Os_GetSP
+001E C87D      1   10   164         ld.a    a13,[a15]28
+0020 0220      1   11   165         mov     d0,d2
+0022 09F94018  1   12   166         ld.bu   d9,[a15]64
+0026 54DF      1   13   167         ld.w    d15,[a13]
+0028 49D2080A  1   14   168         lea     a2,[a13]8
+002C 5200      1   15   169         sub     d0,d15,d0
+002E 4CD1      1   16   170         ld.w    d15,[a13]4
+0030 5422      1   17   171         ld.w    d2,[a2]
+0032 5231      1   18   172         sub     d1,d15,d3
+0034 020F      1   19   173         mov     d15,d0
+0036 7FF20380  1   20   174         jge.u   d2,d15,.L10
+003A 742F      1   21   175         st.w    [a2],d15
+003C                    176 .L10:
+003C C872      1   22   177         ld.a    a2,[a15]28
+003E 092F0C05  1   23   178         ld.w    d15,[+a2]12
+0042 7F1F0380  1   24   179         jge.u   d15,d1,.L11
+0046 7421      1   25   180         st.w    [a2],d1
+0048                    181 .L11:
+0048 C872      1   26   182         ld.a    a2,[a15]28
+004A 4924100A  1   27   183         lea     a4,[a2]16
+004E 4C22      1   28   184         ld.w    d15,[a2]8
+0050 5440      1   29   185         ld.w    d0,[a4]
+0052 7FF00380  1   30   186         jge.u   d0,d15,.L12
+0056 744F      1   31   187         st.w    [a4],d15
+0058                    188 .L12:
+0058 C872      1   32   189         ld.a    a2,[a15]28
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   4
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+005A 4924140A  1   33   190         lea     a4,[a2]20
+005E 4C23      1   34   191         ld.w    d15,[a2]12
+0060 5440      1   35   192         ld.w    d0,[a4]
+0062 7FF00380  1   36   193         jge.u   d0,d15,.L13
+0066 744F      1   37   194         st.w    [a4],d15
+0068                    195 .L13:
+0068 C872      1   38   196         ld.a    a2,[a15]28
+006A 8203      1   39   197         mov     d3,#0
+006C 4C22      1   40   198         ld.w    d15,[a2]8
+006E 09201809  1   41   199         ld.w    d0,[a2]24
+0072 09210C09  1   42   200         ld.w    d1,[a2]12
+0076 09221C09  1   43   201         ld.w    d2,[a2]28
+007A 5204      1   44   202         sub     d4,d15,d0
+007C 0B218050  1   45   203         sub     d5,d1,d2
+0080 3FF00480  1   46   204         jlt.u   d0,d15,.L14
+0084 7F120380  1   47   205         jge.u   d2,d1,.L15
+0088                    206 .L14:
+0088 8213      1   48   207         mov     d3,#1
+008A                    208 .L15:
+008A 7639      1   49   209         jeq     d3,#0,.L16
+008C 8206      1   50   210         mov     d6,#0
+008E 6Drrrrrr  2   52   211         call    Os_Cbk_StackOverrunHook
+0092 C872      1   53   212         ld.a    a2,[a15]28
+0094 82FF      1   54   213         mov     d15,#-1
+0096 6C26      1   55   214         st.w    [a2]24,d15
+0098 C872      1   56   215         ld.a    a2,[a15]28
+009A 6C27      1   57   216         st.w    [a2]28,d15
+009C                    217 .L16:
+009C 49F2200A  1   58   218         lea     a2,[a15]32
+00A0 E872      1   59   219         st.a    [a15]28,a2
+00A2 40F4      1   60   220         mov.aa  a4,a15
+00A4 40C5      1   61   221         mov.aa  a5,a12
+00A6 6Drrrrrr  2   63   222         call    Os_CrossCoreCheck
+00AA 483F      1   64   223         ld.w    d15,[a15]12
+00AC 4860      1   65   224         ld.w    d0,[a15]24
+00AE 0BF030F1  1   66   225         lt.u    d15,d0,d15
+00B2 6E03      1   67   226         jeq     d15,#0,.L17
+00B4 6Drrrrrr  2   69   227         call    Os_Dispatch1
+00B8                    228 .L17:
+00B8 E87D      1   70   229         st.a    [a15]28,a13
+00BA 89F90018  1   71   230         st.b    [a15]64,d9
+00BE 89F80118  1   72   231         st.b    [a15]65,d8
+00C2 0D004002  4   76   232         rslcx
+00C6 0000      1   77   233         nop
+00C8 0000      1   78   234         nop
+00CA 0000      1   79   235         nop
+00CC 0080      2   81   236         rfe
+00CE 0D004002  4   85   237         rslcx
+00D2 0080      2   87   238         rfe
+                        239         
+00D4                    240 __Os_CrossCoreISR1_function_end:
+                        241         .size   Os_CrossCoreISR1,__Os_CrossCoreISR1_function_end-Os_CrossCoreISR1
+                        242         ; End of function
+                        243         
+                        244         .sdecl  '.rodata.Os_CrossCore.Os_CrossCoreSRCs',data,rom
+0000                    245         .sect   '.rodata.Os_CrossCore.Os_CrossCoreSRCs'
+                        246         .global Os_CrossCoreSRCs
+                        247         .align  4
+0000                    248 Os_CrossCoreSRCs:       .type   object
+                        249         .size   Os_CrossCoreSRCs,8
+0000 908903F0           250         .word   -268203632,-268203628
+     948903F0               
+                        251         .sdecl  '.rodata.Os_CrossCore.Os_CrossCoreTriggers',data,rom
+0000                    252         .sect   '.rodata.Os_CrossCore.Os_CrossCoreTriggers'
+                        253         .global Os_CrossCoreTriggers
+                        254         .align  2
+0000                    255 Os_CrossCoreTriggers:   .type   object
+                        256         .size   Os_CrossCoreTriggers,8
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   5
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0000 01040000           257         .word   1025,5121
+     01140000               
+                        258         .calls  'Os_CrossCoreISR0','Os_GetSP'
+                        259         .calls  'Os_CrossCoreISR0','Os_Cbk_StackOverrunHook'
+                        260         .calls  'Os_CrossCoreISR0','Os_CrossCoreCheck'
+                        261         .calls  'Os_CrossCoreISR0','Os_Dispatch0'
+                        262         .calls  'Os_CrossCoreISR1','Os_GetSP'
+                        263         .calls  'Os_CrossCoreISR1','Os_Cbk_StackOverrunHook'
+                        264         .calls  'Os_CrossCoreISR1','Os_CrossCoreCheck'
+                        265         .calls  'Os_CrossCoreISR1','Os_Dispatch1'
+                        266         .calls  'Os_RaiseCrossCoreISR','',0
+                        267         .calls  'Os_CrossCoreISR0','',8
+                        268         .extern Os_Cbk_StackOverrunHook
+                        269         .extern Os_GetSP
+                        270         .extern Os_CrossCoreCheck
+                        271         .extern Os_const_coreconfiguration
+                        272         .extern Os_ControlledCoreInfo
+                        273         .extern Os_Dispatch0
+                        274         .extern Os_Dispatch1
+                        275         .calls  'Os_CrossCoreISR1','',0
+                        276         ; Module end

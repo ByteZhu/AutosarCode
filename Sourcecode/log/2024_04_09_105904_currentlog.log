@@ -1,0 +1,1255 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling asw\ASW_COM\src\ASW_COM.c
+Compiling asw\ASW_CORE0\src\ASW_CORE0.c
+Compiling asw\ASW_CORE1\src\ASW_CORE1.c
+Compiling asw\ASW_DCM\src\ASW_DCM.c
+ctc W537: ["asw\ASW_CORE0\src\ASW_CORE0.c" 68/17] unused variable "retValue"
+0 errors, 1 warnings
+
+Compiling asw\ASW_DCM\src\ASW_DCM_RoutineServices_CheckMemoryCRC_RequestRoutineResults_func.c
+
+Compiling asw\ASW_DCM\src\ASW_DCM_RoutineServices_CheckMemoryCRC_Start_func.c
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 502/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 503/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 504/13] pointers to different types at argument #1
+ctc W523: ["asw\ASW_DCM\src\ASW_DCM.c" 505/13] pointers to different types at argument #1
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 41/14] unused variable "mode_Nrc0x72"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 42/14] unused variable "mode_Nrc0x22"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 49/50] unused variable "HwRef"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 50/50] unused variable "SwRef"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 53/51] unused variable "NCF_Reference_Number"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 214/17] unused variable "retValue"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 491/45] unused variable "write11"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 500/17] unused variable "retValue"
+ctc W537: ["asw\ASW_DCM\src\ASW_DCM.c" 837/17] unused variable "retValue"
+0 errors, 13 warnings
+
+Compiling asw\ASW_DCM\src\ASW_DCM_RoutineServices_CheckMemoryCRC_Stop_func.c
+
+
+
+Compiling asw\ASW_DEM\src\ASW_DEM_CBStatusComp_DemComponent_func.c
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_CS_ExtendedDataRecord_Aged_counter_ReadData_func.c
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_CS_ExtendedDataRecord_Fault_pending_counter_ReadData_func.c
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_CBStatusComp_DemComponent_func.c" 50/17] unused variable "retValue"
+0 errors, 1 warnings
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Day_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Hour_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Minute_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Month_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_OdometerReading_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_PowerMode_ReadData_func.c
+ctc W537: ["asw\ASW_COM\src\ASW_COM.c" 86/17] unused variable "retValue"
+0 errors, 1 warnings
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_SupplyVoltage_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_DataServices_DemDataElementClass_Year_ReadData_func.c
+
+Compiling asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c
+
+Compiling asw\ASW_NVM\src\ASW_NVM.c
+
+
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 48/38] unused variable "EventStatus1"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 50/17] unused variable "syncCall2"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 51/17] unused variable "syncCall3"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 52/17] unused variable "syncCall4"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 53/30] unused variable "DebounceResetStatus2"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 54/17] unused variable "syncCall5"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 55/22] unused variable "EventStatus3"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 57/17] unused variable "syncCall7"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 58/17] unused variable "syncCall8"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 59/17] unused variable "syncCall9"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 60/30] unused variable "DebounceResetStatus4"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 61/17] unused variable "syncCall10"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 63/17] unused variable "syncCall11"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 65/17] unused variable "syncCall12"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 67/17] unused variable "syncCall13"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 69/17] unused variable "syncCall14"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 70/22] unused variable "EventStatus9"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 72/17] unused variable "syncCall16"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 73/17] unused variable "syncCall17"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 74/17] unused variable "syncCall18"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 75/30] unused variable "DebounceResetStatus10"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 76/17] unused variable "syncCall19"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 77/17] unused variable "syncCall20"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 78/22] unused variable "EventStatus11"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 80/17] unused variable "syncCall22"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 81/17] unused variable "syncCall23"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 82/17] unused variable "syncCall24"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 83/30] unused variable "DebounceResetStatus12"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 84/17] unused variable "syncCall25"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 85/17] unused variable "syncCall26"
+ctc W537: ["asw\ASW_DEM\src\ASW_DEM_PeriodicRunnable_10ms_func.c" 101/17] unused variable "retValue"
+0 errors, 31 warnings
+
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 89/100] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 94/83] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 100/100] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 105/83] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 111/100] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 115/100] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 121/89] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 124/89] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 151/101] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 168/68] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 169/68] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 205/81] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 206/81] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 212/103] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 225/103] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 237/80] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 238/80] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 247/80] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 253/101] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 271/80] expression without effect
+ctc W500: ["asw\ASW_NVM\src\ASW_NVM.c" 276/84] expression without effect
+0 errors, 21 warnings
+
+Compiling asw\ASW_USER\src\ASW_USER.c
+Compiling asw\ASW_XCP\src\ASW_XCP.c
+Compiling asw\CDD_CORE0\src\CDD_CORE0.c
+Compiling asw\CDD_USER\src\CDD_USER.c
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 54/9] unused variable "dRead1"
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 55/9] unused variable "write2"
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 56/17] unused variable "retdRead1"
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 57/17] unused variable "retWrite2"
+ctc W537: ["asw\ASW_USER\src\ASW_USER.c" 65/17] unused variable "retValue"
+0 errors, 5 warnings
+
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 56/27] unused variable "cpuWdtPassword"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 57/27] unused variable "safetyWdtPassword"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 58/20] unused variable "watchdog"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 59/21] unused variable "CpuWatchDog"
+ctc W537: ["asw\ASW_XCP\src\ASW_XCP.c" 60/17] unused variable "retValue"
+0 errors, 5 warnings
+
+ctc W537: ["asw\CDD_USER\src\CDD_USER.c" 56/17] unused variable "retdRead1"
+ctc W537: ["asw\CDD_USER\src\CDD_USER.c" 57/17] unused variable "retWrite2"
+ctc W537: ["asw\CDD_USER\src\CDD_USER.c" 65/17] unused variable "retValue"
+ctc W506: ["asw\CDD_USER\src\CDD_USER.c" 71/22] variable "dRead1" is not initialized
+0 errors, 4 warnings
+
+Compiling bsw\BswM\src\BswM.c
+Compiling bsw\BswM\src\BswM_CanSM.c
+Compiling bsw\BswM\src\BswM_ComM.c
+ctc W537: ["asw\CDD_CORE0\src\CDD_CORE0.c" 27/34] unused variable "StateCaculationCore0"
+ctc W537: ["asw\CDD_CORE0\src\CDD_CORE0.c" 33/14] unused variable "Status_global"
+ctc W537: ["asw\CDD_CORE0\src\CDD_CORE0.c" 39/15] unused variable "DataReceiverCore0_ClientServer"
+ctc W537: ["asw\CDD_CORE0\src\CDD_CORE0.c" 45/15] unused variable "Duration_global"
+ctc W537: ["asw\CDD_CORE0\src\CDD_CORE0.c" 51/16] unused variable "CPU_PercentUtilization_global"
+ctc W537: ["asw\CDD_CORE0\src\CDD_CORE0.c" 52/16] unused variable "MaxUserStackUtilization_f64"
+0 errors, 6 warnings
+
+Compiling bsw\BswM\src\BswM_DCM.c
+
+Compiling bsw\BswM\src\BswM_EcuM.c
+
+
+Compiling bsw\BswM\src\BswM_EthIf.c
+Compiling bsw\BswM\src\BswM_EthSM.c
+
+Compiling bsw\BswM\src\BswM_FrSM.c
+
+Compiling bsw\BswM\src\BswM_Generic.c
+
+
+Compiling bsw\BswM\src\BswM_J1939Dcm.c
+Compiling bsw\BswM\src\BswM_J1939Nm.c
+
+Compiling bsw\BswM\src\BswM_LinSM.c
+
+Compiling bsw\BswM\src\BswM_LinTp.c
+
+Compiling bsw\BswM\src\BswM_Nm.c
+
+Compiling bsw\BswM\src\BswM_NvM.c
+
+Compiling bsw\BswM\src\BswM_Prv.c
+
+Compiling bsw\BswM\src\BswM_Prv_AC.c
+
+Compiling bsw\BswM\src\BswM_Prv_AL.c
+
+Compiling bsw\BswM\src\BswM_Prv_IntrptQueue.c
+
+Compiling bsw\BswM\src\BswM_Prv_MRP.c
+
+
+Compiling bsw\BswM\src\BswM_Prv_ProcessDeferredRequest.c
+Compiling bsw\BswM\src\BswM_Prv_ProcessDelayedReqst.c
+
+Compiling bsw\BswM\src\BswM_Prv_RL.c
+
+Compiling bsw\BswM\src\BswM_Sd.c
+
+Compiling bsw\BswM\src\BswM_WdgM.c
+
+
+Compiling bsw\CanIf\src\CanIf_Baudrate.c
+Compiling bsw\CanIf\src\CanIf_Controller.c
+
+Compiling bsw\CanIf\src\CanIf_GetTxConfirmationState.c
+
+
+Compiling bsw\CanIf\src\CanIf_GetVersionInfo.c
+Compiling bsw\CanIf\src\CanIf_Init.c
+
+Compiling bsw\CanIf\src\CanIf_PduMode.c
+
+Compiling bsw\CanIf\src\CanIf_Prv.c
+
+Compiling bsw\CanIf\src\CanIf_Prv_Buffer.c
+
+Compiling bsw\CanIf\src\CanIf_Rb_Apis.c
+
+Compiling bsw\CanIf\src\CanIf_ReadNotifStatus.c
+
+Compiling bsw\CanIf\src\CanIf_ReadRxPduData.c
+
+Compiling bsw\CanIf\src\CanIf_RxIndication.c
+
+Compiling bsw\CanIf\src\CanIf_SetDynamicTxId.c
+
+Compiling bsw\CanIf\src\CanIf_Shared.c
+
+Compiling bsw\CanIf\src\CanIf_Transceiver.c
+
+Compiling bsw\CanIf\src\CanIf_Transmit.c
+
+Compiling bsw\CanIf\src\CanIf_TriggerTransmit.c
+
+Compiling bsw\CanIf\src\CanIf_TxConfirmation.c
+
+Compiling bsw\CanIf\src\CanIf_Wakeup.c
+
+ 
+Compiling bsw\CanIf\src\CanIf_XCore.c
+
+Compiling bsw\CanNm\src\CanNm.c
+Compiling bsw\CanNm\src\CanNm_ChangeState.c
+
+Compiling bsw\CanNm\src\CanNm_CheckRemoteSleepIndication.c
+
+Compiling bsw\CanNm\src\CanNm_ConfirmPnAvailability.c
+
+Compiling bsw\CanNm\src\CanNm_DisableCommunication.c
+
+Compiling bsw\CanNm\src\CanNm_EnableCommunication.c
+
+Compiling bsw\CanNm\src\CanNm_GetLocalNodeIdentifier.c
+
+Compiling bsw\CanNm\src\CanNm_GetNodeIdentifier.c
+
+
+Compiling bsw\CanNm\src\CanNm_GetPduData.c
+Compiling bsw\CanNm\src\CanNm_GetState.c
+
+Compiling bsw\CanNm\src\CanNm_GetUserData.c
+
+Compiling bsw\CanNm\src\CanNm_GetVersionInfo.c
+
+Compiling bsw\CanNm\src\CanNm_Init.c
+
+Compiling bsw\CanNm\src\CanNm_NetworkRelease.c
+
+Compiling bsw\CanNm\src\CanNm_NetworkRequest.c
+
+Compiling bsw\CanNm\src\CanNm_PassiveStartup.c
+
+Compiling bsw\CanNm\src\CanNm_RepeatMessageRequest.c
+
+Compiling bsw\CanNm\src\CanNm_RequestBusSynchronization.c
+
+Compiling bsw\CanNm\src\CanNm_RequestSynchronizedPncShutdown.c
+
+Compiling bsw\CanNm\src\CanNm_RxIndication.c
+
+Compiling bsw\CanNm\src\CanNm_SetSleepReadyBit.c
+
+Compiling bsw\CanNm\src\CanNm_SetUserData.c
+
+Compiling bsw\CanNm\src\CanNm_StartTransmission.c
+
+Compiling bsw\CanNm\src\CanNm_Transmit.c
+
+Compiling bsw\CanNm\src\CanNm_TriggerTransmit.c
+
+Compiling bsw\CanNm\src\CanNm_TxConfirmation.c
+
+Compiling bsw\CanSM\src\CanSM_CheckTransceiverWakeFlagIndication.c
+
+Compiling bsw\CanSM\src\CanSM_ClearTrcvWufFlagIndication.c
+
+Compiling bsw\CanSM\src\CanSM_ConfirmPnAvailability.c
+
+Compiling bsw\CanSM\src\CanSM_ControllerBusoff.c
+
+Compiling bsw\CanSM\src\CanSM_ControllerModeIndication.c
+
+Compiling bsw\CanSM\src\CanSM_GetCurrentComMode.c
+
+Compiling bsw\CanSM\src\CanSM_GetVersionInfo.c
+
+
+Compiling bsw\CanSM\src\CanSM_Init.c
+Compiling bsw\CanSM\src\CanSM_InternalStateTransition.c
+
+Compiling bsw\CanSM\src\CanSM_Main.c
+
+Compiling bsw\CanSM\src\CanSM_NetworkModes.c
+
+Compiling bsw\CanSM\src\CanSM_RequestComMode.c
+
+Compiling bsw\CanSM\src\CanSM_SetBaudrate.c
+
+Compiling bsw\CanSM\src\CanSM_SetEcuPassive.c
+
+Compiling bsw\CanSM\src\CanSM_StartWakeupSource.c
+
+Compiling bsw\CanSM\src\CanSM_StopWakeupSource.c
+
+Compiling bsw\CanSM\src\CanSM_TransceiverModeIndication.c
+
+Compiling bsw\CanSM\src\CanSM_TxTimeoutException.c
+
+Compiling bsw\CanTp\src\CanTp.c
+
+Compiling bsw\CanTp\src\CanTp_Prv.c
+
+Compiling bsw\Com\src\Com_BusLoadManagement.c
+
+Compiling bsw\Com\src\Com_ByteCopy.c
+
+Compiling bsw\Com\src\Com_ByteCopyInit.c
+
+Compiling bsw\Com\src\Com_CopyRxData.c
+
+Compiling bsw\Com\src\Com_CopyTxData.c
+
+Compiling bsw\Com\src\Com_DeInit.c
+
+Compiling bsw\Com\src\Com_DisableReceptionDM.c
+
+Compiling bsw\Com\src\Com_EnableReceptionDM.c
+
+Compiling bsw\Com\src\Com_Filter.c
+
+Compiling bsw\Com\src\Com_GetStatus.c
+
+Compiling bsw\Com\src\Com_GetVersionInfo.c
+
+Compiling bsw\Com\src\Com_Init.c
+
+Compiling bsw\Com\src\Com_InvalidateShadowSignal.c
+
+Compiling bsw\Com\src\Com_InvalidateSignal.c
+
+Compiling bsw\Com\src\Com_InvalidateSignalGroup.c
+
+Compiling bsw\Com\src\Com_IpduGroupControl.c
+
+Compiling bsw\Com\src\Com_IpduGroupStart.c
+
+Compiling bsw\Com\src\Com_IpduGroupStop.c
+
+Compiling bsw\Com\src\Com_MainFunctionRouteSignals.c
+
+Compiling bsw\Com\src\Com_MainFunctionRx.c
+
+Compiling bsw\Com\src\Com_MainFunctionTx.c
+
+Compiling bsw\Com\src\Com_PackGwMappings.c
+
+Compiling bsw\Com\src\Com_PackSignal.c
+
+Compiling bsw\Com\src\Com_ProcessSignal.c
+
+Compiling bsw\Com\src\Com_ProcessSignalGroup.c
+
+Compiling bsw\Com\src\Com_ReceiveDynSignal.c
+
+Compiling bsw\Com\src\Com_ReceiveDynSignalWithMetaData.c
+
+Compiling bsw\Com\src\Com_ReceiveShadowSignal.c
+
+Compiling bsw\Com\src\Com_ReceiveSignal.c
+
+Compiling bsw\Com\src\Com_ReceiveSignalGroup.c
+
+Compiling bsw\Com\src\Com_ReceiveSignalGroupArray.c
+
+Compiling bsw\Com\src\Com_ReceiveSignalGroupArrayWithMetaData.c
+
+Compiling bsw\Com\src\Com_ReceiveSignalGroupWithMetaData.c
+
+Compiling bsw\Com\src\Com_ReceiveSignalWithMetadata.c
+
+Compiling bsw\Com\src\Com_ReceptionDM.c
+
+Compiling bsw\Com\src\Com_RxIndication.c
+
+Compiling bsw\Com\src\Com_SendDynSignal.c
+
+Compiling bsw\Com\src\Com_SendDynSignalWithMetaData.c
+
+Compiling bsw\Com\src\Com_SendIpdu.c
+
+Compiling bsw\Com\src\Com_SendSignal.c
+
+Compiling bsw\Com\src\Com_SendSignalGroup.c
+
+Compiling bsw\Com\src\Com_SendSignalGroupArray.c
+
+Compiling bsw\Com\src\Com_SendSignalGroupArrayWithMetaData.c
+
+Compiling bsw\Com\src\Com_SendSignalGroupWithMetaData.c
+
+Compiling bsw\Com\src\Com_SendSignalWithMetaData.c
+
+Compiling bsw\Com\src\Com_ShadowBuffToIpduBuff.c
+
+Compiling bsw\Com\src\Com_StartOfReception.c
+
+Compiling bsw\Com\src\Com_SwitchIpduTxMode.c
+
+Compiling bsw\Com\src\Com_TpRxIndication.c
+
+Compiling bsw\Com\src\Com_TpTxConfirmation.c
+
+Compiling bsw\Com\src\Com_TriggerIPDUSend.c
+
+Compiling bsw\Com\src\Com_TriggerIPDUSendWithMetaData.c
+
+Compiling bsw\Com\src\Com_TriggerTransmit.c
+
+Compiling bsw\Com\src\Com_TxChangeMode.c
+
+Compiling bsw\Com\src\Com_TxConfirmation.c
+
+Compiling bsw\Com\src\Com_UnpackSignal.c
+
+Compiling bsw\Com\src\Com_UpdateShadowSignal.c
+
+Compiling bsw\ComM\src\ComM.c
+
+Compiling bsw\ComM\src\ComM_BusSM_ModeIndication.c
+
+Compiling bsw\ComM\src\ComM_CommunicationAllowed.c
+
+Compiling bsw\ComM\src\ComM_Dcm_ActiveDiagnostic.c
+
+Compiling bsw\ComM\src\ComM_Dcm_InactiveDiagnostic.c
+
+Compiling bsw\ComM\src\ComM_DeInit.c
+
+Compiling bsw\ComM\src\ComM_EcuM_PNCWakeUpIndication.c
+
+Compiling bsw\ComM\src\ComM_EcuM_WakeupIndication.c
+
+Compiling bsw\ComM\src\ComM_GetCurrentComMode.c
+
+Compiling bsw\ComM\src\ComM_GetCurrentPNCComMode.c
+
+Compiling bsw\ComM\src\ComM_GetInhibitionStatus.c
+
+Compiling bsw\ComM\src\ComM_GetMaxComMode.c
+
+Compiling bsw\ComM\src\ComM_GetRequestedComMode.c
+
+Compiling bsw\ComM\src\ComM_GetState.c
+
+Compiling bsw\ComM\src\ComM_GetStatus.c
+
+Compiling bsw\ComM\src\ComM_GetVersionInfo.c
+
+Compiling bsw\ComM\src\ComM_Init.c
+
+Compiling bsw\ComM\src\ComM_LChannelMainFunction.c
+
+Compiling bsw\ComM\src\ComM_LimitChannelToNoComMode.c
+
+Compiling bsw\ComM\src\ComM_LimitECUToNoComMode.c
+
+Compiling bsw\ComM\src\ComM_LPncMainFunction.c
+
+Compiling bsw\ComM\src\ComM_LUpdateFullComRequestors.c
+
+Compiling bsw\ComM\src\ComM_Nm_BusSleepMode.c
+
+Compiling bsw\ComM\src\ComM_Nm_ForwardSynchronizedPncShutdown.c
+
+Compiling bsw\ComM\src\ComM_Nm_NetworkMode.c
+
+Compiling bsw\ComM\src\ComM_Nm_NetworkStartIndication.c
+
+Compiling bsw\ComM\src\ComM_Nm_PrepareBusSleepMode.c
+
+Compiling bsw\ComM\src\ComM_Nm_RestartIndication.c
+
+Compiling bsw\ComM\src\ComM_PreventWakeUp.c
+
+Compiling bsw\ComM\src\ComM_ReadInhibitCounter.c
+
+Compiling bsw\ComM\src\ComM_RequestComMode.c
+
+Compiling bsw\ComM\src\ComM_ResetInhibitCounter.c
+
+Compiling bsw\ComM\src\ComM_SetECUGroupClassification.c
+
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Transmission\Dcm_Dsl_CancelTransmission.c
+Compiling bsw\Dcm\src\Dsp\DcmDspLib\DcmDsp_SignalLib.c
+
+Compiling bsw\Dcm\src\Dsp\Obd\DcmDspObd_Mode37A.c
+
+Compiling bsw\Dcm\src\Dsp\Obd\DcmDspObd_Mode4.c
+
+
+Compiling bsw\Dcm\src\Dsp\Obd\DcmDspObd_Mode9.c
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Authentication.c
+
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Auth_Callback.c
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Auth_ProofOfOwnership.c
+
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Auth_VerifyCertificate.c
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_CC.c
+
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Cdi.c
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Cdtcs.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Did_Support.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Dsc.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Er.c
+ctc W537: ["bsw\Dcm\src\Dsp\Uds\DcmDspUds_Cdtcs.c" 49/21] unused variable "Dcm_CdtcsExpectedTotalLength_u16"
+ctc W537: ["bsw\Dcm\src\Dsp\Uds\DcmDspUds_Cdtcs.c" 55/21] unused variable "Dcm_CdtcsValidRecord_u32"
+0 errors, 2 warnings
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_GetVIN.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Rdtc.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Rdtc_GetFreezeFrameDataByRecord.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Rdtc_RepDTCFaultDetectionCounter.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Rdtc_RepFailedDTC.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Rdtc_RepNumDTCByStatusMask.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Rdtc_ReportDTCBySevMaskRec.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Rdtc_ReportDTCSnapshotRecId.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Rdtc_ReportExtendedDataRecordByDTC.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Rdtc_ReportSnapshotRecordByDTC.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Rdtc_RepSeverityOfDTC.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Rdtc_RepSuppDTC.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Roe.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Seca.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Seca_ChgSecurity.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Seca_RestoreDelayCount.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Seca_SecurityIni.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Tp.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_TransferData.c
+
+Compiling bsw\Dcm\src\Dsp\Uds\DcmDspUds_Uds_Did_F186.c
+
+Compiling bsw\Dcm\src\Dsd\Dcm_Dsd_Confirmation.c
+
+Compiling bsw\Dcm\src\Dsd\Dcm_Dsd_Rdpi.c
+
+Compiling bsw\Dcm\src\Dsd\Dcm_Dsd_Roe.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_Authentication.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_AuthenticationTimer.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_ComMInteraction.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_OBDStateMachine.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_Protocol.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_Security.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_Session.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_StateMachine.c
+
+Compiling bsw\Dcm\src\General\Dcm_DslDsd_BootLoader.c
+
+Compiling bsw\Dcm\src\General\Dcm_DslDsd_KwpProtocolHandling.c
+
+Compiling bsw\Dcm\src\General\Dcm_DslDsd_RestartP3Timer.c
+
+Compiling bsw\Dcm\src\General\Dcm_DslDsd_SetP3MaxMonitoring.c
+
+Compiling bsw\Dcm\src\General\Dcm_DslDsd_WarmStart.c
+
+Compiling bsw\Dcm\src\General\Dcm_General_MainFunction.c
+
+
+Compiling bsw\Dem\src\client\Dem_Client.c
+Compiling bsw\Dem\src\client\Dem_ClientMachine_Clear.c
+
+Compiling bsw\Dem\src\client\Dem_ClientRequestDispatcher.c
+
+Compiling bsw\Dem\src\client\Dem_Client_Api.c
+
+Compiling bsw\Dem\src\consischk\Dem_ConsisChk.c
+
+Compiling bsw\Dem\src\deb\Dem_Deb.c
+
+Compiling bsw\Dem\src\deb\Dem_DebArTime.c
+
+Compiling bsw\Dem\src\deb\Dem_DebBase.c
+
+Compiling bsw\Dem\src\deb\Dem_DebCtrBaseClass.c
+
+
+Compiling bsw\Dem\src\distmem\Dem_DisturbanceMemory.c
+Compiling bsw\Dem\src\dtc\Dem_DTCFilter.c
+
+Compiling bsw\Dem\src\dtc\Dem_DTCGroup.c
+
+Compiling bsw\Dem\src\dtc\Dem_DTCs.c
+
+Compiling bsw\Dem\src\dtc\Dem_DTCStatusByte.c
+
+Compiling bsw\Dem\src\dtc\Dem_Prv_J1939Dcm.c
+
+Compiling bsw\Dem\src\enco\Dem_EnableCondition.c
+
+Compiling bsw\Dem\src\env\Dem_EnvDataElement.c
+
+Compiling bsw\Dem\src\env\Dem_EnvDid.c
+
+Compiling bsw\Dem\src\env\Dem_EnvExtendedData.c
+
+Compiling bsw\Dem\src\env\Dem_EnvExtendedDataRec.c
+
+Compiling bsw\Dem\src\env\Dem_EnvFFRecNumeration.c
+
+Compiling bsw\Dem\src\env\Dem_EnvFreezeFrame.c
+
+Compiling bsw\Dem\src\env\Dem_EnvMain.c
+
+Compiling bsw\Dem\src\env\Dem_EvtRelatedData.c
+
+Compiling bsw\Dem\src\env\Dem_J1939EnvFreezeFrame.c
+
+Compiling bsw\Dem\src\evbuff\Dem_EvBuff.c
+
+Compiling bsw\Dem\src\evbuff\Dem_EvBuffDistributor.c
+
+Compiling bsw\Dem\src\evdep\Dem_Dependencies.c
+
+Compiling bsw\Dem\src\evdep\Dem_EventRecheck.c
+
+Compiling bsw\Dem\src\event\Dem_EventFHandling.c
+
+Compiling bsw\Dem\src\event\Dem_Events.c
+
+Compiling bsw\Dem\src\event\Dem_EventStatus.c
+
+Compiling bsw\Dem\src\event\Dem_MonitorStatus.c
+
+Compiling bsw\Dem\src\evmem\Dem_EvMem.c
+
+Compiling bsw\Dem\src\evmem\Dem_EvMemApi.c
+
+Compiling bsw\Dem\src\evmem\Dem_EvMemGen.c
+
+Compiling bsw\Dem\src\indct\Dem_Indicator.c
+
+Compiling bsw\Dem\src\indct\Dem_IndicatorAttributes.c
+
+Compiling bsw\Dem\src\main\Dem_Clear.c
+
+Compiling bsw\Dem\src\main\Dem_Main.c
+
+Compiling bsw\Dem\src\main\Dem_OperationCycle.c
+
+Compiling bsw\Dem\src\map\Dem_Mapping.c
+
+Compiling bsw\Dem\src\nvm\Dem_Nvm.c
+
+Compiling bsw\Dem\src\nvm\Dem_NvmCallbacks.c
+
+Compiling bsw\Dem\src\stoco\Dem_StorageCondition.c
+
+Compiling bsw\Det\src\Det.c
+
+
+Compiling bsw\EcuM\src\EcuM_BootTarget.c
+
+Compiling bsw\EcuM\src\EcuM_CurrentState.c
+Compiling bsw\EcuM\src\EcuM_KillAllRequests.c
+
+Compiling bsw\EcuM\src\EcuM_MainFunction.c
+
+Compiling bsw\EcuM\src\EcuM_Misc.c
+
+Compiling bsw\EcuM\src\EcuM_Prv.c
+
+Compiling bsw\EcuM\src\EcuM_Prv_RteActions.c
+
+Compiling bsw\EcuM\src\EcuM_ReleasePOST_RUN.c
+
+Compiling bsw\EcuM\src\EcuM_ReleaseRUN.c
+
+Compiling bsw\EcuM\src\EcuM_RequestPOST_RUN.c
+
+Compiling bsw\EcuM\src\EcuM_RequestRUN.c
+
+Compiling bsw\EcuM\src\EcuM_SetState.c
+
+Compiling bsw\EcuM\src\EcuM_Shutdown.c
+
+Compiling bsw\EcuM\src\EcuM_ShutdownServices.c
+
+Compiling bsw\EcuM\src\EcuM_Sleep.c
+
+Compiling bsw\EcuM\src\EcuM_Startup.c
+
+Compiling bsw\EcuM\src\EcuM_WakeupServices.c
+
+
+
+Compiling bsw\NvM\src\Internal\ExplicitSynchronization\NvM_ExplicitSynchronization.c
+Compiling bsw\NvM\src\Internal\InternalBuffer\NvM_InternalBuffer.c
+Compiling bsw\NvM\src\Internal\JobHandling\NvM_Job.c
+
+Compiling bsw\NvM\src\Internal\JobHandling\NvM_JobRead.c
+
+Compiling bsw\NvM\src\Internal\JobHandling\NvM_JobRecalcRamBlkCrc.c
+
+Compiling bsw\NvM\src\Internal\JobHandling\NvM_JobRestore.c
+
+Compiling bsw\NvM\src\Internal\JobHandling\NvM_JobWrite.c
+
+Compiling bsw\NvM\src\Internal\QueueHandling\NvM_JobQueue.c
+
+
+Compiling bsw\NvM\src\SingleBlockRequests\Asynchronous\NvM_EraseNvBlock.c
+Compiling bsw\NvM\src\SingleBlockRequests\Asynchronous\NvM_InvalidateNvBlock.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Asynchronous\NvM_ReadBlock.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Asynchronous\NvM_RestoreBlockDefaults.c
+
+
+Compiling bsw\NvM\src\SingleBlockRequests\Asynchronous\NvM_WriteBlock.c
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_GetDataIndex.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_GetErrorStatus.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_SetBlockProtection.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_SetDataIndex.c
+
+Compiling bsw\NvM\src\SingleBlockRequests\Synchronous\NvM_SetRamBlockStatus.c
+
+Compiling bsw\NvM\src\CommonRequests\NvM_Init.c
+
+Compiling bsw\NvM\src\ScheduledFunctions\NvM_MainFunction.c
+
+
+ 
+Compiling bsw\PduR\src\PduR_BufferPool.c
+Compiling bsw\PduR\src\PduR_EnableDisableRouting.c
+Compiling bsw\PduR\src\PduR_Gateway_DDIfTransmit_FiFo.c
+
+Compiling bsw\PduR\src\PduR_Gateway_DDIfTxConf_FiFo.c
+
+Compiling bsw\PduR\src\PduR_Gateway_DDIfTxConf_NoBuf.c
+
+Compiling bsw\PduR\src\PduR_Gateway_IfRxInd.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TpDcmTx.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TpRx.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TpTx.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TpTxConf.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TTIfTransmit_Buf.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TTIfTransmit_FiFo.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TTIfTrigTx_Buf.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TTIfTrigTx_FiFo.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TTIfTxConf_Buf.c
+
+Compiling bsw\PduR\src\PduR_Gateway_TTIfTxConf_FiFo.c
+
+Compiling bsw\PduR\src\PduR_Gateway_UpIf.c
+
+Compiling bsw\PduR\src\PduR_GetBuffer.c
+
+Compiling bsw\PduR\src\PduR_GetConfigurationId.c
+
+Compiling bsw\PduR\src\PduR_GetVersionInfo.c
+
+Compiling bsw\PduR\src\PduR_Globals.c
+
+Compiling bsw\PduR\src\PduR_Init.c
+
+Compiling bsw\PduR\src\PduR_InvalidId_If.c
+
+Compiling bsw\PduR\src\PduR_InvalidId_Tp.c
+
+Compiling bsw\PduR\src\PduR_InvalidId_UpTx.c
+
+Compiling bsw\PduR\src\PduR_Multicast_LoTpTxToUp.c
+
+Compiling bsw\PduR\src\PduR_Multicast_Tp.c
+
+Compiling bsw\PduR\src\PduR_Multicast_UpToLo.c
+
+
+
+Compiling bsw\PduR\src\PduR_Multicast_UpTx.c
+Compiling bsw\PduR\src\PduR_NullFunc_TrigTx.c
+Compiling bsw\PduR\src\PduR_Null_UpIf.c
+
+Compiling bsw\PduR\src\PduR_RPG_TpRx.c
+
+
+
+
+Compiling bsw\WdgM\src\WdgM.c
+Compiling bsw\WdgM\src\WdgM_Prv.c
+Compiling bsw\Xcp\src\XcpOnCan.c
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_AC.c
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_LE.c
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_ModeManagerReq.c
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_MRP.c
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_RL.c
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_PBcfg.c
+
+Compiling bsw\CanIf\CanIf_cfg.c
+
+Compiling bsw\CanIf\CanIf_PBcfg.c
+
+Compiling bsw\CanNm_PreCompile_and_PB_Variant\CanNm_Cfg.c
+
+Compiling bsw\CanNm_PreCompile_and_PB_Variant\CanNm_PBcfg.c
+
+Compiling bsw\CanSM\CanSM_PBcfg.c
+
+Compiling bsw\CanTp_PreCompile\CanTp_Cfg.c
+
+
+Compiling bsw\Com\Com_Cfg.c
+Compiling bsw\Com\Com_PBcfg.c
+
+Compiling bsw\Com\Com_PBcfg_Common.c
+
+Compiling bsw\Com\Com_PBcfg_Variant.c
+
+Compiling bsw\ComM\ComM_Cfg.c
+
+Compiling bsw\ComM\ComM_Main.c
+
+Compiling bsw\ComM\ComM_PBcfg.c
+
+Compiling bsw\Dcm\Dcm_Lcfg_Dsd.c
+
+
+Compiling bsw\Dcm\Dcm_Lcfg_DspUds.c
+Compiling bsw\Dem\Dem_Cfg_Clear.c
+
+Compiling bsw\Dem\Dem_Cfg_DTC_DataStructures.c
+
+Compiling bsw\Dem\Dem_Cfg_Events_DataStructures.c
+
+Compiling bsw\EcuM\EcuM_Cfg.c
+
+Compiling bsw\EcuM\EcuM_Cfg_Startup.c
+ctc W537: ["bsw\Dcm\Dcm_Lcfg_DspUds.c" 213/20] unused variable "Dcm_Dsld_supported_security_acu8"
+0 errors, 1 warnings
+
+Compiling bsw\EcuM\EcuM_Lcfg.c
+
+Compiling bsw\EcuM\EcuM_PBcfg.c
+
+Compiling bsw\Fee\rba_FeeFs1x_Prv_Cfg.c
+
+Compiling bsw\NvM\NvM_Cfg.c
+
+Compiling bsw\PduR\PduR_Cfg.c
+
+Compiling bsw\PduR\PduR_dLoIf.c
+
+Compiling bsw\PduR\PduR_dLoIfTT.c
+
+Compiling bsw\PduR\PduR_dLoTp.c
+ctc W505: ["bsw\EcuM\EcuM_Cfg_Startup.c" 235/27] implicit declaration of function "CDD_CORE0_Init"
+ctc W577: ["bsw\EcuM\EcuM_Cfg_Startup.c" 235/41] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling bsw\PduR\PduR_dUpIf.c
+
+Compiling bsw\PduR\PduR_dUpTp.c
+
+Compiling bsw\PduR\PduR_LoTp.c
+
+Compiling bsw\PduR\PduR_PBcfg.c
+
+Compiling bsw\PduR\PduR_UpIf.c
+
+Compiling bsw\PduR\PduR_UpTp.c
+
+Compiling bsw\WdgM\WdgM_Cfg.c
+
+Compiling bsw\Xcp\XcpOnCan_Cfg.c
+
+Compiling Integration\base_package\os\Src\Os_Cbk_GetStopwatch.c
+
+Compiling Integration\base_package\os\Src\Os_Cbk_Idle.c
+
+
+Compiling Integration\base_package\os\Src\Os_Hooks.c
+Compiling Integration\base_package\os\Src\ProtectionHook.c
+
+Compiling Integration\base_package\os\Src\Task_Background.c
+
+Compiling Integration\base_package\os\Src\Task_NonRte.c
+
+Compiling Integration\base_package\os\timing_calculation\TimingCalculation.c
+
+Compiling Integration\base_package\rte\Src\ECU_Startup.c
+
+Compiling Integration\BSW\BswM\integration\BswM_Appl.c
+
+Compiling Integration\BSW\BswM\integration\BswM_Callout_Stub.c
+
+Compiling Integration\BSW\CanIf\integration\CanIfAppl.c
+ctc W529: ["Integration\base_package\os\timing_calculation\TimingCalculation.c" 92/68] overflow in constant expression of type "unsigned int"
+0 errors, 1 warnings
+
+Compiling Integration\BSW\CanIf\integration\CanIf_ControllerModeIndication_Integration.c
+
+Compiling Integration\BSW\CanIf\integration\CanIf_GetControllerMode_Integration.c
+
+Compiling Integration\BSW\CanIf\integration\CanIf_RxIndication_Integration.c
+
+Compiling Integration\BSW\CanIf\integration\CanIf_SetControllerMode_Integration.c
+
+Compiling Integration\BSW\CanIf\integration\CanIf_Write_Integration.c
+
+Compiling Integration\BSW\CanNm\integration\CanNmAppl.c
+
+
+Compiling Integration\BSW\Com\integration\ComAppl.c
+Compiling Integration\BSW\Com\integration\Com_Integration.c
+
+Compiling Integration\BSW\ComM\integration\ComMAppl.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_CheckEncryptionCompressionMethod.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_ConfirmationRespPend.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmCancelPagedBufferProcessing.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmCheckCDTCRecord.c
+
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmCheckControlMaskAndState.c
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmCheckRdbiResponseLength.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmCheckSeed.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmCheckWDBIReqLen.c
+
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmClearRoeEventInformation.c
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmCommControlConditionCheck.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmComModeError.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmConfirmation.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmConfirmationRDPI.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmConfirmation_DcmNegResp.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmConfirmation_GeneralReject.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmControlDtcSettingEnableStatus.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmCopyRxData.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmEcuResetPreparation.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmGetNRCForMinLengthCheck.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmGetP2Timings.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmGetPermissionForMemoryAccess_u8.c
+ctc W535: ["Integration\BSW\Dcm\integration\DcmAppl_DcmEcuResetPreparation.c" 20/1] no type specifiers - assumed 'int'
+0 errors, 1 warnings
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmGetPermTxWarmResp.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmGetRemainingResponseLength.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmGetROEDidInfo.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmGetRoeDTCInfo.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmGetRxPermission.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmGetSesChgPermission.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmGetStoreType.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmGetUpdatedDelayForPowerOn.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmGetUpdatedDelayTime.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmIndicationFuncTpr.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmIsComModeDefault.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmMemSizeCheckForTransferData.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmModifyResponse.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmNotification.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmReadDataNRC.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmReadDddiFromNvM.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmRespWarmInit.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmRxIndication.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmSecaInvalidKey.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmSecaValidKey.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmSecurityLevelLocked.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmSesCtrlChangeIndication.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmSetUpRoeEvent.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmStartOfReception.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmStartProtocol.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmStopProtocol.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmStoreRespForJump.c
+
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmStoreROEcycleCounter.c
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmStoreRoeDidInfo.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmStoreRoeDTCInfo.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmSwitchCommunicationControl.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmTransferDataCheckPermission.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmUpdateRxTable.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DcmWriteOrClearDddiInNvM.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Dcm_GetProgConditions.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Dcm_ProcessRequestDownload.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Dcm_ProcessRequestTransferExit.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Dcm_ProcessRequestUpload.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Dcm_ReadMemory.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Dcm_SetProgConditions.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Dcm_WriteMemory.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DDDI_Read_Memory_Condition.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_DisableDTCSetting.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_EnableDTCSetting.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_ManufacturerNotification.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_OBD_Mode04.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_P3TimeoutIndication.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_SupplierNotification.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Switch_DcmBootLoaderReset.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Switch_DcmDiagnosticSessionControl.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Switch_DcmDriveToDriveReset.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Switch_DcmEcuReset.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Switch_DcmExecuteDscReset.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Switch_DcmExecuteEcuReset.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Switch_DcmExecuteReset.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Switch_DcmResponseOnEvent.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_Switch_DcmSysSupplierReset.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_UserCommCtrlReEnableModeRuleService.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_UserDIDModeRuleService.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_UserDTCSettingEnableModeRuleService.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_UserMemoryRangeModeRuleService.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_UserServiceModeRuleService.c
+
+Compiling Integration\BSW\Dcm\integration\DcmAppl_UserSubServiceModeRuleService.c
+
+Compiling Integration\BSW\Dem\integration\Dem_PrjChronoSorting.c
+
+Compiling Integration\BSW\Dem\integration\Dem_PrjDisturbanceMemory.c
+
+Compiling Integration\BSW\Dem\integration\Dem_PrjEnvDataElement.c
+
+Compiling Integration\BSW\Dem\integration\Dem_PrjEvmemProjectExtension.c
+
+Compiling Integration\BSW\Dem\integration\Dem_PrjSpecificConsistencyCheck.c
+
+Compiling Integration\BSW\Dem\integration\Dem_PrjSpecificDebOptimization.c
+
+Compiling Integration\BSW\Dem\integration\Dem_PrjSpecificFailureMemory.c
+
+Compiling Integration\BSW\Dem\integration\Dem_PrjSpecificIndiHandling.c
+
+Compiling Integration\BSW\EcuM\integration\EcuM_Callout_Stubs.c
+
+Compiling Integration\BSW\EcuM\integration\EcuM_integration.c
+
+Compiling Integration\BSW\EcuM\integration\EcuM_User.c
+
+Compiling Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c
+
+Compiling Integration\BSW\PduR\integration\PduRAppl.c
+ctc W505: ["Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c" 42/3] implicit declaration of function "Wdg_17_Scu_SetTriggerCondition"
+ctc W577: ["Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c" 42/33] calling a function without a prototype
+ctc W505: ["Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c" 80/3] implicit declaration of function "Wdg_17_Scu_SetTriggerCondition"
+ctc W577: ["Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c" 80/33] calling a function without a prototype
+ctc W537: ["Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c" 30/10] unused variable "CRC_ptr"
+ctc W537: ["Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c" 31/9] unused variable "CRC_data"
+ctc W537: ["Integration\BSW\NvM\integration\Nvm_MultiBlockCallback.c" 32/9] unused variable "CRC_cal"
+0 errors, 7 warnings
+
+Compiling Integration\BSW\WdgM\integration\WdgM_Bsw_User.c
+ctc W537: ["Integration\BSW\EcuM\integration\EcuM_integration.c" 62/18] unused variable "safetyWdtPassword"
+0 errors, 1 warnings
+
+
+
+Compiling Integration\mcal_package\TargetIntegration\TC36x\Src\main.c
+Compiling Integration\mcal_package\Irq\Can_17_McmCan_Irq.c
+Compiling Integration\mcal_package\Irq\Ccu6_Irq.c
+
+Compiling Integration\mcal_package\Irq\Gtm_Irq.c
+
+Compiling Integration\mcal_package\Irq\Sent_Irq.c
+
+Compiling Integration\mcal_package\Irq\Stm_Irq.c
+
+Compiling Integration\mcal_package\Src\Cpu0_Main.c
+
+Compiling Integration\mcal_package\Src\Cpu1_Main.c
+
+Compiling Integration\mcal_package\Src\Ifx_Ssw_Tc0.c
+ctc W505: ["Integration\mcal_package\Src\Cpu1_Main.c" 67/3] implicit declaration of function "inner_main"
+ctc W577: ["Integration\mcal_package\Src\Cpu1_Main.c" 67/13] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling rte\gen\Core0_OsTask_ASW_10ms.c
+
+Compiling rte\gen\Core0_OsTask_ASW_1ms.c
+ctc W505: ["Integration\mcal_package\Src\Cpu0_Main.c" 97/2] implicit declaration of function "inner_main"
+ctc W577: ["Integration\mcal_package\Src\Cpu0_Main.c" 97/12] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling rte\gen\Core0_OsTask_BSW_10ms.c
+
+Compiling rte\gen\Core0_OsTask_BSW_1ms.c
+
+Compiling rte\gen\Core0_OsTask_BSW_50ms.c
+
+Compiling rte\gen\Core1_OsTask_ASW_10ms.c
+
+Compiling rte\gen\Core1_OsTask_BSW_10ms.c
+
+Compiling rte\gen\Rte.c
+
+Compiling rte\gen\Rte_Lib.c
+
+Compiling mcal\MCAL_Gen\src\Gpt_PBcfg.c
+
+Compiling mcal\MCAL_Modules\Can_17_McmCan\src\Can_17_McmCan.c
+
+
+Compiling mcal\MCAL_Modules\Gpt\src\Gpt.c
+Compiling mcal\MCAL_Modules\Mcu\src\Mcu_17_TimerIp.c
+
+
+Compiling mcal\MCAL_Modules\Irq\Irq.c
+
+
+
+Linking output\dbg\D_ENTRY_PLATFROM.elf...
+
+Dumping output\dbg\D_ENTRY_PLATFROM.elf to output\hex\D_ENTRY_PLATFROM.hex
+Dumping output\dbg\D_ENTRY_PLATFROM.elf to output\s19\D_ENTRY_PLATFROM.s19
+
+
+scons: done building targets.

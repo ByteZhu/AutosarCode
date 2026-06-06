@@ -1,0 +1,65 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling bsw\EcuM\src\EcuM_BootTarget.c
+Compiling bsw\EcuM\src\EcuM_CurrentState.c
+Compiling bsw\EcuM\src\EcuM_KillAllRequests.c
+Compiling bsw\EcuM\src\EcuM_MainFunction.c
+
+Compiling bsw\EcuM\src\EcuM_Misc.c
+
+Compiling bsw\EcuM\src\EcuM_Prv.c
+
+Compiling bsw\EcuM\src\EcuM_ReleasePOST_RUN.c
+
+Compiling bsw\EcuM\src\EcuM_ReleaseRUN.c
+
+Compiling bsw\EcuM\src\EcuM_RequestPOST_RUN.c
+
+Compiling bsw\EcuM\src\EcuM_RequestRUN.c
+
+Compiling bsw\EcuM\src\EcuM_SetState.c
+
+Compiling bsw\EcuM\src\EcuM_Shutdown.c
+
+Compiling bsw\EcuM\src\EcuM_ShutdownServices.c
+
+Compiling bsw\EcuM\src\EcuM_Sleep.c
+
+Compiling bsw\EcuM\src\EcuM_Startup.c
+
+Compiling bsw\EcuM\src\EcuM_WakeupServices.c
+
+
+
+
+Compiling bsw\EcuM\EcuM_Cfg_Startup.c
+Compiling bsw\EcuM\EcuM_PBcfg.c
+Compiling Integration\BSW\EcuM\integration\EcuM_Callout_Stubs.c
+
+
+Compiling Integration\mcal_package\Irq\Sent_Irq.c
+Compiling Integration\mcal_package\Src\Sent_Callback.c
+Compiling rte\gen\Core0_OsTask_ASW_100ms.c
+ctc E219: [".\mcal\MCAL_Modules\Sent\inc\Sent.h" 48/1] cannot open #include file "Sent_Cfg.h"
+ctc E219: [".\mcal\MCAL_Modules\Sent\inc\Sent.h" 695/1] cannot open #include file "Sent_PBcfg.h"
+2 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\Integration\mcal_package\Sent_Irq.o] Error 1
+ctc E219: [".\mcal\MCAL_Modules\Sent\inc\Sent.h" 48/1] cannot open #include file "Sent_Cfg.h"
+ctc E219: [".\mcal\MCAL_Modules\Sent\inc\Sent.h" 695/1] cannot open #include file "Sent_PBcfg.h"
+2 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\Integration\mcal_package\Sent_Callback.o] Error 1
+
+
+scons: building terminated because of errors.

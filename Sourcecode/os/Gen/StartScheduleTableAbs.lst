@@ -1,0 +1,123 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc34000a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\StartScheduleTableAbs.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\StartSched
+                            uleTableAbs.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.StartScheduleTableAbs.Os_StartScheduleTableAbs',code
+0000                     11         .sect   '.text.StartScheduleTableAbs.Os_StartScheduleTableAbs'
+                         12         .align  2
+                         13         
+                         14         .global Os_StartScheduleTableAbs
+                         15 ; Function Os_StartScheduleTableAbs
+0000                     16 Os_StartScheduleTableAbs:       .type   func
+0000 8208      1    1    17         mov     d8,#0
+0002 404D      1    2    18         mov.aa  a13,a4
+0004 4DC0E29F  1    3    19         mfcr    d9,#65068
+0008 0D004003  1    4    20         disable
+000C BBF000F8  1    5    21         mov.u   d15,#32783
+0010 CDCFE20F  1    6    22         mtcr    #65068,d15
+0014 0D00C004  1    7    23         isync
+                         24         
+0018 91r0rrCr  1    8    25         movh.a  a12,#@his(Os_lock_alarmaccess)
+001C D9CCrrrr  1    9    26         lea     a12,[a12]@los(Os_lock_alarmaccess)
+0020 3C09      1   10    27         j       .L2
+0022                     28 .L3:
+0022 0000      1   11    29         nop
+0024 0000      1   12    30         nop
+0026 0000      1   13    31         nop
+0028 0000      1   14    32         nop
+002A 0000      1   15    33         nop
+002C 0000      1   16    34         nop
+002E 0000      1   17    35         nop
+0030 0000      1   18    36         nop
+0032                     37 .L2:
+0032 DA01      1   19    38         mov     d15,#1
+0034 49CF0008  1   20    39         swap.w  [a12]0,d15
+0038 EEF5      1   21    40         jne     d15,#0,.L3
+003A D4DF      1   22    41         ld.a    a15,[a13]
+003C 482F      1   23    42         ld.w    d15,[a15]8
+003E 6E0C      1   24    43         jeq     d15,#0,.L4
+0040 8278      1   25    44         mov     d8,#7
+0042 0D008004  1   26    45         dsync
+0046 A00F      1   27    46         mov.a   a15,#0
+0048 F4CF      1   28    47         st.a    [a12],a15
+004A 0D008004  1   29    48         dsync
+004E 0284      1   30    49         mov     d4,d8
+0050 6Drrrrrr  2   32    50         call    Os_ErrorLog
+0054 3C25      1   33    51         j       .L5
+0056                     52 .L4:
+0056 09DF0A09  1   34    53         ld.w    d15,[a13]10
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+005A 6CF3      1   35    54         st.w    [a15]12,d15
+005C CCD1      1   36    55         ld.a    a15,[a13]4
+005E 09D04E08  1   37    56         ld.bu   d0,[a13]14
+0062 D4D2      1   38    57         ld.a    a2,[a13]
+0064 486F      1   39    58         ld.w    d15,[a15]24
+0066 0B040010  1   40    59         add     d1,d4,d0
+006A 5242      1   41    60         sub     d2,d15,d4
+006C 7F020480  1   42    61         jge.u   d2,d0,.L6
+0070 A2F1      1   43    62         sub     d1,d15
+0072 C2F1      1   44    63         add     d1,#-1
+0074                     64 .L6:
+0074 7421      1   45    65         st.w    [a2],d1
+0076 8205      1   46    66         mov     d5,#0
+0078 A005      1   47    67         mov.a   a5,#0
+007A 09D48409  1   48    68         ld.a    a4,[a13]4
+007E D4D2      1   49    69         ld.a    a2,[a13]
+0080 CC45      1   50    70         ld.a    a15,[a4]20
+0082 5424      1   51    71         ld.w    d4,[a2]
+0084 2D0F0000  2   53    72         calli   a15
+0088 D4DF      1   54    73         ld.a    a15,[a13]
+008A A002      1   55    74         mov.a   a2,#0
+008C E812      1   56    75         st.a    [a15]4,a2
+008E D4DF      1   57    76         ld.a    a15,[a13]
+0090 DA03      1   58    77         mov     d15,#3
+0092 6CF2      1   59    78         st.w    [a15]8,d15
+0094 0D008004  1   60    79         dsync
+0098 F4C2      1   61    80         st.a    [a12],a2
+009A 0D008004  1   62    81         dsync
+009E                     82 .L5:
+009E CDC9E20F  1   63    83         mtcr    #65068,d9
+00A2 0D00C004  1   64    84         isync
+                         85         
+00A6 0282      1   65    86         mov     d2,d8
+00A8 0090      2   67    87         ret
+                         88         
+00AA                     89 __Os_StartScheduleTableAbs_function_end:
+                         90         .size   Os_StartScheduleTableAbs,__Os_StartScheduleTableAbs_function_end-Os_StartScheduleTableAb
+                            s
+                         91         ; End of function
+                         92         
+                         93         .calls  'Os_StartScheduleTableAbs','Os_ErrorLog'
+                         94         .calls  'Os_StartScheduleTableAbs','__INDIRECT__'
+                         95         .extern Os_lock_alarmaccess
+                         96         .extern Os_ErrorLog
+                         97         .extern __INDIRECT__
+                         98         .calls  'Os_StartScheduleTableAbs','',0
+                         99         ; Module end

@@ -1,0 +1,38 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling Integration\base_package\os\Src\Os_Hooks.c
+Compiling Integration\mcal_package\Irq\Adc_Irq.c
+Compiling Integration\mcal_package\Irq\Can_17_McmCan_Irq.c
+Compiling Integration\mcal_package\Irq\Ccu6_Irq.c
+
+Compiling Integration\mcal_package\Irq\Gtm_Irq.c
+
+Compiling Integration\mcal_package\Irq\Stm_Irq.c
+
+Compiling Integration\mcal_package\Src\Cpu0_Main.c
+
+
+ctc W505: ["Integration\mcal_package\Irq\Stm_Irq.c" 147/3] implicit declaration of function "Test_Stm0Sr0_CompareMatchIsr"
+ctc W577: ["Integration\mcal_package\Irq\Stm_Irq.c" 147/31] calling a function without a prototype
+0 errors, 2 warnings
+
+ctc W505: ["Integration\mcal_package\Src\Cpu0_Main.c" 97/2] implicit declaration of function "inner_main"
+ctc W577: ["Integration\mcal_package\Src\Cpu0_Main.c" 97/12] calling a function without a prototype
+0 errors, 2 warnings
+
+Compiling mcal\MCAL_Modules\Irq\Irq.c
+
+Linking output\dbg\D_ENTRY_PLATFROM.elf...
+ltc E106: unresolved external: Address_ptr_2 - (Stm_Irq.o)
+ltc E106: unresolved external: Test_Stm0Sr0_CompareMatchIsr - (Stm_Irq.o)
+ltc F019: unrecoverable error: fatal link error
+
+===================
+None
+===================
+scons: *** [output\dbg\D_ENTRY_PLATFROM.elf] Error 2
+scons: building terminated because of errors.

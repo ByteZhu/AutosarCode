@@ -1,0 +1,83 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc34396a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\Os_SrcInit.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\Os_SrcInit
+                            .c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.Os_SrcInit.Os_InitializeServiceRequests',code
+0000                     11         .sect   '.text.Os_SrcInit.Os_InitializeServiceRequests'
+                         12         .align  2
+                         13         
+                         14         .global Os_InitializeServiceRequests
+                         15 ; Function Os_InitializeServiceRequests
+0000                     16 Os_InitializeServiceRequests:   .type   func
+0000 3B1040F1  1    1    17         mov     d15,#5121
+0004 914000FF  1    2    18         movh.a  a15,#61444
+0008 59FF9468  1    3    19         st.w    [a15]@los(0xf0038994),d15
+000C 3B1040F0  1    4    20         mov     d15,#1025
+0010 59FF9068  1    5    21         st.w    [a15]@los(0xf0038990),d15
+0014 3B2040F0  1    6    22         mov     d15,#1026
+0018 59FF7068  1    7    23         st.w    [a15]@los(0xf00385b0),d15
+001C 3B3040F0  1    8    24         mov     d15,#1027
+0020 59FF7468  1    9    25         st.w    [a15]@los(0xf00385b4),d15
+0024 3B4040F0  1   10    26         mov     d15,#1028
+0028 59FF7868  1   11    27         st.w    [a15]@los(0xf00385b8),d15
+002C 3B5040F0  1   12    28         mov     d15,#1029
+0030 59FF7C68  1   13    29         st.w    [a15]@los(0xf00385bc),d15
+0034 3B6040F0  1   14    30         mov     d15,#1030
+0038 59FF4078  1   15    31         st.w    [a15]@los(0xf00385c0),d15
+003C 3B7040F0  1   16    32         mov     d15,#1031
+0040 59FF4478  1   17    33         st.w    [a15]@los(0xf00385c4),d15
+0044 3B8040F0  1   18    34         mov     d15,#1032
+0048 59FF4878  1   19    35         st.w    [a15]@los(0xf00385c8),d15
+004C 3B9040F0  1   20    36         mov     d15,#1033
+0050 59FF4C78  1   21    37         st.w    [a15]@los(0xf00385cc),d15
+0054 3BA040F0  1   22    38         mov     d15,#1034
+0058 59FF5078  1   23    39         st.w    [a15]@los(0xf00385d0),d15
+005C 3BB040F0  1   24    40         mov     d15,#1035
+0060 59FF5478  1   25    41         st.w    [a15]@los(0xf00385d4),d15
+0064 3BC040F0  1   26    42         mov     d15,#1036
+0068 59FF5878  1   27    43         st.w    [a15]@los(0xf00385d8),d15
+006C 3BD040F0  1   28    44         mov     d15,#1037
+0070 59FF5C78  1   29    45         st.w    [a15]@los(0xf00385dc),d15
+0074 3BE040F0  1   30    46         mov     d15,#1038
+0078 59FF00C8  1   31    47         st.w    [a15]@los(0xf0038300),d15
+007C 3BF040F0  1   32    48         mov     d15,#1039
+0080 59FF0098  1   33    49         st.w    [a15]@los(0xf0038240),d15
+0084 3B0041F0  1   34    50         mov     d15,#1040
+0088 59FFCC98  1   35    51         st.w    [a15]@los(0xf0038e4c),d15
+008C 0090      2   37    52         ret
+                         53         
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+008E                     54 __Os_InitializeServiceRequests_function_end:
+                         55         .size   Os_InitializeServiceRequests,__Os_InitializeServiceRequests_function_end-Os_InitializeSe
+                            rviceRequests
+                         56         ; End of function
+                         57         
+                         58         .calls  'Os_InitializeServiceRequests','',0
+                         59         ; Module end

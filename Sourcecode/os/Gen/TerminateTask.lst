@@ -1,0 +1,63 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc33724a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\TerminateTask.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\TerminateT
+                            ask.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.TerminateTask.Os_TerminateTask',code
+0000                     11         .sect   '.text.TerminateTask.Os_TerminateTask'
+                         12         .align  2
+                         13         
+                         14         .global Os_TerminateTask
+                         15 ; Function Os_TerminateTask
+0000                     16 Os_TerminateTask:       .type   func
+0000 4DC0E1FF  1    1    17         mfcr    d15,#65052
+0004 538F21F0  3    4    18         mul     d15,d15,#24
+0008 91r0rrFr  1    5    19         movh.a  a15,#@his(Os_const_coreconfiguration)
+000C D9FFrrrr  1    6    20         lea     a15,[a15]@los(Os_const_coreconfiguration)
+0010 10FF      1    7    21         addsc.a a15,a15,d15,#0
+0012 D4FF      1    8    22         ld.a    a15,[a15]
+0014 A002      1    9    23         mov.a   a2,#0
+0016 C844      1   10    24         ld.a    a4,[a15]16
+0018 7D420980  1   11    25         jne.a   a2,a4,.L2
+001C C854      1   12    26         ld.a    a4,[a15]20
+001E 7D420600  1   13    27         jeq.a   a2,a4,.L3
+0022 C85F      1   14    28         ld.a    a15,[a15]20
+0024 D4F4      1   15    29         ld.a    a4,[a15]
+0026 6Drrrrrr  2   17    30         call    Os_longjmp
+002A                     31 .L3:
+002A                     32 .L2:
+002A 8202      1   18    33         mov     d2,#0
+002C 0090      2   20    34         ret
+                         35         
+002E                     36 __Os_TerminateTask_function_end:
+                         37         .size   Os_TerminateTask,__Os_TerminateTask_function_end-Os_TerminateTask
+                         38         ; End of function
+                         39         
+                         40         .calls  'Os_TerminateTask','Os_longjmp'
+                         41         .extern Os_longjmp
+                         42         .extern Os_const_coreconfiguration
+                         43         .calls  'Os_TerminateTask','',0
+                         44         ; Module end

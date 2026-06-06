@@ -1,0 +1,516 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc33864a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\Os_Cfg_Counters.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\Os_Cfg_Cou
+                            nters.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.Os_Cfg_Counters.Os_CounterRelativeStart',code
+0000                     11         .sect   '.text.Os_Cfg_Counters.Os_CounterRelativeStart'
+                         12         .align  2
+                         13         
+                         14         .global Os_CounterRelativeStart
+                         15 ; Function Os_CounterRelativeStart
+0000                     16 Os_CounterRelativeStart:        .type   func
+0000 2008      1    1    17         sub.a   a10,#8
+0002 404F      1    2    18         mov.aa  a15,a4
+0004 0248      1    3    19         mov     d8,d4
+0006 405C      1    4    20         mov.aa  a12,a5
+0008 C822      1    5    21         ld.a    a2,[a15]8
+000A 2D020000  2    7    22         calli   a2
+000E 4860      1    8    23         ld.w    d0,[a15]24
+0010 1A28      1    9    24         add     d15,d8,d2
+0012 74A2      1   10    25         st.w    [a10],d2
+0014 0B208010  1   11    26         sub     d1,d0,d2
+0018 7F810480  1   12    27         jge.u   d1,d8,.L3
+001C A20F      1   13    28         sub     d15,d0
+001E C2FF      1   14    29         add     d15,#-1
+0020                     30 .L3:
+0020 74CF      1   15    31         st.w    [a12],d15
+0022 02F4      1   16    32         mov     d4,d15
+0024 486F      1   17    33         ld.w    d15,[a15]24
+0026 C852      1   18    34         ld.a    a2,[a15]20
+0028 06FF      1   19    35         sh      d15,#-1
+002A 7FF80580  1   20    36         jge.u   d8,d15,.L4
+002E 40A5      1   21    37         mov.aa  a5,a10
+0030 0285      1   22    38         mov     d5,d8
+0032 3C03      1   23    39         j       .L5
+0034                     40 .L4:
+0034 8205      1   24    41         mov     d5,#0
+0036 40C5      1   25    42         mov.aa  a5,a12
+0038                     43 .L5:
+0038 40F4      1   26    44         mov.aa  a4,a15
+003A DC02      1   27    45         ji      a2
+                         46         
+003C                     47 __Os_CounterRelativeStart_function_end:
+                         48         .size   Os_CounterRelativeStart,__Os_CounterRelativeStart_function_end-Os_CounterRelativeStart
+                         49         ; End of function
+                         50         
+                         51         .sdecl  '.text.Os_Cfg_Counters.Os_PerformEP',code
+0000                     52         .sect   '.text.Os_Cfg_Counters.Os_PerformEP'
+                         53         .align  2
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                         54         
+                         55         .global Os_PerformEP
+                         56 ; Function Os_PerformEP
+0000                     57 Os_PerformEP:   .type   func
+0000 2008      1    1    58         sub.a   a10,#8
+0002 89A48409  1    2    59         st.a    [a10]4,a4
+0006 405F      1    3    60         mov.aa  a15,a5
+0008 0248      1    4    61         mov     d8,d4
+000A F4A6      1    5    62         st.a    [a10],a6
+000C 407C      1    6    63         mov.aa  a12,a7
+000E 91r0rrDr  1    7    64         movh.a  a13,#@his(Os_lock_alarmaccess)
+0012 D9DDrrrr  1    8    65         lea     a13,[a13]@los(Os_lock_alarmaccess)
+0016 3C09      1    9    66         j       .L6
+0018                     67 .L7:
+0018 0000      1   10    68         nop
+001A 0000      1   11    69         nop
+001C 0000      1   12    70         nop
+001E 0000      1   13    71         nop
+0020 0000      1   14    72         nop
+0022 0000      1   15    73         nop
+0024 0000      1   16    74         nop
+0026 0000      1   17    75         nop
+0028                     76 .L6:
+0028 DA01      1   18    77         mov     d15,#1
+002A 49DF0008  1   19    78         swap.w  [a13]0,d15
+002E EEF5      1   20    79         jne     d15,#0,.L7
+0030 4830      1   21    80         ld.w    d0,[a15]12
+0032 91r0rr2r  1   22    81         movh.a  a2,#@his(Os_const_expiry_intervals)
+0036 8FF007F1  1   23    82         and     d15,d0,#127
+003A D922rrrr  1   24    83         lea     a2,[a2]@los(Os_const_expiry_intervals)
+003E 1022      1   25    84         addsc.a a2,a2,d15,#0
+0040 0690      1   26    85         sh      d0,#-7
+0042 1429      1   27    86         ld.bu   d9,[a2]
+0044 91r0rr2r  1   28    87         movh.a  a2,#@his(Os_const_expiry_actions)
+0048 D922rrrr  1   29    88         lea     a2,[a2]@los(Os_const_expiry_actions)
+004C 012000E6  1   30    89         addsc.a a14,a2,d0,#0
+0050 0D008004  1   31    90         dsync
+0054 A002      1   32    91         mov.a   a2,#0
+0056 F4D2      1   33    92         st.a    [a13],a2
+0058 0D008004  1   34    93         dsync
+005C                     94 .L8:
+005C 14EF      1   35    95         ld.bu   d15,[a14]
+005E 163E      1   36    96         and     d15,#62
+0060 8FFF3FA0  1   37    97         sha     d10,d15,#-1
+0064 DF0A3200  1   38    98         jeq     d10,#0,.L12
+0068 3C09      1   39    99         j       .L10
+006A                    100 .L11:
+006A 0000      1   40   101         nop
+006C 0000      1   41   102         nop
+006E 0000      1   42   103         nop
+0070 0000      1   43   104         nop
+0072 0000      1   44   105         nop
+0074 0000      1   45   106         nop
+0076 0000      1   46   107         nop
+0078 0000      1   47   108         nop
+007A                    109 .L10:
+007A DA01      1   48   110         mov     d15,#1
+007C 49DF0008  1   49   111         swap.w  [a13]0,d15
+0080 EEF5      1   50   112         jne     d15,#0,.L11
+0082 483F      1   51   113         ld.w    d15,[a15]12
+0084 8B0F08F0  1   52   114         add     d15,d15,#128
+0088 6CF3      1   53   115         st.w    [a15]12,d15
+008A 0D008004  1   54   116         dsync
+008E A002      1   55   117         mov.a   a2,#0
+0090 F4D2      1   56   118         st.a    [a13],a2
+0092 0D008004  1   57   119         dsync
+0096 91r0rr2r  1   58   120         movh.a  a2,#@his(Os_const_tasks)
+009A 8F2A00F0  1   59   121         sh      d15,d10,#2
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   3
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+009E D922rrrr  1   60   122         lea     a2,[a2]@los(Os_const_tasks)
+00A2 1022      1   61   123         addsc.a a2,a2,d15,#0
+00A4 D4A5      1   62   124         ld.a    a5,[a10]
+00A6 40C6      1   63   125         mov.aa  a6,a12
+00A8 0924BCF9  1   64   126         ld.a    a4,[a2]-4
+00AC 6Drrrrrr  2   66   127         call    Os_ActivateTaskKL
+00B0 04E0      1   67   128         ld.bu   d0,[a14+]
+00B2 6F00D57F  1   68   129         jz.t    d0:0,.L8
+00B6 3C09      1   69   130         j       .L12
+00B8                    131 .L13:
+00B8 0000      1   70   132         nop
+00BA 0000      1   71   133         nop
+00BC 0000      1   72   134         nop
+00BE 0000      1   73   135         nop
+00C0 0000      1   74   136         nop
+00C2 0000      1   75   137         nop
+00C4 0000      1   76   138         nop
+00C6 0000      1   77   139         nop
+00C8                    140 .L12:
+00C8 DA01      1   78   141         mov     d15,#1
+00CA 49DF0008  1   79   142         swap.w  [a13]0,d15
+00CE EEF5      1   80   143         jne     d15,#0,.L13
+00D0 483F      1   81   144         ld.w    d15,[a15]12
+00D2 C21F      1   82   145         add     d15,#1
+00D4 6CF3      1   83   146         st.w    [a15]12,d15
+00D6 DF0A4080  1   84   147         jne     d10,#0,.L14
+00DA DA00      1   85   148         mov     d15,#0
+00DC 6CF2      1   86   149         st.w    [a15]8,d15
+00DE C812      1   87   150         ld.a    a2,[a15]4
+00E0 BD023200  1   88   151         jz.a    a2,.L15
+00E4 D422      1   89   152         ld.a    a2,[a2]
+00E6 DA03      1   90   153         mov     d15,#3
+00E8 6C22      1   91   154         st.w    [a2]8,d15
+00EA C812      1   92   155         ld.a    a2,[a15]4
+00EC 09A48409  1   93   156         ld.a    a4,[a10]4
+00F0 0C2E      1   94   157         ld.bu   d15,[a2]14
+00F2 09404E08  1   95   158         ld.bu   d0,[a4]14
+00F6 A20F      1   96   159         sub     d15,d0
+00F8 42F9      1   97   160         add     d9,d15
+00FA DF091D80  1   98   161         jne     d9,#0,.L16
+00FE 0D008004  1   99   162         dsync
+0102 A002      1  100   163         mov.a   a2,#0
+0104 F4D2      1  101   164         st.a    [a13],a2
+0106 0D008004  1  102   165         dsync
+010A C814      1  103   166         ld.a    a4,[a15]4
+010C 0284      1  104   167         mov     d4,d8
+010E D4A6      1  105   168         ld.a    a6,[a10]
+0110 40C7      1  106   169         mov.aa  a7,a12
+0112 D445      1  107   170         ld.a    a5,[a4]
+0114 6DFF76FF  2  109   171         call    Os_PerformEP
+0118 3C09      1  110   172         j       .L17
+011A                    173 .L18:
+011A 0000      1  111   174         nop
+011C 0000      1  112   175         nop
+011E 0000      1  113   176         nop
+0120 0000      1  114   177         nop
+0122 0000      1  115   178         nop
+0124 0000      1  116   179         nop
+0126 0000      1  117   180         nop
+0128 0000      1  118   181         nop
+012A                    182 .L17:
+012A DA01      1  119   183         mov     d15,#1
+012C 49DF0008  1  120   184         swap.w  [a13]0,d15
+0130 EEF5      1  121   185         jne     d15,#0,.L18
+0132 3C12      1  122   186         j       .L19
+0134                    187 .L16:
+0134 D422      1  123   188         ld.a    a2,[a2]
+0136 54FF      1  124   189         ld.w    d15,[a15]
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   4
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0138 742F      1  125   190         st.w    [a2],d15
+013A C81F      1  126   191         ld.a    a15,[a15]4
+013C D4FF      1  127   192         ld.a    a15,[a15]
+013E A002      1  128   193         mov.a   a2,#0
+0140 E812      1  129   194         st.a    [a15]4,a2
+0142 3C0A      1  130   195         j       .L20
+0144                    196 .L15:
+0144 09A28409  1  131   197         ld.a    a2,[a10]4
+0148 0C28      1  132   198         ld.bu   d15,[a2]8
+014A 6E06      1  133   199         jeq     d15,#0,.L21
+014C 092F0A09  1  134   200         ld.w    d15,[a2]10
+0150 6CF3      1  135   201         st.w    [a15]12,d15
+0152 DA03      1  136   202         mov     d15,#3
+0154 6CF2      1  137   203         st.w    [a15]8,d15
+0156                    204 .L21:
+0156                    205 .L20:
+0156                    206 .L19:
+0156                    207 .L14:
+0156 482F      1  138   208         ld.w    d15,[a15]8
+0158 5E3A      1  139   209         jne     d15,#3,.L22
+015A A298      1  140   210         sub     d8,d9
+015C 54FF      1  141   211         ld.w    d15,[a15]
+015E 7F8F0580  1  142   212         jge.u   d15,d8,.L23
+0162 42F9      1  143   213         add     d9,d15
+0164 74F9      1  144   214         st.w    [a15],d9
+0166 3C03      1  145   215         j       .L24
+0168                    216 .L23:
+0168 A28F      1  146   217         sub     d15,d8
+016A 74FF      1  147   218         st.w    [a15],d15
+016C                    219 .L24:
+016C                    220 .L22:
+016C 0D008004  1  148   221         dsync
+0170 A002      1  149   222         mov.a   a2,#0
+0172 F4D2      1  150   223         st.a    [a13],a2
+0174 0D008004  1  151   224         dsync
+0178 40F2      1  152   225         mov.aa  a2,a15
+017A 0090      2  154   226         ret
+                        227         
+017C                    228 __Os_PerformEP_function_end:
+                        229         .size   Os_PerformEP,__Os_PerformEP_function_end-Os_PerformEP
+                        230         ; End of function
+                        231         
+                        232         .sdecl  '.rodata.Os_Cfg_Counters.Os_const_counters',data,rom
+0000                    233         .sect   '.rodata.Os_Cfg_Counters.Os_const_counters'
+                        234         .global Os_const_counters
+                        235         .align  4
+0000                    236 Os_const_counters:      .type   object
+                        237         .size   Os_const_counters,44
+0000 rrrrrrrr           238         .word   Os_dyn_counters,Os_AdvanceCounter_Rte_TickCounter,Os_Cbk_Now_Rte_TickCounter,Os_Cbk_Set_
+     rrrrrrrr               Rte_TickCounter
+     rrrrrrrr               
+     rrrrrrrr               
+0010 rrrrrrrr           239         .word   Os_Cbk_State_Rte_TickCounter,Os_HwCounterAbsoluteStart,65535,1
+     rrrrrrrr               
+     FFFF0000               
+     01000000               
+0020 01000000           240         .word   1,Os_const_coreconfiguration
+     rrrrrrrr               
+0028 03                 241         .byte   3
+0029                    242         .space  3
+  |  RESERVED               
+002B
+                        243         .sdecl  '.rodata.Os_Cfg_Counters.Os_const_scheduletables',data,rom
+0000                    244         .sect   '.rodata.Os_Cfg_Counters.Os_const_scheduletables'
+                        245         .global Os_const_scheduletables
+                        246         .align  4
+0000                    247 Os_const_scheduletables:        .type   object
+                        248         .size   Os_const_scheduletables,20
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   5
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+0000 rrrrrrrr           249         .word   Os_dyn_scheduletables,Os_const_counters
+     rrrrrrrr               
+0008 01                 250         .byte   1
+0009                    251         .space  6
+  |  RESERVED               
+000E
+000F 03                 252         .byte   3
+0010                    253         .space  4
+  |  RESERVED               
+0013
+                        254         .sdecl  '.rodata.Os_Cfg_Counters.Os_const_expiry_intervals',data,rom
+0000                    255         .sect   '.rodata.Os_Cfg_Counters.Os_const_expiry_intervals'
+                        256         .global Os_const_expiry_intervals
+0000                    257 Os_const_expiry_intervals:      .type   object
+                        258         .size   Os_const_expiry_intervals,100
+0000 01010101           259         .byte   1,1,1,1
+0004 01010101           260         .byte   1,1,1,1
+0008 01010101           261         .byte   1,1,1,1
+000C 01010101           262         .byte   1,1,1,1
+0010 01010101           263         .byte   1,1,1,1
+0014 01010101           264         .byte   1,1,1,1
+0018 01010101           265         .byte   1,1,1,1
+001C 01010101           266         .byte   1,1,1,1
+0020 01010101           267         .byte   1,1,1,1
+0024 01010101           268         .byte   1,1,1,1
+0028 01010101           269         .byte   1,1,1,1
+002C 01010101           270         .byte   1,1,1,1
+0030 01010101           271         .byte   1,1,1,1
+0034 01010101           272         .byte   1,1,1,1
+0038 01010101           273         .byte   1,1,1,1
+003C 01010101           274         .byte   1,1,1,1
+0040 01010101           275         .byte   1,1,1,1
+0044 01010101           276         .byte   1,1,1,1
+0048 01010101           277         .byte   1,1,1,1
+004C 01010101           278         .byte   1,1,1,1
+0050 01010101           279         .byte   1,1,1,1
+0054 01010101           280         .byte   1,1,1,1
+0058 01010101           281         .byte   1,1,1,1
+005C 01010101           282         .byte   1,1,1,1
+0060 01010101           283         .byte   1,1,1,1
+                        284         .sdecl  '.rodata.Os_Cfg_Counters.Os_const_expiry_actions',data,rom
+0000                    285         .sect   '.rodata.Os_Cfg_Counters.Os_const_expiry_actions'
+                        286         .global Os_const_expiry_actions
+0000                    287 Os_const_expiry_actions:        .type   object
+                        288         .size   Os_const_expiry_actions,574
+0000 1E200C0E           289         .byte   30,32,12,14
+0004 181A1C04           290         .byte   24,26,28,4
+0008 06141608           291         .byte   6,20,22,8
+000C 0A12111E           292         .byte   10,18,17,30
+0010 200C0F1E           293         .byte   32,12,15,30
+0014 200C0E19           294         .byte   32,12,14,25
+0018 1E200C0F           295         .byte   30,32,12,15
+001C 1E200C0E           296         .byte   30,32,12,14
+0020 191E200C           297         .byte   25,30,32,12
+0024 0E1A1C04           298         .byte   14,26,28,4
+0028 071E200C           299         .byte   7,30,32,12
+002C 0E191E20           300         .byte   14,25,30,32
+0030 0C0F1E20           301         .byte   12,15,30,32
+0034 0C0E191E           302         .byte   12,14,25,30
+0038 200C0F1E           303         .byte   32,12,15,30
+003C 200C0E18           304         .byte   32,12,14,24
+0040 1A1C0406           305         .byte   26,28,4,6
+0044 1416080B           306         .byte   20,22,8,11
+0048 1E200C0F           307         .byte   30,32,12,15
+004C 1E200C0E           308         .byte   30,32,12,14
+0050 191E200C           309         .byte   25,30,32,12
+0054 0F1E200C           310         .byte   15,30,32,12
+0058 0E191E20           311         .byte   14,25,30,32
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   6
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+005C 0C0E1A1C           312         .byte   12,14,26,28
+0060 04071E20           313         .byte   4,7,30,32
+0064 0C0E191E           314         .byte   12,14,25,30
+0068 200C0F1E           315         .byte   32,12,15,30
+006C 200C0E19           316         .byte   32,12,14,25
+0070 1E200C0F           317         .byte   30,32,12,15
+0074 1E200C0E           318         .byte   30,32,12,14
+0078 181A1C04           319         .byte   24,26,28,4
+007C 06141608           320         .byte   6,20,22,8
+0080 0B1E200C           321         .byte   11,30,32,12
+0084 0F1E200C           322         .byte   15,30,32,12
+0088 0E191E20           323         .byte   14,25,30,32
+008C 0C0F1E20           324         .byte   12,15,30,32
+0090 0C0E191E           325         .byte   12,14,25,30
+0094 200C0E1A           326         .byte   32,12,14,26
+0098 1C04071E           327         .byte   28,4,7,30
+009C 200C0E19           328         .byte   32,12,14,25
+00A0 1E200C0F           329         .byte   30,32,12,15
+00A4 1E200C0E           330         .byte   30,32,12,14
+00A8 191E200C           331         .byte   25,30,32,12
+00AC 0F1E200C           332         .byte   15,30,32,12
+00B0 0E181A1C           333         .byte   14,24,26,28
+00B4 04061416           334         .byte   4,6,20,22
+00B8 080B1E20           335         .byte   8,11,30,32
+00BC 0C0F1E20           336         .byte   12,15,30,32
+00C0 0C0E191E           337         .byte   12,14,25,30
+00C4 200C0F1E           338         .byte   32,12,15,30
+00C8 200C0E19           339         .byte   32,12,14,25
+00CC 1E200C0E           340         .byte   30,32,12,14
+00D0 1A1C0407           341         .byte   26,28,4,7
+00D4 1E200C0E           342         .byte   30,32,12,14
+00D8 191E200C           343         .byte   25,30,32,12
+00DC 0F1E200C           344         .byte   15,30,32,12
+00E0 0E191E20           345         .byte   14,25,30,32
+00E4 0C0F1E20           346         .byte   12,15,30,32
+00E8 0C0E181A           347         .byte   12,14,24,26
+00EC 1C040614           348         .byte   28,4,6,20
+00F0 16080B1E           349         .byte   22,8,11,30
+00F4 200C0F1E           350         .byte   32,12,15,30
+00F8 200C0E19           351         .byte   32,12,14,25
+00FC 1E200C0F           352         .byte   30,32,12,15
+0100 1E200C0E           353         .byte   30,32,12,14
+0104 191E200C           354         .byte   25,30,32,12
+0108 0E1A1C04           355         .byte   14,26,28,4
+010C 071E200C           356         .byte   7,30,32,12
+0110 0E191E20           357         .byte   14,25,30,32
+0114 0C0F1E20           358         .byte   12,15,30,32
+0118 0C0E191E           359         .byte   12,14,25,30
+011C 200C0F1E           360         .byte   32,12,15,30
+0120 200C0E18           361         .byte   32,12,14,24
+0124 1A1C0406           362         .byte   26,28,4,6
+0128 1416080A           363         .byte   20,22,8,10
+012C 131E200C           364         .byte   19,30,32,12
+0130 0F1E200C           365         .byte   15,30,32,12
+0134 0E191E20           366         .byte   14,25,30,32
+0138 0C0F1E20           367         .byte   12,15,30,32
+013C 0C0E191E           368         .byte   12,14,25,30
+0140 200C0E1A           369         .byte   32,12,14,26
+0144 1C04071E           370         .byte   28,4,7,30
+0148 200C0E19           371         .byte   32,12,14,25
+014C 1E200C0F           372         .byte   30,32,12,15
+0150 1E200C0E           373         .byte   30,32,12,14
+0154 191E200C           374         .byte   25,30,32,12
+0158 0F1E200C           375         .byte   15,30,32,12
+015C 0E181A1C           376         .byte   14,24,26,28
+0160 04061416           377         .byte   4,6,20,22
+0164 080B1E20           378         .byte   8,11,30,32
+0168 0C0F1E20           379         .byte   12,15,30,32
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   7
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+016C 0C0E191E           380         .byte   12,14,25,30
+0170 200C0F1E           381         .byte   32,12,15,30
+0174 200C0E19           382         .byte   32,12,14,25
+0178 1E200C0E           383         .byte   30,32,12,14
+017C 1A1C0407           384         .byte   26,28,4,7
+0180 1E200C0E           385         .byte   30,32,12,14
+0184 191E200C           386         .byte   25,30,32,12
+0188 0F1E200C           387         .byte   15,30,32,12
+018C 0E191E20           388         .byte   14,25,30,32
+0190 0C0F1E20           389         .byte   12,15,30,32
+0194 0C0E181A           390         .byte   12,14,24,26
+0198 1C040614           391         .byte   28,4,6,20
+019C 16080B1E           392         .byte   22,8,11,30
+01A0 200C0F1E           393         .byte   32,12,15,30
+01A4 200C0E19           394         .byte   32,12,14,25
+01A8 1E200C0F           395         .byte   30,32,12,15
+01AC 1E200C0E           396         .byte   30,32,12,14
+01B0 191E200C           397         .byte   25,30,32,12
+01B4 0E1A1C04           398         .byte   14,26,28,4
+01B8 071E200C           399         .byte   7,30,32,12
+01BC 0E191E20           400         .byte   14,25,30,32
+01C0 0C0F1E20           401         .byte   12,15,30,32
+01C4 0C0E191E           402         .byte   12,14,25,30
+01C8 200C0F1E           403         .byte   32,12,15,30
+01CC 200C0E18           404         .byte   32,12,14,24
+01D0 1A1C0406           405         .byte   26,28,4,6
+01D4 1416080B           406         .byte   20,22,8,11
+01D8 1E200C0F           407         .byte   30,32,12,15
+01DC 1E200C0E           408         .byte   30,32,12,14
+01E0 191E200C           409         .byte   25,30,32,12
+01E4 0F1E200C           410         .byte   15,30,32,12
+01E8 0E191E20           411         .byte   14,25,30,32
+01EC 0C0E1A1C           412         .byte   12,14,26,28
+01F0 04071E20           413         .byte   4,7,30,32
+01F4 0C0E191E           414         .byte   12,14,25,30
+01F8 200C0F1E           415         .byte   32,12,15,30
+01FC 200C0E19           416         .byte   32,12,14,25
+0200 1E200C0F           417         .byte   30,32,12,15
+0204 1E200C0E           418         .byte   30,32,12,14
+0208 181A1C04           419         .byte   24,26,28,4
+020C 06141608           420         .byte   6,20,22,8
+0210 0B1E200C           421         .byte   11,30,32,12
+0214 0F1E200C           422         .byte   15,30,32,12
+0218 0E191E20           423         .byte   14,25,30,32
+021C 0C0F1E20           424         .byte   12,15,30,32
+0220 0C0E191E           425         .byte   12,14,25,30
+0224 200C0E1A           426         .byte   32,12,14,26
+0228 1C04071E           427         .byte   28,4,7,30
+022C 200C0E19           428         .byte   32,12,14,25
+0230 1E200C0F           429         .byte   30,32,12,15
+0234 1E200C0E           430         .byte   30,32,12,14
+0238 191E200C           431         .byte   25,30,32,12
+023C 0E01               432         .byte   14,1
+                        433         .calls  '__INDIRECT__','Os_Cbk_Now_Rte_TickCounter'
+                        434         .calls  '__INDIRECT__','Os_Cbk_Set_Rte_TickCounter'
+                        435         .calls  '__INDIRECT__','Os_Cbk_State_Rte_TickCounter'
+                        436         .calls  '__INDIRECT__','Os_AdvanceCounter_Rte_TickCounter'
+                        437         .calls  '__INDIRECT__','Os_HwCounterAbsoluteStart'
+                        438         .calls  'Os_CounterRelativeStart','__INDIRECT__'
+                        439         .calls  'Os_PerformEP','Os_ActivateTaskKL'
+                        440         .calls  'Os_PerformEP','Os_PerformEP'
+                        441         .calls  'Os_CounterRelativeStart','',8
+                        442         .extern Os_const_coreconfiguration
+                        443         .extern Os_const_tasks
+                        444         .extern Os_lock_alarmaccess
+                        445         .extern Os_Cbk_Now_Rte_TickCounter
+                        446         .extern Os_Cbk_Set_Rte_TickCounter
+                        447         .extern Os_Cbk_State_Rte_TickCounter
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   8
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                        448         .extern Os_AdvanceCounter_Rte_TickCounter
+                        449         .extern Os_ActivateTaskKL
+                        450         .extern Os_HwCounterAbsoluteStart
+                        451         .extern Os_dyn_counters
+                        452         .extern Os_dyn_scheduletables
+                        453         .extern __INDIRECT__
+                        454         .calls  'Os_PerformEP','',8
+                        455         ; Module end

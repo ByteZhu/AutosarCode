@@ -1,0 +1,23 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling asw\ASW_CORE1\src\ASW_CORE1.c
+ctc W505: ["asw\ASW_CORE1\src\ASW_CORE1.c" 54/2] implicit declaration of function "Rte_Call_RPort_CPUUtilizationCore1_CPU_Utilization"
+ctc W577: ["asw\ASW_CORE1\src\ASW_CORE1.c" 54/52] calling a function without a prototype
+ctc W505: ["asw\ASW_CORE1\src\ASW_CORE1.c" 60/2] implicit declaration of function "Rte_Call_RPort_GetMaxUserStackUtilization_GetMaxUserStackUtilization"
+ctc W577: ["asw\ASW_CORE1\src\ASW_CORE1.c" 60/70] calling a function without a prototype
+ctc W537: ["asw\ASW_CORE1\src\ASW_CORE1.c" 50/17] unused variable "retValue"
+0 errors, 5 warnings
+
+Compiling asw\CDD_CORE1\src\CDD_CORE1.c
+ctc E219: ["asw\CDD_CORE1\src\CDD_CORE1.c" 21/1] cannot open #include file "Rte_CDD_CORE1.h"
+1 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\asw\CDD_CORE1\CDD_CORE1.o] Error 1
+scons: building terminated because of errors.

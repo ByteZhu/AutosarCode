@@ -1,0 +1,28 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling bsw\BswM\src\BswM.c
+Compiling bsw\BswM\src\BswM_CanSM.c
+Compiling bsw\BswM\src\BswM_ComM.c
+Compiling bsw\BswM\src\BswM_DCM.c
+
+
+
+
+Compiling bsw\EcuM\EcuM_Cfg_Startup.c
+Compiling bsw\WdgM\WdgM_Cfg.c
+
+ctc W505: ["bsw\EcuM\EcuM_Cfg_Startup.c" 235/27] implicit declaration of function "CDD_CORE0_Init"
+ctc W577: ["bsw\EcuM\EcuM_Cfg_Startup.c" 235/41] calling a function without a prototype
+0 errors, 2 warnings
+
+Linking output\dbg\D_ENTRY_PLATFROM.elf...
+
+Dumping output\dbg\D_ENTRY_PLATFROM.elf to output\s19\D_ENTRY_PLATFROM.s19
+Dumping output\dbg\D_ENTRY_PLATFROM.elf to output\hex\D_ENTRY_PLATFROM.hex
+
+
+scons: done building targets.

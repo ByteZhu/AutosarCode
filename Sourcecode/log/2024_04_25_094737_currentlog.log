@@ -1,0 +1,47 @@
+scons: done reading SConscript files.
+
+scons: warning: you do not seem to have the pywin32 extensions installed;
+	parallel (-j) builds may not work reliably with open Python files.
+File "C:\Python27\Scripts\scons.py", line 201, in <module>
+scons: Building targets ...
+Compiling bsw\EcuM\src\EcuM_BootTarget.c
+Compiling bsw\EcuM\src\EcuM_CurrentState.c
+Compiling bsw\EcuM\src\EcuM_KillAllRequests.c
+Compiling bsw\EcuM\src\EcuM_MainFunction.c
+
+Compiling bsw\EcuM\src\EcuM_Misc.c
+
+Compiling bsw\EcuM\src\EcuM_Prv.c
+ctc E219: [".\bsw\EcuM\EcuM_Cfg_Startup.h" 26/1] cannot open #include file "Spi.h"
+ctc E219: [".\bsw\EcuM\EcuM_Cfg_Startup.h" 27/1] cannot open #include file "Sent.h"
+2 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\bsw\EcuM\EcuM_BootTarget.o] Error 1
+ctc E219: [".\bsw\EcuM\EcuM_Cfg_Startup.h" 26/1] cannot open #include file "Spi.h"
+ctc E219: [".\bsw\EcuM\EcuM_Cfg_Startup.h" 27/1] cannot open #include file "Sent.h"
+2 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\bsw\EcuM\EcuM_MainFunction.o] Error 1
+ctc E219: [".\bsw\EcuM\EcuM_Cfg_Startup.h" 26/1] cannot open #include file "Spi.h"
+ctc E219: [".\bsw\EcuM\EcuM_Cfg_Startup.h" 27/1] cannot open #include file "Sent.h"
+2 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\bsw\EcuM\EcuM_Misc.o] Error 1
+ctc E219: [".\bsw\EcuM\EcuM_Cfg_Startup.h" 26/1] cannot open #include file "Spi.h"
+ctc E219: [".\bsw\EcuM\EcuM_Cfg_Startup.h" 27/1] cannot open #include file "Sent.h"
+2 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [output\objs\bsw\EcuM\EcuM_Prv.o] Error 1
+scons: building terminated because of errors.

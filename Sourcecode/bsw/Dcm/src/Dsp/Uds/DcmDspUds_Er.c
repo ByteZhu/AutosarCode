@@ -1,0 +1,322 @@
+#include "Dcm_Cfg_Prot.h"
+#include "Dcm.h"
+
+#if ( (DCM_CFG_DSPUDSSUPPORT_ENABLED != DCM_CFG_OFF) && (DCM_CFG_DSP_ECURESET_ENABLED != DCM_CFG_OFF) )
+#if(DCM_CFG_RTESUPPORT_ENABLED != DCM_CFG_OFF)
+#include "SchM_Dcm.h"
+#endif
+#include "DcmDspUds_Er_Inf.h"
+#include "Dcm_Prv.h"
+#include "DcmDspUds_Er_Priv.h"
+/* Definition of global variables */
+#define DCM_START_SEC_VAR_CLEARED_8 /*Adding this for memory mapping*/
+#include "Dcm_MemMap.h"
+
+#if((DCM_CFG_STORING_ENABLED != DCM_CFG_OFF) || (DCM_CFG_RTESUPPORT_ENABLED != DCM_CFG_OFF))
+static uint8 Dcm_idxReset_u8;   /* Index variable for looping */
+#endif
+#define DCM_STOP_SEC_VAR_CLEARED_8 /*Adding this for memory mapping*/
+#include "Dcm_MemMap.h"
+#define DCM_START_SEC_VAR_CLEARED_UNSPECIFIED /*Adding this for memory mapping*/
+#include "Dcm_MemMap.h"
+Dcm_EcuResetStateType_ten Dcm_stEcuResetState_en; /*State machine control variable for ECU Reset service*/
+#define DCM_STOP_SEC_VAR_CLEARED_UNSPECIFIED /*Adding this for memory mapping*/
+#include "Dcm_MemMap.h"
+#define DCM_START_SEC_VAR_CLEARED_8 /*Adding this for memory mapping*/
+#include "Dcm_MemMap.h"
+uint8 Dcm_dataEcuRType_u8;     /* Variable to store the received reset type */
+#define DCM_STOP_SEC_VAR_CLEARED_8 /*Adding this for memory mapping*/
+#include "Dcm_MemMap.h"
+
+
+#define DCM_START_SEC_CODE /*Adding this for memory mapping*/
+#include "Dcm_MemMap.h"
+
+/**
+ **************************************************************************************************
+ * Dcm_Prv_DspEcuReset_Init :
+ * This function initialises the ECU Reset service to DCM_ECURESET_IDLE.
+ * This function is to be called every time when a new protocol starts.
+ *
+ * \param           :None
+ * \return          :None
+ * \retval          :Not Applicable
+ * \seealso
+ * \usedresources
+ **************************************************************************************************
+ */
+
+void Dcm_Prv_DspEcuReset_Init (void)
+{
+    /* Initialise EcuR Service state machine to IDLE state */
+    Dcm_stEcuResetState_en = DCM_ECURESET_IDLE;
+    /* Initialise the reset mode to DCM_NO_RESET */
+    Dcm_dataEcuRType_u8 = DCM_NO_RESET;
+#if(DCM_CFG_STORING_ENABLED != DCM_CFG_OFF)
+    /* Reset Boot loader */
+    Dcm_ResetBootLoader();
+#endif
+}
+
+/**
+ *******************************************************************************
+ * Dcm_Prv_DspEcuResetConfirmation : API used for confirmation of response sent
+ *                                               for ECUReset (0x11) service.
+ * \param           dataIdContext_u8    Service Id
+ * \param           dataRxPduId_u8      PDU Id on which request is Received
+ * \param           dataSourceAddress_u16    Tester Source address id
+ * \param           status_u8                Status of Tx confirmation function
+ *
+ * \retval          None
+ * \seealso
+ *
+ *******************************************************************************
+ */
+void Dcm_Prv_DspEcuResetConfirmation(uint8 sid_u8,
+                                    uint8 reqType_u8,
+                                    uint16 connectionId_u16,
+                                    Dcm_ConfirmationStatusType confirmationStatus,
+                                    Dcm_ProtocolType protocolType,
+                                    uint16 testerSrcAddress_u16)
+{
+        if((confirmationStatus == DCM_RES_POS_OK)||(confirmationStatus == DCM_RES_POS_NOT_OK))
+        {
+            #if(DCM_CFG_APPLTXCONF_REQ != DCM_CFG_OFF)
+            /* Give application tx confirmation before the reset happens */
+            DcmAppl_DcmConfirmation(sid_u8,reqType_u8,connectionId_u16,confirmationStatus,protocolType,testerSrcAddress_u16);
+            #else
+            (void)sid_u8;
+            (void)reqType_u8;
+            (void)connectionId_u16;
+            (void)confirmationStatus;
+            (void)protocolType;
+            (void)testerSrcAddress_u16;
+            #endif
+            #if(DCM_CFG_RESPOND_REQ_AFTERECURESET == DCM_CFG_OFF)
+            /*Update the value of s_IsDcmInitialized_b to FALSE via interface Dcm_Prv_DcmInitialize*/
+            Dcm_acceptRequests_b = FALSE;
+            #endif
+#if(DCM_CFG_STORING_ENABLED != DCM_CFG_OFF)
+            if(Dcm_BootLoaderState_en == DCM_BOOT_STORE_WARMINIT)
+            {
+                Dcm_ResetBootLoader();
+            }
+#endif
+            #if (DCM_CFG_RTESUPPORT_ENABLED != DCM_CFG_OFF)
+            (void)SchM_Switch_Dcm_DcmEcuReset(RTE_MODE_DcmEcuReset_EXECUTE);
+            #endif
+            (void)DcmAppl_Switch_DcmExecuteEcuReset(Dcm_dataEcuRType_u8);
+            (void)DcmAppl_Switch_DcmExecuteReset();
+        }
+}
+
+
+/**
+ *****************************************************************************************************
+ * Dcm_Prv_DspEcuReset :
+ *  EcuReset service interpreter function.
+ *  This service is used by client (tester) to do a server reset.
+ *  This service has supports the following sub functions - 0x01-0x05
+ *
+ * \param           pMsgContext    Pointer to message structure
+ *                                 (parameter in : RequestLength, Response buffer size, request bytes)
+ *                                 (parameter out: Response bytes and Response length )
+ *
+ * \retval          None
+ * \seealso
+ *
+ *****************************************************************************************************
+ */
+/* TRACE [SWS_Dcm_00260]*/
+Std_ReturnType Dcm_Prv_DspEcuReset (Dcm_SrvOpStatusType OpStatus,Dcm_MsgContextType * pMsgContext,Dcm_NegativeResponseCodeType * dataNegRespCode_u8)
+{
+    Std_ReturnType dataRetVal_u8;
+    uint8_least idxIndex_qu8;
+    /* Initialize the local variables */
+    *dataNegRespCode_u8 = 0x00;
+    dataRetVal_u8=E_OK;
+    /*Opstatus possed by the central statemachine is unused currently, opstatus variables related to service needs to be
+     * removed and the one passed by the central statemachine needs to be used, this would be taken care with task XXXXX*/
+
+    /* If OpStatus is set to DCM_CANCEL then call the ini function for resetting */
+    if (OpStatus == DCM_CANCEL)
+    {
+        /* Call the Ini Function */
+        Dcm_Prv_DspEcuReset_Init();
+        /* Set the return value to E_OK (explicitly again) as the Ini function will always be serviced  */
+        dataRetVal_u8 = E_OK;
+    }
+    else
+    {
+        /* Process the request received, Check for the state machine */
+        if(Dcm_stEcuResetState_en == DCM_ECURESET_IDLE)
+        {
+            /* Store the sub function byte */
+            Dcm_dataEcuRType_u8 = pMsgContext->reqData[0];
+
+            /* Check whether the requested reset type is supported */
+            for(idxIndex_qu8 = 0; idxIndex_qu8 < DCM_CFG_DSP_NUMRESETTYPE; idxIndex_qu8++)
+            {
+                if(Dcm_dataEcuRType_u8 == Dcm_DspEcuResetType_cast[idxIndex_qu8].dataResetLevel_u8)
+                {
+                    break;  /* Reset type  found */
+                }
+            }
+            /* Reset type requested is configured */
+            if(idxIndex_qu8 < DCM_CFG_DSP_NUMRESETTYPE)
+            {
+                if(pMsgContext->reqDataLen == DCM_ECUR_REQ_LEN)
+                {
+#if((DCM_CFG_STORING_ENABLED != DCM_CFG_OFF) || (DCM_CFG_RTESUPPORT_ENABLED != DCM_CFG_OFF))
+                    /* Store the index of the reset type */
+                    Dcm_idxReset_u8 = (uint8)idxIndex_qu8 ;
+#endif
+                    /* Move the state to to check for permission */
+                    Dcm_stEcuResetState_en = DCM_ECURESET_REQPERMISSION;
+                }
+                else
+                {
+                    *dataNegRespCode_u8 = DCM_E_INCORRECTMESSAGELENGTHORINVALIDFORMAT;
+                }
+            }
+            else
+            {
+                /* Set negative response code */
+                *dataNegRespCode_u8 = DCM_E_SUBFUNCTIONNOTSUPPORTED;
+            }
+
+            if(*dataNegRespCode_u8 != 0x0u)
+            {
+                Dcm_stEcuResetState_en = DCM_ECURESET_ERROR;
+                dataRetVal_u8=E_NOT_OK;
+            }
+        }
+
+        if(Dcm_stEcuResetState_en == DCM_ECURESET_REQPERMISSION)
+        {
+            /* Call DcmAppl function to prepare the reset */
+            dataRetVal_u8 = DcmAppl_DcmEcuResetPreparation(Dcm_dataEcuRType_u8,dataNegRespCode_u8);
+            if (E_OK == dataRetVal_u8)
+            {
+                *dataNegRespCode_u8=0x00;
+                /* Do nothing */
+#if(DCM_CFG_STORING_ENABLED != DCM_CFG_OFF)
+                /* If Session is mapped to perform Jump to Boot Loader, move the state to prepare for the Jump to Boot */
+                if((Dcm_DspEcuResetType_cast[Dcm_idxReset_u8].resetForBoot == DCM_RESET_OEM_BOOT)||
+                   (Dcm_DspEcuResetType_cast[Dcm_idxReset_u8].resetForBoot == DCM_RESET_SYS_BOOT)||
+                   (Dcm_DspEcuResetType_cast[Dcm_idxReset_u8].resetForBoot == DCM_RESET_DRIVE_TO_DRIVE))
+                {
+                    Dcm_stEcuResetState_en = DCM_ECURESET_WAIT;
+                }
+                /* Move the state to send the positive response */
+                else
+#endif
+                {
+                   Dcm_stEcuResetState_en = DCM_ECURESET_SENDRESPONSE;
+                }
+            }
+            else if(dataRetVal_u8 == DCM_E_PENDING)
+            {
+                *dataNegRespCode_u8=0x00;
+                /* Do nothing */
+            }
+            else
+            {
+                if(*dataNegRespCode_u8 == 0x00u)
+                {
+                    /* Set negative response code */
+                    *dataNegRespCode_u8 = DCM_E_GENERALREJECT;
+                }
+                Dcm_stEcuResetState_en = DCM_ECURESET_ERROR;
+                dataRetVal_u8=E_NOT_OK;
+            }
+        }
+#if(DCM_CFG_STORING_ENABLED != DCM_CFG_OFF)
+        if(Dcm_stEcuResetState_en == DCM_ECURESET_WAIT)
+        {
+            if(Dcm_DspEcuResetType_cast[Dcm_idxReset_u8].resetForBoot == DCM_RESET_OEM_BOOT )
+            {   /* Call the API to perform Jump to Boot Loader */
+                Dcm_JumpToBootLoader(DCM_JUMPTOOEMBOOTLOADER,dataNegRespCode_u8);
+            }
+            else if(Dcm_DspEcuResetType_cast[Dcm_idxReset_u8].resetForBoot == DCM_RESET_SYS_BOOT)
+            {   /* Call the API to perform Jump to Boot Loader */
+                Dcm_JumpToBootLoader(DCM_JUMPTOSYSSUPPLIERBOOTLOADER,dataNegRespCode_u8);
+            }
+            else
+            {   /* Call the API to perform Jump to Boot Loader */
+                Dcm_JumpToBootLoader(DCM_JUMPDRIVETODRIVE,dataNegRespCode_u8);
+            }
+
+           dataRetVal_u8=DCM_E_PENDING;
+        }
+#endif
+        /* State for transmitting postive response ( normal reset case and warm init case )*/
+        if(Dcm_stEcuResetState_en == DCM_ECURESET_SENDRESPONSE)
+        {
+            /* TRACE [SWS_Dcm_00594] */
+#if (DCM_CFG_RTESUPPORT_ENABLED != DCM_CFG_OFF)
+            /* Call SchM_Switch function */
+            /* TRACE [SWS_Dcm_00834] : TRACE [SWS_Dcm_00373]*/
+            if((Dcm_dataEcuRType_u8 != DCM_ENABLE_RAPID_POWER_SHUTDOWN_RESET) &&
+               (Dcm_dataEcuRType_u8 != DCM_DISABLE_RAPID_POWER_SHUTDOWN_RESET))
+            {
+                /* TRACE [SWS_Dcm_00594] */
+                (void)SchM_Switch_Dcm_DcmEcuReset(Dcm_DspEcuResetType_cast[Dcm_idxReset_u8].dataResetMode_u8);
+            }
+#if (DCM_CFG_RAPIDPOWERSHUTDOWNRESET!=DCM_CFG_OFF)
+            else
+            {
+                /* TRACE [SWS_Dcm_00818] */
+                (void)SchM_Switch_Dcm_DcmModeRapidPowerShutDown(Dcm_DspEcuResetType_cast[Dcm_idxReset_u8].dataResetMode_u8);
+            }
+#endif
+#endif
+            /* Call the DcmAppl API to inform regarding the reset */
+            DcmAppl_Switch_DcmEcuReset(Dcm_dataEcuRType_u8);
+            /* Fill the response buffer with the subfunction */
+            pMsgContext->resData[0] = Dcm_dataEcuRType_u8;
+
+            /* Fill the response length as 0x01 if reset type is not enableRapidPowerShutDown */
+            if(Dcm_dataEcuRType_u8 != DCM_ENABLE_RAPID_POWER_SHUTDOWN_RESET)
+            {
+                pMsgContext->resDataLen = 1;
+            }
+            else
+            {
+                /* TRACE [SWS_Dcm_00589] */
+                /* Fill the power down time if reset type is enableRapidPowerShutDown  */
+                pMsgContext->resData[1] = DCM_CFG_DSP_POWER_DOWN_TIME;
+                /* Fill the response length 0x02 if reset type is enableRapidPowerShutDown(0x04)  */
+                pMsgContext->resDataLen = 2;
+            }
+
+#if (DCM_CFG_RTESUPPORT_ENABLED != DCM_CFG_OFF)
+            /* To remove Misra warning */
+            (void)Dcm_idxReset_u8;
+#endif
+            /* Bring the state to IDLE */
+            Dcm_stEcuResetState_en = DCM_ECURESET_IDLE;
+            dataRetVal_u8=E_OK;
+        }
+        /* Request length error or reset cannot be realized */
+        if(Dcm_stEcuResetState_en == DCM_ECURESET_ERROR)
+        {
+            if(*dataNegRespCode_u8==0x00u)
+            {
+                *dataNegRespCode_u8=DCM_E_CONDITIONSNOTCORRECT;
+            }
+
+#if (DCM_CFG_RTESUPPORT_ENABLED != DCM_CFG_OFF)
+            /* To remove Misra warning */
+            (void)Dcm_idxReset_u8;
+#endif
+            /* Bring the state to IDLE */
+            Dcm_stEcuResetState_en = DCM_ECURESET_IDLE;
+            dataRetVal_u8=E_NOT_OK;
+        }
+    }
+    return dataRetVal_u8;
+}
+#define DCM_STOP_SEC_CODE /*Adding this for memory mapping*/
+#include "Dcm_MemMap.h"
+#endif /*(DCM_CFG_DSPUDSSUPPORT_ENABLED != DCM_CFG_OFF) && ((DCM_CFG_DSP_ECURESET_ENABLED != DCM_CFG_OFF)*/

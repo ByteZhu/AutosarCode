@@ -1,0 +1,94 @@
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   1
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+                          1         ; Module start
+                          2         .compiler_version       "TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 731
+                            18428"
+                          3         .compiler_invocation    "ctc --integer-enumeration -D__CPU__=tc39x -D__CPU_TC39X__ --core=tc1.6.
+                            2 --iso=99 --fp-model=+float --eabi=nw -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\So
+                            urcecode\\Integration\\base_package\\os\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_Co
+                            deGen\\Sourcecode\\Integration\\base_package\\rte\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW
+                            12-V1.0_CodeGen\\Sourcecode\\Integration\\base_package\\rte\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_P
+                            SCM_BSW12-V1.0_CodeGen\\Sourcecode\\Integration\\BSW\\integration -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_
+                            PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\bsw\\Platform -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0
+                            _CodeGen\\Sourcecode\\rte\\gen -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode
+                            \\Integration\\base_package\\os\\inc -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sour
+                            cecode\\Integration\\mcal_package\\Memmap -IC:\\Users\\XBDZ\\Desktop\\Tao\\ETAS_PSCM_BSW12-V1.0_CodeGen\
+                            \Sourcecode\\Integration\\mcal_package\\TargetIntegration\\TC36x\\Include -IC:\\Users\\XBDZ\\Desktop\\Ta
+                            o\\ETAS_PSCM_BSW12-V1.0_CodeGen\\Sourcecode\\os\\Gen -w588 -w560 -t3 -N0 -OacefgIklmnopRsuvwy -Y0 -Z0 --
+                            immediate-in-code --switch=linear -o cc32048a.src C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_63854
+                            4938899294634_3340401\\SuspendOSInterrupts.c"
+                          4         .compiler_name          "ctc"
+                          5         ;source 'C:\\Users\\XBDZ\\AppData\\Local\\Temp\\rta_RTAOS_638544938899294634_3340401\\SuspendOSI
+                            nterrupts.c'
+                          6 
+                          7         
+                          8 $TC162
+                          9         
+                         10         .sdecl  '.text.SuspendOSInterrupts.Os_SuspendOSInterrupts',code
+0000                     11         .sect   '.text.SuspendOSInterrupts.Os_SuspendOSInterrupts'
+                         12         .align  2
+                         13         
+                         14         .global Os_SuspendOSInterrupts
+                         15 ; Function Os_SuspendOSInterrupts
+0000                     16 Os_SuspendOSInterrupts: .type   func
+0000 4DC0E1FF  1    1    17         mfcr    d15,#65052
+0004 538F21F0  3    4    18         mul     d15,d15,#24
+0008 91r0rrFr  1    5    19         movh.a  a15,#@his(Os_const_coreconfiguration)
+000C D9FFrrrr  1    6    20         lea     a15,[a15]@los(Os_const_coreconfiguration)
+0010 10FF      1    7    21         addsc.a a15,a15,d15,#0
+0012 C81F      1    8    22         ld.a    a15,[a15]4
+0014 485F      1    9    23         ld.w    d15,[a15]20
+0016 EE30      1   10    24         jne     d15,#0,.L2
+0018 4DC0E20F  1   11    25         mfcr    d0,#65068
+001C 4DC0E2FF  1   12    26         mfcr    d15,#65068
+0020 BBF00F18  1   13    27         mov.u   d1,#33023
+0024 261F      1   14    28         and     d15,d1
+0026 BBF00028  1   15    29         mov.u   d2,#32783
+002A 7F2F1500  1   16    30         jge     d15,d2,.L3
+002E 0D004003  1   17    31         disable
+0032 CDC1E20F  1   18    32         mtcr    #65068,d1
+0036 0D00C004  1   19    33         isync
+                         34         
+003A 6820      1   20    35         st.w    [a15]8,d0
+003C 485F      1   21    36         ld.w    d15,[a15]20
+003E C21F      1   22    37         add     d15,#1
+0040 6CF5      1   23    38         st.w    [a15]20,d15
+0042 0D004003  1   24    39         disable
+0046 BBF000F8  1   25    40         mov.u   d15,#32783
+004A CDCFE20F  1   26    41         mtcr    #65068,d15
+004E 0D00C004  1   27    42         isync
+                         43         
+0052 0090      2   29    44         ret
+0054                     45 .L3:
+0054 0D004003  1   30    46         disable
+0058 BBF00FF8  1   31    47         mov.u   d15,#33023
+005C CDCFE20F  1   32    48         mtcr    #65068,d15
+0060 0D00C004  1   33    49         isync
+                         50         
+0064 485F      1   34    51         ld.w    d15,[a15]20
+0066 C21F      1   35    52         add     d15,#1
+0068 6CF5      1   36    53         st.w    [a15]20,d15
+TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558
+                                                                                                                           Page   2
+
+ADDR CODE      CYCLES  LINE SOURCE LINE
+006A 6820      1   37    54         st.w    [a15]8,d0
+006C CDC0E20F  1   38    55         mtcr    #65068,d0
+0070 0D00C004  1   39    56         isync
+                         57         
+0074 0090      2   41    58         ret
+0076                     59 .L2:
+0076 485F      1   42    60         ld.w    d15,[a15]20
+0078 C21F      1   43    61         add     d15,#1
+007A 6CF5      1   44    62         st.w    [a15]20,d15
+007C 0090      2   46    63         ret
+                         64         
+007E                     65 __Os_SuspendOSInterrupts_function_end:
+                         66         .size   Os_SuspendOSInterrupts,__Os_SuspendOSInterrupts_function_end-Os_SuspendOSInterrupts
+                         67         ; End of function
+                         68         
+                         69         .extern Os_const_coreconfiguration
+                         70         .calls  'Os_SuspendOSInterrupts','',0
+                         71         ; Module end
